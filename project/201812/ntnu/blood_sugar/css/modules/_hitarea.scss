@@ -1,0 +1,54 @@
+.hitarea {
+  position: relative;
+  height: 100%;
+
+  &_s0 {
+    background-color: $color-hit_s0;
+    width: 21%;
+  }
+
+  &_s1 {
+    background-color: $color-hit_s1;
+    width: 6%;
+  }
+
+  &_s2 {
+    background-color: $color-hit_s2;
+    width: 5%;
+  }
+
+  &_s3 {
+    background-color: $color-hit_s3;
+    width: 17%;
+  }
+
+  &_s4 {
+    background-color: $color-hit_s4;
+    width: 5%;
+  }
+
+  &_s5 {
+    background-color: $color-hit_s5;
+    width: 5%;
+  }
+
+  &_s6 {
+    background-color: $color-hit_s6;
+    width: 18%;
+  }
+
+  &_s7 {
+    background-color: $color-hit_s7;
+    width: 6%;
+  }
+
+  &_s8 {
+    background-color: $color-hit_s8;
+    width: 6%;
+  }
+
+  &_s9 {
+    background-color: $color-hit_s9;
+    width: 11%;
+  }
+}

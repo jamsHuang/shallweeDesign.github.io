@@ -1,0 +1,30 @@
+button{
+  color:$color-font-main;
+  border-radius: 3px;
+  &:focus{
+    outline-color: rgba(255,255,255,0);
+  }
+}
+
+.btn_box{
+
+  font-size: 0.9rem;
+  text-align: center;
+  display: inline-flex;
+  width:100%;
+  justify-content: center;
+  z-index: 99;
+  padding: 0 3%;
+  margin-left: 2%;
+  &_block{
+    padding: 10px;
+    margin:0 2px 10px 0;
+    background-color:$color-btn-bg;
+    color: $color-btn-text;
+    border-radius: 5px;
+
+    &:hover{
+      cursor: move;
+    }
+  }
+}
