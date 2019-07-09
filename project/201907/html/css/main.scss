@@ -50,7 +50,7 @@ img {
 .page {
   padding-top:90px;
   &__result{
-    padding-top:50px;
+    padding-top:90px;
   }
   .title {
     margin: 0 auto 20px;
@@ -265,7 +265,9 @@ img {
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
-
+    &__result{
+      padding-top:50px;
+    }
     .title {}
 
     .subtitle {
