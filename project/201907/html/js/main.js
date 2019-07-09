@@ -384,7 +384,7 @@ $(function() {
         // $('.content').append(cvs);
         //
         var finalImg = new Image();
-        finalData = cvs.toDataURL();
+        finalData = cvs.toDataURL("image/jpeg", 1.0);
         //
         finalImg.src = finalData;
         finalImg.onload = function() {
@@ -425,7 +425,8 @@ $(function() {
   var finalData;
 
   function connectServer() {
-    finalData = finalData.replace("data:image/png;base64,", "");
+    // finalData = finalData.replace("data:image/png;base64,", "");
+    console.log(finalData);
     $.ajax({
       url: 'https://sylvan-plane-243506.appspot.com/api/upload',
       method: "POST",
