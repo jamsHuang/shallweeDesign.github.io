@@ -423,25 +423,27 @@ $(function() {
     // $('.content').append(finalImg);
   })
   var finalData;
-
+  var fbshare = "https://www.facebook.com/sharer/sharer.php?u="
+  var shareLink;
   function connectServer() {
     // finalData = finalData.replace("data:image/png;base64,", "");
-    console.log(finalData);
-    $.ajax({
-      url: 'https://sylvan-plane-243506.appspot.com/api/upload',
-      method: "POST",
-      dataType: "json",
-      data: {
+    // finalData = "222";
+    // console.log(finalData);
+    let api = 'https://sylvan-plane-243506.appspot.com/api/upload';
+    // api = "http://localhost:3001/api/upload"
+    $.post(api,
+      {
         id: viewNum,
         photo: finalData
+      },function(response) {
+        // console.log(respongse);
+        console.log(response.url);
+        shareLink = response.url;
       },
-      success: function(response) {
-        console.log(respongse);
-      },
-      error() {
+      function() {
         console.log('Upload error');
       },
-    });
+    );
   }
   var image = document.querySelector('#photo__head');
   var cropper = new Cropper(image, {
@@ -484,6 +486,6 @@ $(function() {
     window.location.reload();
   });
   $('.btn__share').click(function(){
-    console.log('share')
+    window.open(""+fbshare+shareLink)
   });
 });
