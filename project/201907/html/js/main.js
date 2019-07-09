@@ -29,9 +29,6 @@ $(function() {
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
   //
@@ -175,14 +172,11 @@ $(function() {
             background: false,
             guides: false,
           });
-          // cropper.destroy();
         };
         img.src = e.target.result;
       };
     }
   };
-  // $('.photo').resizable().rotatable().draggable();
-
   //
   var gen = "f";
   $('.feature__gender-m').click(function(e) {
@@ -436,8 +430,8 @@ $(function() {
         id: viewNum,
         photo: finalData
       },function(response) {
-        // console.log(respongse);
-        console.log(response.url);
+        console.log("a",respongse);
+        console.log("b",response);
         shareLink = response.url;
       },
       function() {

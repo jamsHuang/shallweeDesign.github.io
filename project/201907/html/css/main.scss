@@ -1,3 +1,8 @@
+.cropper-modal{
+
+    background-color: rgba(0,0,0,0);
+}
+
 .cropper-view-box {
 
     outline:none;
@@ -314,4 +319,37 @@ background-repeat-y: no-repeat;
   }
 
   #btn_upload {}
+}
+
+footer {
+    padding: 20px;
+    background: #151515;
+    color: #fff;
+    font-size: .8rem;
+    .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}.justify-content-between {
+    -ms-flex-pack: justify!important;
+    justify-content: space-between!important;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap!important;
+    flex-wrap: wrap!important;
+}
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+p{
+  color: #fff;
+letter-spacing: 2px;
+font-weight: 300;
+line-height: 1.8;
+margin-top:0;
+margin-bottom:1rem;
+}
 }
