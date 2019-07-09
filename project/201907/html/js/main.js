@@ -1,4 +1,5 @@
 $(function() {
+  $('footer').hide();
   //setup SLIDER
   $('.view-slick').slick({
     dots: false,
@@ -275,6 +276,11 @@ $(function() {
   })
   $('#btn__go').click(function() {
     // console.log(hat,glasses,carry,gen,viewNum);
+    $('footer').show();
+    if(window.innerWidth>768){
+       $('header').hide();
+    }
+    //
     var canvas = cropper.getCroppedCanvas({
       width: 170,
       height: 250
@@ -283,6 +289,9 @@ $(function() {
 
     $('.page').hide();
     $('.page__result').show();
+    $('.content').click(function(){
+      window.open('http://www.heavyduty.com.tw/GoWeb2/include/index.php');
+    })
     //
     var resultImg = new Image(1200, 675);
     var headImg = new Image(170, 250);
