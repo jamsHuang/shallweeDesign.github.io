@@ -35,6 +35,8 @@ $(function() {
     ]
   });
   //
+
+  //
   $(".page").hide();
   $('.page__pick-view').show();
   //
@@ -59,13 +61,21 @@ $(function() {
     }
     $('.page').hide();
     $('.page__upload').show();
+
+    $('.item__slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 2,
+      slidesToScroll: 2
+    });
   })
   //
 
   //
   $("#btn_upload").change(function(e) {
     var file = document.getElementById("btn_upload").files[0];
-    ImageHelper.resizeAndRotateImage(file, 540, function(resizeImageObj) {});
+    ImageHelper.resizeAndRotateImage(file, 500, function(resizeImageObj) {});
   });
 
   var ImageHelper = {
@@ -138,75 +148,341 @@ $(function() {
           //fd = fd.replace("data:image/png;base64,", "");
           // console.log(fd);
 
-          $(".photo").css('background-image','url('+fd+')');
+          // $(".photo").css('background-image','url('+fd+')');
+          $('#photo__head').attr("src", fd);
+          cropper.destroy();
+          cropper = new Cropper(image, {
+            dragMode: 'move',
+            aspectRatio: 12 / 16,
+            autoCropArea: .6,
+            restore: false,
+            guides: false,
+            center: false,
+            highlight: false,
+            cropBoxMovable: false,
+            cropBoxResizable: false,
+            toggleDragModeOnDblclick: false,
+            zoomable: true,
+            zoomOnWheel: true,
+            minContainerWidth: 300,
+            minContainerHeight: 340,
+            maxContainerWidth: 300,
+            maxContainerHeight: 340,
+            minCropBoxWidth: 170,
+            minCropBoxHeight: 250,
+            maxCropBoxWidth: 170,
+            maxCropBoxHeight: 250,
+            background: false,
+            guides: false,
+          });
+          // cropper.destroy();
         };
         img.src = e.target.result;
       };
     }
   };
-  $('.photo').resizable().rotatable().draggable();
-  // var $image = $('.photo');
-  // 		$(document).ready(function() {
-  // 			space.initCorpper();
-  // 		});
-  //
-  // 		var space = {
-  // 			curRotationPrev: 0,
-  // 			curRotationFlag: false,
-  // 			initCorpper: function() {
-  // 				$image.cropper({
-  // 					aspectRatio: 1 / 1,
-  // 					viewMode: 0, // 视点模式：【0：无限制；1:不能超出裁剪区域；】
-  // 					dragMode: 'move', // 拖曳模式:'crop'*创建一个新的麦田盒,'move'*移动画布,'none'*无所事事
-  // 					modal: true, // 是否显示黑色遮罩
-  // 					guides: true, // 显示麦田盒上方的虚线。
-  // 					center: true, // 显示位于“作物”框上方的中心指示器。
-  // 					highlight: true, // 在“作物”框上方显示白色模式(突出显示“作物”框)。
-  // 					background: true, // 是否显示透明背景
-  // 					movable: true, // 是否可以移动图像
-  // 					rotatable: true, // 可旋转
-  // 					scalable: true, // 可伸缩
-  // 					zoomable: true, // 可缩放
-  // 					responsive: true, // 调整窗口大小时，重新渲染裁剪器
-  // 					zoomOnWheel: false, // 通过移动鼠标使图像能够缩放
-  // 					wheelZoomRatio: 0.1, // 定义缩放比率时，通过鼠标旋转放大图像。（滚动时放大或缩小的比例）
-  // 					cropBoxMovable: false, // 通过拖动启用移动“裁剪”框。
-  // 					CropBoxResizable: true, // 可以通过拖动调整裁剪框的大小
-  // 					ready: function() {
-  // 						space.initRorate();
-  // 					}
-  // 				});
-  // 			},
-  // 			// 初始化旋转度数
-  // 			initRorate: function() {
-  //
-  // 				touch.on('#target', 'touchstart', function(ev) {
-  // 					ev.startRotate();
-  // 					ev.preventDefault();
-  // 				});
-  // 				touch.on('#content', 'rotate', function(ev) {
-  //
-  // 					var r = ev.rotation; // 当前度数
-  //
-  // 					var pr = r - space.curRotationPrev;
-  //
-  // 					if(ev.rotation >= -20 && ev.rotation <= 20 && !space.curRotationFlag) {
-  // 						// ±20°的范围内 不操作
-  // 					} else {
-  // 						var imgData = $image.data('cropper').getImageData();
-  // 						$image.cropper("rotateTo", imgData.rotate + pr);
-  // 						space.curRotationFlag = true;
-  // 					}
-  //
-  // 					space.curRotationPrev = r;
-  //
-  // 					if(ev.fingerStatus === 'end') { // 手指离开时
-  // 						space.curRotationFlag = false;
-  // 						space.curRotationPrev = 0;
-  // 					}
-  //
-  // 				});
-  // 			}
-  // 		}
+  // $('.photo').resizable().rotatable().draggable();
 
+  //
+  var gen = "f";
+  $('.feature__gender-m').click(function(e) {
+    gen = 'm';
+    if ($('.feature__gender-f').hasClass('feature__gender-active')) {
+      $('.feature__gender-f').removeClass('feature__gender-active');
+    }
+    if ($('.feature__gender-m').hasClass('feature__gender-active')) {
+
+    } else {
+      $('.feature__gender-m').addClass('feature__gender-active');
+    }
+  })
+  $('.feature__gender-f').click(function(e) {
+    gen = 'f';
+    if ($('.feature__gender-m').hasClass('feature__gender-active')) {
+      $('.feature__gender-m').removeClass('feature__gender-active');
+    }
+    if ($('.feature__gender-f').hasClass('feature__gender-active')) {
+
+    } else {
+      $('.feature__gender-f').addClass('feature__gender-active');
+    }
+  })
+  var hat = -1;
+  var glasses = -1;
+  var carry = -1;
+  $('.feature__item').click(function(e) {
+    if ($('#' + e.target.id).hasClass('feature__item-active')) {
+      $('#' + e.target.id).removeClass('feature__item-active')
+    } else {
+      $('#' + e.target.id).addClass('feature__item-active');
+    }
+    switch (e.target.id) {
+      case "item0":
+        glasses = 0;
+        if ($('#item1').hasClass('feature__item-active')) {
+          $('#item1').removeClass('feature__item-active')
+        }
+        break;
+      case "item1":
+        glasses = 1;
+        if ($('#item0').hasClass('feature__item-active')) {
+          $('#item0').removeClass('feature__item-active')
+        }
+        break;
+      case "item2":
+        hat = 0;
+        if ($('#item3').hasClass('feature__item-active')) {
+          $('#item3').removeClass('feature__item-active')
+        } else if ($('#item4').hasClass('feature__item-active')) {
+          $('#item4').removeClass('feature__item-active')
+        }
+        break;
+      case "item3":
+        hat = 1;
+        if ($('#item2').hasClass('feature__item-active')) {
+          $('#item2').removeClass('feature__item-active')
+        } else if ($('#item4').hasClass('feature__item-active')) {
+          $('#item4').removeClass('feature__item-active')
+        }
+        break;
+      case "item4":
+        hat = 2;
+        if ($('#item3').hasClass('feature__item-active')) {
+          $('#item3').removeClass('feature__item-active')
+        } else if ($('#item2').hasClass('feature__item-active')) {
+          $('#item2').removeClass('feature__item-active')
+        }
+        break;
+      case "item5":
+        carry = 0;
+        if ($('#item6').hasClass('feature__item-active')) {
+          $('#item6').removeClass('feature__item-active')
+        } else if ($('#item7').hasClass('feature__item-active')) {
+          $('#item7').removeClass('feature__item-active')
+        }
+        break;
+      case "item6":
+        carry = 1;
+        if ($('#item5').hasClass('feature__item-active')) {
+          $('#item5').removeClass('feature__item-active')
+        } else if ($('#item7').hasClass('feature__item-active')) {
+          $('#item7').removeClass('feature__item-active')
+        }
+        break;
+      case "item7":
+        carry = 2;
+        if ($('#item6').hasClass('feature__item-active')) {
+          $('#item6').removeClass('feature__item-active')
+        } else if ($('#item5').hasClass('feature__item-active')) {
+          $('#item5').removeClass('feature__item-active')
+        }
+        break;
+    }
+  })
+  $('#btn__go').click(function() {
+    // console.log(hat,glasses,carry,gen,viewNum);
+    var canvas = cropper.getCroppedCanvas({
+      width: 170,
+      height: 250
+    });
+    var dataURL = canvas.toDataURL();
+
+    $('.page').hide();
+    $('.page__result').show();
+    //
+    var resultImg = new Image(1200, 675);
+    var headImg = new Image(170, 250);
+
+    // resultImg.crossOrigin = '';
+    // console.log("img/view_"+gen+"_"+viewNum+".png");
+
+    // $('.content').append(resultImg);
+    var cvs = document.createElement('canvas');
+    cvs.width = 1200;
+    cvs.height = 675;
+    var ctx = cvs.getContext("2d");
+    var xx, yy, sw, sh, deg;
+    xx = 840;
+    yy = 170;
+    sw = 170;
+    sh = 250;
+    switch (gen) {
+      case "f":
+        if (viewNum == 0) {
+          xx = 255;
+          yy = 75;
+          deg = 18;
+          sw = 176.8;
+          sh = 260;
+        } else if (viewNum == 1) {
+          xx = 150;
+          yy = 120;
+          deg = 10;
+          sw = 176.8;
+          sh = 260;
+        } else if (viewNum == 2) {
+          xx = 825;
+          yy = 370;
+          deg = -10;
+          sw = 166;
+          sh = 245;
+
+        } else if (viewNum == 3) {
+          xx = 768;
+          yy = 300;
+          deg = -10;
+          sw = 180.2;
+          sh = 265;
+
+        } else {
+
+        }
+        break;
+      case "m":
+        if (viewNum == 0) {
+          xx = 130;
+          yy = 160;
+          sw = 230;
+          sh = 340;
+        } else if (viewNum == 1) {
+          xx = 90;
+          yy = 140;
+          sw = 210.8;
+          sh = 310;
+        } else if (viewNum == 2) {
+          xx = 900;
+          yy = 270;
+        } else if (viewNum == 3) {
+          xx = 830;
+          yy = 170;
+          sw = 210;
+          sh = 310;
+        } else {
+
+        }
+        break;
+
+      default:
+        "f"
+    }
+
+
+    headImg.src = dataURL;
+    headImg.onload = function() {
+      ctx.rotate(deg * Math.PI / 180);
+      ctx.drawImage(headImg, 0, 0, 170, 250, xx, yy, sw, sh);
+      ctx.restore();
+
+      resultImg.src = "img/view_" + gen + "_" + viewNum + ".png";
+      resultImg.onload = function() {
+        ctx.rotate(-deg * Math.PI / 180);
+        ctx.drawImage(resultImg, 0, 0, 1200, 675, 0, 0, 1200, 675);
+        ctx.restore();
+        if (hat != -1 && glasses != -1 && carry != -1) {
+
+        }
+        // $('.content').append(cvs);
+        //
+        var finalImg = new Image();
+        finalData = cvs.toDataURL();
+        //
+        finalImg.src = finalData;
+        finalImg.onload = function() {
+          $('.content').append(finalImg);
+          connectServer();
+        }
+      }
+    }
+
+    // resultImg.src = "img/view_" + gen + "_" + viewNum + ".png";
+    // resultImg.onload = function() {
+    //   ctx.drawImage(resultImg, 0, 0, 1200, 675, 0, 0, 1200, 675);
+    //   headImg.src = dataURL;
+    //   headImg.onload = function() {
+    //     ctx.rotate(deg*Math.PI/180);
+    //     ctx.drawImage(headImg, 0, 0, 170, 250, xx, yy, sw, sh);
+    //     ctx.restore();
+    //
+    //     if(hat!=-1 && glasses!=-1&&carry!=-1){
+    //
+    //     }
+    //     // $('.content').append(cvs);
+    //     //
+    //     var finalImg = new Image();
+    //     finalData = cvs.toDataURL();
+    //     //
+    //     finalImg.src = finalData;
+    //     finalImg.onload = function() {
+    //       $('.content').append(finalImg);
+    //       connectServer();
+    //     }
+    //   }
+    // }
+    // ctx.drawImage(headImg,0,0,170,250);
+    // console.log(headImg);
+    // $('.content').append(finalImg);
+  })
+  var finalData;
+
+  function connectServer() {
+    finalData = finalData.replace("data:image/png;base64,", "");
+    $.ajax({
+      url: 'https://sylvan-plane-243506.appspot.com/api/upload',
+      method: "POST",
+      dataType: "json",
+      data: {
+        id: viewNum,
+        photo: finalData
+      },
+      success: function(response) {
+        console.log(respongse);
+      },
+      error() {
+        console.log('Upload error');
+      },
+    });
+  }
+  var image = document.querySelector('#photo__head');
+  var cropper = new Cropper(image, {
+    dragMode: 'move',
+    aspectRatio: 12 / 16,
+    autoCropArea: .6,
+    restore: false,
+    guides: false,
+    center: false,
+    highlight: false,
+    cropBoxMovable: false,
+    cropBoxResizable: false,
+    toggleDragModeOnDblclick: false,
+    zoomable: true,
+    zoomOnWheel: true,
+    minContainerWidth: 300,
+    minContainerHeight: 340,
+    maxContainerWidth: 300,
+    maxContainerHeight: 340,
+
+    minCropBoxWidth: 170,
+    minCropBoxHeight: 250,
+    maxCropBoxWidth: 170,
+    maxCropBoxHeight: 250,
+    background: false,
+    guides: false,
+  });
+
+  $('.icon__rotate').click(function() {
+    cropper.rotate(10);
+  })
+  $('.icon__zoom-in').click(function() {
+    cropper.zoom(0.1);
+  })
+  $('.icon__zoom-out').click(function() {
+    cropper.zoom(-0.1);
+  });
+
+  $('.btn__playagain').click(function(){
+    window.location.reload();
+  });
+  $('.btn__share').click(function(){
+    console.log('share')
+  });
 });
