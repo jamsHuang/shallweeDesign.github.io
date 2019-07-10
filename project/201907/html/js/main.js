@@ -205,9 +205,20 @@ $(function() {
   var hat = -1;
   var glasses = -1;
   var carry = -1;
+
+
   $('.feature__item').click(function(e) {
     if ($('#' + e.target.id).hasClass('feature__item-active')) {
       $('#' + e.target.id).removeClass('feature__item-active')
+      if (e.target.id == "item0" || e.target.id == "item1") {
+        hat = -1;
+      } else if (e.target.id == "item2" || e.target.id == "item3" || e.target.id == "item4") {
+        glasses = -1;
+      } else if (e.target.id == "item5" || e.target.id == "item6" || e.target.id == "item7") {
+        carry = -1;
+      } else {
+
+      }
     } else {
       $('#' + e.target.id).addClass('feature__item-active');
     }
@@ -274,11 +285,18 @@ $(function() {
         break;
     }
   })
+  var cvs, ctx;
+  var imgHat, imgGlasses, imgCarry;
+  var loadHat = false;
+  var loadGlasses = false;
+  var loadCarry = false;
+  var urlHat, urlGlasses, urlCarry;
+
   $('#btn__go').click(function() {
     // console.log(hat,glasses,carry,gen,viewNum);
     $('footer').show();
-    if(window.innerWidth>768){
-       $('header').hide();
+    if (window.innerWidth > 768) {
+      $('header').hide();
     }
     //
     var canvas = cropper.getCroppedCanvas({
@@ -289,7 +307,7 @@ $(function() {
 
     $('.page').hide();
     $('.page__result').show();
-    $('.content').click(function(){
+    $('.content').click(function() {
       window.open('http://www.heavyduty.com.tw/GoWeb2/include/index.php');
     })
     //
@@ -300,10 +318,10 @@ $(function() {
     // console.log("img/view_"+gen+"_"+viewNum+".png");
 
     // $('.content').append(resultImg);
-    var cvs = document.createElement('canvas');
+    cvs = document.createElement('canvas');
     cvs.width = 1200;
     cvs.height = 675;
-    var ctx = cvs.getContext("2d");
+    ctx = cvs.getContext("2d");
     var xx, yy, sw, sh, deg;
     xx = 840;
     yy = 170;
@@ -312,9 +330,9 @@ $(function() {
     switch (gen) {
       case "f":
         if (viewNum == 0) {
-          xx = 255;
-          yy = 75;
-          deg = 18;
+          xx = 240;
+          yy = 100;
+          deg = 14;
           sw = 176.8;
           sh = 260;
         } else if (viewNum == 1) {
@@ -324,16 +342,16 @@ $(function() {
           sw = 176.8;
           sh = 260;
         } else if (viewNum == 2) {
-          xx = 825;
-          yy = 370;
-          deg = -10;
+          xx = 795;
+          yy = 425;
+          deg = -12.8;
           sw = 166;
           sh = 245;
 
         } else if (viewNum == 3) {
-          xx = 768;
-          yy = 300;
-          deg = -10;
+          xx = 758;
+          yy = 350;
+          deg = -11.5;
           sw = 180.2;
           sh = 265;
 
@@ -364,9 +382,6 @@ $(function() {
 
         }
         break;
-
-      default:
-        "f"
     }
 
 
@@ -381,19 +396,74 @@ $(function() {
         ctx.rotate(-deg * Math.PI / 180);
         ctx.drawImage(resultImg, 0, 0, 1200, 675, 0, 0, 1200, 675);
         ctx.restore();
-        if (hat != -1 && glasses != -1 && carry != -1) {
+        if (hat !== -1 || glasses !== -1 || carry !== -1) {
 
+          if(hat !== -1){
+            imgHat = new Image(1200,675);
+            var hatNum = hat+2;
+            urlHat = "img/t_"+hatNum+"_"+gen+"_"+viewNum+".png";
+            imgHat.src = urlHat;
+            imgHat.onload = function(){
+              loadHat = true;
+            }
+          }
+          if(glasses !== -1){
+            imgGlasses = new Image(1200,675);
+            urlGlasses = "img/t_"+glasses+"_"+gen+"_"+viewNum+".png";
+            imgGlasses.src = urlGlasses;
+            console.log(loadGlasses);
+            imgGlasses.onload = function(){
+              loadGlasses = true;
+              console.log(loadGlasses);
+            }
+          }
+          if(carry !== -1){
+            imgCarry = new Image(1200,675);
+            var carryNum = carry + 5;
+            urlCarry = "img/t_"+carryNum+ "_"+gen+"_"+viewNum+".png";
+            imgCarry.src = urlCarry;
+            imgCarry.onload = function(){
+              loadCarry = true;
+            }
+          }
+          checkGlasses();
+
+          // var dhat, dglasses, dcarry;
+          // var hat_url, glasses_url, carry_url;
+          // if (hat == 0) {
+          //   dhat = new Image(1200, 675);
+          //   hat_url = "img/t_2_" + gen + "_" + viewNum + ".png";
+          //   dhat.src = hat_url;
+          //   dhat.onload = function() {
+          //     ctx.drawImage(dhat, 0, 0, 1200, 675, 0, 0, 1200, 675);
+          //     //drawFinal(cvs);
+          //     if (glasses !== -1 || carry !== -1) {
+          //       if(glasses == 0){
+          //
+          //       }
+          //       else if(glasses ==1){
+          //
+          //       }else {
+          //
+          //       }
+          //     } else {
+          //       drawFinal(cvs);
+          //     }
+          //   }
+          // } else if (hat == 1) {
+          //   dhat = new Image(1200, 675);
+          //
+          // } else if (hat == 2) {
+          //
+          // } else {
+          //
+          // }
+        } else {
+          drawFinal(cvs);
         }
         // $('.content').append(cvs);
         //
-        var finalImg = new Image();
-        finalData = cvs.toDataURL("image/jpeg", 1.0);
-        //
-        finalImg.src = finalData;
-        finalImg.onload = function() {
-          $('.content').append(finalImg);
-          connectServer();
-        }
+
       }
     }
 
@@ -406,7 +476,7 @@ $(function() {
     //     ctx.drawImage(headImg, 0, 0, 170, 250, xx, yy, sw, sh);
     //     ctx.restore();
     //
-    //     if(hat!=-1 && glasses!=-1&&carry!=-1){
+    //     if(hat!==-1 && glasses!==-1&&carry!==-1){
     //
     //     }
     //     // $('.content').append(cvs);
@@ -425,9 +495,73 @@ $(function() {
     // console.log(headImg);
     // $('.content').append(finalImg);
   })
+
+  function checkGlasses(){
+
+    if(glasses!==-1 && loadGlasses == true){
+      console.log('checkHat');
+      checkHat();
+    }else{
+      if(glasses==-1){
+        checkHat();
+      }else{
+        setTimeout(function(){checkGlasses();},500);
+      }
+    }
+  }
+  function checkHat(){
+    if(hat!==-1 && loadHat == true){
+      console.log('checkCarry');
+      checkCarry();
+    }else{
+      if(hat==-1){
+        console.log('checkCarry');
+        checkCarry();
+      }else{
+        setTimeout(function(){checkHat();},500);
+      }
+    }
+  }
+  function checkCarry(){
+    if(carry!==-1 && loadCarry == true){
+      console.log('drawItem');
+      drawItem();
+    }else{
+      if(carry==-1){
+        console.log('drawItem');
+        drawItem();
+      }else{
+        setTimeout(function(){checkCarry();},500);
+      }
+    }
+  }
+
+  function drawItem(){
+    if(glasses !== -1){
+      ctx.drawImage(imgGlasses, 0, 0, 1200, 675, 0, 0, 1200, 675);
+    }
+    if(hat !== -1){
+      ctx.drawImage(imgHat, 0, 0, 1200, 675, 0, 0, 1200, 675);
+    }
+    if(carry !== -1){
+      ctx.drawImage(imgCarry, 0, 0, 1200, 675, 0, 0, 1200, 675);
+    }
+    drawFinal(cvs);
+  }
+  function drawFinal(cvs) {
+    var finalImg = new Image();
+    finalData = cvs.toDataURL("image/jpeg", 1.0);
+    //
+    finalImg.src = finalData;
+    finalImg.onload = function() {
+      $('.content').append(finalImg);
+      connectServer();
+    }
+  }
   var finalData;
   var fbshare = "https://www.facebook.com/sharer/sharer.php?u="
   var shareLink;
+
   function connectServer() {
     // finalData = finalData.replace("data:image/png;base64,", "");
     // finalData = "222";
@@ -442,12 +576,14 @@ $(function() {
         photo: finalData
       },
       success: function(response) {
-        console.info("# success: ", response.url);
+        // console.info("# success: ", response.url);
         shareLink = encodeURIComponent(response.url);
-        console.log("shareLink",shareLink);
+        // console.log("shareLink", shareLink);
+        $('.loading').hide();
       },
       error: function(err) {
         console.info("# upload faild, error: ", err);
+        alert("伺服器錯誤，請重新操作一次");
       }
     })
   }
@@ -488,10 +624,10 @@ $(function() {
     cropper.zoom(-0.1);
   });
 
-  $('.btn__playagain').click(function(){
+  $('.btn__playagain').click(function() {
     window.location.reload();
   });
-  $('.btn__share').click(function(){
-    window.open(""+fbshare+shareLink);
+  $('.btn__share').click(function() {
+    window.open("" + fbshare + shareLink);
   });
 });
