@@ -361,21 +361,27 @@ $(function() {
         break;
       case "m":
         if (viewNum == 0) {
-          xx = 130;
-          yy = 160;
+          xx = 215;
+          yy = 55;
+          deg = 20;
           sw = 230;
           sh = 340;
         } else if (viewNum == 1) {
-          xx = 90;
-          yy = 140;
+          xx = 150;
+          yy = 86;
+          deg = 14;
           sw = 210.8;
           sh = 310;
         } else if (viewNum == 2) {
-          xx = 900;
-          yy = 270;
+          xx = 660;
+          yy = 660;
+          deg = -24;
+          sw = 156.4;
+          sh = 230;
         } else if (viewNum == 3) {
-          xx = 830;
-          yy = 170;
+          xx = 648;
+          yy = 485;
+          deg = -21;
           sw = 210;
           sh = 310;
         } else {
@@ -428,72 +434,21 @@ $(function() {
           }
           checkGlasses();
 
-          // var dhat, dglasses, dcarry;
-          // var hat_url, glasses_url, carry_url;
-          // if (hat == 0) {
-          //   dhat = new Image(1200, 675);
-          //   hat_url = "img/t_2_" + gen + "_" + viewNum + ".png";
-          //   dhat.src = hat_url;
-          //   dhat.onload = function() {
-          //     ctx.drawImage(dhat, 0, 0, 1200, 675, 0, 0, 1200, 675);
-          //     //drawFinal(cvs);
-          //     if (glasses !== -1 || carry !== -1) {
-          //       if(glasses == 0){
-          //
-          //       }
-          //       else if(glasses ==1){
-          //
-          //       }else {
-          //
-          //       }
-          //     } else {
-          //       drawFinal(cvs);
-          //     }
-          //   }
-          // } else if (hat == 1) {
-          //   dhat = new Image(1200, 675);
-          //
-          // } else if (hat == 2) {
-          //
-          // } else {
-          //
-          // }
         } else {
+          // headImg.src = dataURL;
+          //  headImg.onload = function() {
+          //    ctx.rotate(deg*Math.PI/180);
+          //    ctx.drawImage(headImg, 0, 0, 170, 250, xx, yy, sw, sh);
+          //    ctx.restore();
+          //    drawFinal(cvs);
+          // }
+
           drawFinal(cvs);
         }
-        // $('.content').append(cvs);
-        //
 
       }
     }
 
-    // resultImg.src = "img/view_" + gen + "_" + viewNum + ".png";
-    // resultImg.onload = function() {
-    //   ctx.drawImage(resultImg, 0, 0, 1200, 675, 0, 0, 1200, 675);
-    //   headImg.src = dataURL;
-    //   headImg.onload = function() {
-    //     ctx.rotate(deg*Math.PI/180);
-    //     ctx.drawImage(headImg, 0, 0, 170, 250, xx, yy, sw, sh);
-    //     ctx.restore();
-    //
-    //     if(hat!==-1 && glasses!==-1&&carry!==-1){
-    //
-    //     }
-    //     // $('.content').append(cvs);
-    //     //
-    //     var finalImg = new Image();
-    //     finalData = cvs.toDataURL();
-    //     //
-    //     finalImg.src = finalData;
-    //     finalImg.onload = function() {
-    //       $('.content').append(finalImg);
-    //       connectServer();
-    //     }
-    //   }
-    // }
-    // ctx.drawImage(headImg,0,0,170,250);
-    // console.log(headImg);
-    // $('.content').append(finalImg);
   })
 
   function checkGlasses(){
