@@ -350,7 +350,7 @@ $(function() {
 
         } else if (viewNum == 3) {
           xx = 758;
-          yy = 350;
+          yy = 330;
           deg = -11.5;
           sw = 180.2;
           sh = 265;
