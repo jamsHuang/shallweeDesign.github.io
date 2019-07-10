@@ -250,6 +250,7 @@ img {
 
   &-box {
     display: flex;
+    padding-bottom:50px;
   }
 }
 
@@ -266,7 +267,7 @@ img {
     margin: 0 auto;
     position: relative;
     &__result{
-      padding-top:50px;
+      padding-top:10px;
     }
     .title {}
 

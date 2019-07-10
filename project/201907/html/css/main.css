@@ -246,6 +246,7 @@ img {
 
 .btn-box {
   display: flex;
+  padding-bottom: 50px;
 }
 
 #btn_upload {
@@ -262,7 +263,7 @@ img {
     position: relative;
   }
   .page__result {
-    padding-top: 50px;
+    padding-top: 10px;
   }
   .page .subtitle {
     margin-bottom: 50px;
