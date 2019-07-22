@@ -384,10 +384,11 @@ header {
   text-align: left;
   right: 50%;
   top: 0;
+  pointer-events: none;
 }
 
 .notice.upload__notice {
-  margin-top: -70px;
+  margin-top: -75px;
   margin-right: -100px;
 }
 
@@ -474,11 +475,11 @@ header {
 @keyframes fadeIn2 {
   0% {
     opacity: 0;
-    transform: scale(0);
+    transform: translateY(-100%);
   }
   100% {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
 }
 
@@ -499,5 +500,34 @@ header {
   100% {
     opacity: 1;
     transform: translateY(0) scaleY(1);
+  }
+}
+
+.jump {
+  animation: jp ease 0.5s;
+  -webkit-animation: jp ease 0.5s;
+  -moz-animation: jp ease 0.5s;
+  -o-animation: jp ease 0.5s;
+  -ms-animation: jp ease 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jp {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-1%);
+  }
+  50% {
+    transform: translateY(-3%);
+  }
+  80% {
+    transform: translateY(-1%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

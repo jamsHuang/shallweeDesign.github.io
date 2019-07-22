@@ -64,12 +64,13 @@ $(function() {
         viewNum = 3;
     }
     $('.page').hide();
-    $(".page__upload").addClass("fade-in-1");
+    $(".page__upload").addClass("fade-in-2");
     $('.page__upload').show();
     if($('.upload__notice').hasClass('fade-in-3')){
 
     }else{
-      $('.upload__notice').addClass('fade-in-3')
+      $('.upload__notice').addClass('fade-in-3');
+      $(".upload__notice").addClass("jump");
     }
     $('.upload__notice').css('display','inline-flex');
     notice_timer = setTimeout(function(){
@@ -97,11 +98,13 @@ $(function() {
 
     }else{
       $('.gender__notice').addClass('fade-in-3')
+      $('.gender__notice').addClass('jump');
     }
     $('.gender__notice').css('display','inline-flex');
     notice_timer = setTimeout(function(){
       $('.gender__notice').hide();
       $('.item__notice').css('display','inline-flex');
+      $('.item__notice').addClass('jump');
     },10000);
     var file = document.getElementById("btn_upload").files[0];
     ImageHelper.resizeAndRotateImage(file, 500, function(resizeImageObj) {});
@@ -219,6 +222,7 @@ $(function() {
 
     }else{
       $('.item__notice').addClass('fade-in-3')
+      $('.item__notice').addClass('jump');
     }
     $('.item__notice').css('display','inline-flex');
     notice_timer = setTimeout(function(){
@@ -240,7 +244,8 @@ $(function() {
     if($('.item__notice').hasClass('fade-in-3')){
 
     }else{
-      $('.item__notice').addClass('fade-in-3')
+      $('.item__notice').addClass('fade-in-3');
+      $('.item__notice').addClass('jump');
     }
     $('.item__notice').css('display','inline-flex');
     notice_timer = setTimeout(function(){
