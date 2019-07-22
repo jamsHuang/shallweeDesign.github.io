@@ -67,10 +67,16 @@
         </div>
 
         <h5 class="info">請選擇5MB以內大頭照</h5>
-        <label class="btn upload__btn" for="btn_upload">
-          上傳圖片
-          <input type="file" id="btn_upload" accept="image/*" />
-        </label>
+        <div class="btn__wrapper">
+          <div class="notice upload__notice">
+            上傳一張<br/>最好看的大頭照吧
+          </div>
+          <label class="btn upload__btn" for="btn_upload">
+            上傳圖片
+            <input type="file" id="btn_upload" accept="image/*" />
+          </label>
+        </div>
+
         <div class="icon__box">
           <div class="icon icon__rotate">
             <img src="img/icon_rotate.png"/>
@@ -85,7 +91,13 @@
       </div>
       <div class="feature">
         <div class="feature__gender-box">
+
           <h4>選擇性別</h4>
+          <div class="btn__wrapper">
+            <div class="notice gender__notice">
+              請 選 擇 性 別 喔
+            </div>
+
           <div class="feature__gender feature__gender-f feature__gender-active">
             <img src="img/gender_f.png"/>
           </div>
@@ -93,8 +105,14 @@
             <img src="img/gender_m.png"/>
           </div>
         </div>
+        </div>
         <div class="feature__item-box">
           <h4>選擇配件</h4>
+          <div class="btn__wrapper">
+            <div class="notice item__notice">
+              請左右選擇<br/>搭配有趣的配件
+            </div>
+
           <div class="item__slider">
             <div class="">
               <div class="feature__item" id="item0">
@@ -136,6 +154,7 @@
                 <img src="img/item_7.png"/>
               </div>
             </div>
+          </div>
           </div>
           <div class="btn" id="btn__go">
             選擇完畢 GO
