@@ -1,0 +1,172 @@
+﻿<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117343653-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-117343653-2');
+</script>
+<meta name="description" content="美國優必洗Huebsch家用洗烘衣機，美國原裝進口，商用等級結構與零配件，強調堅固、耐用、專業的特性。上洋公司為美國優必洗Huebsch台灣總代理商，專業經營商用洗衣設備超過35年。全台共計6個支援維修站，超過100人的服務維修團隊，提供顧客最即時、迅速、有效率的高品質服務。">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>上洋‧美國優必洗 - </title>
+<link rel="shortcut icon" type="image/png" href="images/icon32.png" />
+<link rel="apple-touch-icon-precomposed" href="images/icon128.png">
+<link href="css/chart.css" rel="stylesheet">
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/jquery.canvasjs.min.js"></script>
+<script src="js/libs/device.min.js"></script>
+<script src="js/libs/fancybox/jquery.fancybox.pack.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="form1" class="form">
+		<h1>試算您新買的優必洗 Huebsch<sup>®</sup> 洗衣機壽命</h1>
+		<div class="form1">
+		<label for="year">前一台洗衣機用了多少年?</label><br />
+		<input type="text" name="year" id="year" value="" placeholder="" class="dt" alt="前一台洗衣機用了多少年?" /><br /><br />
+		<label for="n">每周大約洗幾次衣服?</label><br />
+		<input type="text" name="n" id="n" value="" placeholder="" class="dt" alt="每周大約洗幾次衣服?" /><br /><br />
+		<div class="buttons"><button type="button" class="close">關閉</button><button type="button" id="calculate">計算</button></div>
+		</div>
+	</div>
+	<div id="form2" class="form">
+		<h1>美國優必洗 Huebsch<sup>®</sup></h1>
+		<h5>美國優必洗 Huebsch<sup>®</sup> 洗衣機經過10,400次洗衣測試*，提供您最堅固耐用的產品經驗</h5><br />
+		<div id="chartContainer" style="height: 400px; width: 90%;"></div>
+		<div id="legend"><h5>* 美國優必洗實驗室測試結果</h5></div><br />
+		<div class="buttons"><button type="button" class="close">關閉</button><button type="button" id="recalculate">重新計算</button></div>
+	</div>
+</div>
+
+
+
+
+<script type="text/javascript">
+var clickHandler = ('ontouchstart' in document.documentElement ? "touchstart" : "click");
+//http://canvasjs.com/docs/charts/basics-of-creating-html5-chart/html5-color-coding/
+function chart(a, b){
+	var year1, x, year2;
+	if(a>25){
+		year1 = 25;
+	}else{
+		year1 = a/1;
+	}
+	
+	x = 10400/b/52;
+	if(x>25){
+		year2 = 25;
+	}else{
+		year2 = Math.round(x);
+		//year2 = Math.ceil(x);
+	}
+	
+	$("#chartContainer").CanvasJSChart({ //Pass chart options
+		height: 400, //in pixels
+		width: $(window).width()*0.90,
+		title:{
+			//text: "HOW LONG WILL YOUR SPEED QUEEN WASHER LAST?" 			
+		},
+		animationEnabled: true,
+		axisX: {
+			//title: "Speed Queen washers are built to last, We test our machines through 10,400 loads.*",
+			//titleFontFamily:"arial"
+			gridColor: "#FFFFFF",
+			labelFontColor:"#FFFFFF"
+		},		
+		axisY: {
+			title: "使用年限",
+			titleFontFamily:"微軟正黑體,儷中黑",
+			minimum:0,
+			maximum:25,
+			gridColor: "#FFFFFF",
+			labelFontColor:"#FFFFFF"
+		},
+		
+		legend: {
+			verticalAlign: "bottom",
+			horizontalAlign: "center"		
+		},
+		 toolTip:{
+			// toolTip properties
+		},
+		//theme: "theme4",
+		data: [{        
+			type: "column",  
+			showInLegend: false, 
+			legendMarkerColor: "grey",
+			legendMarkerType: "none",
+			legendText: "*Results are based on Speed Queen testing and not Guaranteed.",
+			
+			dataPoints: [      
+					{y: year1, label: "前一台洗衣機"},
+					{y: year2,  label: "美國優必洗Huebsch®" }  
+				]
+		}]
+	});
+}
+$(function () {
+
+	if( device.mobile() ){ // || device.ipad() || device.tablet()
+		$('body').addClass("mobile");
+		//alert("mobile");
+	}else{
+		$('body').addClass("desktop");	
+		//alert("desktop");
+	}
+	
+	//chart(5,5);
+	$('#calculate').bind(clickHandler, function(){
+		calculate();
+		return false;
+	});	
+	
+	$('#recalculate').bind(clickHandler, function(){		
+		$('#form1, #form2').toggle();			
+		return false;
+	});	
+	
+	$('.close').bind(clickHandler, function(){		
+		//parent.jQuery.fancybox.close();
+		history.back();
+	});	
+	
+	
+});
+
+function calculate(){
+	var dt = [];
+	var err = "";
+	
+	$("#form1 .dt").each(function(){  
+		var input = $(this);
+		if( input.val() == "" ){
+			err = err + '\n請輸入' + input.attr('alt');
+		}else{
+			numRule = /^[0-9]*$/;	
+			if( input.val().search(numRule) == -1 ){
+				err = err + '\n' + input.attr('alt') + '只能輸入數字';
+			}else{
+				dt[input.attr('id')] = input.val();
+			}
+		}
+	}); 
+	
+	if( err == "" ){		
+		chart(dt['year'], dt['n']);
+		$('#form1, #form2').toggle();
+	}else{
+		alert(err);
+	}
+	
+}
+</script>
+
+</body>
+</html>

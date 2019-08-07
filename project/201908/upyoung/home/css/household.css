@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+#main{
+	position:relative;
+	background:url('../images/household_img.jpg') right top no-repeat;
+	
+}
+.desktop #main{
+	background-size:50%;
+	margin-top:32px;
+}
+.mobile #main{
+	background-size:85%;
+	margin-top:1em;
+}
+#slogan{
+	position:relative;
+	
+}
+.desktop #slogan{
+	height:95px;
+}
+.mobile #slogan{
+	height:6em;
+}
+#slogan h1{
+	padding:0;
+	letter-spacing:1px;
+}
+.desktop #slogan h1{
+	font-size:27px;
+	margin:60px 0 0 40px;
+}
+.mobile #slogan h1{
+	font-size:2.5em;
+	margin:8em 0 0 1.5em;
+}
+#slogan h1.br{
+	margin-top:6px;
+	padding-left:0px;
+}
+#slogan span{
+	font-family:Arial, Helvetica, sans-serif;	
+}
+#slogan h1 span{
+	color:#80b539;
+	letter-spacing:0px;
+	
+}
+
+#products{
+	position:relative;
+	margin:0 auto;
+	text-align:center;
+	
+	border-bottom:1px solid #c5c5c5;
+}
+.desktop #products{
+	padding-top:30px;
+	padding-bottom:65px;
+}
+.mobile #products{
+	padding-top:0em;
+	padding-bottom:2em;
+}
+#products > div{
+	position:relative;
+	display:inline-block;
+	margin:0 0.46875%;/*0 6px*/
+	width:40%;
+	vertical-align:top;
+}
+#products > div:first-child{
+	margin-left:0;
+}
+#products > div:last-child{
+	margin-right:0;
+}
+#products > div > a img{
+	display:block;
+	width:100%;
+}
+#products > div > a h2{
+	
+	/*color:#6c6c6c;*/
+	color:#80b539;
+	padding:0;
+	margin:10px 0 0 0;
+	font-weight:bold;
+	line-height:25px;
+}
+.desktop #products > div > a h2{
+	font-size:22px;
+}
+.mobile #products > div > a h2{
+	font-size:1.6em;
+}
+#products > div > a h2 span{
+	font-size:16px;
+	font-weight:100;
+}
+#products > div > a:hover{
+	text-decoration:none;
+}
+#products > div > div.more{
+	position:relative;
+	width:103px;
+	height:30px;
+	line-height:30px;
+	padding:0;
+	margin:19px auto 0 auto;
+}
+#products > div > div.more a{
+	position:relative;
+	display:block;
+	width:100%;
+	height:100%;
+	text-align:left;
+	padding-left:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFFFFF;
+	background:#dddddd url('../images/icons/learn_more_arrow.png') right 7px center no-repeat;
+}
+#products > div > div.more a:hover{
+	text-decoration:none;
+	background:#999999 url('../images/icons/learn_more_arrow.png') right 7px center no-repeat;
+}
+
+#spreadsheets{
+	position:relative;
+	margin:0 auto;
+	text-align:center;
+	
+}
+.desktop #spreadsheets{
+	padding-top:72px;
+	padding-bottom:118px;
+}
+.mobile #spreadsheets{
+	padding-top:2em;
+	padding-bottom:3em;
+}
+.desktop #spreadsheets > div{
+	position:relative;
+	width:362px;
+	height:47px;
+	line-height:47px;
+	padding:0;
+	margin:0 auto;
+	
+}
+.mobile #spreadsheets > div{
+	position:relative;
+	width:85%;
+	/*
+	height:47px;
+	*/
+	line-height:2em;
+	padding:0;
+	margin:0 auto;
+	
+}
+.desktop #spreadsheets > div a{
+	position:relative;
+	display:block;
+	width:100%;
+	height:100%;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#FFFFFF;
+	background:#313435;
+	letter-spacing:1px;
+}
+.mobile #spreadsheets > div a{
+	position:relative;
+	display:block;
+	width:100%;
+	height:100%;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.4em;
+	padding:0.5em;
+	color:#FFFFFF;
+	background:#313435;
+	letter-spacing:1px;
+	
+}
+#spreadsheets > div a:hover{
+	text-decoration:none;
+	background:#53585a;
+}
+
+@media (min-width: 768px) {
+	#main{
+		position:relative;
+		background:url('../images/household_img.jpg') right top no-repeat;
+		background-size:50%;
+	}
+	
+	#slogan h1{
+		font-size:27px;
+		padding:0;
+		margin:60px 0 0 68px;
+		letter-spacing:1px;
+	}
+	#slogan h1.br{
+		margin-top:6px;
+		padding-left:200px;
+	}
+	
+	#products > div{
+		position:relative;
+		display:inline-block;
+		margin:0 0.46875%;/*0 6px*/
+		width:22.03125%;
+	}
+}
+
+@media (min-width: 992px) {
+	#main{
+		position:relative;
+		background:url('../images/household_img.jpg') right top no-repeat;
+		background-size:auto;
+	}
+	
+	#slogan h1{
+		font-size:27px;
+		padding:0;
+		margin:60px 0 0 68px;
+		letter-spacing:1px;
+	}
+	#slogan h1.br{
+		margin-top:6px;
+		padding-left:200px;
+	}
+	
+	
+}

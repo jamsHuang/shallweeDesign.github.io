@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+#main{
+	position:relative;	
+	min-height:821px;
+	background:#363231 url('../images/aboutus.jpg') center top no-repeat;	
+	
+}
+.desktop #main{
+	background-size:cover;
+}
+.mobile #main{
+	background-size:contain;
+}
+.main{
+	position:relative;
+	
+	float:left;
+	
+}
+.desktop .main{
+	width:55.68627450980392%;/*852/1530 = 55.68627450980392*/
+	margin:131px 0 0 0;	
+}
+.mobile .main{
+	width:95%;
+	margin:11em 0 0 0;	/*8.1875*/
+}
+.main > div{
+	position:relative;
+	display:inline-block;
+	vertical-align:top;
+	margin-right:-4px;
+}
+.main > div.left{
+	width:5%;
+	
+}
+.desktop .main > div.left{
+	height:65px;
+	border-bottom:3px solid #FFFFFF;
+}
+.mobile .main > div.left{
+	height:65px;
+	border-bottom:3px solid #FFFFFF;
+}
+.main > div.right{
+	width:94%;
+	color:#FFFFFF;
+}
+@media (min-width: 992px) {
+	.main > div.left{
+		width:26.52582159624413%;/*226/852 = 26.52582159624413*/
+		height:65px;
+		border-bottom:3px solid #FFFFFF;
+	}
+	.main > div.right{
+		width:70.30516431924883%;/*599/852 = 70.30516431924883*/
+		color:#FFFFFF;
+	}
+}
+
+
+.main > div.right > div{
+	position:relative;
+	width:100%;
+	overflow:hidden;
+}
+.main > div.right > div > h1{
+	
+	margin:0;
+	padding:0;
+	border-bottom:10px solid #FFFFFF;
+	float:left;
+}
+.desktop .main > div.right > div > h1{
+	font-size:38px;
+	height:65px;
+}
+.mobile .main > div.right > div > h1{
+	font-size:38px;
+	height:65px;
+}
+.main > div.right p{
+	width:100%;
+	font-size:15px;
+	line-height:20px;
+	padding-bottom:10px;
+}
+.main > div.right p.first{
+	margin-top:40px;
+}

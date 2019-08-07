@@ -1,0 +1,67 @@
+﻿@charset "utf-8";
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;font-family: Arial, Helvetica, sans-serif;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+body{font-size:12px;line-height:1.5;}
+select option{padding:2px;}
+#main_body{border:none;border-left:solid 1px #333;border-right:solid 1px #000;margin:0 auto;padding:none;background-color:#EFEFEF;}
+#frame_top{clear:both;overflow-x:auto;overflow-y:hidden;white-space:nowrap;height:20px;background-color:#D8F6FF;padding:4px 2px 0 2px;}
+#frame_left{position:absolute;clear:both;overflow-x:auto;overflow-y:auto;white-space:nowrap;padding:3px;background-color:#FFF;}
+#frame_right{overflow-x:auto;overflow-y:auto;background-color:#FFF;padding:0 5px;}
+
+a{text-decoration: none;color: #000;cursor:hand;cursor:pointer;}
+a:hover{background-color: #C8E6FF;}
+a.en_hover{background-color: #92B0C9;color: #FFF;}
+a.en_hover:hover{background-color: #C8E6FF;}
+
+#frame_left>ul>li{margin-left:0;}
+#frame_left li{margin-left:18px;background:transparent url('../photo/moduletree.png') repeat-y -54px 0;white-space:nowrap;}
+#frame_left li.text_last{background-position:-100px 0;}
+#frame_left li div{float:left;width:18px;height:18px;background:url('../photo/moduletree.png') no-repeat -36px 0;}
+#frame_left li div.text_list1{background-position:0 0;cursor:hand;cursor:pointer;}
+#frame_left li div.text_list2{background-position:-18px 0;cursor:hand;cursor:pointer;}
+#frame_left li div.text_last1{background-position:0 -18px;}
+#frame_left li div.text_last2{background-position:-18px -18px;cursor:hand;cursor:pointer;}
+#frame_left li div.text_last3{background-position:-36px -18px;cursor:hand;cursor:pointer;}
+#frame_left li.li_load{background:none;}
+
+#add_button{float:left;width:50px;font-size:14px;padding:10px 0 10px 10px;display:inline;}
+#search_div{float:right;margin:10px 0 10px 10px;display:inline;}
+.edit_button{width:24px;margin:0 3px;padding:1px;border:1px solid #333;}
+.disable_button{color:#AAA;}
+.table_list .tlist_tr{background-color:#E0E0E0;height:30px;}
+.table_list .tlist_tr:hover{background-color:#E0E0E0;}
+.table_list tr:hover{background-color:#EFEFEF;}
+.table_list tr td{border:none;padding:3px;vertical-align:middle;}
+.table_list .tlist_td1{border-left:1px solid #CCC;border-top:1px solid #CCC;}
+.table_list .tlist_td2{border-right:1px solid #CCC;}
+.table_list .tlist_td3{border-bottom:1px solid #CCC;}
+.end_tree{padding:0 3px 0 2px;}
+.mouse_over{cursor:hand;cursor:pointer;}
+.mouse_over:hover{background-color:#CEC;}
+
+.cpage{margin:0 10px;}
+.cpage td{padding:0 3px;}
+.cpage td font{color: #F00;}
+
+#cform1 table{margin:0 auto;}
+#cform1 table tr td{border-top:1px solid #CCC;vertical-align:top;}
+#cform1 table .font_content{background-color:#CCC;font-size:150%;text-align:center;}
+#cform1 .span_image_preview{width:80px;height:60px;border:1px solid #000;overflow:hidden;}
+#cform1 .simage{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);}
+
+	/* FCKeditor */
+#outputSample{table-layout: fixed;width: 100%;}
+pre{
+	margin: 0;
+	padding: 0;
+	white-space: pre; /* CSS2 */
+	white-space: -moz-pre-wrap; /* Mozilla*/
+	white-space: -o-pre-wrap; /* Opera 7 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+#outputSample thead th{color: #dddddd;background-color: #999999;padding: 4px;white-space: nowrap;}
+#outputSample tbody th{vertical-align: top;text-align: left;}
