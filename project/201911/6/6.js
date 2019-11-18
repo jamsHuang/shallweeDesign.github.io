@@ -899,13 +899,13 @@ p.nominalBounds = new cjs.Rectangle(134,34,171.5,390.2);
 		
 		function playAni(){
 			if(obj_num==1&&liq_num==1&&cup_num==1){
-				main.ani.gotoAndPlay(0);
+				main.ani.gotoAndPlay(1);
 			}
 			else if(obj_num==2&&liq_num==1&&cup_num==1){
-				main.ani.gotoAndPlay(10);
+				main.ani.gotoAndPlay(11);
 			}
 			else if(obj_num==3&&liq_num==1&&cup_num==1){
-				main.ani.gotoAndPlay(20);
+				main.ani.gotoAndPlay(21);
 			}
 		}
 		function resetCup(){
@@ -1198,16 +1198,16 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Image.png?1573664502711", id:"Image"},
-		{src:"images/Image_0.png?1573664502711", id:"Image_0"},
-		{src:"images/Image_1.png?1573664502711", id:"Image_1"},
-		{src:"images/Image_2.png?1573664502711", id:"Image_2"},
-		{src:"images/Asset22x100.jpg?1573664502711", id:"Asset22x100"},
-		{src:"images/btn_start.png?1573664502711", id:"btn_start"},
-		{src:"images/cup1.png?1573664502711", id:"cup1"},
-		{src:"images/obj_1.png?1573664502711", id:"obj_1"},
-		{src:"images/obj_2.png?1573664502711", id:"obj_2"},
-		{src:"images/obj_3.png?1573664502711", id:"obj_3"}
+		{src:"images/Image.png?1573668986514", id:"Image"},
+		{src:"images/Image_0.png?1573668986514", id:"Image_0"},
+		{src:"images/Image_1.png?1573668986514", id:"Image_1"},
+		{src:"images/Image_2.png?1573668986514", id:"Image_2"},
+		{src:"images/Asset22x100.jpg?1573668986514", id:"Asset22x100"},
+		{src:"images/btn_start.png?1573668986514", id:"btn_start"},
+		{src:"images/cup1.png?1573668986514", id:"cup1"},
+		{src:"images/obj_1.png?1573668986514", id:"obj_1"},
+		{src:"images/obj_2.png?1573668986514", id:"obj_2"},
+		{src:"images/obj_3.png?1573668986514", id:"obj_3"}
 	],
 	preloads: []
 };
