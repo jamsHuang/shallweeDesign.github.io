@@ -933,30 +933,33 @@ p.nominalBounds = new cjs.Rectangle(-80.5,-19.5,161.1,39.1);
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_143 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(120));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(143).call(this.frame_143).wait(1));
 
 	// Layer_4
 	this.instance = new lib.unit_bottom();
 	this.instance.parent = this;
-	this.instance.setTransform(233.7,539.4,1,1,0,0,0,-0.2,12.5);
+	this.instance.setTransform(233.95,539.6);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({guide:{path:[233.7,539.4,239.1,543.4,242.5,544.6,245.9,545.8,247.4,544.2,249.1,542.5,249.9,531.8,250.7,520.3,254.2,515,259.7,506.7,273.5,507.1,282.8,507.3,290,522.7,293.8,530.7,297.3,541.4,299,544.5,301.7,547.1,304,549.2,305.1,549.5,306.3,549.8,307.1,549.5,308.4,548.9,309.7,546.8,310.2,546.6,311.5,538,313.1,527.3,315.7,520.1,324.7,494.6,348.8,496.7,350.3,496.9,351.3,497.3,352.5,497.8,353.8,499.1,354.8,500.1,356.5,504.1,358.4,507.5,360.9,507.2,363.1,507,367.1,500.6,372.2,492.3,374.1,490.4,386.8,477.8,413.3,494.7,426.7,503.2,438.4,514.6,439.9,515.2,440.2,515.2,441.1,515.4,442.3,515.2,443.2,515.1,457.4,512.8,471.6,510.9,473.8,512.4,478.4,515.6,481.6,521.9,483,524.6,486.3,533.8,489,541.4,491.7,545.3,495.5,550.9,501.5,553.3,504.8,554.6,506.1,551.9,506.6,550.8,507.4,545.6,508.1,541.3,509.6,540,511.7,538.2,516.5,540.9,520.1,543.4,521.5,548.6,524,558.3,525.3,561.3,528.7,569.2,531.5,572.3,534.6,575.7,541.7,578.6,548.3,581.2,551.7,575.4,553.8,572.1,556.2,561.3,558.6,550.7,561,547.1,564.8,541.2,572,543.6,578.7,545.9,578.8,555.3,578.8,560.1,577.6,566.4,577.7,568.7,578.7,568,579.2,567.7,580.7,565.5,582.1,563.6,582.8,563.4,583.3,563.2,583.6,563.8,583.8,564.4,583.9,565.9,584.1,570.3,583.6,580.4,583.2,589.8,583.6,595,583.7,596.2,584.8,597.5,585.4,598.3,586.8,599.6,587.1,599.9,587.6,599.8,588,599.8,588.4,599.5,594.9,593,596.5,584,597.1,580.5,597,568.4,597,559.2,599.5,554.3,603.1,547.2,613.3,542.9,616.4,542.1,616.6,542.1,619.2,541.2,620,540.2,623.7,530.3,626.8,527.1,629.3,524.4,634.6,523.7,645.5,522.2,648,521.6,658.9,519,671.9,512.3,674.5,511,676,507.5,677.4,503.4,678.2,501.6,679.5,498.3,681.6,497.4,684.3,496.2,689.4,498,696.1,500.5,701.5,504.3,704.3,506.3,707.9,509,710.6,510.4,713.8,509,717.2,507.4,724.3,501.3]}},119).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({guide:{path:[234,539.7,239.2,543.5,242.6,544.6,245.9,545.7,247.4,544.2,249.1,542.5,249.9,531.8,250.7,520.3,254.2,515,259.7,506.7,273.5,507.1,282.8,507.3,290,522.7,293.8,530.7,297.3,541.4,299,544.5,301.7,547.1,304,549.2,305.1,549.5,306.3,549.8,307.1,549.5,308.4,548.9,309.7,546.8,310.2,546.6,311.5,538,313.1,527.3,315.7,520.1,324.7,494.6,348.8,496.7,350.3,496.9,351.3,497.3,352.5,497.8,353.8,499.1,354.8,500.1,356.5,504.1,358.4,507.5,360.9,507.2,363.1,507,367.1,500.6,372.2,492.3,374.1,490.4,386.8,477.8,413.3,494.7,426.7,503.2,438.4,514.6,439.9,515.2,440.2,515.2,441.1,515.4,442.3,515.2,443.2,515.1,457.4,512.8,471.6,510.9,473.8,512.4,478.4,515.6,481.6,521.9,483,524.6,486.3,533.8,489,541.4,491.7,545.3,495.5,550.9,501.5,553.3,504.8,554.6,506.1,551.9,506.6,550.8,507.4,545.6,508.1,541.3,509.6,540,511.7,538.2,516.5,540.9,520.1,543.4,521.5,548.6,524,558.3,525.3,561.3,528.7,569.2,531.5,572.3,534.6,575.7,541.7,578.6,548.3,581.2,551.7,575.4,553.8,572.1,556.2,561.3,558.6,550.7,561,547.1,564.8,541.2,572,543.6,578.7,545.9,578.8,555.3,578.8,560.1,577.6,566.4,577.7,568.7,578.7,568,579.2,567.7,580.7,565.5,582.1,563.6,582.8,563.4,583.3,563.2,583.6,563.8,583.8,564.4,583.9,565.9,584.1,570.3,583.6,580.4,583.2,589.8,583.6,595,583.7,596.2,584.8,597.5,585.4,598.3,586.8,599.6,587.1,599.9,587.6,599.8,588,599.8,588.4,599.5,594.9,593,596.5,584,597.1,580.5,597,568.4,597,559.2,599.5,554.3,603.1,547.2,613.3,542.9,616.4,542.1,616.6,542.1,619.2,541.2,620,540.2,623.7,530.3,626.8,527.1,629.3,524.4,634.6,523.7,645.5,522.2,648,521.6,658.9,519,671.9,512.3,674.5,511,676,507.5,677.4,503.4,678.2,501.6,679.5,498.3,681.6,497.4,684.3,496.2,689.4,498,696.1,500.5,701.5,504.3,704.3,506.3,707.9,509,710.6,510.4,713.8,509,717,507.5,723.7,501.8]}},143).wait(1));
 
 	// Layer_6
 	this.instance_1 = new lib.unit_top();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(245.65,234,1,1,0,0,0,-0.2,-12.5);
+	this.instance_1.setTransform(245.6,232.6);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({x:732.15,y:179.1},119).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({x:245.8,y:213.35},1).to({x:246,y:194.1},1).to({x:249.4,y:205.85},1).to({x:253.5,y:224.65},1).to({x:259.8,y:229.4},1).to({x:266.5,y:211.85},1).to({x:267.7,y:192.65},1).to({x:268.95,y:173.45},1).to({x:270.6,y:157.8},1).to({x:276.65,y:174.1},1).to({x:285.9,y:160.3},1).to({x:286.7,y:179.55},1).to({x:287.5,y:198.75},1).to({x:288.3,y:217.95},1).to({x:295.2,y:235.3},1).to({x:299.95,y:231.5},1).to({x:300.5,y:212.3},1).to({x:301.1,y:193.05},1).to({x:301.65,y:173.8},1).to({x:302.25,y:154.6},1).to({x:303.8,y:153.65},1).to({x:306.4,y:172.7},1).to({x:309,y:191.8},1).to({x:311.25,y:199.2},1).to({x:312.65,y:180.05},1).to({x:314.1,y:160.85},1).to({x:315.5,y:141.65},1).to({x:317.75,y:136.6},1).to({x:321.35,y:155.55},1).to({x:325,y:174.45},1).to({x:329.1,y:156.8},1).to({x:335.9,y:154.75},1).to({x:344.8,y:140.25},1).to({x:347.5,y:157.15},1).to({x:349,y:176.35},1).to({x:351.3,y:158},1).to({x:354.1,y:142.4},1).to({x:362.9,y:145.55},1).to({x:366.5,y:154.1},1).to({x:372.8,y:145.6},1).to({x:378.05,y:138.45},1).to({x:380.2,y:153.6},1).to({x:381.85,y:172.2},1).to({x:384.05,y:163.3},1).to({x:385.25,y:143.85},1).to({x:386.55,y:125.6},1).to({x:393.85,y:122.45},1).to({x:400.6,y:133.45},1).to({x:401.2,y:152.65},1).to({x:401.85,y:171.9},1).to({x:402.5,y:191.15},1).to({x:403.4,y:194.25},1).to({x:404.75,y:175.05},1).to({x:406.05,y:155.85},1).to({x:409.3,y:151.45},1).to({x:414.5,y:157.1},1).to({x:417.8,y:141.4},1).to({x:422.9,y:145.95},1).to({x:426.05,y:164.95},1).to({x:429.25,y:183.95},1).to({x:432.4,y:202.9},1).to({x:434.45,y:198.6},1).to({x:435.9,y:179.35},1).to({x:437.75,y:166.25},1).to({x:441.9,y:185},1).to({x:451.45,y:197.25},1).to({x:458.05,y:209.2},1).to({x:461.55,y:228.1},1).to({x:462.65,y:213.55},1).to({x:463.45,y:194.3},1).to({x:464.2,y:175.05},1).to({x:465.35,y:164.1},1).to({x:467.85,y:183.2},1).to({x:470.35,y:202.3},1).to({x:472.65,y:210.25},1).to({x:474.55,y:191.1},1).to({x:475.7,y:205.75},1).to({x:476.75,y:224.95},1).to({x:477.8,y:244.15},1).to({x:478.8,y:263.35},1).to({x:479.95,y:279.15},1).to({x:482.25,y:260.05},1).to({x:484.5,y:240.95},1).to({x:490.1,y:231.1},1).to({x:493.95,y:249.9},1).to({x:496.3,y:249.55},1).to({x:498.15,y:230.5},1).to({x:503.2,y:212.2},1).to({x:512.75,y:195.8},1).to({x:516.95,y:205.1},1).to({x:518.9,y:224.25},1).to({x:524.3,y:214.4},1).to({x:530.7,y:215.65},1).to({x:534.45,y:232.5},1).to({x:542.75,y:233.5},1).to({x:543.2,y:214.3},1).to({x:557.85,y:221.65},1).to({x:569.7},1).to({x:577.9,y:237.85},1).to({x:583.15,y:228.9},1).to({x:588.8,y:215},1).to({x:590.35,y:234.15},1).to({x:591.95,y:253.3},1).to({x:594.4,y:250.3},1).to({x:597.55,y:231.35},1).to({x:602.25,y:223.8},1).to({x:607.2,y:221.8},1).to({x:609.85,y:217.2},1).to({x:610.5,y:236.4},1).to({x:611.1,y:255.65},1).to({x:611.75,y:274.9},1).to({x:617.85,y:275.7},1).to({x:621.1,y:267.2},1).to({x:622.4,y:248},1).to({x:623.75,y:228.8},1).to({x:625.45,y:229.35},1).to({x:627.5,y:248.45},1).to({x:634.1,y:247.5},1).to({x:641.75,y:230.3},1).to({x:643.95,y:211.2},1).to({x:645.7,y:192},1).to({x:647.45,y:172.85},1).to({x:649.2,y:154.8},1).to({x:650.1,y:174},1).to({x:651,y:193.25},1).to({x:651.9,y:212.45},1).to({x:652.8,y:231.65},1).to({x:653.7,y:250.9},1).to({x:655.4,y:239.55},1).to({x:657.3,y:220.4},1).to({x:659.25,y:201.7},1).to({x:665.8,y:200.05},1).to({x:674.7,y:204.05},1).to({x:679.05,y:189.75},1).to({x:684.8,y:174.9},1).to({x:688.2,y:174.35},1).to({x:689.8,y:193.4},1).to({x:691.3,y:188.3},1).to({x:691.5,y:169.3},1).to({x:695.2,y:150.95},1).to({x:704.9,y:145.1},1).to({x:718.25,y:158.65},1).to({x:723.3,y:177.25},1).wait(1));
 
 	// Layer_1
 	this.instance_2 = new lib.sence2();
 	this.instance_2.parent = this;
 	this.instance_2.setTransform(0,0,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(120));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(144));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,1024.5,768.5);
@@ -1048,11 +1051,11 @@ p.nominalBounds = new cjs.Rectangle(12.5,13.4,11.3,13.200000000000001);
 		var mc_sence = 1;
 		var now_sence;
 		var totalF;
-		main.btn_obj1.addEventListener("click",switchMC);
-		main.btn_obj2.addEventListener("click",switchMC);
-		main.btn_obj3.addEventListener("click",switchMC);
-		main.btn_ctrl.addEventListener("click",switchMC);
-		main.btn_nav.addEventListener("click",ctrlVideo);
+		main.btn_obj1.addEventListener("click", switchMC);
+		main.btn_obj2.addEventListener("click", switchMC);
+		main.btn_obj3.addEventListener("click", switchMC);
+		main.btn_ctrl.addEventListener("click", switchMC);
+		main.btn_nav.addEventListener("click", ctrlVideo);
 		//
 		main.ctrl_nav.on("pressmove", moveNav);
 		main.ctrl_nav.on("pressup", upNav);
@@ -1065,13 +1068,13 @@ p.nominalBounds = new cjs.Rectangle(12.5,13.4,11.3,13.200000000000001);
 		createjs.Ticker.addEventListener("tick", handleTick);
 		function handleTick(event) {
 			if (!event.paused) {
-				if(isPlaying){
+				if (isPlaying) {
 					//console.log(now_sence.currentFrame);
-					var xx = Math.round(now_sence.currentFrame/now_sence.totalFrames*950);
-					main.ctrl_nav.x = 50+xx;
-					if(now_sence.currentFrame==(now_sence.totalFrames-1)){
+					var xx = Math.round(now_sence.currentFrame / now_sence.totalFrames * 950);
+					main.ctrl_nav.x = 50 + xx;
+					if (now_sence.currentFrame == (now_sence.totalFrames - 1)) {
 						isPlaying = false;
-						createjs.Ticker.paused=true;
+						createjs.Ticker.paused = true;
 						main.mc_ctrl.gotoAndStop(0);
 						//now_sence.gotoAndStop(0);
 						//main.ctrl_nav.x = 50;
@@ -1079,43 +1082,46 @@ p.nominalBounds = new cjs.Rectangle(12.5,13.4,11.3,13.200000000000001);
 				}
 			}
 		}
-		function ctrlVideo(evt){
+		function ctrlVideo(evt) {
 			totalF = now_sence.totalFrames;
-			var p = stage.globalToLocal(evt.stageX,evt.stageY);
+			var p = stage.globalToLocal(evt.stageX, evt.stageY);
 			main.ctrl_nav.x = p.x;
-			var f = Math.round((p.x-50)/950*totalF)+1;
-			if(isPlaying == true){
+			var f = Math.round((p.x - 50) / 950 * totalF) + 1;
+			if (isPlaying == true) {
 				now_sence.gotoAndPlay(f);
-			}
-			else{
+			} else {
 				now_sence.gotoAndStop(f);
 			}
 		}
-		function upNav(evt){
+		function upNav(evt) {
 		
 		}
-		function moveNav(evt){
+		function moveNav(evt) {
 			isPlaying = false;
-			createjs.Ticker.paused=true;
+			createjs.Ticker.paused = true;
 			var p = stage.globalToLocal(evt.stageX, evt.stageY);
-			if(p.x<50){
+			if (p.x < 50) {
 				p.x = 50;
-			}
-			else if(p.x>1000){
+			} else if (p.x > 1000) {
 				p.x = 1000;
-			}else{
+			} else {
 				evt.currentTarget.x = p.x;
 			}
-			var f = Math.round((p.x-50)/950*totalF);
+			var f = Math.round((p.x - 50) / 950 * totalF);
 			now_sence.gotoAndStop(f);
 			main.mc_ctrl.gotoAndStop(0);
 		}
-		function switchMC(evt){
-			switch(evt.target.name){
+		function switchMC(evt) {
+		
+			switch (evt.target.name) {
 				case "btn_obj1":
 					mc_sence = 1;
-					isPlaying = false;
 					now_sence = main.mc_sence1;
+					main.mc_ctrl.gotoAndStop(0);
+					isPlaying = false;
+					createjs.Ticker.paused = true;
+					main.ctrl_nav.x = 50;
+					now_sence.gotoAndStop(0);
 					//
 					main.mc_ctrl.gotoAndStop(0);
 					main.mc_btn1.gotoAndStop(1);
@@ -1124,8 +1130,12 @@ p.nominalBounds = new cjs.Rectangle(12.5,13.4,11.3,13.200000000000001);
 					break;
 				case "btn_obj2":
 					mc_sence = 2;
-					isPlaying = false;
 					now_sence = main.mc_sence2;
+					main.mc_ctrl.gotoAndStop(0);
+					now_sence.gotoAndStop(0);
+					isPlaying = false;
+					createjs.Ticker.paused = true;
+					main.ctrl_nav.x = 50;
 					//
 					main.mc_ctrl.gotoAndStop(0);
 					main.mc_btn1.gotoAndStop(0);
@@ -1134,33 +1144,37 @@ p.nominalBounds = new cjs.Rectangle(12.5,13.4,11.3,13.200000000000001);
 					break;
 				case "btn_obj3":
 					mc_sence = 3;
-					isPlaying = false;
-					now_sence = main.mc_sence3;
+					now_sence.gotoAndStop(0);
 					main.mc_ctrl.gotoAndStop(0);
+					isPlaying = false;
+					createjs.Ticker.paused = true;
+					main.ctrl_nav.x = 50;
+		
+					now_sence = main.mc_sence3;
 					//
 					main.mc_btn1.gotoAndStop(0);
 					main.mc_btn2.gotoAndStop(0);
 					main.mc_btn3.gotoAndStop(1);
 					break;
 				case "btn_ctrl":
-					if(isPlaying==true){
+					console.log(isPlaying);
+					if (isPlaying == true) {
 						isPlaying = false;
 						main.mc_ctrl.gotoAndStop(0);
 						now_sence.stop();
-						createjs.Ticker.paused=true;
-					}
-					else{
+						createjs.Ticker.paused = true;
+					} else {
 						isPlaying = true;
+						console.log(isPlaying, "ss");
 						main.mc_ctrl.gotoAndStop(1);
-						if(now_sence.currentFrame == (now_sence.totalFrames-1)){
+						if (now_sence.currentFrame == (now_sence.totalFrames - 1)) {
 							now_sence.gotoAndPlay(1);
-						}else{
+						} else {
 							now_sence.play();
 						}
-						
-						createjs.Ticker.paused=false;
+						createjs.Ticker.paused = false;
 					}
-				break;
+					break;
 			}
 			main.mc_sence1.visible = false;
 			main.mc_sence2.visible = false;
@@ -1171,30 +1185,6 @@ p.nominalBounds = new cjs.Rectangle(12.5,13.4,11.3,13.200000000000001);
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
-
-	// sence1
-	this.mc_sence1 = new lib.mc_sence1();
-	this.mc_sence1.name = "mc_sence1";
-	this.mc_sence1.parent = this;
-	this.mc_sence1.setTransform(520.2,386.2,1,1,0,0,0,512.2,384.2);
-
-	this.timeline.addTween(cjs.Tween.get(this.mc_sence1).wait(1));
-
-	// sence2
-	this.mc_sence2 = new lib.mc_sence2();
-	this.mc_sence2.name = "mc_sence2";
-	this.mc_sence2.parent = this;
-	this.mc_sence2.setTransform(520.2,386.2,1,1,0,0,0,512.2,384.2);
-
-	this.timeline.addTween(cjs.Tween.get(this.mc_sence2).wait(1));
-
-	// sence3
-	this.mc_sence3 = new lib.mc_sence3();
-	this.mc_sence3.name = "mc_sence3";
-	this.mc_sence3.parent = this;
-	this.mc_sence3.setTransform(398.5,406,1,1,0,0,0,373.5,281);
-
-	this.timeline.addTween(cjs.Tween.get(this.mc_sence3).wait(1));
 
 	// btn
 	this.btn_ctrl = new lib.btn_0();
@@ -1242,6 +1232,30 @@ p.nominalBounds = new cjs.Rectangle(12.5,13.4,11.3,13.200000000000001);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.mc_ctrl},{t:this.ctrl_nav},{t:this.btn_nav}]}).wait(1));
 
+	// sence1
+	this.mc_sence1 = new lib.mc_sence1();
+	this.mc_sence1.name = "mc_sence1";
+	this.mc_sence1.parent = this;
+	this.mc_sence1.setTransform(520.2,386.2,1,1,0,0,0,512.2,384.2);
+
+	this.timeline.addTween(cjs.Tween.get(this.mc_sence1).wait(1));
+
+	// sence2
+	this.mc_sence2 = new lib.mc_sence2();
+	this.mc_sence2.name = "mc_sence2";
+	this.mc_sence2.parent = this;
+	this.mc_sence2.setTransform(520.2,386.2,1,1,0,0,0,512.2,384.2);
+
+	this.timeline.addTween(cjs.Tween.get(this.mc_sence2).wait(1));
+
+	// sence3
+	this.mc_sence3 = new lib.mc_sence3();
+	this.mc_sence3.name = "mc_sence3";
+	this.mc_sence3.parent = this;
+	this.mc_sence3.setTransform(398.5,406,1,1,0,0,0,373.5,281);
+
+	this.timeline.addTween(cjs.Tween.get(this.mc_sence3).wait(1));
+
 	// ctrl_bg
 	this.mc_btn3 = new lib.mc_btn3();
 	this.mc_btn3.name = "mc_btn3";
@@ -1282,78 +1296,78 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Asset22x8.png?1574196228077", id:"Asset22x8"},
-		{src:"images/Asset32x8.png?1574196228077", id:"Asset32x8"},
-		{src:"images/bg.jpg?1574196228077", id:"bg"},
-		{src:"images/btn_face0.png?1574196228077", id:"btn_face0"},
-		{src:"images/btn_face1.png?1574196228077", id:"btn_face1"},
-		{src:"images/btn_text1.png?1574196228077", id:"btn_text1"},
-		{src:"images/btn_text2.png?1574196228077", id:"btn_text2"},
-		{src:"images/btn_text3.png?1574196228077", id:"btn_text3"},
-		{src:"images/map1.png?1574196228077", id:"map1"},
-		{src:"images/map10.png?1574196228077", id:"map10"},
-		{src:"images/map11.png?1574196228077", id:"map11"},
-		{src:"images/map12.png?1574196228077", id:"map12"},
-		{src:"images/map13.png?1574196228077", id:"map13"},
-		{src:"images/map14.png?1574196228077", id:"map14"},
-		{src:"images/map15.png?1574196228077", id:"map15"},
-		{src:"images/map16.png?1574196228077", id:"map16"},
-		{src:"images/map17.png?1574196228077", id:"map17"},
-		{src:"images/map18.png?1574196228077", id:"map18"},
-		{src:"images/map19.png?1574196228077", id:"map19"},
-		{src:"images/map2.png?1574196228077", id:"map2"},
-		{src:"images/map20.png?1574196228077", id:"map20"},
-		{src:"images/map21.png?1574196228077", id:"map21"},
-		{src:"images/map22.png?1574196228077", id:"map22"},
-		{src:"images/map23.png?1574196228077", id:"map23"},
-		{src:"images/map24.png?1574196228077", id:"map24"},
-		{src:"images/map25.png?1574196228077", id:"map25"},
-		{src:"images/map26.png?1574196228077", id:"map26"},
-		{src:"images/map27.png?1574196228077", id:"map27"},
-		{src:"images/map28.png?1574196228077", id:"map28"},
-		{src:"images/map29.png?1574196228077", id:"map29"},
-		{src:"images/map3.png?1574196228077", id:"map3"},
-		{src:"images/map30.png?1574196228077", id:"map30"},
-		{src:"images/map31.png?1574196228077", id:"map31"},
-		{src:"images/map32.png?1574196228077", id:"map32"},
-		{src:"images/map33.png?1574196228077", id:"map33"},
-		{src:"images/map34.png?1574196228077", id:"map34"},
-		{src:"images/map35.png?1574196228077", id:"map35"},
-		{src:"images/map36.png?1574196228077", id:"map36"},
-		{src:"images/map37.png?1574196228077", id:"map37"},
-		{src:"images/map38.png?1574196228077", id:"map38"},
-		{src:"images/map39.png?1574196228077", id:"map39"},
-		{src:"images/map4.png?1574196228077", id:"map4"},
-		{src:"images/map40.png?1574196228077", id:"map40"},
-		{src:"images/map41.png?1574196228077", id:"map41"},
-		{src:"images/map42.png?1574196228077", id:"map42"},
-		{src:"images/map43.png?1574196228077", id:"map43"},
-		{src:"images/map44.png?1574196228077", id:"map44"},
-		{src:"images/map45.png?1574196228077", id:"map45"},
-		{src:"images/map46.png?1574196228077", id:"map46"},
-		{src:"images/map47.png?1574196228077", id:"map47"},
-		{src:"images/map48.png?1574196228077", id:"map48"},
-		{src:"images/map49.png?1574196228077", id:"map49"},
-		{src:"images/map5.png?1574196228077", id:"map5"},
-		{src:"images/map50.png?1574196228077", id:"map50"},
-		{src:"images/map51.png?1574196228077", id:"map51"},
-		{src:"images/map52.png?1574196228077", id:"map52"},
-		{src:"images/map53.png?1574196228077", id:"map53"},
-		{src:"images/map54.png?1574196228077", id:"map54"},
-		{src:"images/map55.png?1574196228077", id:"map55"},
-		{src:"images/map56.png?1574196228077", id:"map56"},
-		{src:"images/map57.png?1574196228077", id:"map57"},
-		{src:"images/map58.png?1574196228077", id:"map58"},
-		{src:"images/map59.png?1574196228077", id:"map59"},
-		{src:"images/map6.png?1574196228077", id:"map6"},
-		{src:"images/map60.png?1574196228077", id:"map60"},
-		{src:"images/map61.png?1574196228077", id:"map61"},
-		{src:"images/map7.png?1574196228077", id:"map7"},
-		{src:"images/map8.png?1574196228077", id:"map8"},
-		{src:"images/map9.png?1574196228077", id:"map9"},
-		{src:"images/s3_bg.png?1574196228077", id:"s3_bg"},
-		{src:"images/sence1.png?1574196228077", id:"sence1"},
-		{src:"images/sence2.png?1574196228077", id:"sence2"}
+		{src:"images/Asset22x8.png?1574198235010", id:"Asset22x8"},
+		{src:"images/Asset32x8.png?1574198235010", id:"Asset32x8"},
+		{src:"images/bg.jpg?1574198235010", id:"bg"},
+		{src:"images/btn_face0.png?1574198235010", id:"btn_face0"},
+		{src:"images/btn_face1.png?1574198235010", id:"btn_face1"},
+		{src:"images/btn_text1.png?1574198235010", id:"btn_text1"},
+		{src:"images/btn_text2.png?1574198235010", id:"btn_text2"},
+		{src:"images/btn_text3.png?1574198235010", id:"btn_text3"},
+		{src:"images/map1.png?1574198235010", id:"map1"},
+		{src:"images/map10.png?1574198235010", id:"map10"},
+		{src:"images/map11.png?1574198235010", id:"map11"},
+		{src:"images/map12.png?1574198235010", id:"map12"},
+		{src:"images/map13.png?1574198235010", id:"map13"},
+		{src:"images/map14.png?1574198235010", id:"map14"},
+		{src:"images/map15.png?1574198235010", id:"map15"},
+		{src:"images/map16.png?1574198235010", id:"map16"},
+		{src:"images/map17.png?1574198235010", id:"map17"},
+		{src:"images/map18.png?1574198235010", id:"map18"},
+		{src:"images/map19.png?1574198235010", id:"map19"},
+		{src:"images/map2.png?1574198235010", id:"map2"},
+		{src:"images/map20.png?1574198235010", id:"map20"},
+		{src:"images/map21.png?1574198235010", id:"map21"},
+		{src:"images/map22.png?1574198235010", id:"map22"},
+		{src:"images/map23.png?1574198235010", id:"map23"},
+		{src:"images/map24.png?1574198235010", id:"map24"},
+		{src:"images/map25.png?1574198235010", id:"map25"},
+		{src:"images/map26.png?1574198235010", id:"map26"},
+		{src:"images/map27.png?1574198235010", id:"map27"},
+		{src:"images/map28.png?1574198235010", id:"map28"},
+		{src:"images/map29.png?1574198235010", id:"map29"},
+		{src:"images/map3.png?1574198235010", id:"map3"},
+		{src:"images/map30.png?1574198235010", id:"map30"},
+		{src:"images/map31.png?1574198235010", id:"map31"},
+		{src:"images/map32.png?1574198235010", id:"map32"},
+		{src:"images/map33.png?1574198235010", id:"map33"},
+		{src:"images/map34.png?1574198235010", id:"map34"},
+		{src:"images/map35.png?1574198235010", id:"map35"},
+		{src:"images/map36.png?1574198235010", id:"map36"},
+		{src:"images/map37.png?1574198235010", id:"map37"},
+		{src:"images/map38.png?1574198235010", id:"map38"},
+		{src:"images/map39.png?1574198235010", id:"map39"},
+		{src:"images/map4.png?1574198235010", id:"map4"},
+		{src:"images/map40.png?1574198235010", id:"map40"},
+		{src:"images/map41.png?1574198235010", id:"map41"},
+		{src:"images/map42.png?1574198235010", id:"map42"},
+		{src:"images/map43.png?1574198235010", id:"map43"},
+		{src:"images/map44.png?1574198235010", id:"map44"},
+		{src:"images/map45.png?1574198235010", id:"map45"},
+		{src:"images/map46.png?1574198235010", id:"map46"},
+		{src:"images/map47.png?1574198235010", id:"map47"},
+		{src:"images/map48.png?1574198235010", id:"map48"},
+		{src:"images/map49.png?1574198235010", id:"map49"},
+		{src:"images/map5.png?1574198235010", id:"map5"},
+		{src:"images/map50.png?1574198235010", id:"map50"},
+		{src:"images/map51.png?1574198235010", id:"map51"},
+		{src:"images/map52.png?1574198235010", id:"map52"},
+		{src:"images/map53.png?1574198235010", id:"map53"},
+		{src:"images/map54.png?1574198235010", id:"map54"},
+		{src:"images/map55.png?1574198235010", id:"map55"},
+		{src:"images/map56.png?1574198235010", id:"map56"},
+		{src:"images/map57.png?1574198235010", id:"map57"},
+		{src:"images/map58.png?1574198235010", id:"map58"},
+		{src:"images/map59.png?1574198235010", id:"map59"},
+		{src:"images/map6.png?1574198235010", id:"map6"},
+		{src:"images/map60.png?1574198235010", id:"map60"},
+		{src:"images/map61.png?1574198235010", id:"map61"},
+		{src:"images/map7.png?1574198235010", id:"map7"},
+		{src:"images/map8.png?1574198235010", id:"map8"},
+		{src:"images/map9.png?1574198235010", id:"map9"},
+		{src:"images/s3_bg.png?1574198235010", id:"s3_bg"},
+		{src:"images/sence1.png?1574198235010", id:"sence1"},
+		{src:"images/sence2.png?1574198235010", id:"sence2"}
 	],
 	preloads: []
 };
