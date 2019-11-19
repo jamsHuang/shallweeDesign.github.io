@@ -9,372 +9,6 @@ lib.ssMetadata = [];
 
 
 
-(lib._1 = function() {
-	this.initialize(img._1);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._10 = function() {
-	this.initialize(img._10);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._11 = function() {
-	this.initialize(img._11);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._12 = function() {
-	this.initialize(img._12);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._13 = function() {
-	this.initialize(img._13);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._14 = function() {
-	this.initialize(img._14);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._15 = function() {
-	this.initialize(img._15);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._16 = function() {
-	this.initialize(img._16);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._17 = function() {
-	this.initialize(img._17);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._18 = function() {
-	this.initialize(img._18);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._19 = function() {
-	this.initialize(img._19);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._2 = function() {
-	this.initialize(img._2);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._20 = function() {
-	this.initialize(img._20);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._21 = function() {
-	this.initialize(img._21);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._22 = function() {
-	this.initialize(img._22);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._23 = function() {
-	this.initialize(img._23);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._24 = function() {
-	this.initialize(img._24);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._25 = function() {
-	this.initialize(img._25);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._26 = function() {
-	this.initialize(img._26);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._27 = function() {
-	this.initialize(img._27);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._28 = function() {
-	this.initialize(img._28);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._29 = function() {
-	this.initialize(img._29);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._3 = function() {
-	this.initialize(img._3);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._30 = function() {
-	this.initialize(img._30);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._31 = function() {
-	this.initialize(img._31);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._32 = function() {
-	this.initialize(img._32);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._33 = function() {
-	this.initialize(img._33);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._34 = function() {
-	this.initialize(img._34);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._35 = function() {
-	this.initialize(img._35);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._36 = function() {
-	this.initialize(img._36);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._37 = function() {
-	this.initialize(img._37);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._38 = function() {
-	this.initialize(img._38);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._39 = function() {
-	this.initialize(img._39);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._4 = function() {
-	this.initialize(img._4);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._40 = function() {
-	this.initialize(img._40);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._41 = function() {
-	this.initialize(img._41);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._42 = function() {
-	this.initialize(img._42);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._43 = function() {
-	this.initialize(img._43);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._44 = function() {
-	this.initialize(img._44);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._45 = function() {
-	this.initialize(img._45);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._46 = function() {
-	this.initialize(img._46);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._47 = function() {
-	this.initialize(img._47);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._48 = function() {
-	this.initialize(img._48);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._49 = function() {
-	this.initialize(img._49);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._5 = function() {
-	this.initialize(img._5);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._50 = function() {
-	this.initialize(img._50);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._51 = function() {
-	this.initialize(img._51);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._52 = function() {
-	this.initialize(img._52);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._53 = function() {
-	this.initialize(img._53);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._54 = function() {
-	this.initialize(img._54);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._55 = function() {
-	this.initialize(img._55);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._56 = function() {
-	this.initialize(img._56);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._57 = function() {
-	this.initialize(img._57);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._58 = function() {
-	this.initialize(img._58);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._59 = function() {
-	this.initialize(img._59);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._6 = function() {
-	this.initialize(img._6);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._60 = function() {
-	this.initialize(img._60);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._61 = function() {
-	this.initialize(img._61);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._7 = function() {
-	this.initialize(img._7);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._8 = function() {
-	this.initialize(img._8);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
-(lib._9 = function() {
-	this.initialize(img._9);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
-
-
 (lib.Asset22x8 = function() {
 	this.initialize(img.Asset22x8);
 }).prototype = p = new cjs.Bitmap();
@@ -421,6 +55,372 @@ p.nominalBounds = new cjs.Rectangle(0,0,452,120);
 	this.initialize(img.btn_text3);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,452,120);
+
+
+(lib.map1 = function() {
+	this.initialize(img.map1);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map10 = function() {
+	this.initialize(img.map10);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map11 = function() {
+	this.initialize(img.map11);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map12 = function() {
+	this.initialize(img.map12);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map13 = function() {
+	this.initialize(img.map13);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map14 = function() {
+	this.initialize(img.map14);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map15 = function() {
+	this.initialize(img.map15);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map16 = function() {
+	this.initialize(img.map16);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map17 = function() {
+	this.initialize(img.map17);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map18 = function() {
+	this.initialize(img.map18);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map19 = function() {
+	this.initialize(img.map19);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map2 = function() {
+	this.initialize(img.map2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map20 = function() {
+	this.initialize(img.map20);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map21 = function() {
+	this.initialize(img.map21);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map22 = function() {
+	this.initialize(img.map22);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map23 = function() {
+	this.initialize(img.map23);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map24 = function() {
+	this.initialize(img.map24);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map25 = function() {
+	this.initialize(img.map25);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map26 = function() {
+	this.initialize(img.map26);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map27 = function() {
+	this.initialize(img.map27);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map28 = function() {
+	this.initialize(img.map28);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map29 = function() {
+	this.initialize(img.map29);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map3 = function() {
+	this.initialize(img.map3);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map30 = function() {
+	this.initialize(img.map30);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map31 = function() {
+	this.initialize(img.map31);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map32 = function() {
+	this.initialize(img.map32);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map33 = function() {
+	this.initialize(img.map33);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map34 = function() {
+	this.initialize(img.map34);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map35 = function() {
+	this.initialize(img.map35);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map36 = function() {
+	this.initialize(img.map36);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map37 = function() {
+	this.initialize(img.map37);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map38 = function() {
+	this.initialize(img.map38);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map39 = function() {
+	this.initialize(img.map39);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map4 = function() {
+	this.initialize(img.map4);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map40 = function() {
+	this.initialize(img.map40);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map41 = function() {
+	this.initialize(img.map41);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map42 = function() {
+	this.initialize(img.map42);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map43 = function() {
+	this.initialize(img.map43);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map44 = function() {
+	this.initialize(img.map44);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map45 = function() {
+	this.initialize(img.map45);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map46 = function() {
+	this.initialize(img.map46);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map47 = function() {
+	this.initialize(img.map47);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map48 = function() {
+	this.initialize(img.map48);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map49 = function() {
+	this.initialize(img.map49);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map5 = function() {
+	this.initialize(img.map5);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map50 = function() {
+	this.initialize(img.map50);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map51 = function() {
+	this.initialize(img.map51);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map52 = function() {
+	this.initialize(img.map52);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map53 = function() {
+	this.initialize(img.map53);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map54 = function() {
+	this.initialize(img.map54);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map55 = function() {
+	this.initialize(img.map55);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map56 = function() {
+	this.initialize(img.map56);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map57 = function() {
+	this.initialize(img.map57);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map58 = function() {
+	this.initialize(img.map58);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map59 = function() {
+	this.initialize(img.map59);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map6 = function() {
+	this.initialize(img.map6);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map60 = function() {
+	this.initialize(img.map60);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map61 = function() {
+	this.initialize(img.map61);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map7 = function() {
+	this.initialize(img.map7);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map8 = function() {
+	this.initialize(img.map8);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
+
+
+(lib.map9 = function() {
+	this.initialize(img.map9);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1137,538);
 
 
 (lib.s3_bg = function() {
@@ -495,247 +495,247 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(610));
 
 	// Layer_2
-	this.instance = new lib._1();
+	this.instance = new lib.map1();
 	this.instance.parent = this;
 	this.instance.setTransform(30,90,0.6,0.6);
 
-	this.instance_1 = new lib._2();
+	this.instance_1 = new lib.map2();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(30,90,0.6,0.6);
 
-	this.instance_2 = new lib._3();
+	this.instance_2 = new lib.map3();
 	this.instance_2.parent = this;
 	this.instance_2.setTransform(30,90,0.6,0.6);
 
-	this.instance_3 = new lib._4();
+	this.instance_3 = new lib.map4();
 	this.instance_3.parent = this;
 	this.instance_3.setTransform(30,90,0.6,0.6);
 
-	this.instance_4 = new lib._5();
+	this.instance_4 = new lib.map5();
 	this.instance_4.parent = this;
 	this.instance_4.setTransform(30,90,0.6,0.6);
 
-	this.instance_5 = new lib._6();
+	this.instance_5 = new lib.map6();
 	this.instance_5.parent = this;
 	this.instance_5.setTransform(30,90,0.6,0.6);
 
-	this.instance_6 = new lib._7();
+	this.instance_6 = new lib.map7();
 	this.instance_6.parent = this;
 	this.instance_6.setTransform(30,90,0.6,0.6);
 
-	this.instance_7 = new lib._8();
+	this.instance_7 = new lib.map8();
 	this.instance_7.parent = this;
 	this.instance_7.setTransform(30,90,0.6,0.6);
 
-	this.instance_8 = new lib._9();
+	this.instance_8 = new lib.map9();
 	this.instance_8.parent = this;
 	this.instance_8.setTransform(30,90,0.6,0.6);
 
-	this.instance_9 = new lib._10();
+	this.instance_9 = new lib.map10();
 	this.instance_9.parent = this;
 	this.instance_9.setTransform(30,90,0.6,0.6);
 
-	this.instance_10 = new lib._11();
+	this.instance_10 = new lib.map11();
 	this.instance_10.parent = this;
 	this.instance_10.setTransform(30,90,0.6,0.6);
 
-	this.instance_11 = new lib._12();
+	this.instance_11 = new lib.map12();
 	this.instance_11.parent = this;
 	this.instance_11.setTransform(30,94,0.6,0.6);
 
-	this.instance_12 = new lib._13();
+	this.instance_12 = new lib.map13();
 	this.instance_12.parent = this;
 	this.instance_12.setTransform(30,94,0.6,0.6);
 
-	this.instance_13 = new lib._14();
+	this.instance_13 = new lib.map14();
 	this.instance_13.parent = this;
 	this.instance_13.setTransform(30,94,0.6,0.6);
 
-	this.instance_14 = new lib._15();
+	this.instance_14 = new lib.map15();
 	this.instance_14.parent = this;
 	this.instance_14.setTransform(30,94,0.6,0.6);
 
-	this.instance_15 = new lib._16();
+	this.instance_15 = new lib.map16();
 	this.instance_15.parent = this;
 	this.instance_15.setTransform(30,94,0.6,0.6);
 
-	this.instance_16 = new lib._17();
+	this.instance_16 = new lib.map17();
 	this.instance_16.parent = this;
 	this.instance_16.setTransform(30,94,0.6,0.6);
 
-	this.instance_17 = new lib._18();
+	this.instance_17 = new lib.map18();
 	this.instance_17.parent = this;
 	this.instance_17.setTransform(30,94,0.6,0.6);
 
-	this.instance_18 = new lib._19();
+	this.instance_18 = new lib.map19();
 	this.instance_18.parent = this;
 	this.instance_18.setTransform(30,94,0.6,0.6);
 
-	this.instance_19 = new lib._20();
+	this.instance_19 = new lib.map20();
 	this.instance_19.parent = this;
 	this.instance_19.setTransform(30,94,0.6,0.6);
 
-	this.instance_20 = new lib._21();
+	this.instance_20 = new lib.map21();
 	this.instance_20.parent = this;
 	this.instance_20.setTransform(30,94,0.6,0.6);
 
-	this.instance_21 = new lib._22();
+	this.instance_21 = new lib.map22();
 	this.instance_21.parent = this;
 	this.instance_21.setTransform(30,94,0.6,0.6);
 
-	this.instance_22 = new lib._23();
+	this.instance_22 = new lib.map23();
 	this.instance_22.parent = this;
 	this.instance_22.setTransform(30,94,0.6,0.6);
 
-	this.instance_23 = new lib._24();
+	this.instance_23 = new lib.map24();
 	this.instance_23.parent = this;
 	this.instance_23.setTransform(30,94,0.6,0.6);
 
-	this.instance_24 = new lib._25();
+	this.instance_24 = new lib.map25();
 	this.instance_24.parent = this;
 	this.instance_24.setTransform(30,94,0.6,0.6);
 
-	this.instance_25 = new lib._26();
+	this.instance_25 = new lib.map26();
 	this.instance_25.parent = this;
 	this.instance_25.setTransform(30,94,0.6,0.6);
 
-	this.instance_26 = new lib._27();
+	this.instance_26 = new lib.map27();
 	this.instance_26.parent = this;
 	this.instance_26.setTransform(30,94,0.6,0.6);
 
-	this.instance_27 = new lib._28();
+	this.instance_27 = new lib.map28();
 	this.instance_27.parent = this;
 	this.instance_27.setTransform(30,94,0.6,0.6);
 
-	this.instance_28 = new lib._29();
+	this.instance_28 = new lib.map29();
 	this.instance_28.parent = this;
 	this.instance_28.setTransform(30,94,0.6,0.6);
 
-	this.instance_29 = new lib._30();
+	this.instance_29 = new lib.map30();
 	this.instance_29.parent = this;
 	this.instance_29.setTransform(30,94,0.6,0.6);
 
-	this.instance_30 = new lib._31();
+	this.instance_30 = new lib.map31();
 	this.instance_30.parent = this;
 	this.instance_30.setTransform(30,94,0.6,0.6);
 
-	this.instance_31 = new lib._32();
+	this.instance_31 = new lib.map32();
 	this.instance_31.parent = this;
 	this.instance_31.setTransform(30,94,0.6,0.6);
 
-	this.instance_32 = new lib._33();
+	this.instance_32 = new lib.map33();
 	this.instance_32.parent = this;
 	this.instance_32.setTransform(30,94,0.6,0.6);
 
-	this.instance_33 = new lib._34();
+	this.instance_33 = new lib.map34();
 	this.instance_33.parent = this;
 	this.instance_33.setTransform(30,94,0.6,0.6);
 
-	this.instance_34 = new lib._35();
+	this.instance_34 = new lib.map35();
 	this.instance_34.parent = this;
 	this.instance_34.setTransform(30,94,0.6,0.6);
 
-	this.instance_35 = new lib._36();
+	this.instance_35 = new lib.map36();
 	this.instance_35.parent = this;
 	this.instance_35.setTransform(30,94,0.6,0.6);
 
-	this.instance_36 = new lib._37();
+	this.instance_36 = new lib.map37();
 	this.instance_36.parent = this;
 	this.instance_36.setTransform(30,94,0.6,0.6);
 
-	this.instance_37 = new lib._38();
+	this.instance_37 = new lib.map38();
 	this.instance_37.parent = this;
 	this.instance_37.setTransform(30,94,0.6,0.6);
 
-	this.instance_38 = new lib._39();
+	this.instance_38 = new lib.map39();
 	this.instance_38.parent = this;
 	this.instance_38.setTransform(30,94,0.6,0.6);
 
-	this.instance_39 = new lib._40();
+	this.instance_39 = new lib.map40();
 	this.instance_39.parent = this;
 	this.instance_39.setTransform(30,94,0.6,0.6);
 
-	this.instance_40 = new lib._41();
+	this.instance_40 = new lib.map41();
 	this.instance_40.parent = this;
 	this.instance_40.setTransform(30,94,0.6,0.6);
 
-	this.instance_41 = new lib._42();
+	this.instance_41 = new lib.map42();
 	this.instance_41.parent = this;
 	this.instance_41.setTransform(30,94,0.6,0.6);
 
-	this.instance_42 = new lib._43();
+	this.instance_42 = new lib.map43();
 	this.instance_42.parent = this;
 	this.instance_42.setTransform(30,94,0.6,0.6);
 
-	this.instance_43 = new lib._44();
+	this.instance_43 = new lib.map44();
 	this.instance_43.parent = this;
 	this.instance_43.setTransform(30,94,0.6,0.6);
 
-	this.instance_44 = new lib._45();
+	this.instance_44 = new lib.map45();
 	this.instance_44.parent = this;
 	this.instance_44.setTransform(30,94,0.6,0.6);
 
-	this.instance_45 = new lib._46();
+	this.instance_45 = new lib.map46();
 	this.instance_45.parent = this;
 	this.instance_45.setTransform(30,94,0.6,0.6);
 
-	this.instance_46 = new lib._47();
+	this.instance_46 = new lib.map47();
 	this.instance_46.parent = this;
 	this.instance_46.setTransform(30,94,0.6,0.6);
 
-	this.instance_47 = new lib._48();
+	this.instance_47 = new lib.map48();
 	this.instance_47.parent = this;
 	this.instance_47.setTransform(30,94,0.6,0.6);
 
-	this.instance_48 = new lib._49();
+	this.instance_48 = new lib.map49();
 	this.instance_48.parent = this;
 	this.instance_48.setTransform(30,94,0.6,0.6);
 
-	this.instance_49 = new lib._50();
+	this.instance_49 = new lib.map50();
 	this.instance_49.parent = this;
 	this.instance_49.setTransform(30,94,0.6,0.6);
 
-	this.instance_50 = new lib._51();
+	this.instance_50 = new lib.map51();
 	this.instance_50.parent = this;
 	this.instance_50.setTransform(30,94,0.6,0.6);
 
-	this.instance_51 = new lib._52();
+	this.instance_51 = new lib.map52();
 	this.instance_51.parent = this;
 	this.instance_51.setTransform(30,94,0.6,0.6);
 
-	this.instance_52 = new lib._53();
+	this.instance_52 = new lib.map53();
 	this.instance_52.parent = this;
 	this.instance_52.setTransform(30,94,0.6,0.6);
 
-	this.instance_53 = new lib._54();
+	this.instance_53 = new lib.map54();
 	this.instance_53.parent = this;
 	this.instance_53.setTransform(30,94,0.6,0.6);
 
-	this.instance_54 = new lib._55();
+	this.instance_54 = new lib.map55();
 	this.instance_54.parent = this;
 	this.instance_54.setTransform(30,94,0.6,0.6);
 
-	this.instance_55 = new lib._56();
+	this.instance_55 = new lib.map56();
 	this.instance_55.parent = this;
 	this.instance_55.setTransform(30,94,0.6,0.6);
 
-	this.instance_56 = new lib._57();
+	this.instance_56 = new lib.map57();
 	this.instance_56.parent = this;
 	this.instance_56.setTransform(30,94,0.6,0.6);
 
-	this.instance_57 = new lib._58();
+	this.instance_57 = new lib.map58();
 	this.instance_57.parent = this;
 	this.instance_57.setTransform(30,94,0.6,0.6);
 
-	this.instance_58 = new lib._59();
+	this.instance_58 = new lib.map59();
 	this.instance_58.parent = this;
 	this.instance_58.setTransform(30,94,0.6,0.6);
 
-	this.instance_59 = new lib._60();
+	this.instance_59 = new lib.map60();
 	this.instance_59.parent = this;
 	this.instance_59.setTransform(30,94,0.6,0.6);
 
-	this.instance_60 = new lib._61();
+	this.instance_60 = new lib.map61();
 	this.instance_60.parent = this;
 	this.instance_60.setTransform(30,94,0.6,0.6);
 
@@ -1279,78 +1279,78 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/_1.png?1574128475475", id:"_1"},
-		{src:"images/_10.png?1574128475475", id:"_10"},
-		{src:"images/_11.png?1574128475475", id:"_11"},
-		{src:"images/_12.png?1574128475475", id:"_12"},
-		{src:"images/_13.png?1574128475475", id:"_13"},
-		{src:"images/_14.png?1574128475475", id:"_14"},
-		{src:"images/_15.png?1574128475475", id:"_15"},
-		{src:"images/_16.png?1574128475475", id:"_16"},
-		{src:"images/_17.png?1574128475475", id:"_17"},
-		{src:"images/_18.png?1574128475475", id:"_18"},
-		{src:"images/_19.png?1574128475475", id:"_19"},
-		{src:"images/_2.png?1574128475475", id:"_2"},
-		{src:"images/_20.png?1574128475475", id:"_20"},
-		{src:"images/_21.png?1574128475475", id:"_21"},
-		{src:"images/_22.png?1574128475475", id:"_22"},
-		{src:"images/_23.png?1574128475475", id:"_23"},
-		{src:"images/_24.png?1574128475475", id:"_24"},
-		{src:"images/_25.png?1574128475475", id:"_25"},
-		{src:"images/_26.png?1574128475475", id:"_26"},
-		{src:"images/_27.png?1574128475475", id:"_27"},
-		{src:"images/_28.png?1574128475475", id:"_28"},
-		{src:"images/_29.png?1574128475475", id:"_29"},
-		{src:"images/_3.png?1574128475475", id:"_3"},
-		{src:"images/_30.png?1574128475475", id:"_30"},
-		{src:"images/_31.png?1574128475475", id:"_31"},
-		{src:"images/_32.png?1574128475475", id:"_32"},
-		{src:"images/_33.png?1574128475475", id:"_33"},
-		{src:"images/_34.png?1574128475475", id:"_34"},
-		{src:"images/_35.png?1574128475475", id:"_35"},
-		{src:"images/_36.png?1574128475475", id:"_36"},
-		{src:"images/_37.png?1574128475475", id:"_37"},
-		{src:"images/_38.png?1574128475475", id:"_38"},
-		{src:"images/_39.png?1574128475475", id:"_39"},
-		{src:"images/_4.png?1574128475475", id:"_4"},
-		{src:"images/_40.png?1574128475475", id:"_40"},
-		{src:"images/_41.png?1574128475475", id:"_41"},
-		{src:"images/_42.png?1574128475475", id:"_42"},
-		{src:"images/_43.png?1574128475475", id:"_43"},
-		{src:"images/_44.png?1574128475475", id:"_44"},
-		{src:"images/_45.png?1574128475475", id:"_45"},
-		{src:"images/_46.png?1574128475475", id:"_46"},
-		{src:"images/_47.png?1574128475475", id:"_47"},
-		{src:"images/_48.png?1574128475475", id:"_48"},
-		{src:"images/_49.png?1574128475475", id:"_49"},
-		{src:"images/_5.png?1574128475475", id:"_5"},
-		{src:"images/_50.png?1574128475475", id:"_50"},
-		{src:"images/_51.png?1574128475475", id:"_51"},
-		{src:"images/_52.png?1574128475475", id:"_52"},
-		{src:"images/_53.png?1574128475475", id:"_53"},
-		{src:"images/_54.png?1574128475475", id:"_54"},
-		{src:"images/_55.png?1574128475475", id:"_55"},
-		{src:"images/_56.png?1574128475475", id:"_56"},
-		{src:"images/_57.png?1574128475475", id:"_57"},
-		{src:"images/_58.png?1574128475475", id:"_58"},
-		{src:"images/_59.png?1574128475475", id:"_59"},
-		{src:"images/_6.png?1574128475475", id:"_6"},
-		{src:"images/_60.png?1574128475475", id:"_60"},
-		{src:"images/_61.png?1574128475475", id:"_61"},
-		{src:"images/_7.png?1574128475475", id:"_7"},
-		{src:"images/_8.png?1574128475475", id:"_8"},
-		{src:"images/_9.png?1574128475475", id:"_9"},
-		{src:"images/Asset22x8.png?1574128475475", id:"Asset22x8"},
-		{src:"images/Asset32x8.png?1574128475475", id:"Asset32x8"},
-		{src:"images/bg.jpg?1574128475475", id:"bg"},
-		{src:"images/btn_face0.png?1574128475475", id:"btn_face0"},
-		{src:"images/btn_face1.png?1574128475475", id:"btn_face1"},
-		{src:"images/btn_text1.png?1574128475475", id:"btn_text1"},
-		{src:"images/btn_text2.png?1574128475475", id:"btn_text2"},
-		{src:"images/btn_text3.png?1574128475475", id:"btn_text3"},
-		{src:"images/s3_bg.png?1574128475475", id:"s3_bg"},
-		{src:"images/sence1.png?1574128475475", id:"sence1"},
-		{src:"images/sence2.png?1574128475475", id:"sence2"}
+		{src:"images/Asset22x8.png?1574195719760", id:"Asset22x8"},
+		{src:"images/Asset32x8.png?1574195719760", id:"Asset32x8"},
+		{src:"images/bg.jpg?1574195719760", id:"bg"},
+		{src:"images/btn_face0.png?1574195719760", id:"btn_face0"},
+		{src:"images/btn_face1.png?1574195719760", id:"btn_face1"},
+		{src:"images/btn_text1.png?1574195719760", id:"btn_text1"},
+		{src:"images/btn_text2.png?1574195719760", id:"btn_text2"},
+		{src:"images/btn_text3.png?1574195719760", id:"btn_text3"},
+		{src:"images/map1.png?1574195719760", id:"map1"},
+		{src:"images/map10.png?1574195719760", id:"map10"},
+		{src:"images/map11.png?1574195719760", id:"map11"},
+		{src:"images/map12.png?1574195719760", id:"map12"},
+		{src:"images/map13.png?1574195719760", id:"map13"},
+		{src:"images/map14.png?1574195719760", id:"map14"},
+		{src:"images/map15.png?1574195719760", id:"map15"},
+		{src:"images/map16.png?1574195719760", id:"map16"},
+		{src:"images/map17.png?1574195719760", id:"map17"},
+		{src:"images/map18.png?1574195719760", id:"map18"},
+		{src:"images/map19.png?1574195719760", id:"map19"},
+		{src:"images/map2.png?1574195719760", id:"map2"},
+		{src:"images/map20.png?1574195719760", id:"map20"},
+		{src:"images/map21.png?1574195719760", id:"map21"},
+		{src:"images/map22.png?1574195719760", id:"map22"},
+		{src:"images/map23.png?1574195719760", id:"map23"},
+		{src:"images/map24.png?1574195719760", id:"map24"},
+		{src:"images/map25.png?1574195719760", id:"map25"},
+		{src:"images/map26.png?1574195719760", id:"map26"},
+		{src:"images/map27.png?1574195719760", id:"map27"},
+		{src:"images/map28.png?1574195719760", id:"map28"},
+		{src:"images/map29.png?1574195719760", id:"map29"},
+		{src:"images/map3.png?1574195719760", id:"map3"},
+		{src:"images/map30.png?1574195719760", id:"map30"},
+		{src:"images/map31.png?1574195719760", id:"map31"},
+		{src:"images/map32.png?1574195719760", id:"map32"},
+		{src:"images/map33.png?1574195719760", id:"map33"},
+		{src:"images/map34.png?1574195719760", id:"map34"},
+		{src:"images/map35.png?1574195719760", id:"map35"},
+		{src:"images/map36.png?1574195719760", id:"map36"},
+		{src:"images/map37.png?1574195719760", id:"map37"},
+		{src:"images/map38.png?1574195719760", id:"map38"},
+		{src:"images/map39.png?1574195719760", id:"map39"},
+		{src:"images/map4.png?1574195719760", id:"map4"},
+		{src:"images/map40.png?1574195719760", id:"map40"},
+		{src:"images/map41.png?1574195719760", id:"map41"},
+		{src:"images/map42.png?1574195719760", id:"map42"},
+		{src:"images/map43.png?1574195719760", id:"map43"},
+		{src:"images/map44.png?1574195719760", id:"map44"},
+		{src:"images/map45.png?1574195719760", id:"map45"},
+		{src:"images/map46.png?1574195719760", id:"map46"},
+		{src:"images/map47.png?1574195719760", id:"map47"},
+		{src:"images/map48.png?1574195719760", id:"map48"},
+		{src:"images/map49.png?1574195719760", id:"map49"},
+		{src:"images/map5.png?1574195719760", id:"map5"},
+		{src:"images/map50.png?1574195719760", id:"map50"},
+		{src:"images/map51.png?1574195719760", id:"map51"},
+		{src:"images/map52.png?1574195719760", id:"map52"},
+		{src:"images/map53.png?1574195719760", id:"map53"},
+		{src:"images/map54.png?1574195719760", id:"map54"},
+		{src:"images/map55.png?1574195719760", id:"map55"},
+		{src:"images/map56.png?1574195719760", id:"map56"},
+		{src:"images/map57.png?1574195719760", id:"map57"},
+		{src:"images/map58.png?1574195719760", id:"map58"},
+		{src:"images/map59.png?1574195719760", id:"map59"},
+		{src:"images/map6.png?1574195719760", id:"map6"},
+		{src:"images/map60.png?1574195719760", id:"map60"},
+		{src:"images/map61.png?1574195719760", id:"map61"},
+		{src:"images/map7.png?1574195719760", id:"map7"},
+		{src:"images/map8.png?1574195719760", id:"map8"},
+		{src:"images/map9.png?1574195719760", id:"map9"},
+		{src:"images/s3_bg.png?1574195719760", id:"s3_bg"},
+		{src:"images/sence1.png?1574195719760", id:"sence1"},
+		{src:"images/sence2.png?1574195719760", id:"sence2"}
 	],
 	preloads: []
 };
