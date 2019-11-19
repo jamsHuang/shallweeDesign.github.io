@@ -541,203 +541,203 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 
 	this.instance_11 = new lib.map12();
 	this.instance_11.parent = this;
-	this.instance_11.setTransform(30,94,0.6,0.6);
+	this.instance_11.setTransform(30,90,0.6,0.6);
 
 	this.instance_12 = new lib.map13();
 	this.instance_12.parent = this;
-	this.instance_12.setTransform(30,94,0.6,0.6);
+	this.instance_12.setTransform(30,90,0.6,0.6);
 
 	this.instance_13 = new lib.map14();
 	this.instance_13.parent = this;
-	this.instance_13.setTransform(30,94,0.6,0.6);
+	this.instance_13.setTransform(30,90,0.6,0.6);
 
 	this.instance_14 = new lib.map15();
 	this.instance_14.parent = this;
-	this.instance_14.setTransform(30,94,0.6,0.6);
+	this.instance_14.setTransform(30,90,0.6,0.6);
 
 	this.instance_15 = new lib.map16();
 	this.instance_15.parent = this;
-	this.instance_15.setTransform(30,94,0.6,0.6);
+	this.instance_15.setTransform(30,90,0.6,0.6);
 
 	this.instance_16 = new lib.map17();
 	this.instance_16.parent = this;
-	this.instance_16.setTransform(30,94,0.6,0.6);
+	this.instance_16.setTransform(30,90,0.6,0.6);
 
 	this.instance_17 = new lib.map18();
 	this.instance_17.parent = this;
-	this.instance_17.setTransform(30,94,0.6,0.6);
+	this.instance_17.setTransform(30,90,0.6,0.6);
 
 	this.instance_18 = new lib.map19();
 	this.instance_18.parent = this;
-	this.instance_18.setTransform(30,94,0.6,0.6);
+	this.instance_18.setTransform(30,90,0.6,0.6);
 
 	this.instance_19 = new lib.map20();
 	this.instance_19.parent = this;
-	this.instance_19.setTransform(30,94,0.6,0.6);
+	this.instance_19.setTransform(30,90,0.6,0.6);
 
 	this.instance_20 = new lib.map21();
 	this.instance_20.parent = this;
-	this.instance_20.setTransform(30,94,0.6,0.6);
+	this.instance_20.setTransform(30,90,0.6,0.6);
 
 	this.instance_21 = new lib.map22();
 	this.instance_21.parent = this;
-	this.instance_21.setTransform(30,94,0.6,0.6);
+	this.instance_21.setTransform(30,90,0.6,0.6);
 
 	this.instance_22 = new lib.map23();
 	this.instance_22.parent = this;
-	this.instance_22.setTransform(30,94,0.6,0.6);
+	this.instance_22.setTransform(30,90,0.6,0.6);
 
 	this.instance_23 = new lib.map24();
 	this.instance_23.parent = this;
-	this.instance_23.setTransform(30,94,0.6,0.6);
+	this.instance_23.setTransform(30,90,0.6,0.6);
 
 	this.instance_24 = new lib.map25();
 	this.instance_24.parent = this;
-	this.instance_24.setTransform(30,94,0.6,0.6);
+	this.instance_24.setTransform(30,90,0.6,0.6);
 
 	this.instance_25 = new lib.map26();
 	this.instance_25.parent = this;
-	this.instance_25.setTransform(30,94,0.6,0.6);
+	this.instance_25.setTransform(30,90,0.6,0.6);
 
 	this.instance_26 = new lib.map27();
 	this.instance_26.parent = this;
-	this.instance_26.setTransform(30,94,0.6,0.6);
+	this.instance_26.setTransform(30,90,0.6,0.6);
 
 	this.instance_27 = new lib.map28();
 	this.instance_27.parent = this;
-	this.instance_27.setTransform(30,94,0.6,0.6);
+	this.instance_27.setTransform(30,90,0.6,0.6);
 
 	this.instance_28 = new lib.map29();
 	this.instance_28.parent = this;
-	this.instance_28.setTransform(30,94,0.6,0.6);
+	this.instance_28.setTransform(30,90,0.6,0.6);
 
 	this.instance_29 = new lib.map30();
 	this.instance_29.parent = this;
-	this.instance_29.setTransform(30,94,0.6,0.6);
+	this.instance_29.setTransform(30,90,0.6,0.6);
 
 	this.instance_30 = new lib.map31();
 	this.instance_30.parent = this;
-	this.instance_30.setTransform(30,94,0.6,0.6);
+	this.instance_30.setTransform(30,90,0.6,0.6);
 
 	this.instance_31 = new lib.map32();
 	this.instance_31.parent = this;
-	this.instance_31.setTransform(30,94,0.6,0.6);
+	this.instance_31.setTransform(30,90,0.6,0.6);
 
 	this.instance_32 = new lib.map33();
 	this.instance_32.parent = this;
-	this.instance_32.setTransform(30,94,0.6,0.6);
+	this.instance_32.setTransform(30,90,0.6,0.6);
 
 	this.instance_33 = new lib.map34();
 	this.instance_33.parent = this;
-	this.instance_33.setTransform(30,94,0.6,0.6);
+	this.instance_33.setTransform(30,90,0.6,0.6);
 
 	this.instance_34 = new lib.map35();
 	this.instance_34.parent = this;
-	this.instance_34.setTransform(30,94,0.6,0.6);
+	this.instance_34.setTransform(30,90,0.6,0.6);
 
 	this.instance_35 = new lib.map36();
 	this.instance_35.parent = this;
-	this.instance_35.setTransform(30,94,0.6,0.6);
+	this.instance_35.setTransform(30,90,0.6,0.6);
 
 	this.instance_36 = new lib.map37();
 	this.instance_36.parent = this;
-	this.instance_36.setTransform(30,94,0.6,0.6);
+	this.instance_36.setTransform(30,90,0.6,0.6);
 
 	this.instance_37 = new lib.map38();
 	this.instance_37.parent = this;
-	this.instance_37.setTransform(30,94,0.6,0.6);
+	this.instance_37.setTransform(30,90,0.6,0.6);
 
 	this.instance_38 = new lib.map39();
 	this.instance_38.parent = this;
-	this.instance_38.setTransform(30,94,0.6,0.6);
+	this.instance_38.setTransform(30,90,0.6,0.6);
 
 	this.instance_39 = new lib.map40();
 	this.instance_39.parent = this;
-	this.instance_39.setTransform(30,94,0.6,0.6);
+	this.instance_39.setTransform(30,90,0.6,0.6);
 
 	this.instance_40 = new lib.map41();
 	this.instance_40.parent = this;
-	this.instance_40.setTransform(30,94,0.6,0.6);
+	this.instance_40.setTransform(30,90,0.6,0.6);
 
 	this.instance_41 = new lib.map42();
 	this.instance_41.parent = this;
-	this.instance_41.setTransform(30,94,0.6,0.6);
+	this.instance_41.setTransform(30,90,0.6,0.6);
 
 	this.instance_42 = new lib.map43();
 	this.instance_42.parent = this;
-	this.instance_42.setTransform(30,94,0.6,0.6);
+	this.instance_42.setTransform(30,90,0.6,0.6);
 
 	this.instance_43 = new lib.map44();
 	this.instance_43.parent = this;
-	this.instance_43.setTransform(30,94,0.6,0.6);
+	this.instance_43.setTransform(30,90,0.6,0.6);
 
 	this.instance_44 = new lib.map45();
 	this.instance_44.parent = this;
-	this.instance_44.setTransform(30,94,0.6,0.6);
+	this.instance_44.setTransform(30,90,0.6,0.6);
 
 	this.instance_45 = new lib.map46();
 	this.instance_45.parent = this;
-	this.instance_45.setTransform(30,94,0.6,0.6);
+	this.instance_45.setTransform(30,90,0.6,0.6);
 
 	this.instance_46 = new lib.map47();
 	this.instance_46.parent = this;
-	this.instance_46.setTransform(30,94,0.6,0.6);
+	this.instance_46.setTransform(30,90,0.6,0.6);
 
 	this.instance_47 = new lib.map48();
 	this.instance_47.parent = this;
-	this.instance_47.setTransform(30,94,0.6,0.6);
+	this.instance_47.setTransform(30,90,0.6,0.6);
 
 	this.instance_48 = new lib.map49();
 	this.instance_48.parent = this;
-	this.instance_48.setTransform(30,94,0.6,0.6);
+	this.instance_48.setTransform(30,90,0.6,0.6);
 
 	this.instance_49 = new lib.map50();
 	this.instance_49.parent = this;
-	this.instance_49.setTransform(30,94,0.6,0.6);
+	this.instance_49.setTransform(30,90,0.6,0.6);
 
 	this.instance_50 = new lib.map51();
 	this.instance_50.parent = this;
-	this.instance_50.setTransform(30,94,0.6,0.6);
+	this.instance_50.setTransform(30,90,0.6,0.6);
 
 	this.instance_51 = new lib.map52();
 	this.instance_51.parent = this;
-	this.instance_51.setTransform(30,94,0.6,0.6);
+	this.instance_51.setTransform(30,90,0.6,0.6);
 
 	this.instance_52 = new lib.map53();
 	this.instance_52.parent = this;
-	this.instance_52.setTransform(30,94,0.6,0.6);
+	this.instance_52.setTransform(30,90,0.6,0.6);
 
 	this.instance_53 = new lib.map54();
 	this.instance_53.parent = this;
-	this.instance_53.setTransform(30,94,0.6,0.6);
+	this.instance_53.setTransform(30,90,0.6,0.6);
 
 	this.instance_54 = new lib.map55();
 	this.instance_54.parent = this;
-	this.instance_54.setTransform(30,94,0.6,0.6);
+	this.instance_54.setTransform(30,90,0.6,0.6);
 
 	this.instance_55 = new lib.map56();
 	this.instance_55.parent = this;
-	this.instance_55.setTransform(30,94,0.6,0.6);
+	this.instance_55.setTransform(30,90,0.6,0.6);
 
 	this.instance_56 = new lib.map57();
 	this.instance_56.parent = this;
-	this.instance_56.setTransform(30,94,0.6,0.6);
+	this.instance_56.setTransform(30,90,0.6,0.6);
 
 	this.instance_57 = new lib.map58();
 	this.instance_57.parent = this;
-	this.instance_57.setTransform(30,94,0.6,0.6);
+	this.instance_57.setTransform(30,90,0.6,0.6);
 
 	this.instance_58 = new lib.map59();
 	this.instance_58.parent = this;
-	this.instance_58.setTransform(30,94,0.6,0.6);
+	this.instance_58.setTransform(30,90,0.6,0.6);
 
 	this.instance_59 = new lib.map60();
 	this.instance_59.parent = this;
-	this.instance_59.setTransform(30,94,0.6,0.6);
+	this.instance_59.setTransform(30,90,0.6,0.6);
 
 	this.instance_60 = new lib.map61();
 	this.instance_60.parent = this;
-	this.instance_60.setTransform(30,94,0.6,0.6);
+	this.instance_60.setTransform(30,90,0.6,0.6);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},10).to({state:[{t:this.instance_2}]},10).to({state:[{t:this.instance_3}]},10).to({state:[{t:this.instance_4}]},10).to({state:[{t:this.instance_5}]},10).to({state:[{t:this.instance_6}]},10).to({state:[{t:this.instance_7}]},10).to({state:[{t:this.instance_8}]},10).to({state:[{t:this.instance_9}]},10).to({state:[{t:this.instance_10}]},10).to({state:[{t:this.instance_11}]},10).to({state:[{t:this.instance_12}]},10).to({state:[{t:this.instance_13}]},10).to({state:[{t:this.instance_14}]},10).to({state:[{t:this.instance_15}]},10).to({state:[{t:this.instance_16}]},10).to({state:[{t:this.instance_17}]},10).to({state:[{t:this.instance_18}]},10).to({state:[{t:this.instance_19}]},10).to({state:[{t:this.instance_20}]},10).to({state:[{t:this.instance_21}]},10).to({state:[{t:this.instance_22}]},10).to({state:[{t:this.instance_23}]},10).to({state:[{t:this.instance_24}]},10).to({state:[{t:this.instance_25}]},10).to({state:[{t:this.instance_26}]},10).to({state:[{t:this.instance_27}]},10).to({state:[{t:this.instance_28}]},10).to({state:[{t:this.instance_29}]},10).to({state:[{t:this.instance_30}]},10).to({state:[{t:this.instance_31}]},10).to({state:[{t:this.instance_32}]},10).to({state:[{t:this.instance_33}]},10).to({state:[{t:this.instance_34}]},10).to({state:[{t:this.instance_35}]},10).to({state:[{t:this.instance_36}]},10).to({state:[{t:this.instance_37}]},10).to({state:[{t:this.instance_38}]},10).to({state:[{t:this.instance_39}]},10).to({state:[{t:this.instance_40}]},10).to({state:[{t:this.instance_41}]},10).to({state:[{t:this.instance_42}]},10).to({state:[{t:this.instance_43}]},10).to({state:[{t:this.instance_44}]},10).to({state:[{t:this.instance_45}]},10).to({state:[{t:this.instance_46}]},10).to({state:[{t:this.instance_47}]},10).to({state:[{t:this.instance_48}]},10).to({state:[{t:this.instance_49}]},10).to({state:[{t:this.instance_50}]},10).to({state:[{t:this.instance_51}]},10).to({state:[{t:this.instance_52}]},10).to({state:[{t:this.instance_53}]},10).to({state:[{t:this.instance_54}]},10).to({state:[{t:this.instance_55}]},10).to({state:[{t:this.instance_56}]},10).to({state:[{t:this.instance_57}]},10).to({state:[{t:this.instance_58}]},10).to({state:[{t:this.instance_59}]},10).to({state:[{t:this.instance_60}]},10).wait(10));
 
@@ -1279,78 +1279,78 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Asset22x8.png?1574195719760", id:"Asset22x8"},
-		{src:"images/Asset32x8.png?1574195719760", id:"Asset32x8"},
-		{src:"images/bg.jpg?1574195719760", id:"bg"},
-		{src:"images/btn_face0.png?1574195719760", id:"btn_face0"},
-		{src:"images/btn_face1.png?1574195719760", id:"btn_face1"},
-		{src:"images/btn_text1.png?1574195719760", id:"btn_text1"},
-		{src:"images/btn_text2.png?1574195719760", id:"btn_text2"},
-		{src:"images/btn_text3.png?1574195719760", id:"btn_text3"},
-		{src:"images/map1.png?1574195719760", id:"map1"},
-		{src:"images/map10.png?1574195719760", id:"map10"},
-		{src:"images/map11.png?1574195719760", id:"map11"},
-		{src:"images/map12.png?1574195719760", id:"map12"},
-		{src:"images/map13.png?1574195719760", id:"map13"},
-		{src:"images/map14.png?1574195719760", id:"map14"},
-		{src:"images/map15.png?1574195719760", id:"map15"},
-		{src:"images/map16.png?1574195719760", id:"map16"},
-		{src:"images/map17.png?1574195719760", id:"map17"},
-		{src:"images/map18.png?1574195719760", id:"map18"},
-		{src:"images/map19.png?1574195719760", id:"map19"},
-		{src:"images/map2.png?1574195719760", id:"map2"},
-		{src:"images/map20.png?1574195719760", id:"map20"},
-		{src:"images/map21.png?1574195719760", id:"map21"},
-		{src:"images/map22.png?1574195719760", id:"map22"},
-		{src:"images/map23.png?1574195719760", id:"map23"},
-		{src:"images/map24.png?1574195719760", id:"map24"},
-		{src:"images/map25.png?1574195719760", id:"map25"},
-		{src:"images/map26.png?1574195719760", id:"map26"},
-		{src:"images/map27.png?1574195719760", id:"map27"},
-		{src:"images/map28.png?1574195719760", id:"map28"},
-		{src:"images/map29.png?1574195719760", id:"map29"},
-		{src:"images/map3.png?1574195719760", id:"map3"},
-		{src:"images/map30.png?1574195719760", id:"map30"},
-		{src:"images/map31.png?1574195719760", id:"map31"},
-		{src:"images/map32.png?1574195719760", id:"map32"},
-		{src:"images/map33.png?1574195719760", id:"map33"},
-		{src:"images/map34.png?1574195719760", id:"map34"},
-		{src:"images/map35.png?1574195719760", id:"map35"},
-		{src:"images/map36.png?1574195719760", id:"map36"},
-		{src:"images/map37.png?1574195719760", id:"map37"},
-		{src:"images/map38.png?1574195719760", id:"map38"},
-		{src:"images/map39.png?1574195719760", id:"map39"},
-		{src:"images/map4.png?1574195719760", id:"map4"},
-		{src:"images/map40.png?1574195719760", id:"map40"},
-		{src:"images/map41.png?1574195719760", id:"map41"},
-		{src:"images/map42.png?1574195719760", id:"map42"},
-		{src:"images/map43.png?1574195719760", id:"map43"},
-		{src:"images/map44.png?1574195719760", id:"map44"},
-		{src:"images/map45.png?1574195719760", id:"map45"},
-		{src:"images/map46.png?1574195719760", id:"map46"},
-		{src:"images/map47.png?1574195719760", id:"map47"},
-		{src:"images/map48.png?1574195719760", id:"map48"},
-		{src:"images/map49.png?1574195719760", id:"map49"},
-		{src:"images/map5.png?1574195719760", id:"map5"},
-		{src:"images/map50.png?1574195719760", id:"map50"},
-		{src:"images/map51.png?1574195719760", id:"map51"},
-		{src:"images/map52.png?1574195719760", id:"map52"},
-		{src:"images/map53.png?1574195719760", id:"map53"},
-		{src:"images/map54.png?1574195719760", id:"map54"},
-		{src:"images/map55.png?1574195719760", id:"map55"},
-		{src:"images/map56.png?1574195719760", id:"map56"},
-		{src:"images/map57.png?1574195719760", id:"map57"},
-		{src:"images/map58.png?1574195719760", id:"map58"},
-		{src:"images/map59.png?1574195719760", id:"map59"},
-		{src:"images/map6.png?1574195719760", id:"map6"},
-		{src:"images/map60.png?1574195719760", id:"map60"},
-		{src:"images/map61.png?1574195719760", id:"map61"},
-		{src:"images/map7.png?1574195719760", id:"map7"},
-		{src:"images/map8.png?1574195719760", id:"map8"},
-		{src:"images/map9.png?1574195719760", id:"map9"},
-		{src:"images/s3_bg.png?1574195719760", id:"s3_bg"},
-		{src:"images/sence1.png?1574195719760", id:"sence1"},
-		{src:"images/sence2.png?1574195719760", id:"sence2"}
+		{src:"images/Asset22x8.png?1574195954063", id:"Asset22x8"},
+		{src:"images/Asset32x8.png?1574195954063", id:"Asset32x8"},
+		{src:"images/bg.jpg?1574195954063", id:"bg"},
+		{src:"images/btn_face0.png?1574195954063", id:"btn_face0"},
+		{src:"images/btn_face1.png?1574195954063", id:"btn_face1"},
+		{src:"images/btn_text1.png?1574195954063", id:"btn_text1"},
+		{src:"images/btn_text2.png?1574195954063", id:"btn_text2"},
+		{src:"images/btn_text3.png?1574195954063", id:"btn_text3"},
+		{src:"images/map1.png?1574195954063", id:"map1"},
+		{src:"images/map10.png?1574195954063", id:"map10"},
+		{src:"images/map11.png?1574195954063", id:"map11"},
+		{src:"images/map12.png?1574195954063", id:"map12"},
+		{src:"images/map13.png?1574195954063", id:"map13"},
+		{src:"images/map14.png?1574195954063", id:"map14"},
+		{src:"images/map15.png?1574195954063", id:"map15"},
+		{src:"images/map16.png?1574195954063", id:"map16"},
+		{src:"images/map17.png?1574195954063", id:"map17"},
+		{src:"images/map18.png?1574195954063", id:"map18"},
+		{src:"images/map19.png?1574195954063", id:"map19"},
+		{src:"images/map2.png?1574195954063", id:"map2"},
+		{src:"images/map20.png?1574195954063", id:"map20"},
+		{src:"images/map21.png?1574195954063", id:"map21"},
+		{src:"images/map22.png?1574195954063", id:"map22"},
+		{src:"images/map23.png?1574195954063", id:"map23"},
+		{src:"images/map24.png?1574195954063", id:"map24"},
+		{src:"images/map25.png?1574195954063", id:"map25"},
+		{src:"images/map26.png?1574195954063", id:"map26"},
+		{src:"images/map27.png?1574195954063", id:"map27"},
+		{src:"images/map28.png?1574195954063", id:"map28"},
+		{src:"images/map29.png?1574195954063", id:"map29"},
+		{src:"images/map3.png?1574195954063", id:"map3"},
+		{src:"images/map30.png?1574195954063", id:"map30"},
+		{src:"images/map31.png?1574195954063", id:"map31"},
+		{src:"images/map32.png?1574195954063", id:"map32"},
+		{src:"images/map33.png?1574195954063", id:"map33"},
+		{src:"images/map34.png?1574195954063", id:"map34"},
+		{src:"images/map35.png?1574195954063", id:"map35"},
+		{src:"images/map36.png?1574195954063", id:"map36"},
+		{src:"images/map37.png?1574195954063", id:"map37"},
+		{src:"images/map38.png?1574195954063", id:"map38"},
+		{src:"images/map39.png?1574195954063", id:"map39"},
+		{src:"images/map4.png?1574195954063", id:"map4"},
+		{src:"images/map40.png?1574195954063", id:"map40"},
+		{src:"images/map41.png?1574195954063", id:"map41"},
+		{src:"images/map42.png?1574195954063", id:"map42"},
+		{src:"images/map43.png?1574195954063", id:"map43"},
+		{src:"images/map44.png?1574195954063", id:"map44"},
+		{src:"images/map45.png?1574195954063", id:"map45"},
+		{src:"images/map46.png?1574195954063", id:"map46"},
+		{src:"images/map47.png?1574195954063", id:"map47"},
+		{src:"images/map48.png?1574195954063", id:"map48"},
+		{src:"images/map49.png?1574195954063", id:"map49"},
+		{src:"images/map5.png?1574195954063", id:"map5"},
+		{src:"images/map50.png?1574195954063", id:"map50"},
+		{src:"images/map51.png?1574195954063", id:"map51"},
+		{src:"images/map52.png?1574195954063", id:"map52"},
+		{src:"images/map53.png?1574195954063", id:"map53"},
+		{src:"images/map54.png?1574195954063", id:"map54"},
+		{src:"images/map55.png?1574195954064", id:"map55"},
+		{src:"images/map56.png?1574195954064", id:"map56"},
+		{src:"images/map57.png?1574195954064", id:"map57"},
+		{src:"images/map58.png?1574195954064", id:"map58"},
+		{src:"images/map59.png?1574195954064", id:"map59"},
+		{src:"images/map6.png?1574195954064", id:"map6"},
+		{src:"images/map60.png?1574195954064", id:"map60"},
+		{src:"images/map61.png?1574195954064", id:"map61"},
+		{src:"images/map7.png?1574195954064", id:"map7"},
+		{src:"images/map8.png?1574195954064", id:"map8"},
+		{src:"images/map9.png?1574195954064", id:"map9"},
+		{src:"images/s3_bg.png?1574195954064", id:"s3_bg"},
+		{src:"images/sence1.png?1574195954064", id:"sence1"},
+		{src:"images/sence2.png?1574195954064", id:"sence2"}
 	],
 	preloads: []
 };
