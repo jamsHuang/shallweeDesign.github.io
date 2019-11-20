@@ -186,8 +186,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,0,0);
 				main.mc_en.y = en_startY + (num - 0.5) * diffY;
 			}
 			//
-			var ratio = stage.canvas.clientWidth * 2 / 1024;
-			var data = ctx.getImageData((580 + evt.currentTarget.x) * ratio, 144 * ratio, 1, 1).data;
+			var ratio = stage.canvas.clientWidth / 1024;
+			var data = ctx.getImageData((580 + evt.currentTarget.x) * ratio, 146 * ratio, 1, 1).data;
 			var currentRGBA = 'rgba(' + data[0] + ',' + data[1] + ',' + data[2] + ',' + data[3] / 255 + ')';
 			main.mc_light.shape.graphics._fill.style = currentRGBA;
 			if (num < 0.5) {
@@ -295,10 +295,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/bg_12x.jpg?1574097839608", id:"bg_12x"},
-		{src:"images/colorbar.jpg?1574097839608", id:"colorbar"},
-		{src:"images/energy.png?1574097839608", id:"energy"},
-		{src:"images/pointer2x.png?1574097839608", id:"pointer2x"}
+		{src:"images/bg_12x.jpg?1574221791635", id:"bg_12x"},
+		{src:"images/colorbar.jpg?1574221791635", id:"colorbar"},
+		{src:"images/energy.png?1574221791635", id:"energy"},
+		{src:"images/pointer2x.png?1574221791635", id:"pointer2x"}
 	],
 	preloads: []
 };
