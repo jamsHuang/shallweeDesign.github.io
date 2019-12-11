@@ -34,7 +34,6 @@
   <script language="JavaScript" type="text/javascript" src="https://www.citibank.com.tw/sim/zh-tw/js/open_card_info.js"></script>
   <script language="JavaScript">
     var timer;
-
     function checkShowHide() {
       if ($('#openCardModal').hasClass("openCardshow")) {
         clearTimeout(timer);
@@ -45,11 +44,6 @@
     }
     $(function() {
       checkShowHide();
-      console.log('i/m ready');
-    });
-    $(document).ready(function() {
-      checkShowHide();
-      console.log('ready');
     });
   </script>
 </body>
