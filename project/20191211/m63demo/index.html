@@ -1,18 +1,19 @@
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Citibank Taiwan 花旗(台灣)銀行</title>
-<META HTTP-EQUIV="Pragma" CONTENT="no=cache">
-<meta http-equiv="Content-Control" content="no-cache">
-<meta http-equiv="Cache-Control" content="no-cache">
-<META HTTP-EQUIV="Expires" CONTENT="-1">
-<meta name="viewport" content="width=device-width,initial-scale=0.0,minimum-scale=1.0,maximum-scale=0.0" />
-<!-- <link href="https://www.citibank.com.tw/sim/zh-tw/css/open_card_info.css" rel="stylesheet" type="text/css"> -->
-<link href="https://www.citibank.com.tw/sim/zh-tw/css/open_card_info.css" rel="stylesheet" type="text/css">
-<script language="JavaScript" type="text/javascript" src="https://www.citibank.com.tw/JPC/portal/js/citi_s_code.js" ></script>
-<script language="JavaScript" type="text/javascript" src="https://www.citibank.com.tw/JPC/portal/js/sitecatalyst_page_code.js" ></script>
 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Citibank Taiwan 花旗(台灣)銀行</title>
+  <META HTTP-EQUIV="Pragma" CONTENT="no=cache">
+  <meta http-equiv="Content-Control" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <META HTTP-EQUIV="Expires" CONTENT="-1">
+  <meta name="viewport" content="width=device-width,initial-scale=0.0,minimum-scale=1.0,maximum-scale=0.0" />
+  <!-- <link href="https://www.citibank.com.tw/sim/zh-tw/css/open_card_info.css" rel="stylesheet" type="text/css"> -->
+  <link href="https://www.citibank.com.tw/sim/zh-tw/css/open_card_info.css" rel="stylesheet" type="text/css">
+  <script language="JavaScript" type="text/javascript" src="https://www.citibank.com.tw/JPC/portal/js/citi_s_code.js"></script>
+  <script language="JavaScript" type="text/javascript" src="https://www.citibank.com.tw/JPC/portal/js/sitecatalyst_page_code.js"></script>
 </head>
+
 <body>
   <!-- <script>
     var param = '';
@@ -30,21 +31,22 @@
   <script language="JavaScript" type="text/javascript" src="https://www.citibank.com.tw/global_docs/js/xss.js"></script>
   <!-- <script language="JavaScript" type="text/javascript" src="https://www.citibank.com.tw/sim/zh-tw/js/open_card_info.js"></script> -->
   <script language="JavaScript" type="text/javascript" src="https://www.citibank.com.tw/sim/zh-tw/js/open_card_info.js"></script>
-  <script>
-  $(function(){
-    $(window).on('load',function () {
-      checkShowHide();
-    });
-    var timer;
-    function checkShowHide(){
-      if($('#openCardModal').hasClass("openCardshow")){
-        clearTimeout(timer);
-      }else{
-        $('#openCardModal').addClass("openCardshow");
-        timer = setTimeout(checkShowHide,500);
+  <script language="JavaScript">
+    $(function() {
+      $(window).on('load', function() {
+        checkShowHide();
+      });
+      var timer;
+      function checkShowHide() {
+        if ($('#openCardModal').hasClass("openCardshow")) {
+          clearTimeout(timer);
+        } else {
+          $('#openCardModal').addClass("openCardshow");
+          timer = setTimeout(checkShowHide, 500);
+        }
       }
-    }
-  });
+    });
   </script>
 </body>
+
 </html>
