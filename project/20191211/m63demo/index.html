@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Citibank Taiwan 花旗(台灣)銀行</title>
@@ -32,24 +33,23 @@
   <!-- <script language="JavaScript" type="text/javascript" src="https://www.citibank.com.tw/sim/zh-tw/js/open_card_info.js"></script> -->
   <script language="JavaScript" type="text/javascript" src="https://www.citibank.com.tw/sim/zh-tw/js/open_card_info.js"></script>
   <script language="JavaScript">
-    $(function() {
-      $(window).on('load', function() {
-        checkShowHide();
-      });
-      var timer;
-      function checkShowHide() {
-        if ($('#openCardModal').hasClass("openCardshow")) {
-          clearTimeout(timer);
-        } else {
-          $('#openCardModal').addClass("openCardshow");
-          timer = setTimeout(checkShowHide, 500);
-        }
-      }
-    });
+    var timer;
 
+    function checkShowHide() {
+      if ($('#openCardModal').hasClass("openCardshow")) {
+        clearTimeout(timer);
+      } else {
+        $('#openCardModal').addClass("openCardshow");
+        timer = setTimeout(checkShowHide, 500);
+      }
+    }
+    $(function() {
+      checkShowHide();
+      console.log('i/m ready');
+    });
     $(document).ready(function() {
-    // document is loaded and DOM is ready
-      alert("document is ready");
+      checkShowHide();
+      console.log('ready');
     });
   </script>
 </body>
