@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title></title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="" class="logo"><img class="logo__img" src="img/logo.png" /></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="#index">首頁</a></li>
+      <li><a href="#commercial">影片介紹</a></li>
+      <li><a href="#about">美白迷思</a></li>
+      <li><a href="#intro">植萃美白</a></li>
+      <li><a href="#form">領取試用</a></li>
+    </ul>
+  </header>
+
+  <div class="bg3" data-0="opacity:0;display:none;">
+  </div>
+  <div class="bg2" data-0="opacity:0;display:none;" data-1700="opacity:0;display:block;" data-2000="opacity:1" data-2300="opacity:1" data-2500="opacity:0">
+  </div>
+  <div class="bg1" data-0="opacity:1" data-1600="opacity:1;" data-1800="opacity:0;" data-2300="opacity:0" data-2500="opacity:1">
+  </div>
+  <section class="a0" id="index" data-0="opacity: 1;top:0" data-500="opacity: 0;top:0">
+    <div class="a0__title">
+      <h6 class="a0__title__text rl animated fadeInDown font-jpm">
+        美白我只相信
+      </h6>
+      <div class="a0__title__logo animated flipInY delay-1s">
+        <img src="img/logo-v.png" />
+      </div>
+    </div>
+  </section>
+  <section class="a1" data-0="opacity:0;" data-500="opacity:0" data-1000="opacity:1" data-1600="opacity:1;" data-1800="opacity:0;display:block;" data-2000="display:none;">
+    <div class="kaleidoscope">
+      <canvas id="kale"></canvas>
+      <img id="defaultImg" class="hidden" src="img/bg_kai.jpg"></img>
+    </div>
+  </section>
+  <section class="a2" data-1000="opacity:0" data-1200="opacity:1" data-1600="opacity:1;" data-1800="opacity:0;">
+    <h5 class="a2__text1 rl font-jpb" data-1000="top:20%;" data-1200="top:50%;">植萃新科技</h5>
+    <h5 class="a2__text2 rl font-jpb" data-1000="top:100%" data-1200="top:50%">自主亮白透出來</h5>
+    <h6 class="a2__text3 rl font-jpm" data-1100="background-color:rgb(255,255,255);color:rgb(228,0,127);" data-1300="background-color:rgb(228,0,127);color:rgb(255,255,255);"> 植萃綺肌露 新發售</h6>
+  </section>
+
+  <section class="a3" data-1600="display:none;" data-1800="display:block;opacity:0;" data-2000="opacity:1;" data-2300="opacity:1" data-2500="opacity:0;">
+    <h4 class="a3__text2 rl font-jpb" data-1800="top:30%;" data-2000="top:50%;" data-2300="top:50%" data-2500="top:80%">植萃科技再突破</h4>
+    <h6 class="a3__text1 rl font-jpm" data-1800="top:80%;" data-2000="top:50%;" data-2300="top:50%" data-2500="top:30%">百年美白科學研究所</h6>
+  </section>
+  <section id="commercial" class="a4" data-2200="opacity:0;transform:scale(0)" data-2500="opacity:1;transform:scale(1)" data-2700="opacity:1;" data-2900="opacity:0;">
+    <figure class="a4__video">
+      <img class="a4__video__cover" src="img/video_cover.jpg"/>
+      <button class="a4__video__button" data-2300="opacity:0;transform:scale(0)" data-2500="opacity:1;transform:scale(1)" name="play"></button>
+    </figure>
+  </section>
+  <section class="a5" data-2700="top:30%;opacity:0;" data-2900="top:0;opacity:1;"  data-3900="left:-0%;" data-4200="left:-150%;">
+    <div class="a5__model" data-2800="bottom:-100%;right:-100%;" data-3000="bottom:0;right:-10%;"></div>
+    <h1 class="a5__title rl font-jpm" data-2700="opacity:0" data-2900="opacity:1" data-3200="transform:scaleX(1);opacity:1" data-3500="transform:scaleX(0);opacity:0">保濕<span class="upright">≠</span>美白</h1>
+    <h6 class="a5__text rl font-jpm" data-2900="opacity:0" data-3000="opacity:1;" data-3200="transform:scaleX(1);opacity:1" data-3500="transform:scaleX(0);opacity:0">冬季敏感肌膚通常使用保濕產品保養可略顯美白作用，<br class="hidePC"/>但實際上暗沈問題還是存在！</h6>
+    <h2 class="a5__title a5__title2 rl font-jpm" data-3500="opacity:0;transform:scaleX(0);" data-3700="opacity:1;transform:scaleX(1);">做好保濕，<br/>為什麼還是暗沉？</h2>
+    <h6 class="a5__text a5__text2 rl font-jpm" data-3500="opacity:0;transform:scaleX(0);" data-3700="opacity:1;transform:scaleX(1);">因為黑色素造成的細微斑點散佈肌膚各處！</h6>
+  </section>
+  <section class="a6" data-3900="left:150%" data-4200="left:0">
+    <h4 class="a6__title rl font-jpb" data-3900="" data-4200="">冬季白皙計畫</h4>
+    <h6 class="a6__text rl font-jpm" data-3900="" data-4200="">啟動肌膚自主亮白力</h6>
+    <h4 class="a6__title2 rl font-jpb" data-3900="" data-4200="">領取試用包<span></span></h4>
+    <h6 class="a6__text2 rl font-jpm" data-3900="" data-4200="">深入了解植萃美白新科技</h6>
+  </section>
+  <div class="production" data-0="opacity:0;transform:scale(5);" data-700="opacity:1;transform:scale(0.4);" data-1600="opacity:1;transform:scale(0.4);" data-1800="opacity:1;transform:scale(5);" data-2000="opacity:0;transform:scale(7);"  data-3900="left:100%;opacity:0;transform:scale(0.4);" data-4200="left:-10%;opacity:1;">
+  </div>
+
+  <div class="loading">
+
+  </div>
+  <script type="text/javascript" src="js/lib/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/lib/skrollr.min.js"></script>
+  <script type="text/javascript" src="js/lib/kaleidoscope.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+@import "layout/menu";
+@import "layout/text";
+
+.wrapper{
+  padding-top: 55px;
+}
+a, a:visited, a:hover, a:focus {
+  color: black;
+}
+img{
+  width: 100%;
+}
+.hidePC{
+  display:block;
+}
+
+@media (min-width: 768px){
+  .wrapper{
+    padding-top: 55px;
+  }
+  .hidePC{
+    display:none;
+  }
+}
