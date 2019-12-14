@@ -1043,11 +1043,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Asset22x100.jpg?1576318464031", id:"Asset22x100"},
-		{src:"images/Asset22x8.png?1576318464031", id:"Asset22x8"},
-		{src:"images/Asset32x8.png?1576318464031", id:"Asset32x8"},
-		{src:"images/Asset42x8.png?1576318464031", id:"Asset42x8"},
-		{src:"images/farm2x8.png?1576318464031", id:"farm2x8"}
+		{src:"images/Asset22x100.jpg?1576318635032", id:"Asset22x100"},
+		{src:"images/Asset22x8.png?1576318635032", id:"Asset22x8"},
+		{src:"images/Asset32x8.png?1576318635032", id:"Asset32x8"},
+		{src:"images/Asset42x8.png?1576318635032", id:"Asset42x8"},
+		{src:"images/farm2x8.png?1576318635032", id:"farm2x8"}
 	],
 	preloads: []
 };
