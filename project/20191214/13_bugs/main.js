@@ -121,7 +121,7 @@ p.nominalBounds = new cjs.Rectangle(-51.7,-21.7,103.5,43.5);
 
 	// Layer_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("rgba(204,204,204,0.6)").s().p("Ao/E0IAApnIR/AAIAAJng");
+	this.shape.graphics.f("rgba(153,153,153,0.647)").s().p("Ao/E0IAApnIR/AAIAAJng");
 	this.shape.setTransform(0,0.025);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
@@ -152,15 +152,13 @@ p.nominalBounds = new cjs.Rectangle(-80.5,-19.5,161.1,39.1);
 	this.text_blue.name = "text_blue";
 	this.text_blue.lineHeight = 17;
 	this.text_blue.lineWidth = 15;
-	this.text_blue.alpha = 0.60000000;
 	this.text_blue.parent = this;
 	this.text_blue.setTransform(89.8,42.5);
 
 	this.text_yellow = new cjs.Text("0", "bold 15px 'Helvetica'", "#333333");
 	this.text_yellow.name = "text_yellow";
 	this.text_yellow.lineHeight = 17;
-	this.text_yellow.lineWidth = 15;
-	this.text_yellow.alpha = 0.60000000;
+	this.text_yellow.lineWidth = 16;
 	this.text_yellow.parent = this;
 	this.text_yellow.setTransform(89.8,6.6);
 
@@ -168,7 +166,6 @@ p.nominalBounds = new cjs.Rectangle(-80.5,-19.5,161.1,39.1);
 	this.text_white.name = "text_white";
 	this.text_white.lineHeight = 17;
 	this.text_white.lineWidth = 15;
-	this.text_white.alpha = 0.60000000;
 	this.text_white.parent = this;
 	this.text_white.setTransform(89.8,24.5);
 
@@ -193,7 +190,7 @@ p.nominalBounds = new cjs.Rectangle(-80.5,-19.5,161.1,39.1);
 	this.mark.lineHeight = 62;
 	this.mark.lineWidth = 53;
 	this.mark.parent = this;
-	this.mark.setTransform(30.05,3.45);
+	this.mark.setTransform(30.05,3.35);
 
 	this.timeline.addTween(cjs.Tween.get(this.mark).wait(1));
 
@@ -203,7 +200,7 @@ p.nominalBounds = new cjs.Rectangle(-80.5,-19.5,161.1,39.1);
 	this.shape_3.setTransform(30.225,29.975);
 
 	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f("rgba(204,204,255,0.718)").s().p("AkcEdIAAo5II5AAIAAI5g");
+	this.shape_4.graphics.f("rgba(102,204,153,0.62)").s().p("AkcEdIAAo5II5AAIAAI5g");
 	this.shape_4.setTransform(30.225,29.975);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_4},{t:this.shape_3}]}).wait(1));
@@ -216,7 +213,7 @@ p.nominalBounds = new cjs.Rectangle(-80.5,-19.5,161.1,39.1);
 
 	this.timeline.addTween(cjs.Tween.get(this.hitbg).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.hit_area, new cjs.Rectangle(0,-0.6,115.2,66.1), null);
+}).prototype = getMCSymbolPrototype(lib.hit_area, new cjs.Rectangle(0,-0.6,115.2,66), null);
 
 
 // stage content:
@@ -1025,7 +1022,7 @@ p.nominalBounds = new cjs.Rectangle(-80.5,-19.5,161.1,39.1);
 	this.text_total.textAlign = "center";
 	this.text_total.lineHeight = 48;
 	this.text_total.lineWidth = 40;
-	this.text_total.alpha = 0.70980392;
+	this.text_total.alpha = 0.70588235;
 	this.text_total.parent = this;
 	this.text_total.setTransform(74.45,701.7);
 
@@ -1046,11 +1043,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Asset22x100.jpg?1575499026020", id:"Asset22x100"},
-		{src:"images/Asset22x8.png?1575499026020", id:"Asset22x8"},
-		{src:"images/Asset32x8.png?1575499026020", id:"Asset32x8"},
-		{src:"images/Asset42x8.png?1575499026020", id:"Asset42x8"},
-		{src:"images/farm2x8.png?1575499026020", id:"farm2x8"}
+		{src:"images/Asset22x100.jpg?1576318464031", id:"Asset22x100"},
+		{src:"images/Asset22x8.png?1576318464031", id:"Asset22x8"},
+		{src:"images/Asset32x8.png?1576318464031", id:"Asset32x8"},
+		{src:"images/Asset42x8.png?1576318464031", id:"Asset42x8"},
+		{src:"images/farm2x8.png?1576318464031", id:"farm2x8"}
 	],
 	preloads: []
 };
