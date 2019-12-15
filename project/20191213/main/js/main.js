@@ -36,7 +36,7 @@ $(function() {
 	resolution: 512,
 	dropRadius: 25,
 	perturbance: 0.04,
-  interactive:true,
+  interactive:false,
   crossOrigin:"anonymous",
   imageUrl:"img/bg_kai.jpg"
   });

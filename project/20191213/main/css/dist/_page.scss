@@ -390,18 +390,58 @@ section {
       margin-left: -0.5em;
     }
   }
+}
 
-  &__bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url("../img/bg_kai.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    pointer-events: none;
+.b9 {
+  width: 100%;
+  height: 100%;
+
+  &__title {
+    left: 50%;
+    top: 50%;
+
+    &__1 {
+      margin-left: -150px;
+      margin-top: -62px;
+    }
+
+    &__2 {
+      margin-left: -190px;
+      margin-top: -20px;
+    }
   }
+
+  &__text {
+    left: 50%;
+    top: 50%;
+
+    &__1 {
+      margin-left: -220px;
+      margin-top: -60px;
+    }
+
+    &__2 {
+      background-color: rgb(228, 0, 127);
+      color: rgb(255, 255, 255);
+      padding: 5px;
+      margin-left: -250px;
+      font-size: 12px;
+      letter-spacing: 3px;
+      margin-top: -60px;
+    }
+  }
+}
+
+.b__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg_kai.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  pointer-events: none;
 }
 
 #kale {
