@@ -49,6 +49,7 @@ else{
               rad = Math.PI/180*deg;
               moveX = Math.sin(rad)*r;
               deg+=0.5;
+              //console.log("de",deg);
               if(deg>360){
                 deg=0;
               }

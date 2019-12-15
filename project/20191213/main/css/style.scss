@@ -10,3 +10,4 @@
 @import "dist/vendor";
 @import "dist/layout";
 @import "dist/page";
+* { touch-action: pan-y; }

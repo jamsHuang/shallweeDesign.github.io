@@ -115,6 +115,8 @@ section {
 }
 
 .a5 {
+  pointer-events: none;
+
   &__title {
     width: auto;
     height: 100%;
@@ -149,32 +151,261 @@ section {
 
   &__text2 {}
 }
-.a6{
-  h4, h6{
+
+.a6 {
+  h4,
+  h6 {
     left: 50%;
-    top:50%;
+    top: 50%;
   }
-  &__title{
 
+  &__title {
+    margin-left: -100px;
+    margin-top: -205px;
   }
-  &__text{
 
+  &__text {
+    margin-top: -175px;
+    margin-left: -130px;
+  }
+
+  &__title2 {
+    margin-left: -100px;
+    margin-top: -155px;
+
+    &__arr {
+      display: inline-block;
+      width: 18px;
+      vertical-align: sub;
+    }
+  }
+
+  &__text2 {
+    margin-top: -195px;
+    margin-left: -130px;
+  }
+
+  .production_s {
+    height: 55%;
+    margin-top: -30%;
   }
 }
+
+.b1 {
+  width: 100%;
+  height: 100%;
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -140px;
+    margin-left: 19px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -114px;
+    margin-left: -10px;
+  }
+}
+
+.b2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 220px;
+    letter-spacing: 10px;
+    margin-left: 50px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    margin-top: 260px;
+    left: 50%;
+    letter-spacing: 5px;
+    margin-left: 130px;
+  }
+}
+
+.b3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 220px;
+    letter-spacing: 10px;
+    margin-left: 50px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    margin-top: 260px;
+    left: 50%;
+    letter-spacing: 5px;
+    margin-left: 130px;
+  }
+}
+
+.b4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 220px;
+    letter-spacing: 10px;
+    margin-left: 50px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    margin-top: 260px;
+    left: 50%;
+    letter-spacing: 5px;
+    margin-left: 130px;
+  }
+}
+
+.b5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 10px;
+    height: 100%;
+    margin-left: 210px;
+    margin-top: -200px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 5px;
+    margin-top: -150px;
+    margin-left: 170px;
+  }
+}
+
+.b6 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 10px;
+    height: 100%;
+    margin-left: 210px;
+    margin-top: -200px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 5px;
+    margin-top: -200px;
+    margin-left: 250px;
+  }
+
+  &__text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 5px;
+    margin-top: -150px;
+    margin-left: 170px;
+  }
+}
+
+.b7 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 10px;
+    height: 100%;
+    margin-left: 210px;
+    margin-top: -200px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 5px;
+    margin-top: -150px;
+    margin-left: 170px;
+  }
+}
+
+.b8 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  &__txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    margin-top: -180px;
+
+    &__title {
+      margin-left: -0.5em;
+      margin-top: -1.1em;
+    }
+
+    &__text {
+      margin-left: -0.5em;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg_kai.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
 #kale {
   max-width: none;
-}
-
-.production {
-  pointer-events: none;
-  background-position: center;
-  background-image: url("../img/production.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 120%;
-  height: 120%;
-  left: -10%;
-  top: 0;
 }
 @media(min-width:768px) {
   .a0 {
@@ -242,6 +473,14 @@ section {
     }
   }
 
+  .a6 {
+    .production_s {
+      margin-top: -240px;
+      margin-left: -402px;
+      height: 500px;
+    }
+  }
+
   .production {
     width: 100%;
     height: 100%;
@@ -288,6 +527,27 @@ section {
     }
   }
 
+  .a6 {
+    &__title {
+      margin-left: -200px;
+      margin-top: -155px;
+    }
+
+    &__text {
+      margin-top: -75px;
+      margin-left: -235px;
+    }
+
+    &__title2 {
+      margin-left: -200px;
+      margin-top: -85px;
+    }
+
+    &__text2 {
+      margin-top: -155px;
+      margin-left: -235px;
+    }
+  }
 
   .production {}
 }
