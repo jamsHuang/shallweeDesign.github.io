@@ -6,8 +6,8 @@ $(function() {
       //console.log(hash, top);
     }
   });
-  ml = (window.innerWidth - $("#kale").width()) / 2;
-  $("#kale").css("margin-left", ml);
+  //ml = (window.innerWidth - $("#kale").width()) / 2;
+  //$("#kale").css("margin-left", ml);
   var img_ready = false;
   var kcp = document.getElementById("kale__copy");
   var ktx = kcp.getContext("2d");
@@ -29,7 +29,6 @@ $(function() {
       ktx.drawImage(img_cover, 0, 0);
       ktx.globalCompositeOperation = 'source-in';
       ktx.drawImage(canvas, 0, 0, canvas.width, canvas.height, 0, 0, 400, 400);
-
     }
   }
   $('.ripple__holder').ripples({
