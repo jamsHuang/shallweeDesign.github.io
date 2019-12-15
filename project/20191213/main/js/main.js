@@ -1,6 +1,24 @@
 $(function() {
-
-  var skrollr_obj = skrollr.init();
+  var ripple_tf = false;
+  var skrollr_obj = skrollr.init({
+    render: function(data) {
+            //Log the current scroll position.
+            // console.log(data.curTop);
+            if(data.curTop>=9700){
+              if(ripple_tf==false){
+                ripple_tf = true;
+                $('.ripple__holder').ripples({
+              	resolution: 512,
+              	dropRadius: 25,
+              	perturbance: 0.04,
+                interactive:false,
+                crossOrigin:"anonymous",
+                imageUrl:"img/bg_kai.jpg"
+                });
+              }
+            }
+        }
+  });
   var skrollr_menu = skrollr.menu.init(skrollr_obj, {
     change: function(hash, top) {
       //console.log(hash, top);
@@ -31,21 +49,17 @@ $(function() {
       ktx.drawImage(canvas, 0, 0, canvas.width, canvas.height, 0, 0, 400, 400);
     }
   }
-  $('.ripple__holder').ripples({
-	resolution: 512,
-	dropRadius: 25,
-	perturbance: 0.04,
-  interactive:false,
-  crossOrigin:"anonymous",
-  imageUrl:"img/bg_kai.jpg"
-  });
-  setInterval(function() {
-		var $el = $('.ripple__holder');
-		var x = Math.random() * $el.outerWidth();
-		var y = Math.random() * $el.outerHeight();
-		var dropRadius = 20;
-		var strength = 0.04 + Math.random() * 0.04;
 
-		$el.ripples('drop', x, y, dropRadius, strength);
-	}, 700);
+  setInterval(function() {
+    if(ripple_tf==true){
+      var $el = $('.ripple__holder');
+      var x = Math.random() * $el.outerWidth();
+      var y = Math.random() * $el.outerHeight();
+      var dropRadius = 20;
+      var strength = 0.04 + Math.random() * 0.04;
+
+      $el.ripples('drop', x, y, dropRadius, strength);
+
+  }}, 700);
+
 });
