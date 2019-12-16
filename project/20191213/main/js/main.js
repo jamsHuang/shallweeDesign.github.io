@@ -127,6 +127,10 @@ $(function() {
 
   })
 
+  $('.ig__btn, .ig__btn2').on('click',function(){
+    console.log('ig_bt');
+  })
+
   function step3(){
       formNum = 3;
       $('.form__step1').hide();
