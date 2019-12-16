@@ -1,14 +1,17 @@
+
 .wordcloud {
-  position: absolute;
+
   width: 100%;
   height: 100%;
   top: 50%;
-  transform: scale(0.9);
-  margin-top: -320px;
+  transform: scale(0.35);
+  margin-top: -420px;
   left: 50%;
-  margin-left: -860px;
+  margin-left: -275px;
 
   &_text {
+    width: 700px;
+    height: 100%;
     font-family: "GenYoMinTW-Bold";
     position: absolute;
     top: 10px;
@@ -197,6 +200,213 @@
       top: 620px;
       left: 533px;
       font-size: 28px;
+    }
+  }
+}
+@media(min-width:768px){
+  .wordcloud {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: scale(0.9);
+    margin-top: -320px;
+    left: 50%;
+    margin-left: -860px;
+    pointer-events: none;
+
+    &_text {
+      width: 100%;
+      height: 100%;
+      font-family: "GenYoMinTW-Bold";
+      position: absolute;
+      top: 10px;
+
+      &_0 {
+        font-size: 20px;
+        top: 0;
+        left: 238px;
+      }
+
+      &_1 {
+        font-size: 44px;
+        top: 43px;
+        left: 303px;
+      }
+
+      &_2 {
+        font-size: 55px;
+        top: 32px;
+        left: 442px;
+      }
+
+      &_3 {
+        font-size: 25px;
+        top: 182px;
+        left: 175px;
+      }
+
+      &_4 {
+        top: 98px;
+        left: 252px;
+        font-size: 120px;
+      }
+
+      &_5 {
+        top: 98px;
+        left: 612px;
+        font-size: 40px;
+      }
+
+      &_6 {
+        top: 141px;
+        left: 614px;
+        font-size: 26px;
+      }
+
+      &_7 {
+        top: 138px;
+        left: 742px;
+        font-size: 20px;
+      }
+
+      &_8 {
+        top: 178px;
+        left: 612px;
+        font-size: 50px;
+      }
+
+      &_9 {
+        top: 220px;
+        left: 206px;
+        font-size: 50px;
+      }
+
+      &_10 {
+        top: 220px;
+        left: 360px;
+        font-size: 82px;
+      }
+
+      &_11 {
+        top: 239px;
+        left: 610px;
+        font-size: 57px;
+      }
+
+      &_12 {
+        top: 272px;
+        left: 784px;
+        font-size: 20px;
+      }
+
+      &_13 {
+        top: 278px;
+        left: 125px;
+        font-size: 38px;
+      }
+
+      &_14 {
+        top: 278px;
+        left: 241px;
+        font-size: 38px;
+      }
+
+      &_15 {
+        top: 318px;
+        left: 82px;
+        font-size: 20px;
+      }
+
+      &_16 {
+        top: 321px;
+        left: 312px;
+        font-size: 50px;
+      }
+
+      &_17 {
+        top: 303px;
+        left: 468px;
+        font-size: 70px;
+      }
+
+      &_18 {
+        top: 304px;
+        left: 681px;
+        font-size: 40px;
+      }
+
+      &_19 {
+        top: 351px;
+        left: 682px;
+        font-size: 16px;
+      }
+
+      &_20 {
+        top: 378px;
+        left: 222px;
+        font-size: 111px;
+      }
+
+      &_21 {
+        top: 378px;
+        left: 557px;
+        font-size: 80px;
+      }
+
+      &_22 {
+        top: 459px;
+        left: 555px;
+        font-size: 56px;
+      }
+
+      &_23 {
+        top: 460px;
+        left: 723px;
+        font-size: 28px;
+      }
+
+      &_24 {
+        top: 485px;
+        left: 245px;
+        font-size: 20px;
+      }
+
+      &_25 {
+        top: 486px;
+        left: 313px;
+        font-size: 80px;
+      }
+
+      &_26 {
+        top: 516px;
+        left: 558px;
+        font-size: 28px;
+      }
+
+      &_27 {
+        top: 531px;
+        left: 183px;
+        font-size: 28px;
+      }
+
+      &_28 {
+        top: 565px;
+        left: 415px;
+        font-size: 22px;
+      }
+
+      &_29 {
+        top: 565px;
+        left: 489px;
+        font-size: 22px;
+      }
+
+      &_30 {
+        top: 620px;
+        left: 533px;
+        font-size: 28px;
+      }
     }
   }
 }
