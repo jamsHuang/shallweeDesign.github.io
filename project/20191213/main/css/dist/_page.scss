@@ -385,10 +385,7 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 50%;
-    left: 50%;
-    margin-top: -130px;
-
+    margin-top:-150px;
     &__title {
       margin-left: -0.5em;
       margin-top: -1.1em;
@@ -1070,20 +1067,23 @@ section {
     height: 100%;
 
     &__txt {
-      position: absolute;
+      position: relative;
       width: 100%;
       height: 100%;
-      top: 50%;
-      left: 50%;
-      margin-top: -180px;
 
       &__title {
+        top:50%;
+        left:50%;
         margin-left: -0.5em;
-        margin-top: -1.1em;
+        margin-top: calc( -1.1em);
       }
 
       &__text {
-        margin-left: -0.5em;
+        top: 50%;
+      width: auto;
+      left: 50%;
+      margin-left: -0.5em;
+      height: 100%;
       }
     }
   }

@@ -9,7 +9,7 @@ $(function() {
         if (ripple_tf == false) {
           ripple_tf = true;
           $('.ripple__holder').ripples({
-            resolution: 512,
+            resolution: 256,
             dropRadius: 25,
             perturbance: 0.04,
             interactive: false,
@@ -73,7 +73,7 @@ $(function() {
         ktx.drawImage(canvas, 0, 0, canvas.width, canvas.height, 0, 0, 400, 400);
       }
     }
-    if (wt % 70 == 0) {
+    if (wt % 350 == 0) {
       if (ripple_tf == true) {
         var $el = $('.ripple__holder');
         var x = Math.random() * $el.outerWidth();
