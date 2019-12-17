@@ -4910,6 +4910,7 @@ section {
 .b8__txt__text {
   margin-left: -0.5em;
   position: absolute;
+  height: 100%;
   top: 50%;
   left: 50%;
 }
