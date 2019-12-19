@@ -23,6 +23,14 @@ $(function() {
         skrollr.menu.click($('#a6__s6')[0]);
       }else if(nowTop>6600 && nowTop<7200){
         skrollr.menu.click($('#a6__s7')[0]);
+      }else if(nowTop>7200 && nowTop<7600){
+        skrollr.menu.click($('#a6__s8')[0]);
+      }else if(nowTop>7600 && nowTop<8000){
+        skrollr.menu.click($('#a6__s9')[0]);
+      }else if(nowTop>8000 && nowTop<8400){
+        skrollr.menu.click($('#a6__s10')[0]);
+      }else if(nowTop>8400 && nowTop<8800){
+        skrollr.menu.click($('#a6__s11')[0]);
       }
 
 
