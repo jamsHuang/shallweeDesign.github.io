@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title></title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="" class="logo"><img class="logo__img" src="img/logo.png" /></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="#index" data-menu-top="0">首頁</a></li>
+      <li><a href="#commercial" data-menu-top="3200">影片介紹</a></li>
+      <li><a href="#about" data-menu-top="4000">美白迷思</a></li>
+      <li><a href="#intro" data-menu-top="11200">植萃美白</a></li>
+      <li><a href="#form" data-menu-top="20000">領取試用</a></li>
+    </ul>
+  </header>
+
+  <section class="a1"  data-3200="opacity:1;display:block;top:0%" data-4000="top:0%">
+    <div class="kaleidoscope">
+      <canvas id="kale2"></canvas>
+      <img id="defaultImg2" class="hidden" src="img/bg_kai2.jpg"></img>
+    </div>
+  </section>
+
+  <div class="bg0" data-0="opacity:1;" data-3200="opacity:1;" data-3600="opacity:0;" data-4600="opacity:0" >
+  </div>
+  <div class="bg1" data-0="opacity:0;background-position:0%;" data-3200="opacity:1;background-position:100%;" data-3600="opacity:0;" data-4600="opacity:0" data-5000="opacity:1" data-6000="opacity:0;display:block;" data-6200="display:none;">
+  </div>
+  <div class="bg2" data-0="opacity:0;display:none;" data-1600="opacity:1;display:block;top:100%;" data-3200="opacity:1;top:-50%" data-4000="top:-150%;display:block;" data-4200="display:none;">
+  </div>
+  <div class="bg3" data-0="opacity:0;display:none;" data-10400="opacity:1;top:100%;display:block;" data-11200="opacity:1;top:0;">
+  </div>
+  <section class="a0" id="index" data-0="opacity: 1;top:0%" data-800="opacity: 1;top:0%; display:block;" data-1000="display:none;">
+    <div class="a0__title">
+      <h6 class="a0__title__text rl animated fadeInDown font-jpm">
+        美白我只相信
+      </h6>
+      <div class="a0__title__logo animated flipInY delay-1s">
+        <img src="img/logo-v.png" />
+      </div>
+    </div>
+  </section>
+
+  <section class="a1" data-0="opacity:1;top:100%;" data-800="opacity:1;top:0%" data-1600="opacity:1;top:-100%" data-2000="opacity:0;display:block;" data-2200="display:none;">
+    <div class="kaleidoscope">
+      <canvas id="kale"></canvas>
+      <img id="defaultImg" class="hidden" src="img/bg_kai.jpg"></img>
+    </div>
+  </section>
+  <section class="a2" data-0="opacity:0;top:100%;@class:a2 skrollable" data-400="top:50%;@class:a2 animated fadeInUp skrollable" data-800="top:0%;" data-1600="top:-100%;" data-1800="opacity:0;display:block;" data-2000="display:none;">
+    <h5 class="a2__text1 animated fadeInUp  rl font-jpb" data-0="top:50%;opacity:1" data-800="top:50%;">植萃新科技</h5>
+    <h5 class="a2__text2 animated fadeIn delay-1s rl font-jpb" data-0="top:50%;opacity:1" data-700="top:50%">自主亮白透出來</h5>
+    <h6 class="a2__text3 rl font-jpm" data-0="opacity:1;background-color:rgb(255,255,255);color:rgb(228,0,127);" data-800="background-color:rgb(228,0,127);color:rgb(255,255,255);"> 植萃綺肌露 新發售</h6>
+  </section>
+
+  <section class="a3" data-0="display:none;" data-800="display:block;top:100%;opacity:1;" data-1600="opacity:1;top:0%;" data-2400="opacity:1;top:0%;display:block;" data-3200="display:block;top:-50%;opacity:0;" data-3400="opacity:0;display:none;">
+    <h4 class="a3__text2 rl font-jpb" data-800="top:30%;" data-1600="top:50%;">植萃科技再突破</h4>
+    <h6 class="a3__text1 rl font-jpm" data-800="top:80%;" data-1600="top:50%;">百年美白科學研究所</h6>
+  </section>
+  <section id="commercial" class="a4" data-0="display:none;" data-2400="display:block;opacity:1;top:100%;" data-3200="top:0%;opacity:1" data-4000="top:-100%;">
+    <figure class="a4__video">
+      <!-- <iframe src="https://www.youtube.com/embed/OOG1Lx-ICc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+      <div class="a4__video__player" id="player"></div>
+      <div class="a4__video__cover" src="img/video_cover.jpg"></div>
+
+      <div class="a4__video__button" data-2400="opacity:0;transform:scale(0)" data-3200="opacity:1;transform:scale(1)" name="play"></div>
+    </figure>
+  </section>
+  <section class="a5" data-3200="opacity:0;top:100%;" data-4000="opacity:1;top:0%;" data-5200="top:0%;" data-6000="top:0%">
+    <div class="a5__model" data-3200="bottom:-100%;opacity:0" data-3600="bottom:-50%;opacity:1" data-4000="bottom:0%;" data-5200="display:block;" data-6000="display:none;"></div>
+    <div class="a5__skin" data-4400="top:3%;opacity:1;transform:scale(0);" data-5200="top:3%;opacity:1;transform:scale(4);display:block;" data-5400="display:none;" data-6000="display:none;"></div>
+    <div class="a5__black" data-5000="transform:scale(0)skew(0deg);border-radius:50%;opacity:0;" data-5200="transform:scale(2)skew(0deg);border-radius:50%;opacity:1;" data-6000="transform:scale(2)skew(-45deg);border-radius:0%;left:50%"
+      data-6800="left:300%"></div>
+    <!-- <h1 class="a5__title rl font-jpm" data-2900="opacity:0" data-3100="opacity:1" data-3500="opacity:1" data-3700="opacity:0">保濕<span class="upright">≠</span>美白</h1>
+    <h6 class="a5__text rl font-jpm" data-2900="opacity:0" data-3000="opacity:1;" data-3500="opacity:1" data-3700="opacity:0">冬季敏感肌膚通常使用保濕產品保養可略顯美白作用<span class="font-twm">，</span><br class="hidePC" />但實際上暗沈問題還是存在！</h6> -->
+    <h2 class="a5__title a5__title2 rl font-jpm" data-3200="left:25%;color:rgba(34,34,34,0);@class:skrollable a5__title a5__title2 rl font-jpm animated fadeInUp" data-3600="left:25%;color:rgba(34,34,34,1);"
+      data-4800="left:25%;color:rgba(34,34,34,1);display:inline-block;" data-5200="left:50%;color:rgba(255,255,255,1);" data-5900="display:inline-block;" data-6000="display:none;">做好保濕<span class="font-twm">，</span><br />為什麼還是暗沉？</h2>
+    <h6 class="a5__text a5__text2 rl font-jpm" data-3200="color:rgba(34,34,34,0);@class:skrollable a5__text a5__text2 rl font-jpm animated fadeInUp" data-3600="color:rgba(34,34,34,1);" data-4800="color:rgba(34,34,34,1);left:25%"
+      data-5200="color:rgba(255,255,255,1);left:50%" data-5900="display:block;" data-6000="display:none;">因為黑色素造成的細微斑點散佈肌膚各處！</h6>
+  </section>
+  <!-- <a id="a6__s0" href="#s0" data-menu-top="3400"></a> -->
+  <a id="a6__s1" href="#s0" data-menu-top="6800"></a>
+  <a id="a6__s2" href="#s0" data-menu-top="9600"></a>
+  <a id="a6__s3" href="#s0" data-menu-top="11200"></a>
+  <a id="a6__s4" href="#s1" data-menu-top="12000"></a>
+  <a id="a6__s5" href="#s1" data-menu-top="12800"></a>
+  <a id="a6__s6" href="#s1" data-menu-top="13600"></a>
+  <a id="a6__s7" href="#s1" data-menu-top="14400"></a>
+  <a id="a6__s8" href="#s1" data-menu-top="15200"></a>
+  <a id="a6__s9" href="#s1" data-menu-top="16000"></a>
+  <a id="a6__s10" href="#s1" data-menu-top="16800"></a>
+  <a id="a6__s11" href="#s2" data-menu-top="17600"></a>
+  <a id="a6__s12" href="#s2" data-menu-top="18400"></a>
+  <a id="a6__s13" href="#s2" data-menu-top="20000"></a>
+  <a id="a6__s14" href="#s2" data-menu-top="20800"></a>
+  <a id="a6__s15" href="#s2" data-menu-top="21600"></a>
+
+  <div class="a6__bg" data-5100="left:-200%" data-6800="left:50%;z-index:100;" data-7600="left:200%;display:block;z-index:102;"
+  data-8400="display:none;z-index:100;" data-8800="display:block;left:-200%" data-9600="left:50%" data-11200="left:250%;display:block;" data-11300="display:none;">
+  </div>
+  <section id="s0" class="a6" data-5200="top:100%" data-6000="left:0%;top:0%;" data-10400="left:0%;opacity:1;top:0%;" data-11200="top:-100%;left:0%;opacity:0">
+    <h4 class="a6__title rl font-jpb" data-0="display:none;@class:a6__title rl skrollable font-jpb;" data-6400="display:block;@class:a6__title rl skrollable font-jpb animated fadeInUp;"
+      data-7200="display:block;@class:a6__title rl font-jpb animated skrollable fadeInUp" data-8000="display:block;@class:a6__title rl font-jpb animated skrollable fadeOutUp" data-8800="display:none;">冬季白皙計畫</h4>
+    <h6 class="a6__text rl font-jpb" data-0="display:none;@class:a6__text rl skrollable font-jpb;" data-6400="display:block;@class:a6__text rl skrollable font-jpb animated fadeInUp;"
+      data-7200="@class:a6__text rl font-jpb animated skrollable fadeOutUp;display:block;" data-8800="display:none;">啟動肌膚自主亮白力</h6>
+    <h4 id="s2" class="a6__title2 rl font-jpb" data-0="display:none;@class:a6__title2 rl skrollable font-jpb;" data-8800="display:block;@class:a6__title2 rl skrollable font-jpb animated fadeInUp;"
+      data-9600="display:block;@class:a6__title2 rl font-jpb animated skrollable fadeInUp" data-10400="@class:a6__title2 rl font-jpb animated skrollable fadeOutUp;display:block;" data-11200="display:none;">領取試用包<span
+        class="a6__title2__arr animated infinite fadeInDown"><img src="img/arrow.png" /></span></h4>
+    <h6 class="a6__text2 rl font-jpb" data-0="display:none;@class:a6__text2 rl skrollable font-jpb;" data-8800="display:block;@class:a6__text2 rl skrollable font-jpb animated fadeInUp;"
+      data-9600="display:block;@class:a6__text2 rl font-jpb animated skrollable fadeInUp" data-10400="@class:a6__text2 rl font-jpb animated skrollable fadeOutUp;display:block;" data-11200="display:none;">深入了解植萃美白新科技</h6>
+    <div class="production_s" data-5800="display:none;" data-6000="display:block;opacity:0;transform:scale(0.5);" data-6800="opacity:1;transform:scale(0.9)"></div>
+  </section>
+  <section id="s1" class="b" data-0="display:none;opacity:0" data-10400="display:block;opacity:1;top:100%" data-11200="opacity:1;top:0%;">
+    <div class="b1 animated fadeInUp" data-10400="opacity:0;display:none;" data-10800="display:block;opacity:1;" data-11600="opacity:1;top:0%;" data-12000="opacity:0;top:-100%;">
+      <h4 class="b1__title rl font-jpb">植萃+美白三角</h4>
+      <h6 class="b1__text rl font-jpm">預防明日細微斑點<span class="font-twm">，</span>白皙看得見</h6>
+    </div>
+    <div class="b2" data-12000="opacity:0" data-12800="opacity:1;" data-13600="opacity:0">
+      <h4 class="b2__title font-jpb" data-11600="left:5%" data-12000="left:50%" data-12800="opacity:1;left:50%" data-13200="opacity:0;left:75%">改善全臉暗沉</h4>
+      <h6 class="b2__text font-jpm" data-11600="left:2%" data-12000="left:50%" data-12800="opacity:1;left:50%" data-13200="opacity:0;left:80%">革命性IBR亮白成分</h6>
+    </div>
+    <div class="b3" data-12800="opacity:0" data-13600="opacity:1" data-14400="opacity:0">
+      <h4 class="b3__title font-jpb" data-12800="left:2%" data-13200="left:50%" data-14000="opacity:1;left:50%" data-14400="opacity:0;left:75%">提升自主亮白力</h4>
+      <h6 class="b3__text font-jpm" data-12800="left:2%" data-13200="left:50%" data-14000="opacity:1;left:50%" data-14400="opacity:0;left:75%">積雪草植萃複方</h6>
+    </div>
+    <div class="b4" data-13600="opacity:0" data-14400="opacity:1" data-14800="opacity:0">
+      <h4 class="b4__title font-jpb" data-14000="left:2%" data-14400="left:50%">加速淡化黑色素</h4>
+      <h6 class="b4__text font-jpm" data-14000="left:2%" data-14400="left:50%">4MSK</h6>
+    </div>
+    <div class="b5" data-14400="opacity:0;top:100%" data-15200="opacity:1;top:0%;" data-16000="opacity:1;top:-100%;">
+      <h4 class="b5__title rl font-jpb" data-16000="left:50%" data-16400="left:50%">明星美白成分<span class="upright">4MSK</span></h4>
+      <h6 class="b5__text rl font-jpm" data-16000="left:50%" data-16400="left:50%">加速淡化黑色素</h6>
+    </div>
+
+    <div class="b6" data-15200="opacity:0;top:100%;" data-16000="opacity:1;top:0%;" data-16400="opacity:1;top:-100%" data-18800="opacity:0;top:-100%;">
+      <h6 class="b6__text rl font-jpm" data-16000="left:50%" data-16400="left:50%">資生堂獨家科技</h6>
+      <h4 class="b6__title rl font-jpb" data-16000="left:50%" data-16400="left:50%">革命性<span class="upright">IBR</span>亮白成分</h4>
+      <h6 class="b6__text2 rl font-jpm" data-16000="left:50%" data-16400="left:50%">改善全臉暗沉</h6>
+    </div>
+
+    <div class="b7" data-16000="opacity:0;top:100%" data-16800="opacity:1;top:0%" data-17200="opacity:1;top:-100%;" data-20000="opacity:0">
+      <h4 class="b7__title rl font-jpb" data-16000="left:50%" data-16400="left:50%">積雪草植萃複方</h4>
+      <h6 class="b7__text rl font-jpm" data-16000="left:50%" data-16400="left:50%">提升自主亮白力</h6>
+    </div>
+
+    <div class="tri" data-10000="opacity:0;transform:rotate(0deg)scale(1.5);"
+      data-10400="opacity:1;transform:rotate(-25deg)scale(1);@class:tri"
+      data-11200="transform:rotate(-50deg)scale(0.8);@class:tri tri-m"
+      data-12000="transform:rotate(-100deg)scale(0.8);" data-13600="transform:rotate(-150deg)scale(0.8)" data-14400="transform:rotate(-200deg)scale(0.8);top:50%;"
+      data-14800="transform:rotate(-200deg)scale(0.8);opacity:0;top:-100%;">
+      <img class="kale__copy__img" src="img/tri.png" />
+      <canvas id="kale__copy" width="400" height="400"></canvas>
+      <img class="kale__copy__img top" src="img/tri.png" />
+    </div>
+    <div class="model" data-10000="opacity:0;left:-0%;" data-11200="opacity:1;left:0;" data-12000="opacity:0;left:0;"
+    data-14000="opacity:0;@class:model" data-14400="opacity:0;@class:model model-m;" data-15200="opacity:1"
+    data-18400="display:block;opacity:1" data-19200="opacity:0;@class:model;display:none;"></div>
+
+    <div class="model model--light" data-14000="@class:model" data-14400="opacity:0;left:0;@class:model model-m model--light"
+      data-15200="opacity:0;" data-16000="opacity:0.3" data-16800="opacity:0.6" data-17600="opacity:1"
+      data-18400="display:block;opacity:1;" data-19200="opacity:0;display:none;@class:model"></div>
+    <div class="wordcloud" data-11200="opacity:1;top:150%;" data-11600="opacity:1;top:50%;" data-12000="opacity:1" data-12800="left:50%;top:50%;" data-14400="display:block" data-14400="display:none">
+      <span class="wordcloud_text wordcloud_text_0" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_1" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_2" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_3" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_4" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.6)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_5" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_6" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_7" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.6)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_8" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_9" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_10" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_11" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.65)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_12" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_13" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_14" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_15" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.75)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_16" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_17" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_18" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.65)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_19" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_20" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_21" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.55)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_22" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_23" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.55)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_24" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_25" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.45)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_26" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_27" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.65)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_28" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.45)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_29" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.5)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+      <span class="wordcloud_text wordcloud_text_30" data-11600="opacity:1;" data-12000="opacity:1" data-12800="transform:scale(1);opacity:0.5" data-13600="transform:scale(0.35)" data-14000="transform:scale(0.5);opacity:1;"
+        data-14400="transform:scale(0);opacity:0;">黑色素</span>
+
+    </div>
+
+    <div id="s2" class="b__bg ripple__holder" data-0="opacity:0;display:none;" data-17200="opacity:1;display:block;top:100%;"
+     data-17600="opacity:1;display:block;top:0;" data-19200="opacity:1;top:0%;" data-20000="opacity:1;top:-100%" data-22800="opacity:0;top:-100%"></div>
+    <div class="b8" data-16800="opacity:0;top:100%" data-17600="opacity:1;top:0%" data-18400="opacity:0;top:-100%">
+      <div class="b8__txt">
+        <h1 class="b8__txt__title rl font-jpb" data-16800="opacity:0;" data-17600="opacity:1;" data-18400="opacity:1;" data-20000="opacity:0;">百</h1>
+        <h6 class="b8__txt__text rl font-jpm" data-16800="opacity:0;letter-spacing:-1em;" data-17600="opacity:1;letter-spacing:0.3em;" data-20000="opacity:1;" data-20400="opacity:0;">年美白科技究極新突破</h6>
+      </div>
+    </div>
+    <div class="b9" data-17600="opacity:0;top:100%;" data-18400="opacity:1;top:0%" data-20000="opacity:0;top:-100%;display:block;" data-20400="display:none;">
+      <h4 class="b9__title b9__title__1 rl font-jpb" data-17600="opacity:0;" data-18400="opacity:1;">植萃新科技</h4>
+      <h4 class="b9__title b9__title__2 rl font-jpb" data-17600="opacity:0;" data-18400="opacity:1;">自主亮白透出來</h4>
+      <h6 class="b9__text b9__text__1 rl font-jpm" data-17600="opacity:0;" data-18400="opacity:1;">預防明日細微斑點 白皙看得見</h6>
+      <h7 class="b9__text b9__text__2 rl font-jpm" data-17600="opacity:0;"
+       data-18400="opacity:1;background-color:rgb(228,0,127);color:rgb(255,255,255);">植萃綺肌露 新發售</h7>
+    </div>
+  </section>
+  <div class="form__bg" data-0="display:none;" data-19200="display:block;opacity:0;" data-20000="opacity:1;"></div>
+  <section id="form" class="form" data-0="display:none;" data-19200="display:block;opacity:0;top:100%;"
+  data-20000="opacity:1;top:0%;" data-20800="opacity:1;top:-100%;display:blcok;" data-21600="opacity:0;display:none;">
+    <div class="form__step form__step1">
+      <h7 class="form__step1__text rl font-jpm">植萃綺肌露 新發售</h7>
+      <img class="form__step1__img" src="img/production_2.png" />
+      <form class="form__step1__table" action="" method="post">
+        <h6 class="table__row table__row__intro font-jpm">
+          請填寫資料預約<span class="font-twm">，</span><br class="showPC" />
+          並於三日內憑簡訊連結畫面<br />
+          至指定專櫃免費領取「植萃綺肌露」體驗禮乙份
+        </h6>
+        <div class="table__row align-left">
+          <label class="form__label font-hei" for="form__name">姓名</label>
+          <input type="text" class="form__name font-hei" id="form__name" />
+        </div>
+        <div class="table__row align-left">
+          <label class="form__label font-hei" for=" form__tel">電話</label>
+          <input type="tel" class="form__tel font-hei" id="form__tel" />
+        </div>
+        <div class="table__row align-left">
+          <label class="form__label font-hei" for=" form__email">Email</label>
+          <input type="email" class="form__email font-hei" id="form__email" />
+        </div>
+        <div class="table__row align-left">
+          <label class="form__label font-hei" for=" form__addr ">領取據點</label>
+          <input disabled class="form__addr font-hei" id="form__addr" value="" />
+          <input class="form__button font-hei" id="button__addr" type="button" value="選擇據點" />
+        </div>
+        <div class="table__row  button__row">
+          <input class="form__button2 font-hei" type="button" id="button__submit" value="確認送出" />
+          <input class="form__button2 form__button--w font-hei" id="button__reset" type="reset" value="重新填寫" />
+        </div>
+        <div class="table__row">
+          <p class="table__row__description font-hei">
+            *體驗禮每人限領乙次<span class="font-twm">，</span>數量有限<span class="font-twm">，</span>兌完為止。<br />
+            *資生堂東京櫃保有贈品更換之權利。
+          </p>
+        </div>
+      </form>
+    </div>
+    <div class="form__step form__step2">
+      <div class="form__step2__container">
+        <div class="form__step2__map">
+          <img src="img/map.png" />
+        </div>
+        <input type="button" id="button__nearby" class="button__nearby" name="button__nearby" value="尋找附近櫃點" />
+      </div>
+      <div class="form__step2__container">
+        <h5 class="form__step2__title font-jpm">選擇欲購的據點</h5>
+        <div class="custom-select">
+          <select class="font-hei" id="select__city" name="" data-callback="showArea" data-placeholder="選擇縣市"></select>
+        </div>
+        <div class="custom-select">
+          <select id="select__area" class="font-hei" name="" data-callback="showStore" data-placeholder="選擇區域"></select>
+        </div>
+        <div class="form__step2__store">
+          <ul class="font-hei">
+            <li>
+              <input id="store_0" class="form__step2__radio " type="radio" name="store" value="store_0" checked>
+              <label for="store_0">宜蘭縣羅東鎮集祥里民生路11號 (03)9544469</label>
+            </li>
+            <li>
+              <input id="store_1" class="form__step2__radio" type="radio" name="store" value="store_1">
+              <label for="store_1">宜蘭縣羅東鎮集祥里民生路11號 (03)9544469</label>
+            </li>
+          </ul>
+
+        </div>
+        <input type="button" id="button__confirm" class="button__confirm font-hei" name="" value="確認送出" />
+      </div>
+    </div>
+    <div class="form__step form__step3">
+      <h4 class="form__step3__title font-jpm">恭喜完成HAKU</h4>
+      <h6 class="form__step3__text font-jpm">植萃+美白三角科技新體驗</h6>
+      <div class="form__step3__img">
+        <img src="img/form-end.png" />
+      </div>
+      <p class="form__step3__text2 font-jpm">
+        若15分鐘內<span class="font-twm">，</span>仍未收到簡訊<span class="font-twm">，</span>請按此<a href="javascript:;" id="resent__msg">補發簡訊</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="ig" data-0="display:none;" data-20000="opacity:0;display:block;top:100%;" data-20800="opacity:1;top:0%;" data-21600="top:-100%;">
+    <section class="line_form">
+      <div class="line__bg"></div>
+
+      <form class="line__form font-hei" action="" method="post">
+        <h5 class="line__form__title font-jpb">您值得更好的禮遇</h5>
+        <h6 class="line__form__text font-jpm">若您曾在資生堂東京櫃消費<span class="font-twm">，</span>請輸入您的生日<span class="font-twm">，</span><br />
+          獲得資生堂LINE會員認證！<br />
+          將不定期收到會員專屬獨家優惠訊息！
+        </h6>
+        <input class="line__input line__input__year" type="text" name="" value="">西元年<input class="line__input line__input__month" type="text" name="" value="">月<input class="line__input line__input__date" type="text" name="" value="">日
+        <input class="line__button" type="button" value="確認送出" />
+      </form>
+    </section>
+    <section class="ig__container">
+      <div class="ig__box">
+        <div class="ig__box__item ig__box--0"></div>
+        <div class="ig__box__item ig__box--1"></div>
+        <div class="ig__box__item ig__box--2"></div>
+        <div class="ig__box__item ig__box--3"></div>
+        <div class="ig__box__item ig__box--4"></div>
+        <div class="ig__box__item ig__box--5"></div>
+        <div class="ig__box__item ig__box--6"></div>
+        <div class="ig__box__item ig__box--7"></div>
+        <div class="ig__box__item ig__box--8"></div>
+        <div class="ig__box__item ig__box--9"></div>
+        <div class="ig__box__item ig__box--10"></div>
+        <div class="ig__box__item ig__box--11"></div>
+        <div class="ig__box__item ig__box--12"></div>
+        <div class="ig__box__item ig__box--13"></div>
+        <div class="ig__box__item ig__box--14"></div>
+        <div class="ig__box__item ig__box--15"></div>
+        <div class="ig__box__item ig__box--16"></div>
+        <div class="ig__box__item ig__box--17"></div>
+        <div class="ig__box__item ig__box--18"></div>
+        <div class="ig__box__item ig__box--19"></div>
+        <div class="ig__box__item ig__box--20"></div>
+        <div class="ig__box__item ig__box--21"></div>
+        <div class="ig__box__item ig__box--22"></div>
+        <div class="ig__box__item ig__box--23"></div>
+        <div class="ig__box__item ig__box--24"></div>
+        <div class="ig__box__item ig__box--25"></div>
+        <div class="ig__box__item ig__box--26"></div>
+        <div class="ig__box__item ig__box--27"></div>
+        <div class="ig__box__item ig__box--28"></div>
+        <div class="ig__box__item ig__box--29"></div>
+      </div>
+      <a href="#form" data-menu-top="20000"  class="ig__btn">
+      </a>
+      <a href="#form" data-menu-top="20000"  class="ig__btn2">
+        立刻領取免費試用包！
+      </a>
+    </section>
+
+  </section>
+
+  <div class="production" data-0="opacity:0;transform:scale(0.5);@class:production skrollable;top:109.5%;" data-800="top:9.5%;opacity:1;transform:scale(0.5);@class:production skrollable fadeIn"
+    data-1600="top:-90.5%;opacity:1;transform:scale(0.5);display:block;" data-2400="opacity:1;transform:scale(0.5);display:none;"
+    data-4000="opacity:0;transform:scale(7);left:0;display:block;" data-4200="display:none;"
+    data-16800="display:none" data-17600="display:block;opacity:0;transform:scale(0.5);top:100%;" data-18400="opacity:1;transform:scale(0.5);top:16%;"
+    data-19200="opacity:1;transform:scale(3.1);top:-11.2%;" data-20000="opacity:0;transform:scale(3.1);top:-11.2%;"  data-20800="opacity:0;">
+  </div>
+
+  <a href="#form" data-menu-top="20000" class="cta" data-0="bottom:-4000px;opacity:0" data-2000="bottom:20px;opacity:1" data-16800="bottom:20px;opacity:1"
+  data-17600="bottom:-3000px;opacity:0;display:block;" data-17800="display:none;"> </a>
+  <div class="loading">
+
+  </div>
+  <script type="text/javascript" src="js/lib/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/lib/skrollr.min.js"></script>
+  <script type="text/javascript" src="js/lib/skrollr.menu.min.js"></script>
+  <script type="text/javascript" src="js/lib/kaleidoscope.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.ripples-min.js"></script>
+  <script type="text/javascript" src="js/lib/AddressSelectList.js"></script>
+  <!-- <script type="text/javascript" src="js/lib/awselect.min.js"></script> -->
+  <script type="text/javascript" src="js/lib/jquery.scroll.js"></script>
+  <script type="text/javascript" src="js/lib/youtube-player.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
