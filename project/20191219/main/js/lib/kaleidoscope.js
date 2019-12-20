@@ -21,8 +21,8 @@ if (window.innerHeight > window.innerWidth) {
   canvas2.width = canvas.width = window.innerWidth;
 }
 ml = (window.innerWidth - canvas.width) / 2;
-$('#kale').css("margin-left", ml + "px");
-$('#kale2').css("margin-left", ml + "px");
+$('#kale').css({"margin-left": ml + "px","width":canvas.width+"px","height":canvas.height+"px"});
+$('#kale2').css("margin-left", ml + "px","width":canvas.width+"px","height":canvas.height+"px");
 
 
 (function draw() {
