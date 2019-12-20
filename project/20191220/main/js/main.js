@@ -123,7 +123,13 @@ $(function() {
     }
   });
   var skrollr_obj = skrollr.init({
-
+    easing: {
+                vibrate: function(p) {
+                    return Math.sin(p * 10 * Math.PI);
+                }
+    },
+    smoothScrolling:true,
+    smoothScrollingDuration:500,
     render: function(data) {
 
       nowTop = data.curTop;

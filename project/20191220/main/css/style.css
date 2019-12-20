@@ -4670,6 +4670,13 @@ body {
   background-color: #dff1f5;
 }
 
+*, :before, :after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+}
+
 .wrapper {
   padding-top: 55px;
 }
