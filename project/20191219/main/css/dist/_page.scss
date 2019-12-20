@@ -7,6 +7,10 @@
   }
 }
 
+canvas {
+  max-width: none;
+}
+
 .bg0,
 .bg1,
 .bg2,
@@ -452,7 +456,7 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    margin-top: -150px;
+    margin-top: -90px;
 
     &__title {
       margin-left: -0.5em;
@@ -709,12 +713,13 @@ section {
 }
 
 .line {
-  &_form{
-      display:none;
-      position:  relative;
-      width:100%;
-      height:100%;
+  &_form {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
+
   &__bg {
     position: absolute;
     width: 90%;
@@ -778,49 +783,7 @@ section {
   }
 }
 
-.ig {
-  &__container{
-    width:320px;
-    margin: 0 auto;
-    height:100%;
-    position: relative;
 
-  }
-  &__bg {
-    width: 90%;
-    height: 100%;
-    background-image: url("../img/ig_wall-m.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 60px;
-    margin-left: 5%;
-  }
-
-  &__btn {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 50%;
-    top: 50%;
-    margin-left: -20px;
-margin-top: -13px;
-    background-image: url("../img/icon_ig.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  &__btn2 {
-    background-color: #000;
-    padding: 5px;
-    color: #FFF;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: 30px;
-    font-size: 12px;
-    margin-top: -3px;
-  }
-}
 
 .table {
   &__row {
@@ -1158,7 +1121,7 @@ margin-top: -13px;
       position: relative;
       width: 100%;
       height: 100%;
-    margin-top: -100px;
+      margin-top: -100px;
 
       &__title {
         top: 50%;
@@ -1473,36 +1436,7 @@ margin-top: -13px;
   }
 
   .ig {
-    &__bg {
-      position: absolute;
-      width: 100%;
-      height: 35vw;
-      top: 50%;
-      margin-top: -15.4vw;
-      margin-left: 0;
-      background-image: url("../img/ig_wall-pc.png");
-      background-position: center;
-    }
 
-    &__btn {
-      margin-left: -230px;
-margin-top: -20px;
-width: 85px;
-height: 85px;
-    }
-
-    &__btn2 {
-      letter-spacing: 2px;
-    background-color: #000;
-    padding: 13px 15px;
-    color: #FFF;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -120px;
-    font-size: 14px;
-    margin-top: 5px;
-    }
   }
 
   .table {
@@ -1512,17 +1446,18 @@ height: 85px;
         margin-top: 0;
       }
 
-      input[type="reset"].form__button2,input[type="button"].form__button2  {
+      input[type="reset"].form__button2,
+      input[type="button"].form__button2 {
         margin-top: 13px;
         width: 94px;
         font-size: 14px;
         padding: 0 24px;
         width: auto;
       }
-      &__description{
 
-    text-align: left;
-    margin-left: 21%;
+      &__description {
+        text-align: left;
+        margin-left: 21%;
       }
     }
   }
@@ -1602,10 +1537,7 @@ height: 85px;
       margin-left: -235px;
     }
   }
-  .ig{
-    &__container{
-      width:100%;;
-    }
-  }
+
+
   .production {}
 }

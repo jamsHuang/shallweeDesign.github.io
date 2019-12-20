@@ -11,19 +11,20 @@ var ml;
 var canvas = document.getElementById("kale");
 var canvas2 = document.getElementById("kale2");
 
-canvas2.height = canvas.height = window.innerHeight * 4 / 3;
-console.log(canvas2.height);
-console.log(window.innerHeight);
-if (window.innerHeight > window.innerWidth) {
-  canvas2.width = canvas.width = window.innerHeight;
 
-} else {
-  canvas2.width = canvas.width = window.innerWidth;
-}
-ml = (window.innerWidth - canvas.width) / 2;
-$('#kale').css({"margin-left": ml + "px","width":canvas.width+"px","height":canvas.height+"px"});
-$('#kale2').css("margin-left", ml + "px","width":canvas.width+"px","height":canvas.height+"px");
+  canvas2.height = canvas.height = window.innerHeight * 4 / 3;
+  console.log(canvas2.height);
+  console.log(window.innerHeight);
+  if (window.innerHeight > window.innerWidth) {
+    canvas2.width = canvas.width = window.innerHeight;
 
+  } else {
+    canvas2.width = canvas.width = window.innerWidth;
+  }
+  ml = (window.innerWidth - canvas.width) / 2;
+
+  $('#kale').css({"margin-left": ml + "px","width":canvas.width+"px","height":canvas.height+"px"});
+  $('#kale2').css({"margin-left": ml + "px","width":canvas2.width+"px","height":canvas2.height+"px"});
 
 (function draw() {
   var ctx = canvas.getContext('2d');

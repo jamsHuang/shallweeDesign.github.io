@@ -6,6 +6,11 @@
   font-family: "GenYoMinJP-Medium";
   src: url('./genyo-font/JP/GenYoMinJP-Medium.ttf');
 }
+
+@font-face{
+  font-family: "GenYoMinTW-Medium";
+  src: url('./genyo-font/TW/GenYoMinTW-Medium.ttf');
+}
 @import "dist/reset.css";
 @import "dist/vendor";
 @import "dist/layout";
