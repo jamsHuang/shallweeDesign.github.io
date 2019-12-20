@@ -128,6 +128,7 @@ $(function() {
                     return Math.sin(p * 10 * Math.PI);
                 }
     },
+    scale: 0.7,
     smoothScrolling:true,
     smoothScrollingDuration:500,
     render: function(data) {
