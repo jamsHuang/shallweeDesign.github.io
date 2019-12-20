@@ -195,7 +195,7 @@ $(function() {
       if (img_ready == true) {
         ktx.drawImage(img_cover, 0, 0);
         ktx.globalCompositeOperation = 'source-in';
-        ktx.drawImage(canvas, 0, 0, canvas.width, canvas.height, 0, 0, 400, 400);
+        ktx.drawImage(kcp, 0, 0, kcp.width, kcp.height, 0, 0, 400, 400);
       }
     }
     if (wt % 350 == 0) {
