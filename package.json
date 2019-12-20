@@ -1,0 +1,19 @@
+{
+  "name": "bdg",
+  "version": "1.0.0",
+  "description": "bdg init",
+  "main": "index.js",
+  "scripts": {
+    "test": "hellow "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shallweeDesign/shallweeDesign.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shallweeDesign/shallweeDesign.github.io/issues"
+  },
+  "homepage": "https://github.com/shallweeDesign/shallweeDesign.github.io#readme"
+}
