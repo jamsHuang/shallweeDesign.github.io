@@ -5497,7 +5497,8 @@ section {
 }
 
 .ig__container {
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
   height: 100%;
   position: relative;
 }
@@ -6175,6 +6176,9 @@ section {
   .a6__text2 {
     margin-top: -155px;
     margin-left: -235px;
+  }
+  .ig__container {
+    width: 100%;
   }
 }
 

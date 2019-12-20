@@ -780,7 +780,8 @@ section {
 
 .ig {
   &__container{
-    width:100%;
+    width:320px;
+    margin: 0 auto;
     height:100%;
     position: relative;
 
@@ -1601,6 +1602,10 @@ height: 85px;
       margin-left: -235px;
     }
   }
-
+  .ig{
+    &__container{
+      width:100%;;
+    }
+  }
   .production {}
 }
