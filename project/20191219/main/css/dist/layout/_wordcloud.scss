@@ -5,13 +5,13 @@
   height: 100%;
   top: 50%;
   transform: scale(0.35);
-  margin-top: -500px;
+  margin-top: -400px;
   left: 50%;
   margin-left: -275px;
 
   &_text {
-    width: auto;
-    transform-origin: left top;
+    width: 3em;
+    transform-origin:center;
     height: auto;
     font-family: "GenYoMinTW-Bold";
     position: absolute;

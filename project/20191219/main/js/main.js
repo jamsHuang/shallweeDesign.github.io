@@ -15,13 +15,13 @@ $(function() {
           skrollr.menu.click($('#a6__s2')[0]);
       }else if(nowTop>4800 && nowTop<5600){
         skrollr.menu.click($('#a6__s3')[0]);
-      }else if(nowTop>5600 && nowTop<5800){
+      }else if(nowTop>5600 && nowTop<6000){
         skrollr.menu.click($('#a6__s4')[0]);
-      }else if(nowTop>5800 && nowTop<6000){
+      }else if(nowTop>6000 && nowTop<6400){
         skrollr.menu.click($('#a6__s5')[0]);
-      }else if(nowTop>6000 && nowTop<6600){
+      }else if(nowTop>6400 && nowTop<6800){
         skrollr.menu.click($('#a6__s6')[0]);
-      }else if(nowTop>6600 && nowTop<7200){
+      }else if(nowTop>6800 && nowTop<7200){
         skrollr.menu.click($('#a6__s7')[0]);
       }else if(nowTop>7200 && nowTop<7600){
         skrollr.menu.click($('#a6__s8')[0]);
@@ -31,6 +31,18 @@ $(function() {
         skrollr.menu.click($('#a6__s10')[0]);
       }else if(nowTop>8400 && nowTop<8800){
         skrollr.menu.click($('#a6__s11')[0]);
+      }else if(nowTop>8800 && nowTop<9200){
+        skrollr.menu.click($('#a6__s12')[0]);
+      }else if(nowTop>9200 && nowTop<10000){
+        skrollr.menu.click($('#a6__s13')[0]);
+      }else if(nowTop>10000 && nowTop<10400){
+        skrollr.menu.click($('#a6__s14')[0]);
+      }else if(nowTop>10400){
+        if(formNum==3){
+          skrollr.menu.click($('#a6__s15')[0]);
+        }else{
+          skrollr.menu.click($('#a6__s14')[0]);
+        }
       }
 
 
@@ -40,22 +52,46 @@ $(function() {
   }
 
   function handleDown() {
-  console.log('down',nowTop);
+  // console.log('down',nowTop);
     if(swipeMode==true){
       if((nowTop>3100) && nowTop<3400){
 
       }else if(nowTop>3400 && nowTop<4800){
-        skrollr.menu.click($('#a6__s1')[0]);
+          skrollr.menu.click($('#a6__s1')[0]);
       }else if(nowTop>4800 && nowTop<5600){
-          skrollr.menu.click($('#a6__s2')[0]);
-      }else if(nowTop>5600 && nowTop<5800){
-      skrollr.menu.click($('#a6__s3')[0]);
-      }else if(nowTop>5800 && nowTop<6000){
-          skrollr.menu.click($('#a6__s4')[0]);
-      }else if(nowTop>6000 && nowTop<6600){
+        skrollr.menu.click($('#a6__s2')[0]);
+      }else if(nowTop>5600 && nowTop<6000){
+        skrollr.menu.click($('#a6__s3')[0]);
+      }else if(nowTop>6000 && nowTop<6400){
+        skrollr.menu.click($('#a6__s4')[0]);
+      }else if(nowTop>6400 && nowTop<6800){
         skrollr.menu.click($('#a6__s5')[0]);
-      }else if(nowTop>6600 && nowTop<7200){
+      }else if(nowTop>6800 && nowTop<7200){
         skrollr.menu.click($('#a6__s6')[0]);
+      }else if(nowTop>7200 && nowTop<7600){
+        skrollr.menu.click($('#a6__s7')[0]);
+      }else if(nowTop>7600 && nowTop<8000){
+        skrollr.menu.click($('#a6__s8')[0]);
+      }else if(nowTop>8000 && nowTop<8400){
+        skrollr.menu.click($('#a6__s9')[0]);
+      }else if(nowTop>8400 && nowTop<8800){
+        skrollr.menu.click($('#a6__s10')[0]);
+      }else if(nowTop>8800 && nowTop<9200){
+        skrollr.menu.click($('#a6__s11')[0]);
+      }else if(nowTop>9200 && nowTop<10000){
+        skrollr.menu.click($('#a6__s12')[0]);
+      }else if(nowTop>10000 && nowTop<10400){
+        skrollr.menu.click($('#a6__s13')[0]);
+      }else if(nowTop>10400 && nowTop<10800){
+        skrollr.menu.click($('#a6__s14')[0]);
+      }else if(nowTop>10800){
+
+            if(formNum==3){
+              skrollr.menu.click($('#a6__s15')[0]);
+            }else{
+              skrollr.menu.click($('#a6__s14')[0]);
+            }
+
       }
 
     }else{
@@ -99,7 +135,7 @@ $(function() {
         swipeMode = true;
       }
 
-      if (data.curTop >= 9700) {
+      if (data.curTop >= 8400) {
 
         if (ripple_tf == false) {
           ripple_tf = true;
@@ -109,12 +145,11 @@ $(function() {
             perturbance: 0.04,
             interactive: false,
             crossOrigin: "Anonymous",
-            imageUrl: "img/bg_kai.jpg"
+            imageUrl: "img/bg_kai_b.jpg"
           });
         }
       }
-      if (data.curTop >= 11200) {
-
+      if (data.curTop >= 9600) {
         switch (formNum) {
           case 1:
             $('.form__step1').show();
@@ -141,8 +176,6 @@ $(function() {
       console.log(hash, top);
     }
   });
-  //ml = (window.innerWidth - $("#kale").width()) / 2;
-  //$("#kale").css("margin-left", ml);
   var img_ready = false;
   var kcp = document.getElementById("kale__copy");
   var ktx = kcp.getContext("2d");
@@ -223,7 +256,7 @@ $(function() {
   })
 
   $('.ig__btn, .ig__btn2').on('click', function() {
-    console.log('ig_bt');
+    // console.log('ig_bt');
   })
 
   function step3() {
@@ -231,11 +264,14 @@ $(function() {
     $('.form__step1').hide();
     $('.form__step2').hide();
     $('.form__step3').show();
+    $('.line_form').show();
+
+    // $('.ig').attr('data-10800','top:-100%')
   }
 
   function checkForm() {
     if ($('#form__name').val() == "" || $('#form__tel').val() == "" || $('#form__email').val() == "" || $('#form__addr').val() == "") {
-      console.log('please check the form again');
+      // console.log('please check the form again');
     } else {
       step3();
     }

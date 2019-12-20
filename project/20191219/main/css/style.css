@@ -3976,14 +3976,14 @@ p.rl {
   height: 100%;
   top: 50%;
   transform: scale(0.35);
-  margin-top: -500px;
+  margin-top: -400px;
   left: 50%;
   margin-left: -275px;
 }
 
 .wordcloud_text {
-  width: auto;
-  transform-origin: left top;
+  width: 3em;
+  transform-origin: center;
   height: auto;
   font-family: "GenYoMinTW-Bold";
   position: absolute;
@@ -4359,7 +4359,7 @@ p.rl {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 0;
+  margin-top: 60px;
   margin-left: 0;
 }
 
@@ -4407,15 +4407,15 @@ p.rl {
 }
 
 .ig__box--7 {
-  background-image: url("../img/ig/ig_7.jpg");
+  background-image: none;
 }
 
 .ig__box--8 {
-  background-image: url("../img/ig/ig_8.jpg");
+  background-image: none;
 }
 
 .ig__box--9 {
-  background-image: url("../img/ig/ig_9.jpg");
+  background-image: none;
 }
 
 .ig__box--10 {
@@ -4512,6 +4512,15 @@ p.rl {
   .ig__box__item {
     height: 184px;
     width: 184px;
+  }
+  .ig__box--7 {
+    background-image: url("../img/ig/ig_7.jpg");
+  }
+  .ig__box--8 {
+    background-image: url("../img/ig/ig_8.jpg");
+  }
+  .ig__box--9 {
+    background-image: url("../img/ig/ig_9.jpg");
   }
 }
 
@@ -5181,7 +5190,7 @@ section {
 }
 
 .b8__txt__text {
-  margin-left: -0.5em;
+  margin-left: -0.6em;
   position: absolute;
   height: 100%;
   top: 50%;
@@ -5232,11 +5241,10 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../img/bg_kai.jpg");
+  background-image: url("../img/bg_kai_b.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: -1;
   pointer-events: none;
 }
 
@@ -5421,6 +5429,13 @@ section {
   text-underline-position: under;
 }
 
+.line_form {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .line__bg {
   position: absolute;
   width: 90%;
@@ -5481,6 +5496,12 @@ section {
   border-radius: 3px;
 }
 
+.ig__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 .ig__bg {
   width: 90%;
   height: 100%;
@@ -5497,8 +5518,8 @@ section {
   height: 40px;
   left: 50%;
   top: 50%;
-  margin-left: -35px;
-  margin-top: -32px;
+  margin-left: -20px;
+  margin-top: -13px;
   background-image: url("../img/icon_ig.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -5513,18 +5534,21 @@ section {
   left: 50%;
   margin-left: 30px;
   font-size: 12px;
-  margin-top: -22px;
+  margin-top: -3px;
 }
 
 .table__row {
-  margin: 10px;
+  margin: 10px 0;
   vertical-align: middle;
   text-align: center;
 }
 
+.table__row.align-left {
+  text-align: left;
+}
+
 .table__row #button__addr {
-  display: block;
-  margin-left: 66px;
+  margin-left: 23%;
   margin-top: 10px;
 }
 
@@ -5534,6 +5558,7 @@ section {
   font-size: 12px;
   line-height: 140%;
   margin-top: 20px;
+  margin-left: 0;
   text-align: center;
 }
 
@@ -5545,7 +5570,7 @@ section {
 }
 
 .table__row .form__label {
-  width: 57px;
+  width: 20%;
   display: inline-block;
   text-align: right;
   margin-right: 5px;
@@ -5556,7 +5581,7 @@ section {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #000;
   line-height: 26px;
-  width: 215px;
+  width: 52%;
   padding: 0 6px;
   font-size: 14px;
   display: inline-block;
@@ -5801,6 +5826,7 @@ section {
     position: relative;
     width: 100%;
     height: 100%;
+    margin-top: -100px;
   }
   .b8__txt__title {
     top: 50%;
@@ -5812,7 +5838,7 @@ section {
     top: 50%;
     width: auto;
     left: 50%;
-    margin-left: -0.5em;
+    margin-left: -0.6em;
     height: 100%;
   }
   .b9 {
@@ -5852,11 +5878,10 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../img/bg_kai.jpg");
+    background-image: url("../img/bg_kai_b.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: -1;
     pointer-events: none;
   }
   .form__bg {
@@ -6076,12 +6101,37 @@ section {
     background-position: center;
   }
   .ig__btn {
-    margin-left: -70px;
-    margin-top: -5px;
+    margin-left: -230px;
+    margin-top: -20px;
+    width: 85px;
+    height: 85px;
   }
   .ig__btn2 {
-    margin-left: -7px;
-    margin-top: 8px;
+    letter-spacing: 2px;
+    background-color: #000;
+    padding: 13px 15px;
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -120px;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .table__row #button__addr {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .table__row input[type="reset"].form__button2, .table__row input[type="button"].form__button2 {
+    margin-top: 13px;
+    width: 94px;
+    font-size: 14px;
+    padding: 0 24px;
+    width: auto;
+  }
+  .table__row__description {
+    text-align: left;
+    margin-left: 21%;
   }
   .production {
     width: 100%;

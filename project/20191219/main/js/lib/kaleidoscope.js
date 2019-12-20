@@ -12,6 +12,8 @@ var canvas = document.getElementById("kale");
 var canvas2 = document.getElementById("kale2");
 
 canvas2.height = canvas.height = window.innerHeight * 4 / 3;
+console.log(canvas2.height);
+console.log(window.innerHeight);
 if (window.innerHeight > window.innerWidth) {
   canvas2.width = canvas.width = window.innerHeight;
 
@@ -87,7 +89,7 @@ $('#kale2').css("margin-left", ml + "px");
     window.addEventListener('drawKai2', function() {
 
       kaleidoscope(w, h, img2, canvas2, ctx2, triangles, moveX);
-      
+
     })
 
     //redraw kaleidoscope when window size changes
