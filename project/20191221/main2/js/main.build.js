@@ -49,7 +49,7 @@ $(document).ready(function() {
   }, 50);
   var s = skrollr.init({
     forceHeight: false,
-    smoothScrolling: true,
+    // smoothScrolling: true,
     easing: 'sqrt',
   });
   skrollr.menu.init(s, {
