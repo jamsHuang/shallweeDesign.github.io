@@ -40,9 +40,12 @@ $(document).ready(function() {
       });
     });
     rad = Math.PI / 180 * deg;
-    spdY = Math.sin(rad) * ylimit / 2;
-    spdX = Math.cos(rad) * xlimit / 2;
+    spdY = Math.round(Math.sin(rad) * ylimit / 2);
+    spdX = Math.round(Math.cos(rad) * xlimit / 2);
     deg++;
+    if(deg>=360){
+      deg = 0;
+    }
 
     xx = spdX;
     yy = spdY;
