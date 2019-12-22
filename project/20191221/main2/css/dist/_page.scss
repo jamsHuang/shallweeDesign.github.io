@@ -28,16 +28,17 @@ section {
 .a1,
 .a2,
 .a3,
-.a4{
+.a4 {
   position: absolute;
   top: 0;
   left: 0;
 }
+
 .a1,
 .a2,
 .a3,
 .a4,
-.a5{
+.a5 {
   width: 100%;
   height: 100%;
 
@@ -56,7 +57,7 @@ section {
   position: fixed;
   z-index: 0;
   width: 100vw;
-  height: calc( 100vh - 60px);
+  height: calc(100vh - 60px);
   bottom: 0;
   left: 0;
 }
@@ -192,18 +193,47 @@ section {
   height: 100%;
   position: absolute;
 
-  &__bg{
+  &__skin {
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-image: url("../img/skin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -135px;
+    margin-top: -95px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+    &__black {
+      width: 150px;
+      height: 150px;
+      background-position: center;
+      border-radius: 50%;
+      background-color: #000;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-left: -135px;
+      margin-top: -95px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+  &__bg {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(../img/bg_col.jpg);
+    background-image: url("../img/bg_col.jpg");
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-
   }
+
   &__title {
     width: auto;
     height: 100%;
