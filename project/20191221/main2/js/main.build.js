@@ -50,7 +50,7 @@ $(document).ready(function() {
   var s = skrollr.init({
     forceHeight: false,
     smoothScrolling: true,
-    smoothScrollingDuration: 200,
+    smoothScrollingDuration: 50,
   });
   skrollr.menu.init(s, {
     animate: true,
