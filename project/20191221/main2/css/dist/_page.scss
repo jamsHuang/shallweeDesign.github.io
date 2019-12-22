@@ -45,9 +45,16 @@ section {
 
   }
 }
-
-.a0 {
+.fixed__box{
   position: fixed;
+  z-index: 0;
+  width:100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+}
+.a0 {
+  position: absolute;
   z-index: 0;
   top:0;
   left:0;
@@ -111,7 +118,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   z-index: 0;
   &__text1 {
     left: 50%;

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body id="skrollr-body">
+<body>
   <header class="header">
     <a href="" class="logo"><img class="logo__img" src="img/logo.png" /></a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -22,24 +22,29 @@
       <li><a href="#form">領取試用</a></li>
     </ul>
   </header>
-  <div class="a0">
-    <div class="a0__title">
-      <h6 class="a0__title__text rl animated fadeInDown font-jpm">
-        美白我只相信
-      </h6>
-      <div class="a0__title__logo animated flipInY delay-1s">
-        <img src="img/logo-v.png" />
+  <div class="fixed__box">
+    <div class="a0" data-anchor-target="#production_target"
+      data-bottom-top="display:block;"
+      data-center="display:none;"
+    >
+      <div class="a0__title">
+        <h6 class="a0__title__text rl animated fadeInDown font-jpm">
+          美白我只相信
+        </h6>
+        <div class="a0__title__logo animated flipInY delay-1s">
+          <img src="img/logo-v.png" />
+        </div>
       </div>
     </div>
+    <div class="a3" data-anchor-target="#production_target"
+      data-bottom-top="display:none;"
+      data-center="display:block;"
+    >
+      <h4 class="a3__text2 rl font-jpb">植萃科技再突破</h4>
+      <h6 class="a3__text1 rl font-jpm">百年美白科學研究所</h6>
+    </div>
   </div>
-  <div class="a3" data-anchor-target="#production_target"
-    data-bottom-top="display:none;"
-    data-center="display:block;"
-  >
-    <h4 class="a3__text2 rl font-jpb">植萃科技再突破</h4>
-    <h6 class="a3__text1 rl font-jpm">百年美白科學研究所</h6>
-  </div>
-  <div class="main">
+  <div class="main" id="skrollr-body">
     <div class="wrapper">
       <section id="kv" class="page--full">
         <div class="container">
