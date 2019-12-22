@@ -4972,8 +4972,17 @@ section {
   left: 50%;
 }
 
-.a0 {
+.fixed__box {
   position: fixed;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.a0 {
+  position: absolute;
   z-index: 0;
   top: 0;
   left: 0;
@@ -5035,7 +5044,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   z-index: 0;
 }
 
@@ -5054,10 +5063,33 @@ section {
 .a4__video {
   position: absolute;
   width: 80%;
+  height: 45vw;
   top: 50%;
   left: 50%;
-  margin-top: -20vw;
+  margin-top: -22.5vw;
   margin-left: -40%;
+}
+
+.a4__video__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/video_cover.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.a4__video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.a4__video iframe .ytp-large-play-button.ytp-button svg {
+  display: none;
 }
 
 .a5 {
