@@ -4985,7 +4985,7 @@ section {
   position: fixed;
   z-index: 0;
   width: 100vw;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 55px);
   bottom: 0;
   left: 0;
 }
@@ -5026,6 +5026,10 @@ section {
   margin-left: -16px;
   top: 50%;
   margin-top: -100px;
+}
+
+.a2 {
+  z-index: 99;
 }
 
 .a2__text1 {
@@ -5191,6 +5195,20 @@ section {
 .a5__title2 {
   line-height: 125%;
   margin-left: -128px;
+}
+
+.a6__bg--mid {
+  position: absolute;
+  width: 2000px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -1000px;
+  margin-top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../img/bg_mid.png");
 }
 
 .a6 h4,
@@ -5844,6 +5862,9 @@ section {
 }
 
 @media (min-width: 768px) {
+  .fixed__box {
+    height: calc(100vh - 63px);
+  }
   .a0__title__text {
     margin-top: -222px;
     margin-left: 50px;

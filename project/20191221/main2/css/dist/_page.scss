@@ -57,7 +57,7 @@ section {
   position: fixed;
   z-index: 0;
   width: 100vw;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 55px);
   bottom: 0;
   left: 0;
 }
@@ -101,6 +101,7 @@ section {
 }
 
 .a2 {
+  z-index: 99;
   &__text1 {
     left: 50%;
     margin-top: -178px;
@@ -273,6 +274,21 @@ section {
 }
 
 .a6 {
+  &__bg {
+    &--mid{
+      position: absolute;
+      width: 2000px;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      margin-left: -1000px;
+      margin-top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("../img/bg_mid.png");
+    }
+  }
   h4,
   h6 {
     left: 50%;
@@ -937,6 +953,10 @@ section {
   max-width: none;
 }
 @media(min-width:768px) {
+
+  .fixed__box {
+    height: calc(100vh - 63px);
+  }
   .a0 {
     &__title {
       &__text {

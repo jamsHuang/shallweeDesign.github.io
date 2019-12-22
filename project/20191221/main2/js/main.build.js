@@ -110,6 +110,9 @@ $(document).ready(function() {
     forceHeight: false,
     // smoothScrolling: true,
     easing: 'sqrt',
+    mobileCheck:function(){},
+    mobileDeceleration:0.004,
+    edgeStrategy:'set',
     render: function(data) {
       nowTop = data.curTop;
       console.log('pass',passTop);
