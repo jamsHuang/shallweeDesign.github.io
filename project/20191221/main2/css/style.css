@@ -4950,27 +4950,27 @@ section {
   z-index: 99;
 }
 
-.a1__title, .a1__text, .a1__text1, .a1__text2, .a1__text3,
-.a2__title,
+.a1__text, .a1__text1, .a1__text2, .a1__text3, .a1__title,
 .a2__text,
 .a2__text1,
 .a2__text2,
 .a2__text3,
-.a3__title,
+.a2__title,
 .a3__text,
 .a3__text1,
 .a3__text2,
 .a3__text3,
-.a4__title,
+.a3__title,
 .a4__text,
 .a4__text1,
 .a4__text2,
 .a4__text3,
-.a5__title,
+.a4__title,
 .a5__text,
 .a5__text1,
 .a5__text2,
-.a5__text3 {
+.a5__text3,
+.a5__title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4992,7 +4992,7 @@ section {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(../img/bg_col.jpg);
+  background-image: url("../img/bg_col.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5049,7 +5049,7 @@ section {
 }
 
 .a3__bg {
-  background-image: url(../img/bg2.jpg);
+  background-image: url("../img/bg2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5703,7 +5703,7 @@ section {
   top: 50%;
   margin-left: -35px;
   margin-top: -32px;
-  background-image: url(../img/icon_ig.png);
+  background-image: url("../img/icon_ig.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -6004,7 +6004,7 @@ section {
     top: 50%;
     left: 50%;
     margin-left: -0.5em;
-    margin-top: calc( -1.1em);
+    margin-top: calc(-1.1em);
   }
   .b8__txt__text {
     top: 50%;
@@ -6299,7 +6299,7 @@ section {
     margin-left: -450px;
   }
   .a5__title {
-    margin-left: -310px;
+    margin-left: -260px;
     letter-spacing: 15px;
   }
   .a5__text {
@@ -6307,7 +6307,7 @@ section {
   }
   .a5__text2 {
     height: 100%;
-    margin-left: -350px;
+    margin-left: -300px;
   }
   .a6__title {
     margin-left: -200px;

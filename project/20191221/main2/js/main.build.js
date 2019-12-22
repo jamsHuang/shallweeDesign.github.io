@@ -50,7 +50,7 @@ $(document).ready(function() {
   var s = skrollr.init({
     forceHeight: false,
     smoothScrolling: true,
-    smoothScrollingDuration: 50,
+    easing: 'sqrt',
   });
   skrollr.menu.init(s, {
     animate: true,
@@ -72,3 +72,17 @@ $(document).ready(function() {
     updateUrl: false //defaults to `true`.
   });
 });
+
+(function () {
+
+  if ( typeof window.CustomEvent === "function" ) return false;
+
+  function CustomEvent ( event, params ) {
+    params = params || { bubbles: false, cancelable: false, detail: null };
+    var evt = document.createEvent( 'CustomEvent' );
+    evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+    return evt;
+   }
+
+  window.CustomEvent = CustomEvent;
+})();
