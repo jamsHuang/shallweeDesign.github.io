@@ -43,6 +43,8 @@ $(document).ready(function() {
     yy=spdY;
   }, 50);
   skrollr.init({
-  		forceHeight: false
+  		forceHeight: false,
+       smoothScrolling : true,
+       smoothScrollingDuration:200,
   });
 });

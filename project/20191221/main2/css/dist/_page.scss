@@ -27,11 +27,6 @@ section {
   height: 100%;
 }
 
-.a0{
-  width: 100%;
-  height: 100%;
-
-}
 .a1,
 .a2,
 .a3,
@@ -52,9 +47,23 @@ section {
 }
 
 .a0 {
+  position: fixed;
+  z-index: 0;
+  top:0;
+  left:0;
+  width:100vw;
+  height: 100vh;
+  background-image: url(../img/bg_col.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   &__title {
     width: 100%;
     height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
 
     &__text {
       position: absolute;
@@ -98,6 +107,12 @@ section {
 }
 
 .a3 {
+  background-image: url(../img/bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 0;
   &__text1 {
     left: 50%;
     margin-left: 28px;

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body id="skrollr-body">
   <header class="header">
     <a href="" class="logo"><img class="logo__img" src="img/logo.png" /></a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -22,19 +22,24 @@
       <li><a href="#form">領取試用</a></li>
     </ul>
   </header>
-  <div class="main" id="skrollr-body">
-    <div class="skroll">
-      <div class="a0">
-        <div class="a0__title">
-          <h6 class="a0__title__text rl animated fadeInDown font-jpm">
-            美白我只相信
-          </h6>
-          <div class="a0__title__logo animated flipInY delay-1s">
-            <img src="img/logo-v.png" />
-          </div>
-        </div>
+  <div class="a0">
+    <div class="a0__title">
+      <h6 class="a0__title__text rl animated fadeInDown font-jpm">
+        美白我只相信
+      </h6>
+      <div class="a0__title__logo animated flipInY delay-1s">
+        <img src="img/logo-v.png" />
       </div>
     </div>
+  </div>
+  <div class="a3" data-anchor-target="#production_target"
+    data-bottom-top="display:none;"
+    data-center="display:block;"
+  >
+    <h4 class="a3__text2 rl font-jpb">植萃科技再突破</h4>
+    <h6 class="a3__text1 rl font-jpm">百年美白科學研究所</h6>
+  </div>
+  <div class="main">
     <div class="wrapper">
       <section id="kv" class="page--full">
         <div class="container">
@@ -98,12 +103,23 @@
 
         </div>
       </section>
+      <section id="commercial" class="page--full">
+        <div class="container">
+          <div class="a4">
+            <figure class="a4__video">
+              <div class="a4__video__player" id="player"></div>
+              <div class="a4__video__cover" src="img/video_cover.jpg"></div>
+              <div class="a4__video__button" data-1200="opacity:0;transform:scale(0)" data-1600="opacity:1;transform:scale(1)" name="play"></div>
+            </figure>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
-
-  <div class="production"
-  data-anchor-target="#production_target"
-  data-bottom-top="opacity:0;transform: scale(0.5);top:100%;" data-center="opacity:1;transform: scale(0.5);top:7.5%">
+  <div class="production" data-anchor-target="#production_target"
+    data-bottom-top="opacity:0;transform: scale(0.5);top:100%;"
+    data-center="opacity:1;transform: scale(0.5);top:7.5%"
+    data-center-bottom="opacity:0;transform: scale(5.5);">
   </div>
   <div class="cta" data-0="bottom:-4000px;opacity:0" data-1000="bottom:20px;opacity:1">
 
@@ -118,6 +134,8 @@
   <script type="text/javascript" src="js/lib/jquery.ripples-min.js"></script>
   <script type="text/javascript" src="js/lib/AddressSelectList.js"></script>
   <!-- <script type="text/javascript" src="js/lib/jquery.scroll.js"></script> -->
+
+  <script type="text/javascript" src="js/lib/youtube-player.js"></script>
   <!-- <script type="text/javascript" src="js/main.js"></script> -->
   <script type="text/javascript" src="js/main.build.js"></script>
 </body>
