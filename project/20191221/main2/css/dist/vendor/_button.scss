@@ -1,10 +1,10 @@
 figure {
 
   display: block;
-  
+
 }
 
-figure button[name="play"] {
+figure div[name="play"] {
   width: 50px;
   height: 50px;
   background: #000;
@@ -19,18 +19,18 @@ figure button[name="play"] {
   margin-left: -25px;
 }
 
-figure button[name="play"]:focus {
+figure div[name="play"]:focus {
   outline: 0;
   border: 1px solid hsl(210, 58%, 69%);
   box-shadow: 0 0 0 3px hsla(210, 76%, 57%, 0.5);
 }
 
-figure button[name="play"]::after {
+figure div[name="play"]::after {
   content: '';
   display: inline-block;
   position: relative;
-  top: 1px;
-  left: 3px;
+  top: 14px;
+  left: 18px;
   border-style: solid;
   border-width: 10px 0 10px 20px;
   border-color: transparent transparent transparent white;

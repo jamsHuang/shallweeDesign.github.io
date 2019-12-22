@@ -15,9 +15,8 @@
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
       <li><a href="#kv">首頁</a></li>
-      <li><a href="#kal">首a</a></li>
       <li><a href="#commercial">影片介紹</a></li>
-      <li><a href="#about">美白迷思</a></li>
+      <li><a href="#question">美白迷思</a></li>
       <li><a href="#intro">植萃美白</a></li>
       <li><a href="#form">領取試用</a></li>
     </ul>
@@ -36,12 +35,30 @@
         </div>
       </div>
     </div>
-    <div class="a3" data-anchor-target="#production_target"
+    <div class="a3"
+      data-anchor-target="#second-part"
       data-100-bottom-top="display:none;"
-      data-100-center="display:block;"
+      data-bottom-top="display:block;"
+      data-bottom="top:0%;"
+      data-top-bottom="display:block;top:-100%"
     >
-      <h4 class="a3__text2 rl font-jpb">植萃科技再突破</h4>
-      <h6 class="a3__text1 rl font-jpm">百年美白科學研究所</h6>
+      <div class="a3__bg"
+       data-anchor-target="#slogan"
+       data-100-bottom-top="display:none;"
+       data-bottom-top="display:block;"
+       data-center="display:block;background-position-y:0%;background-position-x:100%;"
+       data-top-bottom="display:block;background-position-y:100%;background-position-x:0%;"
+      ></div>
+      <h4 class="a3__text2 rl font-jpb"
+        data-anchor-target="#slogan"
+        data-bottom-top="@class: a3__text2 rl font-jpb"
+        data-top-center="@class: a3__text2 rl font-jpb fadeOutUp animated">
+      植萃科技再突破</h4>
+      <h6 class="a3__text1 rl font-jpm"
+        data-anchor-target="#slogan"
+        data-bottom-top="@class: a3__text1 rl font-jpb"
+        data-top-center="@class: a3__text1 rl font-jpb fadeOutUp animated">
+      百年美白科學研究所</h6>
     </div>
   </div>
   <div class="main" id="skrollr-body">
@@ -51,8 +68,9 @@
 
         </div>
       </section>
-      <section class="page--full">
-        <div id="production_target" class="container kal__container">
+
+      <section class="page--full" id="production_target">
+        <div class="container kal__container">
           <div id="kal">
             <div class="kal_main">
               <div class="kal_cont">
@@ -103,20 +121,33 @@
           </div>
         </div>
       </section>
-      <section class="page--full">
-        <div class="container">
+      <div id="second-part">
+        <section class="page--full" id="slogan">
+          <div class="container">
 
+          </div>
+        </section>
+        <section id="commercial" class="page--full">
+          <div class="container">
+            <div class="a4">
+              <figure class="a4__video">
+                <div class="a4__video__player" id="player"></div>
+                <div class="a4__video__cover" src="img/video_cover.jpg"></div>
+                <div class="a4__video__button" name="play"></div>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="question" class="page--full">
+        <div class="container">
+1
         </div>
       </section>
-      <section id="commercial" class="page--full">
+      <section id="question2" class="page--full">
         <div class="container">
-          <div class="a4">
-            <figure class="a4__video">
-              <div class="a4__video__player" id="player"></div>
-              <div class="a4__video__cover" src="img/video_cover.jpg"></div>
-              <div class="a4__video__button" data-1200="opacity:0;transform:scale(0)" data-1600="opacity:1;transform:scale(1)" name="play"></div>
-            </figure>
-          </div>
+2
         </div>
       </section>
     </div>
@@ -134,8 +165,8 @@
   </div>
   <script type="text/javascript" src="js/lib/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/lib/skrollr.min.js"></script>
-  <!--  <script type="text/javascript" src="js/lib/skrollr.menu.min.js"></script>-->
-  <!-- <script type="text/javascript" src="js/lib/kaleidoscope.js"></script> -->
+  <script type="text/javascript" src="js/lib/skrollr.menu.min.js"></script>
+  <!-- <script type="text/javascript" src="js/lib/skrollr.decks.min.js"></script> -->
   <script type="text/javascript" src="js/lib/jquery.ripples-min.js"></script>
   <script type="text/javascript" src="js/lib/AddressSelectList.js"></script>
   <!-- <script type="text/javascript" src="js/lib/jquery.scroll.js"></script> -->
