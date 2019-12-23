@@ -20,6 +20,12 @@ $(document).ready(function() {
     "margin-top": kalMT + "px",
     "margin-left": kalML + "px"
   });
+  $("#kal2").css({
+    "height": kalH + "px",
+    "width": kalW + "px",
+    "margin-top": kalMT + "px",
+    "margin-left": kalML + "px"
+  });
   var xx = 0;
   var yy = 0;
   var spdX = 1;
@@ -58,13 +64,26 @@ $(document).ready(function() {
 
   function handleUp() {
     if (swipeMode == true) {
-      passTop += 65;
+      console.log('pass',passTop);
+      console.log('now',nowTop);
+      console.log('mark',$('#question2').offset().top );
+      console.log('mark2',$('#question3').offset().top );
+      console.log('----------------')
+      passTop = passTop+  130;
       if(passTop<$('#question2').offset().top){
+        console.log('gos1');
           skrollr.menu.click($('#s1')[0]);
-          console.log(nowTop,"now")
-      }else if(passTop+100>$('#question2').offset().top && passTop<$('#question3').offset().top){
+      }else if(passTop>$('#question2').offset().top && passTop<$('#question3').offset().top){
           skrollr.menu.click($('#s2')[0]);
-          console.log(nowTop,"now")
+          console.log('gos2');
+      }else if(passTop>$('#question3').offset().top && passTop<$('#sa61').offset().top){
+          skrollr.menu.click($('#s3')[0]);
+          console.log('gos3');
+      }else if(passTop>$('#sa61').offset().top && passTop<$('#sa62').offset().top){
+          skrollr.menu.click($('#s4')[0]);
+          console.log('gos4');
+      }else{
+
       }
 
     } else {}
@@ -115,11 +134,7 @@ $(document).ready(function() {
     edgeStrategy:'set',
     render: function(data) {
       nowTop = data.curTop;
-      console.log('pass',passTop);
-      console.log('now',nowTop);
-      console.log('mark',$('#question2').offset().top );
-      console.log('mark2',$('#question3').offset().top );
-      console.log('----------------')
+
       qs0 = $('#question').offset().top - stgH / 2;
       if (nowTop > qs0) {
         swipeMode = true;

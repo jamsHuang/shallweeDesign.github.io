@@ -23,7 +23,10 @@
     </ul>
   </header>
   <a href="#question2" id="s1"></a>
-  <a href="#question3" id="s2" data-menu-duration="1000"></a>
+  <a href="#question3" id="s2"></a>
+  <a href="#sa61" id="s3"></a>
+  <a href="#sa62" id="s4"></a>
+
   <div class="fixed__box">
     <div class="a0" data-anchor-target="#production_target"
       data-bottom-top="display:block;"
@@ -63,6 +66,56 @@
         data-top-center="@class: a3__text1 rl font-jpb fadeOutUp animated">
       百年美白科學研究所</h6>
     </div>
+    <div class="a5__bg"
+    data-anchor-target="#third-part"
+    data-100-bottom-top="display:none;"
+    data-bottom-top="display:block;bottom:-100%;"
+    data-top="display:block;bottom:0%;"
+
+    >
+      <div id="kal2">
+        <div class="kal_main">
+          <div class="kal_cont">
+            <div class="ks s1">
+              <div class="ksc"></div>
+            </div>
+            <div class="ks s2">
+              <div class="ksc"></div>
+            </div>
+            <div class="ks s3">
+              <div class="ksc"></div>
+            </div>
+            <div class="ks s4">
+              <div class="ksc"></div>
+            </div>
+            <div class="ks s5">
+              <div class="ksc"></div>
+            </div>
+            <div class="ks s6">
+              <div class="ksc"></div>
+            </div>
+            <div class="ks s7">
+              <div class="ksc"></div>
+            </div>
+            <div class="ks s8">
+              <div class="ksc"></div>
+            </div>
+            <div class="ks s9">
+              <div class="ksc"></div>
+            </div>
+            <div class="ks s10">
+              <div class="ksc"></div>
+            </div>
+            <div class="ks s11">
+              <div class="ksc"></div>
+            </div>
+            <div class="ks s12">
+              <div class="ksc"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="a5"
         data-anchor-target="#third-part"
         data-100-bottom-top="display:none;"
@@ -71,22 +124,29 @@
         data-bottom="bottom:0%;"
         data-top-bottom="display:block;bottom:100%"
     >
-      <div class="a5__bg"></div>
-      <div class="a5__model"></div>
+
+      <div class="a5__model"
+        data-anchor-target="#question2"
+        data-100-bottom-top= "opacity:1"
+        data-center-bottom = "opacity:1;"
+        data-100-top-bottom="opacity:0"
+      ></div>
       <div class="a5__skin"
         data-anchor-target="#question2"
         data-bottom-top="display:block;transform: scale(0);left:65%;"
         data-top="transform: scale(1);left:50%;"
-        data-top-center="transform: scale(1);"
-        data-100-top-bottom="transform: scale(15);"
-        data-100-top-bottom="transform: scale(15);"
+        data-65-top-center="transform: scale(1);opacity:1"
+        data-65-top-bottom="opacity:0;transform: scale(15);"
+        data-100-top-bottom="opacity:0"
       ></div>
       <div class="a5__black"
         data-anchor-target="#question2"
         data-bottom-top="display:block;transform: scale(0);left:65%;"
         data-top="transform: scale(1);left:50%;opacity:0"
-        data-top-center="transform: scale(1);opacity:1"
-        data-100-top-bottom="transform: scale(15);"
+        data-65-top-center="transform: scale(1);opacity:1"
+        data-65-top-bottom="opacity:1;transform: scale(15);"
+        data-top-bottom = "opacity:0;"
+
       ></div>
       <h2 class="a5__title a5__title2 rl font-jpm"
       data-anchor-target="#question2"
@@ -101,14 +161,31 @@
       data-100-top-bottom="left:75%;color:rgba(255,255,255,1);"
       >因為黑色素造成的細微斑點散佈肌膚各處！</h6>
     </div>
-    <div class="a6__bg"></div>
+    <!-- <div class="a6__bg"
+      data-anchor-target="#fourth-part"
+      data-bottom-top="left:-250%"
+      data-65-top="left:-50%;transform:skew(-45deg);"
+      data-bottom-center="left:-50%;transform:skew(-45deg);"
+      data-bottom="left:-50%;transform:skew(0deg)"
+    ></div> -->
     <div class="a6__bg--mid"
       data-anchor-target="#fourth-part"
       data-bottom-top="left:-200%"
-      data-top="left:50%;z-index:100;"
-      data-center="left:200%;display:block;z-index:102;"
-      data-8400="display:none;z-index:100;" data-8800="display:block;left:-200%"
-      data-9600="left:50%" data-11200="left:250%;display:block;" data-11300="display:none;">
+      data-65-top="left:50%;z-index:100;display:block"
+      data-bottom-center="left:200%;display:none;"
+      data-200-center="left:-200%;display:block;"
+      data-65-center="left:50%;z-index:100;"
+      data-top-bottom= "left:200%;display:none;"
+    >
+    </div>
+    <div class="a6">
+      <div class="production_s"
+      data-anchor-target="#fourth-part"
+      data-bottom-top="opacity:0;"
+      data-65-top="opacity:1"
+      data-65-center="opacity:1"
+      data-top-bottom= "opacity:0"
+      ></div>
     </div>
   </div>
   <div class="main" id="skrollr-body">
@@ -173,7 +250,6 @@
       <div id="second-part">
         <section class="page--full" id="slogan">
           <div class="container">
-
           </div>
         </section>
         <section id="commercial" class="page--full" data-menu-offset="-65">
@@ -189,7 +265,7 @@
         </section>
       </div>
       <div id="third-part">
-        <section id="question" class="page--full">
+        <section id="question" class="page--full" data-menu-offset="-65">
           <div class="container">
           </div>
         </section>
@@ -203,15 +279,25 @@
         </section>
       </div>
       <div id="fourth-part">
-        <section id="a61" class="page--full" data-menu-offset="-65">
+        <section id="sa61" class="page--full" data-menu-offset="-65">
           <div class="container">
+            <div class="a6">
+              <h4 class="a6__title rl font-jpb" >冬季白皙計畫</h4>
+              <h6 class="a6__text rl font-jpb" >啟動肌膚自主亮白力</h6>
+
+            </div>
           </div>
         </section>
-        <section id="a62" class="page--full" data-menu-offset="-65">
+        <section id="sa62" class="page--full" data-menu-offset="-65">
           <div class="container">
+            <div class="a6">
+              <h4 id="s2" class="a6__title2 rl font-jpb" >領取試用包<span
+                  class="a6__title2__arr animated infinite fadeInDown"><img src="img/arrow.png" /></span></h4>
+              <h6 class="a6__text2 rl font-jpb">深入了解植萃美白新科技</h6>
+            </div>
           </div>
         </section>
-        <section id="a63" class="page--full" data-menu-offset="-65">
+        <section id="sa63" class="page--full" data-menu-offset="-65">
           <div class="container">
           </div>
         </section>

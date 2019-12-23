@@ -229,10 +229,12 @@ section {
     background-position: center;
     background-image: url("../img/bg_col.jpg");
     position: absolute;
-    top: 0;
+    overflow: hidden;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 0;
   }
 
   &__title {
@@ -274,15 +276,30 @@ section {
 }
 
 .a6 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+
   &__bg {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background-image: url(../img/bg_col.jpg);
+    background-repeat: no-repeat;
+    left: -250%;
+    background-size: cover;
+    transform: skew(-45deg);
+
     &--mid{
-      position: absolute;
-      width: 2000px;
-      height: 100%;
-      top: 0;
-      left: 50%;
-      margin-left: -1000px;
-      margin-top: 0;
+    position: absolute;
+    width: 2000px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -1000px;
+    margin-top: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -291,6 +308,9 @@ section {
   }
   h4,
   h6 {
+    position: absolute;
+    width: auto;
+    height: auto;
     left: 50%;
     top: 50%;
   }
@@ -323,6 +343,7 @@ section {
   }
 
   .production_s {
+
     height: 55%;
     margin-top: -30%;
   }
@@ -949,7 +970,7 @@ section {
   }
 }
 
-#kale {
+#kale,#kale2 {
   max-width: none;
 }
 @media(min-width:768px) {
