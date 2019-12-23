@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="skrollr-decks-init" data-skrollr-decks-delay="150" data-skrollr-decks-duration="500" data-skrollr-deckts-easing="sqrt">
   <div style="transform: translate3d(0,0,0);"></div>
   <header class="header">
     <a href="" class="logo"><img class="logo__img" src="img/logo.png" /></a>
@@ -26,6 +26,9 @@
   <a href="#question3" id="s2"></a>
   <a href="#sa61" id="s3"></a>
   <a href="#sa62" id="s4"></a>
+  <a href="#sb1" id="s5"></a>
+  <a href="#sb2" id="s6"></a>
+  <a href="#sb3" id="s7"></a>
 
   <div class="fixed__box">
     <div class="a0" data-anchor-target="#production_target"
@@ -135,17 +138,19 @@
         data-anchor-target="#question2"
         data-bottom-top="display:block;transform: scale(0);left:65%;"
         data-top="transform: scale(1);left:50%;"
-        data-65-top-center="transform: scale(1);opacity:1"
-        data-65-top-bottom="opacity:0;transform: scale(15);"
+        data-top-center="transform: scale(1);opacity:1"
+        data-top-bottom="opacity:0;transform: scale(15);"
         data-100-top-bottom="opacity:0"
       ></div>
       <div class="a5__black"
         data-anchor-target="#question2"
         data-bottom-top="display:block;transform: scale(0);left:65%;"
         data-top="transform: scale(1);left:50%;opacity:0"
-        data-65-top-center="transform: scale(1);opacity:1"
-        data-65-top-bottom="opacity:1;transform: scale(15);"
-        data-top-bottom = "opacity:0;"
+        data-top-center="transform: scale(1);opacity:1"
+        data-50-top-bottom = "opacity:1;transform: scale(15);"
+        data-top-bottom="opacity:1;transform: scale(15);"
+        data--100-top-bottom="opacity:0;transform: scale(15);"
+
 
       ></div>
       <h2 class="a5__title a5__title2 rl font-jpm"
@@ -171,10 +176,10 @@
     <div class="a6__bg--mid"
       data-anchor-target="#fourth-part"
       data-bottom-top="left:-200%"
-      data-65-top="left:50%;z-index:100;display:block"
-      data-bottom-center="left:200%;display:none;"
-      data-200-center="left:-200%;display:block;"
-      data-65-center="left:50%;z-index:100;"
+      data-top="left:50%;z-index:100;display:block"
+      data--200-top="left:200%;display:none;"
+      data-center="left:-200%;display:block;"
+      data-bottom="left:50%;z-index:100;"
       data-top-bottom= "left:200%;display:none;"
     >
     </div>
@@ -182,10 +187,18 @@
       <div class="production_s"
       data-anchor-target="#fourth-part"
       data-bottom-top="opacity:0;"
-      data-65-top="opacity:1"
-      data-65-center="opacity:1"
+      data-top="opacity:1"
+      data-center="opacity:1"
       data-top-bottom= "opacity:0"
       ></div>
+    </div>
+    <div class="b1__bg"
+    data-anchor-target="#fifth-part"
+    data-bottom-top="bottom:-100%"
+    data-top = "bottom:0%;"
+    ></div>
+    <div class="b1">
+
     </div>
   </div>
   <div class="main" id="skrollr-body">
@@ -265,21 +278,21 @@
         </section>
       </div>
       <div id="third-part">
-        <section id="question" class="page--full" data-menu-offset="-65">
+        <section id="question" class="page--full skrollr-deck" data-menu-offset="-65">
           <div class="container">
           </div>
         </section>
-        <section id="question2" class="page--full" data-menu-offset="-65">
+        <section id="question2" class="page--full skrollr-deck" data-menu-offset="-65">
           <div class="container">
           </div>
         </section>
-        <section id="question3" class="page--full" data-menu-offset="-65">
+        <section id="question3" class="page--full skrollr-deck" data-menu-offset="-65">
           <div class="container">
           </div>
         </section>
       </div>
       <div id="fourth-part">
-        <section id="sa61" class="page--full" data-menu-offset="-65">
+        <section id="sa61" class="page--full skrollr-deck" data-menu-offset="-65">
           <div class="container">
             <div class="a6">
               <h4 class="a6__title rl font-jpb" >冬季白皙計畫</h4>
@@ -288,7 +301,7 @@
             </div>
           </div>
         </section>
-        <section id="sa62" class="page--full" data-menu-offset="-65">
+        <section id="sa62" class="page--full skrollr-deck" data-menu-offset="-65">
           <div class="container">
             <div class="a6">
               <h4 id="s2" class="a6__title2 rl font-jpb" >領取試用包<span
@@ -297,7 +310,22 @@
             </div>
           </div>
         </section>
-        <section id="sa63" class="page--full" data-menu-offset="-65">
+        <!-- <section id="sa63" class="page--full" data-menu-offset="-65">
+          <div class="container">
+          </div>
+        </section> -->
+      </div>
+      <div id="fifth-part">
+        <section id="sb1" class="page--full skrollr-deck" data-menu-offset="-65" style="background-color:#FAF">
+          <div class="container">
+
+          </div>
+        </section>
+        <section id="sb2" class="page--full skrollr-deck" data-menu-offset="-65" style="background-color:#FAA">
+          <div class="container">
+          </div>
+        </section>
+        <section id="sb3" class="page--full skrollr-deck" data-menu-offset="-65" style="background-color:#AAF">
           <div class="container">
           </div>
         </section>
@@ -318,7 +346,7 @@
   <script type="text/javascript" src="js/lib/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/lib/skrollr.min.js"></script>
   <script type="text/javascript" src="js/lib/skrollr.menu.min.js"></script>
-  <!-- <script type="text/javascript" src="js/lib/skrollr.decks.min.js"></script> -->
+  <script type="text/javascript" src="js/lib/skrollr.decks.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery.ripples-min.js"></script>
   <script type="text/javascript" src="js/lib/AddressSelectList.js"></script>
   <script type="text/javascript" src="js/lib/jquery.scroll.js"></script>

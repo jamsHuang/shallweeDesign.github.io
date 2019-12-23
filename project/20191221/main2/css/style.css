@@ -4475,7 +4475,7 @@ section {
 
 .main .wrapper .page--full {
   width: 100%;
-  padding-top: calc(100vh - 55px);
+  height: 100vh;
 }
 
 .main .wrapper .page--full .container {
@@ -4621,7 +4621,6 @@ img {
   }
   .wrapper .page--full {
     width: 100%;
-    padding-top: calc(100vh - 64px);
   }
   .wrapper .container {
     width: 100%;
@@ -5040,6 +5039,19 @@ section {
 .b1 {
   width: 100%;
   height: 100%;
+  position: absolute;
+}
+
+.b1__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-position: center;
+  background-image: url("../img/bg_skin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .b1__title {

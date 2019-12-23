@@ -69,22 +69,25 @@ $(document).ready(function() {
       console.log('mark',$('#question2').offset().top );
       console.log('mark2',$('#question3').offset().top );
       console.log('----------------')
-      passTop = passTop+  130;
-      if(passTop<$('#question2').offset().top){
-        console.log('gos1');
-          skrollr.menu.click($('#s1')[0]);
-      }else if(passTop>$('#question2').offset().top && passTop<$('#question3').offset().top){
-          skrollr.menu.click($('#s2')[0]);
-          console.log('gos2');
-      }else if(passTop>$('#question3').offset().top && passTop<$('#sa61').offset().top){
-          skrollr.menu.click($('#s3')[0]);
-          console.log('gos3');
-      }else if(passTop>$('#sa61').offset().top && passTop<$('#sa62').offset().top){
-          skrollr.menu.click($('#s4')[0]);
-          console.log('gos4');
-      }else{
-
-      }
+      // passTop = passTop+  130;
+      // if(passTop<$('#question2').offset().top){
+      //   console.log('gos1');
+      //     skrollr.menu.click($('#s1')[0]);
+      // }else if(passTop>$('#question2').offset().top && passTop<$('#question3').offset().top){
+      //     skrollr.menu.click($('#s2')[0]);
+      //     // console.log('gos2');
+      // }else if(passTop>$('#question3').offset().top && passTop<$('#sa61').offset().top){
+      //     skrollr.menu.click($('#s3')[0]);
+      //     // console.log('gos3');
+      // }else if(passTop>$('#sa61').offset().top && passTop<$('#sa62').offset().top){
+      //     skrollr.menu.click($('#s4')[0]);
+      //     // console.log('gos4');
+      // }else if(passTop>$('#sa62').offset().top && passTop<$('#sb1').offset().top){
+      //     skrollr.menu.click($('#s5')[0]);
+      //     // console.log('gos4');
+      // }else{
+      //
+      // }
 
     } else {}
   }

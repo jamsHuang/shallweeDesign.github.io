@@ -26,7 +26,8 @@ section {
 
     .page--full {
       width: 100%;
-      padding-top: calc(100vh - 55px);
+      // padding-top: calc(100vh - 55px);
+      height: 100vh;
       .container{
         position: absolute;
       }
@@ -174,7 +175,7 @@ img {
 
     .page--full {
       width: 100%;
-      padding-top: calc(100vh - 64px);
+      // padding-top: calc(100vh - 64px);
     }
 
     .container {
