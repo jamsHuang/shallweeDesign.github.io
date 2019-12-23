@@ -35,7 +35,25 @@ $(document).ready(function() {
   var xlimit = window.innerWidth / 4;
   var ylimit = window.innerHeight / 4;
   // 萬花筒
+  var wt=0;
+  var ripple_tf=true;
   var timer = setInterval(function() {
+
+    if (wt % 20 == 0) {
+      if (ripple_tf == true) {
+        var $el = $('.ripple__holder');
+        var x = Math.random() * $el.outerWidth();
+        var y = Math.random() * $el.outerHeight();
+        var dropRadius = 40;
+        var strength = 0.04 + Math.random() * 0.04;
+        $el.ripples('drop', x, y, dropRadius, strength);
+      }
+    }
+    wt++;
+    if (wt > 7000) {
+      wt = 0;
+    }
+
     $(".kal_cont").each(function(i) {
 
       $(this).find(".ksc").each(function(i) {
@@ -88,7 +106,7 @@ $(document).ready(function() {
       // }else{
       //
       // }
-
+ripple_tf =true;
     } else {}
   }
 
@@ -164,6 +182,15 @@ $(document).ready(function() {
     },
 
     updateUrl: false //defaults to `true`.
+  });
+  //
+  $('.ripple__holder').ripples({
+    resolution: 256,
+    dropRadius: 25,
+    perturbance: 0.04,
+    interactive: false,
+    crossOrigin: "Anonymous",
+    imageUrl: "img/bg_kai_b.jpg"
   });
 });
 
