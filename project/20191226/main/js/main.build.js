@@ -189,7 +189,7 @@ $(document).ready(function() {
     //draw kaleidoscope
     window.dispatchEvent(event_kai);
     //draw ripples
-    if (t % 500 == 0) {
+    if (t % 200 == 0) {
       var dropX = Math.round(Math.random() * window.innerWidth);
       var dropY = Math.round(Math.random() * window.innerHeight);
       var dropR = Math.round(Math.random() * 10)+10;

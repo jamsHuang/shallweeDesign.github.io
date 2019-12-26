@@ -20,7 +20,8 @@ $(function(){
   ml = (window.innerWidth - canvas.width) / 2;
 
   if(isMobile==true){
-    $('#kale').css({"width":window.innerWidth+"px","height":window.innerHeight+"px"});
+    console.log('isMobile',isMobile);
+    $('#kale').css({"width":window.innerWidth+"px","height":window.innerHeight+"px","margin-left":0+"px"});
   }else{
     $('#kale').css({"width":canvas.width+"px","height":canvas.height+"px","margin-left":ml+"px"});
   }
