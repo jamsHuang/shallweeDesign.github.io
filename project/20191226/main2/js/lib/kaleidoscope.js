@@ -2,10 +2,22 @@
 var event_kai = new Event('drawKai');
 var deg = 0;
 var moveX = 0;
-var isMobile = function() {
-	return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
-};
-
+var isMobile =  detectmob();
+function detectmob() {
+ if( navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)
+ ){
+    return true;
+  }
+ else {
+    return false;
+  }
+}
 var ml;
 var canvas = document.getElementById("kale");
   canvas.height = window.innerHeight * 4 / 3;
@@ -19,9 +31,9 @@ var canvas = document.getElementById("kale");
 $(function(){
   ml = (window.innerWidth - canvas.width) / 2;
 
-  console.log('isMobile',isMobile);
+  console.log(isMobile);
   if(isMobile==true){
-    $('#kale').css({"width":window.innerWidth+"px","height":window.innerHeight+"px","margin-left":0+"px"});
+    $('#kale').css({"width":window.innerWidth+"px","height":canvas.height+"px","margin-left":0+"px"});
   }else{
     $('#kale').css({"width":canvas.width+"px","height":canvas.height+"px","margin-left":ml+"px"});
   }
