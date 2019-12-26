@@ -2,6 +2,9 @@
 var event_kai = new Event('drawKai');
 var deg = 0;
 var moveX = 0;
+var isMobile = function() {
+	return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
+};
 
 var ml;
 var canvas = document.getElementById("kale");
@@ -15,8 +18,13 @@ var canvas = document.getElementById("kale");
 
 $(function(){
   ml = (window.innerWidth - canvas.width) / 2;
-console.log(ml,canvas.width,canvas.height,window.innerHeight);
-  $('#kale').css({"width":canvas.width+"px","height":canvas.height+"px"});
+
+  if(isMobile==true){
+    $('#kale').css({"width":window.innerWidth+"px","height":window.innerHeight+"px"});
+  }else{
+    $('#kale').css({"width":canvas.width+"px","height":canvas.height+"px","margin-left":ml+"px"});
+  }
+
 });
 (function draw() {
   var ctx = canvas.getContext('2d');
