@@ -12,10 +12,12 @@ var canvas = document.getElementById("kale");
   } else {
     canvas.width = window.innerWidth;
   }
+
+$(function(){
   ml = (window.innerWidth - canvas.width) / 2;
-
-  $('#kale').css({"margin-left": ml + "px","width":canvas.width+"px","height":canvas.height+"px"});
-
+console.log(ml,canvas.width,canvas.height,window.innerHeight);
+  $('#kale').css({"width":canvas.width+"px","height":canvas.height+"px"});
+});
 (function draw() {
   var ctx = canvas.getContext('2d');
   var img = new Image();
