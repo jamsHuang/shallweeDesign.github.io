@@ -962,14 +962,7 @@ section {
   }
 }
 .btn__box{
-  position: absolute;
-top: 21.5%;
-left: 50%;
-margin-left: -72px;
-  .ig__btn{
-    display: inline-block;
-    vertical-align: middle;
-  }
+
 }
 .table {
   &__row {
@@ -1047,14 +1040,7 @@ margin-left: -72px;
   }
 
   .btn__box{
-    position: absolute;
-  top: 21.5%;
-  left: 50%;
-  margin-left: -72px;
-    .ig__btn{
-      display: inline-block;
-      vertical-align: middle;
-    }
+
   }
   .a0 {
     &__title {
@@ -1790,4 +1776,15 @@ margin-left: -72px;
   }
 
   .production {}
+}
+@media (min-width: 1280px){
+  .form__step{
+    padding-top:100px;
+  }
+}
+
+@media (min-width: 1440px){
+  .form__step{
+    padding-top:200px;
+  }
 }

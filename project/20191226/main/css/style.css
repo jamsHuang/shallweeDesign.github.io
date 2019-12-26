@@ -4355,6 +4355,16 @@ p.rl {
   }
 }
 
+.btn__box {
+  display: flex;
+}
+
+.ig__btn {
+  display: inline-flex;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
 .ig__box {
   width: 100%;
   height: 100%;
@@ -4364,11 +4374,14 @@ p.rl {
   left: 0;
   margin-top: 0;
   margin-left: 0;
-  margin-top: 500px;
 }
 
 .ig__box__section {
-  margin-top: 330px;
+  height: 100%;
+}
+
+.ig__box__section.acitve {
+  padding-top: 375px;
 }
 
 .ig__box__item {
@@ -4380,6 +4393,15 @@ p.rl {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.ig__box__item--btn {
+  display: inline-flex;
+  width: 180px;
+  height: 90px;
+  vertical-align: bottom;
+  justify-content: center;
+  align-items: center;
 }
 
 .ig__box .empty {
@@ -4555,6 +4577,10 @@ p.rl {
   .ig__box__item {
     height: 10vw;
     width: 10vw;
+  }
+  .ig__box__item--btn {
+    width: 20vw;
+    height: 10vw;
   }
 }
 
@@ -5866,18 +5892,6 @@ section {
   font-size: 12px;
 }
 
-.btn__box {
-  position: absolute;
-  top: 21.5%;
-  left: 50%;
-  margin-left: -72px;
-}
-
-.btn__box .ig__btn {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .table__row {
   margin: 10px;
   vertical-align: middle;
@@ -5949,16 +5963,6 @@ section {
 @media (min-width: 768px) {
   .fixed__box {
     height: calc(100vh - 63px);
-  }
-  .btn__box {
-    position: absolute;
-    top: 21.5%;
-    left: 50%;
-    margin-left: -72px;
-  }
-  .btn__box .ig__btn {
-    display: inline-block;
-    vertical-align: middle;
   }
   .a0__title__text {
     margin-top: -222px;
@@ -6538,6 +6542,18 @@ section {
   .a6__text2 {
     margin-top: -155px;
     margin-left: -155px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form__step {
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form__step {
+    padding-top: 200px;
   }
 }
 

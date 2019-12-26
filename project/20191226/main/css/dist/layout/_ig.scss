@@ -1,4 +1,15 @@
+.btn__box{
+
+  display: flex;
+}
+
 .ig {
+
+  &__btn{
+    display: inline-flex;
+    text-decoration: none;
+    margin-left:5px;
+  }
   &__box {
     width: 100%;
     height: 100%;
@@ -8,10 +19,13 @@
     left: 0;
     margin-top: 0;
     margin-left: 0;
-    margin-top:500px;
+
     &__section{
 
-    margin-top: 330px;
+          height: 100%;
+          &.acitve{
+            padding-top: 375px;
+          }
     }
     &__item {
       display: inline-block;
@@ -22,6 +36,15 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      &--btn{
+        display: inline-flex;
+        width: 180px;
+        height: 90px;
+    vertical-align: bottom;
+
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     .empty {
@@ -205,6 +228,10 @@
       &__item {
         height: 10vw;
         width: 10vw;
+        &--btn{
+          width: 20vw;
+          height: 10vw;
+        }
       }
     }
   }
