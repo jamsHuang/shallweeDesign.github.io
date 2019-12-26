@@ -871,8 +871,12 @@ section {
     background-repeat: no-repeat;
     background-size: contain;
   }
+  &_form{
+    height: 380px;
+  }
 
   &__form {
+
     text-align: center;
     top: 50%;
     left: 50%;

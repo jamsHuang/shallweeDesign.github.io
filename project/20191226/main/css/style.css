@@ -4364,6 +4364,11 @@ p.rl {
   left: 0;
   margin-top: 0;
   margin-left: 0;
+  margin-top: 500px;
+}
+
+.ig__box__section {
+  margin-top: 330px;
 }
 
 .ig__box__item {
@@ -4509,6 +4514,9 @@ p.rl {
   .ig__container {
     margin-top: 25%;
     height: 75%;
+  }
+  .ig__section {
+    margin-top: 0;
   }
   .ig__box {
     width: 110%;
@@ -5772,6 +5780,10 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.line_form {
+  height: 380px;
 }
 
 .line__form {
