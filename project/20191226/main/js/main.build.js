@@ -189,11 +189,13 @@ $(document).ready(function() {
     //draw kaleidoscope
     window.dispatchEvent(event_kai);
     //draw ripples
-    if (t % 200 == 0) {
+    if (t % 500 == 0) {
       var dropX = Math.round(Math.random() * window.innerWidth);
       var dropY = Math.round(Math.random() * window.innerHeight);
-      var dropR = 25;
-      $('.ripple__holder').ripples("drop", dropX, dropY, dropR, 0.04);
+      var dropR = Math.round(Math.random() * 10)+10;
+      var dropRec = Math.round(Math.random() * 3)+1;
+
+      $('.ripple__holder').ripples("drop", dropX, dropY, dropR, dropRec);
     }
     //
     if (t % 5 == 0) {
@@ -273,8 +275,7 @@ $(document).ready(function() {
       resolution: 512,
       dropRadius: 20,
       perturbance: 0.04,
-      interactive: true,
-      crossOrigin: "Anonymous",
+      interactive: false,
       imageUrl: "img/bg_kai_b.jpg"
     });
   }
