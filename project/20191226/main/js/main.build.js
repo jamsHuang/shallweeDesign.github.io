@@ -193,7 +193,7 @@ $(document).ready(function() {
       var dropX = Math.round(Math.random() * window.innerWidth);
       var dropY = Math.round(Math.random() * window.innerHeight);
       var dropR = 25;
-      $('.ripple__holder').ripples("drop", dropX, dropY, dropR, 5);
+      $('.ripple__holder').ripples("drop", dropX, dropY, dropR, 0.04);
     }
     //
     if (t % 5 == 0) {
