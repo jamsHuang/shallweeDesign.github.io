@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title></title>
+  <link rel="stylesheet" href="css/dist/vendor/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div style="transform: translate3d(0,0,0);"></div>
+  <header class="header">
+    <a href="" class="logo"><img class="logo__img" src="img/logo.png" /></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a id="s0" href="#kv">首頁</a></li>
+      <li><a id="s1" href="#ss0">影片介紹</a></li>
+      <li><a href="#ss1">美白迷思</a></li>
+      <li><a href="#ss5">植萃美白</a></li>
+      <li><a href="#form">領取試用</a></li>
+    </ul>
+  </header>
+  <div class="scroll__content">
+    <!-- <a id="s1_0" href="#slogan" data-menu-top="3000"></a> -->
+    <div class="fixed__box" data-0="display:block;" data-3000="bottom:0">
+      <div class="a0" data-anchor-target="#production_target" data-bottom-top="display:block;" data-100-center="display:none;">
+        <img class="a0__bg" src="img/bg_col.jpg" />
+        <div class="a0__title">
+          <h6 class="a0__title__text rl animated fadeInUp font-jpm">
+            美白我只相信
+          </h6>
+          <div class="a0__title__logo animated flipInY delay1s">
+            <img src="img/logo-v.png" />
+          </div>
+        </div>
+      </div>
+      <div class="trigger__ss1" data-anchor-target="#ss1" data-bottom-top="display:block;" data-top="display:none;">
+        <div class="a3__bg" data-anchor-target="#second-part" data-150-bottom-top="display:none;" data-50-bottom-top="display:block;background-position-y:0%;" data-top="background-position-y:0%;"
+          data-top-bottom="background-position-y:100%;display:block;">
+        </div>
+      </div>
+
+      <div id="ripple" class="b__bg ripple__holder" data-anchor-target="#third-part" data-_sss8="display:none;" data-_sss9--100="display:block;top:0;">
+        <div class="b8__txt">
+          <h1 class="b8__txt__title rl font-jpb fadeInUp slow animated">百</h1>
+          <h6 class="b8__txt__text rl font-jpm fadeInUp slower animated">年美白科技究極新突破</h6>
+        </div>
+      </div>
+      <div class="form__bg" data-anchor-target="#lastView" data-bottom-top="display:none;top:100%;" data-bottom-center="display:block;top:0%;" data-center="top:0%;">
+
+      </div>
+
+    </div>
+    <div class="main" data-0="display:block;" data-4000="display:block;" data-8000="display:block;top:0%;opacity:1;">
+      <div class="wrapper">
+        <div class="part-0">
+          <section id="kv" class="page--full">
+            <div class="container">
+            </div>
+          </section>
+          <a id="sp0" href="#second-part"></a>
+          <section class="page--full" id="production_target">
+            <div class="container kal__container">
+              <div class="kaleidoscope">
+                <canvas id="kale"></canvas>
+                <img id="defaultImg" class="hidden" src="img/bg_kai.jpg"></img>
+              </div>
+              <div class="a2">
+                <h5 class="a2__text1 rl font-jpb" data-anchor-target="#production_target" data-100-bottom-top="@class: a2__text1 rl font-jpb animated fadeOut slow;" data--100-bottom-top="@class: a2__text1 rl font-jpb fadeInUp animated slow;"
+                  data-center="@class: a2__text1 rl font-jpb fadeInUp animated slow;" data-center-bottom="@class: a2__text1 rl font-jpb fadeOut animated slow">植萃新科技</h5>
+                <h5 class="a2__text2 rl font-jpb" data-anchor-target="#production_target" data-100-bottom-top="@class: a2__text2 rl font-jpb animated fadeOut slow;" data--100-bottom-top="@class: a2__text2 rl font-jpb fadeInUp animated slow ds;"
+                  data-center="@class: a2__text2 rl font-jpb fadeInUp animated slow ds;" data-center-bottom="@class: a2__text2 rl font-jpb fadeOut animated slow">自主亮白透出來</h5>
+                <h6 class="a2__text3 rl font-jpm" data-anchor-target="#production_target" data-100-bottom-top="@class: a2__text3 rl font-jpm animated fadeOut slow;" data--100-bottom-top="@class: a2__text3 rl font-jpm fadeInUp animated slow dss;"
+                  data-center="@class: a2__text3 rl font-jpm rl font-jpb fadeInUp animated slow dss;" data-center-bottom="@class: a2__text3 rl font-jpm rl font-jpb fadeOut animated slow"> 植萃綺肌露 新發售</h6>
+              </div>
+              <div class="a2__production">
+                <div class="production" data-anchor-target="#production_target" data-100-bottom-top="@class: production animated fadeOut ;position:absolute;" data--100-bottom-top="@class: production fadeIn animated;"
+                  data-center="@class: production fadeIn animated;" data-center-bottom="@class: production fadeOut animated">
+                </div>
+              </div>
+            </div>
+          </section>
+          <div id="second-part">
+            <section class="page--full" id="slogan">
+              <div class="container">
+                <h4 class="a3__text2 rl font-jpb" data-anchor-target="#slogan" data-100-bottom-top="@class: a3__text2 rl font-jpb animated fadeOut slow;" data--100-bottom-top="@class: a3__text2 rl font-jpb fadeInUp animated slow;"
+                  data-center="@class: a3__text2 rl font-jpb fadeInUp animated ;" data-center-bottom="@class: a3__text2 rl font-jpb fadeOut animated ">
+                  植萃科技再突破</h4>
+                <h6 class="a3__text1 rl font-jpm" data-anchor-target="#slogan" data-100-bottom-top="@class: a3__text1 rl font-jpm animated fadeOut slow;" data--100-bottom-top="@class: a3__text1 rl font-jpm fadeInUp animated slow ds;"
+                  data-center="@class: a3__text1 rl font-jpm fadeInUp animated ds;" data-center-bottom="@class: a3__text1 rl font-jpm fadeOut animated ">
+                  百年美白科學研究所</h6>
+              </div>
+            </section>
+          </div>
+          <a href="#ss0" id="as0"></a>
+          <a href="#ss1" id="as1"></a>
+          <a href="#ss2" id="as2"></a>
+          <a href="#ss3" id="as3"></a>
+          <a href="#ss4" id="as4"></a>
+          <a href="#ss5" id="as5"></a>
+          <a href="#ss6" id="as6"></a>
+          <a href="#ss7" id="as7"></a>
+          <a href="#ss8" id="as8"></a>
+          <a href="#ss9" id="as9"></a>
+          <a href="#third-part" id="as10"></a>
+          <div class="ss__box" id="ss__box">
+            <div class="ss__box__fixed" data-anchor-target="#ss__box" data-bottom-top="position:absolute;" data-top="position:fixed;" data-_sss10--100="top:0%;" data-_sss10="position:absolute;top:-100%;">
+              <div class="trigger__ss trigger__ss0" data-anchor-target="#ss0" data-bottom-top="top:0%;display:block;" data-top-bottom="top:-100%;display:none;">
+                <section id="commercial" class="view__s0 page--full" data-menu-offset="-65">
+                  <div class="container">
+                    <div class="a4" data-anchor-target="#ss0" data-bottom-top="@class:a4 animated fadeInUp slow" data-bottom="@class:a4 animated fadeOut">
+                      <figure class="a4__video">
+                        <a data-fancybox="" href="https://www.youtube.com/watch?v=OOG1Lx-ICc0">
+                          <img class="card-img-top img-fluid" src="img/video_cover.jpg">
+                          <div class="a4__video__button" name="play"></div>
+                        </a>
+                      </figure>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="trigger__ss trigger__ss4" data-anchor-target="#ss4" data-bottom-top="top:0%" data-top-bottom="top:-100%;">
+                <section id="a5" class="a5" data-anchor-target="#ss0" data-bottom-top="top:100%;" data-top="top:0%;">
+                  <div class="a5__bg" data-anchor-target="#ss0" data-bottom-top="@class:a5__bg fadeOut animated" data-top="@class:a5__bg fadeInUp animated"></div>
+                  <div class="trigger__ss trigger__ss2" data-anchor-target="#ss2" data-bottom-top="top:0%;" data-top="top:-100%;">
+
+                    <div class="a5__model" data-anchor-target="#ss0" data-bottom-top="@class:a5__model fadeOut animated" data-top="@class:a5__model fadeInUp animated ds slow"></div>
+                    <div class="a5__skin" data-anchor-target="#ss0" data-bottom-top="@class:a5__skin fadeOut animated" data-top="@class:a5__skin fadeInRight animated ds slower"></div>
+                    <div class="a5__black" data-anchor-target="#ss1" data-bottom-top="opacity:0" data-center="opacity:1;transform:scale(1);" data-bottom="opacity:1;transform:scale(15);"></div>
+                    <div class="trigger__ss trigger__ss1" data-anchor-target="#ss1" data-bottom-top="color:rgba(0,0,0,1)" data-center="color:rgba(255,255,255,1);transform: translate3d(0%,0,0);"
+                      data-bottom="color:rgba(255,255,255,1);transform: translate3d(20%,0,0);">
+                      <h2 class="a5__title a5__title2 rl font-jpm" data-anchor-target="#ss0" data-bottom-top="@class:a5__title a5__title2 rl font-jpm fadeOut animated" data-top="@class:a5__title a5__title2 rl font-jpm fadeInUp animated dss slow">
+                        做好保濕<span class="font-twm">，</span><br />為什麼還是暗沉？
+                      </h2>
+                      <h6 class="a5__text a5__text2 rl font-jpm;" data-anchor-target="#ss0" data-bottom-top="@class:a5__text a5__text2 rl font-jpm fadeOut animated" data-top="@class:a5__text a5__text2 rl font-jpm fadeInUp animated dsss slow">
+                        因為黑色素造成的細微斑點散佈肌膚各處！</h6>
+                    </div>
+                  </div>
+
+                  <div class="trigger__ss trigger__ss2" data-anchor-target="#ss2" data-bottom-top="@class:trigger__ss trigger__ss2 fadeOutLeft animated" data-top="@class:trigger__ss trigger__ss3 fadeInLeft animated"
+                    data-top-bottom="@class:trigger__ss trigger__ss2 fadeOutRight animated">
+                    <div class="a6__bg--mid"></div>
+                  </div>
+                  <div class="trigger__ss trigger__ss3" data-anchor-target="#ss3" data-bottom-top="@class:trigger__ss trigger__ss3 fadeOut animated" data-top="@class:trigger__ss trigger__ss4 fadeInLeft animated ds"
+                    data-top-bottom="@class:trigger__ss trigger__ss3 fadeOutRight animated">
+                    <div class="a6__bg--mid"></div>
+                  </div>
+                  <div class="trigger__ss trigger__ss2" data-anchor-target="#ss2" data-bottom-top="@class:trigger__ss trigger__ss2 fadeOutUp animated" data-top="@class:trigger__ss trigger__ss3 fadeInUp slow  animated">
+                    <div class="production_s" data-anchor-target="#ss2" data-bottom-top="transform:scale(0.5);" data-top="transform:scale(0.5);"></div>
+                  </div>
+                  <div class="a6">
+                    <div class="trigger__ss trigger__ss3" data-anchor-target="#ss3" data-bottom-top="@class:trigger__ss trigger__ss3" data-top="@class:trigger__ss trigger__ss3 fadeOutUp animated">
+                      <h4 class="a6__title rl font-jpb" data-anchor-target="#ss2" data-bottom-top="@class:a6__title rl font-jpb fadeOutUp animated" data-top="@class:a6__title rl font-jpb fadeInUp slow ds animated">冬季白皙計畫</h4>
+                      <h6 class="a6__text rl font-jpb" data-anchor-target="#ss2" data-bottom-top="@class:a6__text rl font-jpb fadeOutUp animated" data-top="@class:a6__text rl font-jpb dss fadeInUp slow  animated">啟動肌膚自主亮白力</h6>
+                    </div>
+
+                    <div class="trigger__ss trigger__ss4" data-anchor-target="#ss4" data-bottom-top="@class:trigger__ss trigger__ss4" data-top="@class:trigger__ss trigger__ss4 fadeOutUp animated">
+                      <h4 class="a6__title2 rl font-jpb" data-anchor-target="#ss3" data-bottom-top="@class:a6__title2 rl font-jpb fadeOutUp animated" data-top="@class:a6__title2 rl font-jpb dss fadeInUp slow animated">領取試用包<span
+                          class="a6__title2__arr animated infinite fadeInDown"><img src="img/arrow.png" /></span></h4>
+                      <h6 class="a6__text2 rl font-jpb" data-anchor-target="#ss3" data-bottom-top="@class:a6__text2 rl font-jpb fadeOutUp animated" data-top="@class:a6__text2 rl font-jpb dss fadeInUp slow animated">深入了解植萃美白新科技</h6>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="trigger__ss trigger__ss9" data-anchor-target="#ss9" data-bottom-top="top:0%;" data-top-bottom="top:-100%;">
+                <div id="b0" class="b0" data-anchor-target="#ss4" data-bottom-top="top:100%;display:block;" data-top-bottom="top:0%;">
+                  <div class="trigger__ss trigger__ss4" data-anchor-target="#ss4" data-bottom-top="top:100%" data-top="top:0%">
+                    <div class="b1__bg"></div>
+                    <div class="b1">
+                      <div class="trigger__ss trigger__ss4" data-anchor-target="#ss4" data-bottom-top="@class:trigger__ss trigger__ss4 animated fadeOut" data-top="@class:trigger__ss trigger__ss4 animated  ds fadeInUp"
+                        data-top-bottom="@class:trigger__ss trigger__ss4 animated fadeOut">
+                        <h4 class="b1__title rl font-jpb">植萃+美白三角</h4>
+                      </div>
+                      <div class="trigger__ss trigger__ss4" data-anchor-target="#ss4" data-bottom-top="@class:trigger__ss trigger__ss4 animated fadeOut" data-top="@class:trigger__ss trigger__ss4 animated dss fadeInUp"
+                        data-top-bottom="@class:trigger__ss trigger__ss4 animated fadeOut">
+                        <h6 class="b1__text rl font-jpm">預防明日細微斑點<span class="font-twm">，</span>白皙看得見</h6>
+                      </div>
+                    </div>
+                    <div class="b2">
+                      <h4 class="b2__title font-jpb" data-_sss5--100="@class:b2__title font-jpb animated fadeOut" data-_sss5--50="@class:b2__title font-jpb animated fadeOut" data-_sss5="@class:b2__title font-jpb animated fadeInUp slow"
+                        data-_sss6--100="@class:b2__title font-jpb animated fadeOut" data-_sss6="">改善全臉暗沉</h4>
+                      <h6 class="b2__text font-jpm " data-_sss5--100="@class:b2__text font-jpm  animated fadeOut" data-_sss5--50="@class:b2__text font-jpm  animated fadeOut" data-_sss5="@class:b2__text font-jpm  animated fadeInUp ds slow"
+                        data-_sss6--100="@class:b2__text font-jpm animated fadeOut" data-_sss6="">革命性IBR亮白成分</h6>
+                    </div>
+                    <div class="b3">
+                      <h4 class="b3__title font-jpb" data-_sss6--100="@class:b3__title font-jpb animated fadeOut" data-_sss6="@class:b3__title font-jpb animated fadeInUp slow" data-_sss7--100="@class:b3__title font-jpb animated fadeOut">提升自主亮白力</h4>
+                      <h6 class="b3__text font-jpm" data-_sss6--100="@class:b3__text font-jpm animated fadeOut" data-_sss6="@class:b3__text font-jpm animated fadeInUp slow" data-_sss7--100="@class:b3__text font-jpm animated fadeOut">積雪草植萃複方</h6>
+                    </div>
+                    <div class="b4">
+                      <h4 class="b4__title font-jpb" data-_sss7--100="@class:b4__title font-jpb animated fadeOut" data-_sss7="@class:b4__title font-jpb animated fadeInUp slow" data-_sss8--100="@class:b4__title font-jpb animated fadeOut">加速淡化黑色素</h4>
+                      <h6 class="b4__text font-jpm " data-_sss7--100="@class:b4__text font-jpm animated fadeOut" data-_sss7="@class:b4__text font-jpm animated fadeInUp slow" data-_sss8--100="@class:b4__text font-jpm animated fadeOut">4MSK</h6>
+                    </div>
+                    <div class="b5__bg" data-_sss8--150="opacity:0;display:none;" data-_sss8--100="display:block;opacity:1;top:100%;" data-_sss8--50="opacity:1;display:block;top:0%;" data-_sss9="opacity:1;display:block;top:0%;"></div>
+                    <div class="b5" data-_sss7--150="opacity:0;display:none;" data-_sss8="opacity:1;display:block;">
+                      <div class="trigger__ss" data-_sss8="@class:trigger__ss fadeInUp animated">
+                        <h4 class="b5__title rl font-jpb animated fadeInUp ds">明星美白成分<span class="upright">4MSK</span></h4>
+                        <h6 class="b5__text rl font-jpm animated fadeInUp ds">加速淡化黑色素</h6>
+                        <h6 class="b5__text b5__text2 rl font-jpm animated fadeInUp slow dss">資生堂獨家科技</h6>
+                        <h4 class="b5__title b5__title2 rl font-jpb animated fadeInUp slow dss">革命性<span class="upright">IBR</span>亮白成分</h4>
+                        <h6 class="b5__text b5__text3 rl font-jpm animated fadeInUp slow dss">改善全臉暗沉</h6>
+                        <h4 class="b5__title b5__title3 rl font-jpb animated fadeInUp slower dsss">積雪草植萃複方</h4>
+                        <h6 class="b5__text b5__text4 rl font-jpm animated fadeInUp slower dsss">提升自主亮白力</h6>
+                      </div>
+
+                    </div>
+                    <div class="trigger__ss trigger__ss4" data-anchor-target="#ss4" data-bottom-top="@class:trigger__ss trigger__ss4" data-top="@class:trigger__ss trigger__ss4">
+                      <div class="tri" data-_sss4--100="opacity:0;transform:rotate(0deg)scale(1.5);" data-_sss4="opacity:1;transform:rotate(-25deg)scale(1);@class:tri" data-_sss5--100="transform:rotate(-50deg)scale(0.8);@class:tri tri-m"
+                        data-_sss5="transform:rotate(-100deg)scale(0.8);" data-_sss6--100="transform:rotate(-100deg)scale(0.8);" data-_sss6="transform:rotate(-150deg)scale(0.8)" data-_sss7--100="transform:rotate(-150deg)scale(0.8)"
+                        data-_sss7="transform:rotate(-200deg)scale(0.8);top:50%;" data-_sss8--100="transform:rotate(-200deg)scale(0.8);top:50%;" data-_sss8="transform:rotate(-200deg)scale(0.8);opacity:0;top:40%;">
+                        <img class="kale__copy__img" src="img/tri.png" />
+                        <canvas id="kale__copy" width="400" height="400"></canvas>
+                        <img class="kale__copy__img top" src="img/tri.png" />
+                      </div>
+                    </div>
+                    <div class="trigger__ss trigger__ss4" data-anchor-target="#ss4" data-bottom-top="@class:trigger__ss trigger__ss4 animated fadeOut fast" data-top="@class:trigger__ss trigger__ss4 animated ds fadeInUp"
+                      data-top-bottom="@class:trigger__ss trigger__ss4 animated fadeOut" data-_sss8="@class:trigger__ss trigger__ss4 animated fadeInUp">
+                      <div class="model"></div>
+                      <!-- <div class="model model--light"></div> -->
+                    </div>
+
+
+                    <div class="wordcloud" data-_sss5--600="opacity:0;top:55%;display:block;" data-_sss5--50="opacity:1;top:65%;" data-_sss5="opacity:1;top:50%" data-_sss8="display:block" data-_sss8-100="display:none">
+                      <span class="wordcloud_text wordcloud_text_0" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_0 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_0 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_0 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_0 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_0 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_1" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_1 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_1 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_1 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_1 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_1 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_2" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_2 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_2 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_2 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_2 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_2 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_3" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_3 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_3 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_3 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_3 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_3 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_4" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_4 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_4 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_4 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_4 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_4 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_5" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_5 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_5 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_5 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_5 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_5 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_6" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_6 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_6 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_6 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_6 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_6 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_7" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_7 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_7 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_7 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_7 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_7 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_8" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_8 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_8 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_8 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_8 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_8 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_9" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_9 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_9 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_9 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_9 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_9 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_10" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_10 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_10 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_10 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_10 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_10 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_11" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_11 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_11 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_11 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_11 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_11 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_12" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_12 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_12 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_12 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_12 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_12 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_13" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_13 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_13 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_13 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_13 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_13 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_14" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_14 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_14 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_14 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_14 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_14 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_15" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_15 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_15 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_15 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_15 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_15 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_16" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_16 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_16 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_16 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_16 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_16 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_17" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_17 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_17 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_17 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_17 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_17 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_18" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_18 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_18 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_18 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_18 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_18 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_19" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_19 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_19 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_19 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_19 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_19 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_20" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_20 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_20 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_20 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_20 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_20 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_21" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_21 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_21 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_21 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_21 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_21 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_22" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_22 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_22 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_22 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_22 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_22 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_23" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_23 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_23 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_23 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_23 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_23 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_24" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_24 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_24 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_24 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_24 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_24 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_25" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_25 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_25 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_25 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_25 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_25 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_26" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_26 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_26 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_26 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_26 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_26 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_27" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_27 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_27 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_27 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_27 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_27 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_28" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_28 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_28 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_28 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_28 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_28 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_29" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_29 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_29 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_29 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_29 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_29 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_30" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_30 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_30 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_30 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_30 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_30 scaleZero animated dss">黑色素</span>
+                      <span class="wordcloud_text wordcloud_text_31" data-_sss5--600="opacity:1;" data-_sss5--500="@class:wordcloud_text wordcloud_text_31 animated dss"
+                        data-_sss5="transform:scale(1);@class:wordcloud_text wordcloud_text_31 fadeOutHalf animated dss" data-_sss6--100="transform:scale(1);opacity:0.5;@class:wordcloud_text wordcloud_text_31 animated"
+                        data-_sss6="@class:wordcloud_text wordcloud_text_31 scaleHalf animated dss" data-_sss7--100="transform:scale(0.5);opacity:0.5;" data-_sss7="@class:wordcloud_text wordcloud_text_31 scaleZero animated dss">黑色素</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="ss__slide">
+              <div class="ss ss0" id="ss0"></div>
+              <div class="ss ss1" id="ss1"></div>
+              <div class="ss ss2" id="ss2"></div>
+              <div class="ss ss3" id="ss3"></div>
+              <div class="ss ss4" id="ss4"></div>
+              <div class="ss ss5" id="ss5"></div>
+              <div class="ss ss6" id="ss6"></div>
+              <div class="ss ss7" id="ss7"></div>
+              <div class="ss ss8" id="ss8"></div>
+              <div class="ss ss9" id="ss9"></div>
+            </div>
+          </div>
+          <section id="third-part" class="page--full" data-menu-offset="">
+            <div class="container">
+            </div>
+          </section>
+          <div class="fourth-part" id="fourth-part">
+            <section id="lastView" class="page--full" data-menu-offset="-65">
+              <div class="container">
+                <div id="b9" class="b9">
+                  <h4 class="b9__title b9__title__1 rl font-jpb" data-_sss11--300="@class:b9__title b9__title__1 rl font-jpb  fadeOut animated" data-_sss11--200="@class:b9__title b9__title__1 rl font-jpb animated fadeInUp slow">植萃新科技</h4>
+                  <h4 class="b9__title b9__title__2 rl font-jpb" data-_sss11--300="@class:b9__title b9__title__2 rl font-jpb  fadeOut animated" data-_sss11--200="@class:b9__title b9__title__2 rl font-jpb animated fadeInUp slow">自主亮白透出來</h4>
+                  <h6 class="b9__text b9__text__1 rl font-jpm animated fadeInUp slow" data-_sss11--300="@class:b9__text b9__text__1 rl font-jpm  fadeOut animated" data-_sss11--200="@class:b9__text b9__text__1 rl font-jpm animated fadeInUp ds slow">
+                    預防明日細微斑點 白皙看得見</h6>
+                  <h7 class="b9__text b9__text__2 rl font-jpm animated fadeOut" data-_sss11--300="@class:b9__text b9__text__2 rl font-jpm  fadeOut animated" data-_sss11--200="@class:b9__text b9__text__2 rl font-jpm animated fadeInUp dss slower">植萃綺肌露
+                    新發售</h7>
+                </div>
+
+              </div>
+            </section>
+            <div class=""></div>
+            <section id="form" class="form__section" data-menu-offset="-65">
+              <div class="form">
+                <div class="form__step form__step1">
+                  <h7 class="form__step1__text rl font-jpm">植萃綺肌露 新發售</h7>
+                  <img class="form__step1__img" src="img/production_2.png" />
+                  <form class="form__step1__table" action="" method="post">
+                    <h6 class="table__row table__row__intro font-jpm">
+                      請填寫資料預約<span class="font-twm">，</span><br class="showPC" />
+                      並於三日內憑簡訊連結畫面<br />
+                      至指定專櫃免費領取「植萃綺肌露」體驗禮乙份
+                    </h6>
+                    <div class="table__row align-left">
+                      <label class="form__label font-hei" for="form__name">姓名</label>
+                      <input type="text" class="form__name font-hei" id="form__name" />
+                    </div>
+                    <div class="table__row align-left">
+                      <label class="form__label font-hei" for=" form__tel">電話</label>
+                      <input type="tel" class="form__tel font-hei" id="form__tel" />
+                    </div>
+                    <div class="table__row align-left">
+                      <label class="form__label font-hei" for=" form__email">Email</label>
+                      <input type="email" class="form__email font-hei" id="form__email" />
+                    </div>
+                    <div class="table__row align-left">
+                      <label class="form__label font-hei" for=" form__addr ">領取據點</label>
+                      <input disabled class="form__addr font-hei" id="form__addr" value="" />
+                      <input class="form__button font-hei" id="button__addr" type="button" value="選擇據點" />
+                    </div>
+                    <div class="table__row  button__row">
+                      <input class="form__button2 font-hei" type="button" id="button__submit" value="確認送出" />
+                      <input class="form__button2 form__button--w font-hei" id="button__reset" type="reset" value="重新填寫" />
+                    </div>
+                    <div class="table__row">
+                      <p class="table__row__description font-hei">
+                        *體驗禮每人限領乙次<span class="font-twm">，</span>數量有限<span class="font-twm">，</span>兌完為止。<br />
+                        *資生堂東京櫃保有贈品更換之權利。
+                      </p>
+                    </div>
+                  </form>
+                </div>
+                <div class="form__step form__step2">
+                  <div class="form__step2__container">
+                    <div class="form__step2__map">
+                      <img src="img/map.png" />
+                    </div>
+                    <input type="button" id="button__nearby" class="button__nearby" name="button__nearby" value="尋找附近櫃點" />
+                  </div>
+                  <div class="form__step2__container">
+                    <h5 class="form__step2__title font-jpm">選擇欲購的據點</h5>
+                    <div class="custom-select">
+                      <select class="font-hei" id="select__city" name="" data-callback="showArea" data-placeholder="選擇縣市"></select>
+                    </div>
+                    <div class="custom-select">
+                      <select id="select__area" class="font-hei" name="" data-callback="showStore" data-placeholder="選擇區域"></select>
+                    </div>
+                    <div class="form__step2__store">
+                      <ul class="font-hei">
+                        <li>
+                          <input id="store_0" class="form__step2__radio " type="radio" name="store" value="store_0" checked>
+                          <label for="store_0">宜蘭縣羅東鎮集祥里民生路11號 (03)9544469</label>
+                        </li>
+                        <li>
+                          <input id="store_1" class="form__step2__radio" type="radio" name="store" value="store_1">
+                          <label for="store_1">宜蘭縣羅東鎮集祥里民生路11號 (03)9544469</label>
+                        </li>
+                      </ul>
+
+                    </div>
+                    <input type="button" id="button__confirm" class="button__confirm font-hei" name="" value="確認送出" />
+                  </div>
+                </div>
+                <div class="form__step form__step3">
+                  <h4 class="form__step3__title font-jpm">恭喜完成HAKU</h4>
+                  <h6 class="form__step3__text font-jpm">植萃+美白三角科技新體驗</h6>
+                  <div class="form__step3__img">
+                    <img src="img/form-end.png" />
+                  </div>
+                  <p class="form__step3__text2 font-jpm">
+                    若15分鐘內<span class="font-twm">，</span>仍未收到簡訊<span class="font-twm">，</span>請按此<a href="javascript:;" id="resent__msg">補發簡訊</a>
+                  </p>
+                  <section class="line_form">
+                    <div class="line__bg"></div>
+
+                    <form class="line__form font-hei" action="" method="post">
+                      <h5 class="line__form__title font-jpb">您值得更好的禮遇</h5>
+                      <h6 class="line__form__text font-jpm">若您曾在資生堂東京櫃消費<span class="font-twm">，</span>請輸入您的生日<span class="font-twm">，</span><br />
+                        獲得資生堂LINE會員認證！<br />
+                        將不定期收到會員專屬獨家優惠訊息！
+                      </h6>
+                      <input class="line__input line__input__year" type="text" name="" value="">西元年<input class="line__input line__input__month" type="text" name="" value="">月<input class="line__input line__input__date" type="text" name="" value="">日
+                      <input class="line__button" type="button" value="確認送出" />
+                    </form>
+                  </section>
+                </div>
+              </div>
+
+            </section>
+            <section class="page--full">
+              <div class="container ig__container">
+                <div class="ig__box">
+                  <div class="ig__box__item ig__box--0"></div>
+                  <div class="ig__box__item ig__box--1"></div>
+                  <div class="ig__box__item ig__box--2"></div>
+                  <div class="ig__box__item ig__box--3"></div>
+                  <div class="ig__box__item ig__box--4"></div>
+                  <div class="ig__box__item ig__box--5"></div>
+                  <div class="ig__box__item ig__box--6"></div>
+                  <div class="ig__box__item ig__box--7"></div>
+                  <div class="ig__box__item ig__box--8"></div>
+                  <div class="ig__box__item ig__box--9"></div>
+                  <div class="ig__box__item ig__box--10"></div>
+                  <div class="ig__box__item ig__box--11"></div>
+                  <div class="ig__box__item ig__box--12"></div>
+                  <div class="ig__box__item ig__box--13"></div>
+                  <div class="ig__box__item ig__box--14"></div>
+                  <div class="ig__box__item ig__box--15"></div>
+                  <div class="ig__box__item ig__box--16"></div>
+                  <div class="ig__box__item ig__box--17"></div>
+                  <div class="ig__box__item ig__box--18"></div>
+                  <div class="ig__box__item ig__box--19"></div>
+                  <div class="ig__box__item ig__box--20"></div>
+                  <div class="ig__box__item ig__box--21"></div>
+                  <div class="ig__box__item ig__box--22"></div>
+                  <div class="ig__box__item ig__box--23"></div>
+                  <div class="ig__box__item ig__box--24"></div>
+                  <div class="ig__box__item ig__box--25"></div>
+                  <div class="ig__box__item ig__box--26"></div>
+                  <div class="ig__box__item ig__box--27"></div>
+                  <div class="ig__box__item ig__box--28"></div>
+                  <div class="ig__box__item ig__box--29"></div>
+                </div>
+                <div class="btn__box">
+
+                  <a href="#form" class="ig__btn ig__btn1">
+                  </a>
+                  <a href="#form" class="ig__btn ig__btn2">
+                    立刻領取免費試用包！
+                  </a>
+                </div>
+              </div>
+
+            </section>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed__box">
+      <div class="trigger__ss" data-anchor-target="#lastView" data-bottom-top="top:100%;" data-center="top:0%;transform:scale(1)" data-center-bottom="top:25%;transform:scale(10);opacity:1" data-top-bottom="opacity:0;">
+        <div id="p22" class="production" data-_sss10="@class:production animated fadeOut" data-_sss11--10p="@class:production fadeInUp animated">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cta" data-0="bottom:-4000px;opacity:0" data-1000="bottom:20px;opacity:1" data-_sss5="opacity:1;bottom:20px" data-_sss6="opacity:0;bottom:-1000px;">
+
+    </div>
+    <div class="loading">
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/lib/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/lib/skrollr.min.js"></script>
+  <script type="text/javascript" src="js/lib/skrollr.menu.min.js"></script>
+  <script type="text/javascript" src="js/lib/skrollr.decks.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.ripples-min.js"></script>
+  <script type="text/javascript" src="js/lib/AddressSelectList.js"></script>
+  <script type="text/javascript" src="js/lib/jquery.scroll.js"></script>
+
+  <!-- <script type="text/javascript" src="js/lib/youtube-player.js"></script> -->
+  <!-- <script type="text/javascript" src="js/main.js"></script> -->
+  <script type="text/javascript" src="js/lib/jquery.fancybox.min.js">
+
+  </script>
+  <script type="text/javascript" src="js/lib/kaleidoscope.js"></script>
+  <script type="text/javascript" src="js/main.build.js"></script>
+</body>
+
+</html>
