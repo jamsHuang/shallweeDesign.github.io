@@ -7,9 +7,18 @@ $(function() {
   //   }, 10);
   // });
   //
-  $('.layer__main').scroll(function(){
-    // console.log($('#main__container').offset().top);
-  })
+  var ripple_tf = false;
+  if (ripple_tf == false) {
+         ripple_tf = true;
+         $('.ripple__holder').ripples({
+           resolution: 256,
+           dropRadius: 25,
+           perturbance: 0.04,
+           interactive: false,
+           crossOrigin: "Anonymous",
+           imageUrl: "img/bg_kai_b.jpg"
+         });
+       }
   var timer = setInterval(drawWorld, 50);
   var t = 0;
 
@@ -17,15 +26,15 @@ $(function() {
     //draw kaleidoscope
     window.dispatchEvent(event_kai);
     //draw ripples
-    // if (t % 200 == 0) {
-    //   var dropX = Math.round(Math.random() * window.innerWidth);
-    //   var dropY = Math.round(Math.random() * window.innerHeight);
-    //   var dropR = Math.round(Math.random() * 10)+10;
-    //   var dropRec = Math.round(Math.random() * 3)+1;
+    if (t % 200 == 0) {
+      var dropX = Math.round(Math.random() * window.innerWidth);
+      var dropY = Math.round(Math.random() * window.innerHeight);
+      var dropR = Math.round(Math.random() * 10)+10;
+      var dropRec = Math.round(Math.random() * 3)+1;
+
+      $('.ripple__holder').ripples("drop", dropX, dropY, dropR, dropRec);
+    }
     //
-    //   $('.ripple__holder').ripples("drop", dropX, dropY, dropR, dropRec);
-    // }
-    // //
     // if (t % 5 == 0) {
     //   if (img_ready == true) {
     //     ktx.drawImage(img_cover, 0, 0);

@@ -6,6 +6,7 @@ $(function() {
   var triEvent = false;
   var swipeMode = false;
   var nowTop, passTop, isMoving;
+  var nTop, pTop;
   var nowPage = -1;
   var anc = [];
   var diff = stgH / 3;
@@ -60,20 +61,26 @@ $(function() {
       }
     } else {}
   }
+
+  $(".fixed__a3").hide();
+  $(".fixed__a1").show();
+  $('.fixed__a5').hide();
+  $('.fixed__a7').hide();
+
   $('#main__scroll').scroll(function() {
     nowTop = $(this).scrollTop();
-    $('#bg__scroll').scrollTop(nowTop);
+    // $('#bg__scroll').scrollTop(nowTop);
     // console.log(nowTop);
     // console.log(anc);
     if (nowTop < (anc[1] + diff)) {
       getIn($('.a0__title__text'), 'fadeInDown', 'fadeOut');
       getIn($('.a0__title__logo'), 'flipInY', 'fadeOut');
       //
-
       getOut($('.a2__text1'), "fadeInUp", "fadeOutUp");
       getOut($('.a2__text2'), "fadeInUp", "fadeOutUp");
       getOut($('.a2__text3'), "fadeInUp", "fadeOutUp");
       getOut($('.a2__production'), "fadeInUp", "fadeOutUp");
+
     } else if (nowTop > (anc[1] + diff) && nowTop < (anc[2] + diff)) {
       getOut($('.a0__title__text'), 'fadeInDown', 'fadeOut');
       getOut($('.a0__title__logo'), 'flipInY', 'fadeOut');
@@ -85,6 +92,15 @@ $(function() {
       //
       getOut($('.a3__text2'), "fadeInUp", "fadeOutUp");
       getOut($('.a3__text1'), "fadeInUp", "fadeOutUp");
+      if (nowTop >= anc[2]) {
+        $(".fixed__a3").show();
+        $(".fixed__a1").hide();
+        $('.fixed__a5').hide();
+      } else {
+        $('.fixed__a5').hide();
+        $(".fixed__a3").hide();
+        $(".fixed__a1").show();
+      }
     } else if (nowTop > (anc[2] + diff) && nowTop < (anc[3] + diff)) {
 
       getOut($('.a2__text1'), "fadeInUp", "fadeOutUp");
@@ -98,57 +114,132 @@ $(function() {
 
       getOut($('.a3__text2'), "fadeInUp", "fadeOutUp");
       getOut($('.a3__text1'), "fadeInUp", "fadeOutUp");
-    
-      //
-      getIn($('.a3__text2'), "fadeInUp", "fadeOutUp");
-      getIn($('.a3__text1'), "fadeInUp", "fadeOutUp");
+
+      getOut($('.a5__model'), "fadeIn", "fadeOut");
+      getOut($('.a5__text'), "fadeIn", "fadeOut");
+      getOut($('.a5__title'), "fadeIn", "fadeOut");
+      getOut($('.a5__skin'), "zoomIn", "fadeOut");
+
+    } else if (nowTop > (anc[4] + diff) && nowTop < (anc[5] + diff)) {
+      if (nowTop >= anc[5]) {
+        $('.fixed__a5').show();
+        $('.fixed__a3').hide();
+        $('.main__a5 .bg4').hide();
+      }else{
+        $('.fixed__a5').hide();
+        $('.fixed__a3').show();
+        $('.main__a5 .bg4').show();
+      }
+
+      getIn($('.a5__model'), "fadeIn", "fadeOut");
+      getIn($('.a5__text'), "fadeIn", "fadeOut");
+      getIn($('.a5__title'), "fadeIn", "fadeOut");
+      getIn($('.a5__skin'), "zoomIn", "fadeOut");
+      if ($('.a5__skin').hasClass('blackOut')) {
+        $('.a5__skin').removeClass('blackOut');
+
+      }
+      if ($('.a5__black').hasClass('blackOut')) {
+        $('.a5__black').removeClass('blackOut');
+        var tween = gsap.to($(".a5__title, .a5__text"), {
+          duration: 1,
+          color: "rgba(0,0,0,1)",
+          delay: 1
+        })
+        if ($(".a5__title, .a5__text").hasClass('fadeIn')) {} else {
+          $(".a5__title, .a5__text").addClass('fadeIn');
+        }
+      }
+
+    } else if (nowTop > (anc[5] + diff) && nowTop < (anc[6] + diff)) {
+      if ($('.a5__skin').hasClass('zoomIn')) {
+        $('.a5__skin').removeClass('zoomIn');
+      }
+      if ($('.a5__skin').hasClass('blackOut')) {} else {
+        $('.a5__skin').addClass('blackOut');
+      }
+      if ($('.a5__black').hasClass('blackOut')) {} else {
+        $('.a5__black').addClass('blackOut');
+      }
+      if ($(".a5__title, .a5__text").hasClass('fadeIn')) {
+        $(".a5__title, .a5__text").removeClass('fadeIn')
+        var tween = gsap.to($(".a5__title, .a5__text"), {
+          duration: 1,
+          color: "rgba(255,255,255,1)",
+          delay: 1
+        })
+
+      } else {}
+      getOut($('.a6__bg'), "fadeIn", "fadeOut");
+    } else if (nowTop > (anc[6] + diff) && nowTop < (anc[7] + diff)) {
+      getIn($('.a6__bg'), "fadeIn", "fadeOut");
+      if(nowTop>=anc[7]){
+        $('.fixed__a7').show();
+        $('.fixed__a5').hide();
+
+      }else{
+        $('.fixed__a7').hide();
+        $('.fixed__a5').show();
+
+      }
+
     }
+
+  })
+
+
+
+
+  $('.layer__scroll').scroll(function() {
+    nTop = $('.layer__scroll').scrollTop();
+    console.log(nTop);
   })
 
   function handleUp() {
-    switch (nowPage) {
-      case 1:
-        removeScroll();
-        $('.layer__main').stop().animate({
-          scrollTop: $('.main__a4')[0].offsetTop
-        }, 50)
-        break;
-    }
+    console.log('up');
+    nowPage++;
+    console.log(nowPage);
   }
 
   function handleDown() {
+    console.log('down');
+    if (nowPage == 0) {
+      if ($('.layer__scroll').hasClass('active')) {
+        $('.layer__scroll').removeClass('active');
+        $('#main__scroll').stop().animate({
+          scrollTop: anc[4]
+        }, 10);
+      } else {
 
+      }
+    }
   }
 
   window.addEventListener('touchstart', function() {
-    passTop = nowTop;
+    pTop = nTop;
   })
   window.addEventListener('touchend', function() {
 
 
-    if ((nowTop - passTop) > 0) {
+    if ((nTop - pTop) > 0) {
       handleUp();
-    } else if ((nowTop - passTop) < 0) {
+    } else if ((nTop - pTop) < 0) {
       handleDown();
     } else {
 
-
     }
-
-
   })
   jQuery(window).bind('scrollstart', function() {
-    passTop = nowTop;
+    pTop = nTop;
   });
 
   jQuery(window).bind('scrollend', function(e) {
 
-    if ((nowTop - passTop) > 0) {
+    if ((nTop - pTop) > 0) {
       handleUp();
-    } else if ((nowTop - passTop) < 0) {
+    } else if ((nTop - pTop) < 0) {
       handleDown();
     } else {
-
 
     }
 

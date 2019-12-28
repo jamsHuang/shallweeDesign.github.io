@@ -2788,6 +2788,29 @@ input[type='range']::-ms-track {
   }
 }
 
+.turnWhite {
+  -webkit-animation-name: turnWhite;
+  animation-name: turnWhite;
+}
+
+@-webkit-keyframes turnWhite {
+  from {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes turnWhite {
+  from {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
 .blackIn {
   -webkit-animation-name: blackIn;
   animation-name: blackIn;
@@ -4885,7 +4908,7 @@ html.fancybox-active {
   z-index: 10;
   overflow-y: scroll;
   pointer-events: none;
-  display: none;
+  display: block;
 }
 
 .wrapper .container .layer__scroll.active {
@@ -4898,9 +4921,26 @@ html.fancybox-active {
   height: 10000px;
 }
 
-.main__a {
-  position: sticky;
+.fixed {
+  position: fixed;
+  width: 100%;
+  height: calc( 100% - 55px);
+  top: 55px;
+}
+
+.fixed__a3 {
+  position: relative;
   top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fixed__a5 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .main__a1 {
@@ -4910,7 +4950,7 @@ html.fancybox-active {
 
 .main__a2 {
   width: 100%;
-  height: 100%;
+  height: 120%;
 }
 
 .main__a3 {
@@ -4918,9 +4958,13 @@ html.fancybox-active {
   height: 100%;
 }
 
+.main__a5 .fixed {
+  height: 100%;
+}
+
 .main__a6 {
   width: 100%;
-  height: 100%;
+  height: 150%;
 }
 
 a,
@@ -5281,7 +5325,6 @@ section {
 
 .a5 {
   pointer-events: none;
-  position: sticky;
   bottom: 0;
 }
 

@@ -2968,7 +2968,30 @@
       transform: scale3d(1, 1, 1) translateX(0px);
     }
 }
+.turnWhite{
+  -webkit-animation-name: turnWhite;
+  animation-name: turnWhite;
+}
 
+@-webkit-keyframes turnWhite {
+  from {
+    color: rgba(0, 0 , 0 ,1);
+  }
+
+  100%{
+    color: rgba(255,255,255,1);
+  }
+}
+
+@keyframes turnWhite {
+  from {
+    color: rgba(0, 0 , 0 ,1);
+  }
+
+  100%{
+    color: rgba(255,255,255,1);
+  }
+}
 .blackIn {
   -webkit-animation-name: blackIn;
   animation-name: blackIn;

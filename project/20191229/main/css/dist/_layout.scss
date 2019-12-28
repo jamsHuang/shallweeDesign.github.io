@@ -93,7 +93,7 @@ html {
         &::-webkit-scrollbar {
           // display: none;
         }
-        display: none;
+        display: block;
         &.active{
           display: block;
           pointer-events: auto;
@@ -110,10 +110,29 @@ html {
     }
   }
 }
+.fixed{
+  position: fixed;
+  width:100%;
+  height: calc( 100% - 55px);
+  top: 55px;
+  &__a3{
+    position: relative;
+    top:0;
+    width:100%;
+    height:100%;
+  }
+  &__a5{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+  }
+}
 .main{
   &__a{
-    position: sticky;
-    top:0;
+    // position: sticky;
+    // top:0;
 
   }
   &__a1{
@@ -122,7 +141,7 @@ html {
   }
   &__a2{
     width: 100%;
-    height: 100%;
+    height: 120%;
 
   }
   &__a3{
@@ -130,9 +149,14 @@ html {
     width: 100%;
     height: 100%;
   }
+  &__a5{
+    .fixed{
+      height:100%;
+    }
+  }
   &__a6{
     width:100%;
-    height: 100%;
+    height: 150%;
   }
 }
 a,
