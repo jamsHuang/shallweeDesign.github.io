@@ -1876,8 +1876,8 @@
 
   to {
     opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -20%, 0);
+    transform: translate3d(0, -20%, 0);
   }
 }
 
@@ -1888,8 +1888,8 @@
 
   to {
     opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -20%, 0);
+    transform: translate3d(0, -20%, 0);
   }
 }
 
@@ -3707,6 +3707,10 @@
   animation-iteration-count: infinite;
 }
 
+.animated.ds {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
 .animated.delay-1s {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;

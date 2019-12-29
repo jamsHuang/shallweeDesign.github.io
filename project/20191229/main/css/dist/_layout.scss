@@ -78,7 +78,7 @@ html {
       &__main {
         // overflow-y: scroll;
         z-index: 1;
-        position: relative;
+        position: fixed;
       }
 
       &__obj {
@@ -88,8 +88,10 @@ html {
 
       &__scroll {
         z-index: 10;
-        overflow-y: scroll;
-        pointer-events: none;
+        // overflow-y: hidden;
+        // pointer-events: none;
+        position: relative;
+          overflow: hidden;
         &::-webkit-scrollbar {
           // display: none;
         }
@@ -122,7 +124,7 @@ html {
     height:100%;
   }
   &__a5{
-    position: relative;
+    position: absolute;
     height: 100%;
     width: 100%;
     top:0;

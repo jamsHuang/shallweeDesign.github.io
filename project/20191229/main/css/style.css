@@ -1793,8 +1793,8 @@ input[type='range']::-ms-track {
   }
   to {
     opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -20%, 0);
+    transform: translate3d(0, -20%, 0);
   }
 }
 
@@ -1804,8 +1804,8 @@ input[type='range']::-ms-track {
   }
   to {
     opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -20%, 0);
+    transform: translate3d(0, -20%, 0);
   }
 }
 
@@ -3487,6 +3487,11 @@ input[type='range']::-ms-track {
   animation-iteration-count: infinite;
 }
 
+.animated.ds {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
 .animated.delay-1s {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
@@ -4896,7 +4901,7 @@ html.fancybox-active {
 
 .wrapper .container .layer__main {
   z-index: 1;
-  position: relative;
+  position: fixed;
 }
 
 .wrapper .container .layer__obj {
@@ -4906,8 +4911,8 @@ html.fancybox-active {
 
 .wrapper .container .layer__scroll {
   z-index: 10;
-  overflow-y: scroll;
-  pointer-events: none;
+  position: relative;
+  overflow: hidden;
   display: block;
 }
 
@@ -4936,7 +4941,7 @@ html.fancybox-active {
 }
 
 .fixed__a5 {
-  position: relative;
+  position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
@@ -6148,11 +6153,11 @@ section {
   }
   .a5__title {
     margin-top: -170px;
-    margin-left: -190px;
+    margin-left: -300px;
     line-height: 120%;
   }
   .a5__text {
-    margin-left: -220px;
+    margin-left: -330px;
     margin-top: -165px;
   }
   .a5__text2 {

@@ -9,16 +9,16 @@ $(function() {
   //
   var ripple_tf = false;
   if (ripple_tf == false) {
-         ripple_tf = true;
-         $('.ripple__holder').ripples({
-           resolution: 256,
-           dropRadius: 25,
-           perturbance: 0.04,
-           interactive: false,
-           crossOrigin: "Anonymous",
-           imageUrl: "img/bg_kai_b.jpg"
-         });
-       }
+    ripple_tf = true;
+    $('.ripple__holder').ripples({
+      resolution: 256,
+      dropRadius: 25,
+      perturbance: 0.04,
+      interactive: false,
+      crossOrigin: "Anonymous",
+      imageUrl: "img/bg_kai_b.jpg"
+    });
+  }
   var timer = setInterval(drawWorld, 50);
   var t = 0;
 
@@ -29,8 +29,8 @@ $(function() {
     if (t % 200 == 0) {
       var dropX = Math.round(Math.random() * window.innerWidth);
       var dropY = Math.round(Math.random() * window.innerHeight);
-      var dropR = Math.round(Math.random() * 10)+10;
-      var dropRec = Math.round(Math.random() * 3)+1;
+      var dropR = Math.round(Math.random() * 10) + 10;
+      var dropRec = Math.round(Math.random() * 3) + 1;
 
       $('.ripple__holder').ripples("drop", dropX, dropY, dropR, dropRec);
     }
@@ -172,58 +172,72 @@ $(function() {
   //
   //   }
   // });
+  
   // var skrollr_obj = skrollr.init({
-  //   easing: {
-  //               vibrate: function(p) {
-  //                   return Math.sin(p * 10 * Math.PI);
-  //               }
-  //   },
-  //   scale: ss,
+  //   // easing: {
+  //   //             vibrate: function(p) {
+  //   //                 return Math.sin(p * 10 * Math.PI);
+  //   //             }
+  //   // },
+  //   // scale: ss,
   //   smoothScrolling:true,
   //   smoothScrollingDuration:500,
+  //   // skrollrBody:'#scrollLayer',
+  //   // forceHeight:"true",
   //   render: function(data) {
-  //
-  //     nowTop = data.curTop;
-  //     if (data.curTop >= 6200) {
-  //       swipeMode = true;
-  //     }
-  //
-  //     if (data.curTop >= 16800) {
-  //
-  //       if (ripple_tf == false) {
-  //         ripple_tf = true;
-  //         $('.ripple__holder').ripples({
-  //           resolution: 256,
-  //           dropRadius: 25,
-  //           perturbance: 0.04,
-  //           interactive: false,
-  //           crossOrigin: "Anonymous",
-  //           imageUrl: "img/bg_kai_b.jpg"
-  //         });
-  //       }
-  //     }
-  //     if (data.curTop >= 19200) {
-  //       switch (formNum) {
-  //         case 1:
-  //           $('.form__step1').show();
-  //           $('.form__step2').hide();
-  //           $('.form__step3').hide();
-  //
-  //           break;
-  //         case 2:
-  //           $('.form__step1').hide();
-  //           $('.form__step2').show();
-  //           $('.form__step3').hide();
-  //           break;
-  //         case 3:
-  //           $('.form__step1').hide();
-  //           $('.form__step2').hide();
-  //           $('.form__step3').show();
-  //           break;
-  //       }
-  //     }
+  //     dt = data.curTop;
+  //     console.log(dt);
+  //     // if (data.curTop >= 6200) {
+  //     //   swipeMode = true;
+  //     // }
+  //     //
+  //     // if (data.curTop >= 16800) {
+  //     //
+  //     //   if (ripple_tf == false) {
+  //     //     ripple_tf = true;
+  //     //     $('.ripple__holder').ripples({
+  //     //       resolution: 256,
+  //     //       dropRadius: 25,
+  //     //       perturbance: 0.04,
+  //     //       interactive: false,
+  //     //       crossOrigin: "Anonymous",
+  //     //       imageUrl: "img/bg_kai_b.jpg"
+  //     //     });
+  //     //   }
+  //     // }
+  //     // if (data.curTop >= 19200) {
+  //     //   switch (formNum) {
+  //     //     case 1:
+  //     //       $('.form__step1').show();
+  //     //       $('.form__step2').hide();
+  //     //       $('.form__step3').hide();
+  //     //
+  //     //       break;
+  //     //     case 2:
+  //     //       $('.form__step1').hide();
+  //     //       $('.form__step2').show();
+  //     //       $('.form__step3').hide();
+  //     //       break;
+  //     //     case 3:
+  //     //       $('.form__step1').hide();
+  //     //       $('.form__step2').hide();
+  //     //       $('.form__step3').show();
+  //     //       break;
+  //     //   }
+  //     // }
   //   }
   // });
+  // //
+  // var s = skrollr.decks.init({
+  //
+  //   //options.decks (.skrollr-deck) - decks classname
+  //   offset: 10, // (10) - offset in percents to deck since which will autoscroll
+  //   duration: 500, // (600) - scrolling duration
+  //   easing: "qurt", // (quaratic) - scrolling easing, more
+  //   delay: 150, // (500) - delay before scroll
+  //   autoscroll: true, // (true)
+  //
+  // })
   // var skrollr_menu = skrollr.menu.init(skrollr_obj, {
   //   scale: ss,
   //   change: function(hash, top) {
@@ -331,16 +345,20 @@ $(function() {
   //   }
   // }
 });
-(function () {
+(function() {
 
-  if ( typeof window.CustomEvent === "function" ) return false;
+  if (typeof window.CustomEvent === "function") return false;
 
-  function CustomEvent ( event, params ) {
-    params = params || { bubbles: false, cancelable: false, detail: null };
-    var evt = document.createEvent( 'CustomEvent' );
-    evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+  function CustomEvent(event, params) {
+    params = params || {
+      bubbles: false,
+      cancelable: false,
+      detail: null
+    };
+    var evt = document.createEvent('CustomEvent');
+    evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
     return evt;
-   }
+  }
 
   window.CustomEvent = CustomEvent;
 })();
