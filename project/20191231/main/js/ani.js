@@ -288,13 +288,12 @@ $(function() {
 
   function s5goPre() {
     sen = 0;
+    $('#main__scroll').scrollTop(anc[4]);
     isAc = true;
     TweenMax.set($(".fixed__a3"),{y:-stgH});
     $(".fixed__a3").show();
-    TweenMax.to($(".fixed__a3"),0.5,{y:0,onComplete:function(){
-      $('#main__scroll').animate({scrollTop:(anc[4])},50,function(){
-        isAc = false;
-      });
+    TweenMax.to($(".fixed__a3"),1,{y:0,onComplete:function(){
+      isAc = false;
     }});
     // $(".fixed__a3").show();
     // isDrawing = true;
@@ -309,9 +308,7 @@ $(function() {
 
   function s5goNext() {
     sen = 9;
-    // $('#main__scroll').scrollTop(anc[14]);
-    isAc = true;
-    $('#main__scroll').animate({scrollTop:(anc[14])},50,function(){ isAc = false;});
+    $('#main__scroll').scrollTop(anc[14]);
     console.log(anc[14]);
     console.log($('#main__scroll').scrollTop());
     isAc = true;
@@ -340,9 +337,7 @@ $(function() {
       stopCounting();
       s5goPre();
     }else{
-      //$('#main__scroll').scrollTop(anc[6]);
-      isAc = true;
-      $('#main__scroll').animate({scrollTop:(anc[6])},50,function(){isAc = false;});
+      $('#main__scroll').scrollTop(anc[6]);
       ////console.log($('#main__scroll').scrollTop());
       drawSc();
       setTimeout(function(){
@@ -360,9 +355,7 @@ $(function() {
       stopCounting();
       s5goNext();
     }else{
-      // $('#main__scroll').scrollTop(anc[6]);
-      isAc = true;
-      $('#main__scroll').animate({scrollTop:(anc[6])},50,function(){isAc = false;});
+      $('#main__scroll').scrollTop(anc[6]);
       drawSc();
       setTimeout(function(){
         // isDrawing = false;
@@ -852,8 +845,7 @@ $(function() {
         if(nowTop<anc[14]){
           // TweenMax.set($('.fixed__a7'),{y:0});
           // TweenMax.to($(".fixed__a7"),0.5,{y:stgH,onComplete:function(){
-            // $('#main__scroll').scrollTop(anc[6]);
-            $('#main__scroll').animate({scrollTop:(anc[6])});
+            $('#main__scroll').scrollTop(anc[6]);
             // isAc = false;
             // sen =8;
             // drawSc();
@@ -1001,36 +993,27 @@ $(function() {
 
   });
  $('a#btn_index').on('click',function(){
-   // $('#main__scroll').scrollTop(0);
-   isAc=true;
-   $('#main__scroll').animate({scrollTop:0},50,function(){isAc=false});
+   $('#main__scroll').scrollTop(0);
  })
  $('a#btn_commercial').on('click',function(){
-
-   isAc=true;
-   $('#main__scroll').animate({scrollTop:anc[4]},50,function(){isAc=false});
-   // $('#main__scroll').scrollTop(anc[4]);
+   $('#main__scroll').scrollTop(anc[4]);
  })
  $('a#btn_about').on('click',function(){
    sen = 1;
    ss1();
-   isAc=true;
-   $('#main__scroll').animate({scrollTop:anc[6]},50,function(){isAc=false});
+   $('#main__scroll').scrollTop(anc[6]);
  })
  $('a#btn_info').on('click',function(){
 
    sen = 4;
    ss4();
-   isAc=true;
-   $('#main__scroll').animate({scrollTop:anc[6]},50,function(){isAc=false});
+   $('#main__scroll').scrollTop( anc[6])
  })
  $('a#btn_form').on('click',function(){
-   isAc=true;
-   $('#main__scroll').animate({scrollTop:anc[17]},50,function(){isAc=false});
+   $('#main__scroll').scrollTop(anc[17])
 
  })
  $('.a6 .a6__title2, .a6__text2, .main__a6').on('click',function(){
-   isAc=true;
-   $('#main__scroll').animate({scrollTop:anc[17]},50,function(){isAc=false});
+   $('#main__scroll').scrollTop( anc[17])
  })
 })
