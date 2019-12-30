@@ -836,15 +836,8 @@ $(function() {
           case "enter":
             // console.log('im 9');
             TweenMax.fromTo($(".b8__txt__title, .b8__txt__text"),0.5,{opacity:1,y:0},{opacity:0,y:-50})
-            TweenMax.fromTo($(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2"),0.5,{opacity:0,y:50},{opacity:1,y:0})
+            TweenMax.fromTo($(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2, .production_s"),0.5,{opacity:0,y:50},{opacity:1,y:0})
 
-            // // $('.fixed__a8').show();
-            // $(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2").fadeIn();
-            // $(".b8__txt__text, .b8__txt__title").fadeOut();
-            // if ($(".b9__title , .b9__text, .production_ss").hasClass("fadeInUp")) {} else {
-            //   $(".b9__title , .b9__text, .production_ss").addClass("fadeInUp")
-            //   $('.b9__title, .production_ss, .b9__text').removeClass('fadeOut');
-            // }
             break;
           case "leave":
             // console.log('im 9 leave');
