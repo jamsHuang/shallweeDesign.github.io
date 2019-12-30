@@ -236,8 +236,13 @@ $(function() {
     })
     .on("progress", function(e) {
       if(e.progress < 0.6 && e.progress > 0.2){
+        if(isA3){
 
-        $(".fixed__a3").show();
+        }else{
+          $(".fixed__a3").show();
+          isA3 = true;
+        }
+
       }
       $(".fixed__a3 .bg2").css('top', anc[3] - nowTop);
 
@@ -245,10 +250,15 @@ $(function() {
     .on("enter leave", function(e) {
       switch (e.type) {
         case "enter":
+
         sen = 0;
         $(".fixed__a1").hide();
         $('.fixed__a7').hide();
         $('.fixed__a8').hide();
+        isA1 = false;
+        isA7 = false;
+        isA8 = false;
+
           if (isA5) {
 
           } else {
@@ -680,11 +690,11 @@ $(function() {
           $('#main__scroll').stop().animate({
             scrollTop: anc[6]
           }, 10, function() {
-            // if (sen == 0) {
-            //   sen = 1;
-            // } else if (sen == 9) {
-            //   sen = 8;
-            // }
+            if (sen == 0) {
+              sen = 1;
+            } else if (sen == 9) {
+              sen = 8;
+            }
             drawSc();
             $(".fixed__a3").hide();
             $('.fixed__a7').hide();
@@ -715,7 +725,7 @@ $(function() {
   var sc = new ScrollMagic.Scene({
       triggerElement: "#trigger7",
       triggerHook: "onEnter",
-      duration: stgH, // the scene should last for a scroll distance of 100px
+      duration: (stgH-100), // the scene should last for a scroll distance of 100px
       offset:0, // start this scene after scrolling for 50px
     })
     .on("progress", function(e) {
@@ -753,13 +763,27 @@ $(function() {
       .on("progress", function(e) {
         //console.log(e.progress);
         if(e.progress>0.9){
+          if(isA8){
 
-          $('.fixed__a8').show();
-          $('.fixed__a8').css({"top":"100%"});
+          }else{
+            $('.fixed__a8').show();
+            $('.fixed__a8').css({"top":"100%"});
+            isA8 = true;
+          }
+
         }else if(e.progress>0.5){
           // $('.production_ss').css({"transform":"scale("+(1+e.progress*10)+")","margin-top":(-120+e.progress*stgH/2)+"px"})
-          $('.fixed__a7').show();
-          $('.fixed__a8').hide();
+          if(isA8){
+            $('.fixed__a8').hide();
+            isA8 = false;
+          }else{}
+
+          if(isA7){
+
+          }else{
+            $('.fixed__a7').show();
+            isA7=true;
+          }
         }
       })
       .on("enter leave", function(e) {
@@ -789,7 +813,7 @@ $(function() {
               offset: 0, // start this scene after scrolling for 50px
             })
             .on("progress", function(e) {
-              $('.fixed__a8').css({"top":(100-e.progress*100)+"%"});
+              $('.fixed__a8').css({"top": (100-e.progress*100)+"%"});
               if(e.progress>0.9){
 
               }
@@ -865,36 +889,27 @@ $(function() {
 
   });
  $('a#btn_index').on('click',function(){
-   $('#main__scroll').stop().animate({
-     scrollTop: anc[1]
-   })
+   $('#main__scroll').scrollTop(0);
  })
  $('a#btn_commercial').on('click',function(){
-   $('#main__scroll').stop().animate({
-     scrollTop: anc[4]
-   })
+   $('#main__scroll').scrollTop(anc[4]);
  })
  $('a#btn_about').on('click',function(){
+   sen = 1;
    ss1();
-   $('#main__scroll').stop().animate({
-     scrollTop: anc[6]
-   })
+   $('#main__scroll').scrollTop(anc[6]);
  })
  $('a#btn_info').on('click',function(){
-   $('#main__scroll').stop().animate({
-     scrollTop: anc[6]
-   })
+
    sen = 4;
    ss4();
+   $('#main__scroll').scrollTop( anc[6])
  })
  $('a#btn_form').on('click',function(){
-   $('#main__scroll').stop().animate({
-     scrollTop: anc[17]
-   })
+   $('#main__scroll').scrollTop(anc[17])
+
  })
  $('.a6 .a6__title2, .a6__text2, .main__a6').on('click',function(){
-   $('#main__scroll').stop().animate({
-     scrollTop: anc[17]
-   })
+   $('#main__scroll').scrollTop( anc[17])
  })
 })

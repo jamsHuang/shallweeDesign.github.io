@@ -1,14 +1,6 @@
 $(function() {
 
-  //
-  // $('.layer__scroll').scroll(function(){
-  //   $('#main__container').animate({
-  //         top: $(".scroll__content").offset().top
-  //   }, 10);
-  // });
-  //
   var ld=true;
-  //
   $('.loading').hide();
   //
   var ripple_tf = false;
@@ -16,7 +8,7 @@ $(function() {
     ripple_tf = true;
     $('.ripple__holder').ripples({
       resolution: 256,
-      dropRadius: 25,
+      dropRadius: 20,
       perturbance: 0.04,
       interactive: false,
       crossOrigin: "",
@@ -30,20 +22,20 @@ $(function() {
     //draw kaleidoscope
     window.dispatchEvent(event_kai);
     //draw ripples
-    if (t % 200 == 0) {
+    if (t % 250 == 0) {
       var dropX = Math.round(Math.random() * window.innerWidth);
       var dropY = Math.round(Math.random() * window.innerHeight);
       var dropR = Math.round(Math.random() * 10) + 10;
-      var dropRec = Math.round(Math.random() * 3) + 1;
+      var dropRec = Math.round(Math.random() * 2) + 1;
 
       $('.ripple__holder').ripples("drop", dropX, dropY, dropR, dropRec);
 
     }
-    if(t%50==49){
-      if(ld == true){
-        $(".loading").hide();
-      }
-    }
+    // if(t%50==49){
+    //   // if(ld == true){
+    //   //   $(".loading").hide();
+    //   // }
+    // }
     //
     // if (t % 5 == 0) {
     //   if (img_ready == true) {
