@@ -20,7 +20,9 @@ $(function() {
 
   function drawWorld() {
     //draw kaleidoscope
-    window.dispatchEvent(event_kai);
+    if(t%5==0){
+      window.dispatchEvent(event_kai);
+    }
     //draw ripples
     if (t % 350 == 0) {
       if (ripple_tf == true) {
@@ -38,14 +40,6 @@ $(function() {
         $(".loading").hide();
       }
     }
-    //
-    // if (t % 5 == 0) {
-    //   if (img_ready == true) {
-    //     ktx.drawImage(img_cover, 0, 0);
-    //     ktx.globalCompositeOperation = 'source-in';
-    //     ktx.drawImage(canvas, 0, 0, canvas.width, canvas.height, 0, 0, 400, 400);
-    //   }
-    // }
     t++;
     if (t > 70000) {
 
