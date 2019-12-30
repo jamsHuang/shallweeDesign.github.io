@@ -798,6 +798,7 @@ $(function() {
           // TweenMax.set($('.fixed__a7'),{y:0});
           // TweenMax.to($(".fixed__a7"),0.5,{y:stgH,onComplete:function(){
             $('#main__scroll').scrollTop(anc[6]);
+            $('.cta').fadeIn();
             // isAc = false;
             // sen =8;
             // drawSc();

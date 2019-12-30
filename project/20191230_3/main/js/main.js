@@ -33,11 +33,11 @@ $(function() {
         $el.ripples('drop', x, y, dropRadius, strength);
       }
     }
-    // if(t%50==49){
-    //   // if(ld == true){
-    //   //   $(".loading").hide();
-    //   // }
-    // }
+    if(t%300==290){
+      if(ld == true){
+        $(".loading").hide();
+      }
+    }
     //
     // if (t % 5 == 0) {
     //   if (img_ready == true) {
