@@ -338,7 +338,7 @@ $(function() {
       drawSc();
       setTimeout(function(){
         isAc = false;
-      },1000);
+      },1500);
     }
   }
 
@@ -356,7 +356,7 @@ $(function() {
       setTimeout(function(){
         // isDrawing = false;
         isAc = false;
-      },1000);
+      },1500);
     }
   }
   var $a5_bg = $('.a5 .bg4');
@@ -816,6 +816,9 @@ $(function() {
       switch (e.type) {
         case "enter":
           sen= 9;
+          $(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2").hide();
+          $(".b8__txt__title, .b8__txt__text").fadeIn();
+          //
           $('.fixed__a7').show();
           $('.fixed__a8').hide();
           if ($(".b8__txt__title, .b8__txt__text").hasClass("fadeInUp")) {} else {
@@ -839,7 +842,7 @@ $(function() {
         triggerElement: "#trigger8",
         triggerHook: "onEnter",
         duration: stgH, // the scene should last for a scroll distance of 100px
-        offset: 0, // start this scene after scrolling for 50px
+        offset: 100, // start this scene after scrolling for 50px
       })
       .on("progress", function(e) {
         //console.log(e.progress);
@@ -871,6 +874,8 @@ $(function() {
         switch (e.type) {
           case "enter":
             // $('.fixed__a8').show();
+            $(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2").fadeIn();
+            $(".b8__txt__text, .b8__txt__title").fadeOut();
             if ($(".b9__title , .b9__text, .production_ss").hasClass("fadeInUp")) {} else {
               $(".b9__title , .b9__text, .production_ss").addClass("fadeInUp")
               $('.b9__title, .production_ss, .b9__text').removeClass('fadeOut');
