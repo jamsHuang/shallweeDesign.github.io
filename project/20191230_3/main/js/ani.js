@@ -566,7 +566,7 @@ $(function() {
       $tri.removeClass("tri-m")
     }
     if(dir=="up"){
-        $('.cta').fadeInUp();
+        $('.cta').fadeIn();
     }
   }
   function ss5(){
