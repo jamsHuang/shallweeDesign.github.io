@@ -28,7 +28,8 @@
 .bg2,
 .bg3,
 .bg4,
-.bg5 {
+.bg5,
+.bg6 {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -60,8 +61,10 @@
   background-image: url("../img/bg_kai2.jpg");
 }
 .bg5{
-
   background-color: #dff1f5;
+}
+.bg6{
+  background-image: url("../img/bg3.jpg");
 }
 section {
   width: 100%;
@@ -227,14 +230,14 @@ section {
 
   &__black {
     position: absolute;
-    width: 100%;
-    height: 100%;
     background-color: #000;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    top: 0;
-    left: 0;
-    margin-left: 0;
-    margin-top: 0;
+    top: 50%;
+    left: 50%;
+    margin-left: -120px;
+    margin-top: 30px;
     opacity:0;
   }
 
@@ -245,13 +248,20 @@ section {
     border-radius: 50%;
     top: 50%;
     left: 50%;
-    margin-left: -120px;
-    margin-top: 30px;
+    margin-top: 90px;
+    margin-left: -40px;
     background-position: left top;
     background-image: url("../img/skin.png");
     background-repeat: no-repeat;
     background-size: contain;
+    .a5__black-in{
+      position: relative;
+      width:100%;
+      height:100%;
+      background-color: #000;
+      border-radius: 50%;
 
+    }
   }
 
   &__title {
@@ -299,7 +309,7 @@ section {
   left:0;
   width: 100%;
   height: 100%;
-  &__bg {
+  &__bg {  position: absolute;
     width: 1000px;
     height: 100%;
     top: 0;
@@ -312,7 +322,9 @@ section {
   }
 
   h4,
-  h6 {
+  h6 {  position: absolute;
+    width:auto;
+    height: auto;
     left: 50%;
     top: 50%;
   }
@@ -601,7 +613,17 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-
+   .production_ss{
+     pointer-events: none;
+    position: fixed;
+    display: block;
+    top:50%;
+    left:50%;
+    height: auto;
+    width: 120px;
+    margin-left: -60px;
+    margin-top: -120px;
+   }
 
   &__title {
     left: 50%;
@@ -846,15 +868,17 @@ section {
   &_form {
     position: relative;
     width: 100%;
-    height: 100%;    margin-top: -150px;
+    height: 100%;
+    margin-top:-180px;
   }
 
   &__bg {
     position: absolute;
-    width: 90%;
-    left: 5%;
+    width: 320px;
+    left: 50%;
+    margin-left: -160px;
     margin-top: 50px;
-    height: 100%;
+    height: 420px;
     background-image: url("../img/line_form.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -865,10 +889,11 @@ section {
     text-align: center;
     top: 50%;
     left: 50%;
-    margin-top: -30px;
+
+    margin-top: -75px;
+    margin-left: -142px;
     position: absolute;
     font-size: 12px;
-    margin-left: -160px;
 
     &__title {
       margin-bottom: 10px;
@@ -1063,9 +1088,6 @@ section {
       height: 100%;
     }
     &__skin{
-      &.fadeOut{
-
-      }
       margin-left: -80px;
       margin-top: -40px;
     }
@@ -1535,6 +1557,9 @@ section {
   }
 
   .line {
+    &_form{
+      margin-top: -22%;
+    }
     &__bg {
       position: absolute;
       max-width: 320px;
@@ -1554,6 +1579,7 @@ section {
       margin-top: -30px;
       position: absolute;
       font-size: 12px;
+
 
       &__title {
         margin-bottom: 10px;

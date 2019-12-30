@@ -7,6 +7,10 @@ $(function() {
   //   }, 10);
   // });
   //
+  var ld=true;
+  //
+  $('.loading').hide();
+  //
   var ripple_tf = false;
   if (ripple_tf == false) {
     ripple_tf = true;
@@ -15,8 +19,8 @@ $(function() {
       dropRadius: 25,
       perturbance: 0.04,
       interactive: false,
-      crossOrigin: "Anonymous",
-      imageUrl: "img/bg_kai_b.jpg"
+      crossOrigin: "",
+
     });
   }
   var timer = setInterval(drawWorld, 50);
@@ -33,6 +37,12 @@ $(function() {
       var dropRec = Math.round(Math.random() * 3) + 1;
 
       $('.ripple__holder').ripples("drop", dropX, dropY, dropR, dropRec);
+
+    }
+    if(t%50==49){
+      if(ld == true){
+        $(".loading").hide();
+      }
     }
     //
     // if (t % 5 == 0) {
@@ -44,9 +54,11 @@ $(function() {
     // }
     t++;
     if (t > 50000) {
+
       t = 0;
     }
   }
+  //
 
   // var ripple_tf = false;
   // var formNum = 1;
@@ -172,7 +184,7 @@ $(function() {
   //
   //   }
   // });
-  
+
   // var skrollr_obj = skrollr.init({
   //   // easing: {
   //   //             vibrate: function(p) {
@@ -285,65 +297,66 @@ $(function() {
   //     wt = 0;
   //   }
   // }
-  // //form
-  // AddressSeleclList.Initialize('select__city', 'select__area', "選擇縣市", "選擇區域");
-  //
-  // $("#button__addr").on("click", function() {
-  //   $('.form__step1').hide();
-  //   $('.form__step2').show();
-  //   formNum = 2;
-  // })
-  //
-  // $('#select__area').change(function() {
-  //   appendStore();
-  // })
-  //
-  // function appendStore() {
-  //
-  // }
-  // $('#button__confirm').on('click', function() {
-  //   var ck = $('[name=store]:checked');
-  //   addr = $('label[for=' + ck.val() + ']')[0].innerText;
-  //   $('#form__addr').val(addr);
-  //   $('.form__step1').show();
-  //   $('.form__step2').hide();
-  //   formNum = 1;
-  // })
-  // $('#button__reset').on('click', function() {
-  //
-  // })
-  // //submit表單
-  // $("#button__submit").on('click', function() {
-  //   $('#form__name').val()
-  //   //checkForm();
-  //   step3();
-  // })
-  // //補寄簡訊
-  // $('#resent__msg').on('click', function() {
-  //
-  // })
-  //
-  // $('.ig__btn, .ig__btn2').on('click', function() {
-  //   // console.log('ig_bt');
-  // })
-  //
-  // function step3() {
-  //   formNum = 3;
-  //   $('.form__step1').hide();
-  //   $('.form__step2').hide();
-  //   $('.form__step3').show();
-  //   $('.line_form').show();
-  //
-  //   // $('.ig').attr('data-10800','top:-100%')
-  // }
-  //
-  // function checkForm() {
-  //   if ($('#form__name').val() == "" || $('#form__tel').val() == "" || $('#form__email').val() == "" || $('#form__addr').val() == "") {
-  //     // console.log('please check the form again');
-  //   } else {
-  //     step3();
-  //   }
-  // }
+  //form
+  $('.line_form').hide();
+  AddressSeleclList.Initialize('select__city', 'select__area', "選擇縣市", "選擇區域");
+
+  $("#button__addr").on("click", function() {
+    $('.form__step1').hide();
+    $('.form__step2').show();
+    formNum = 2;
+  })
+
+  $('#select__area').change(function() {
+    appendStore();
+  })
+
+  function appendStore() {
+
+  }
+  $('#button__confirm').on('click', function() {
+    var ck = $('[name=store]:checked');
+    addr = $('label[for=' + ck.val() + ']')[0].innerText;
+    $('#form__addr').val(addr);
+    $('.form__step1').show();
+    $('.form__step2').hide();
+    formNum = 1;
+  })
+  $('#button__reset').on('click', function() {
+
+  })
+  //submit表單
+  $("#button__submit").on('click', function() {
+    $('#form__name').val()
+    //checkForm();
+    step3();
+  })
+  //補寄簡訊
+  $('#resent__msg').on('click', function() {
+
+  })
+
+  $('.ig__btn, .ig__btn2').on('click', function() {
+    // console.log('ig_bt');
+  })
+
+  function step3() {
+    formNum = 3;
+    $('.form__step1').hide();
+    $('.form__step2').hide();
+    $('.form__step3').show();
+    $('.line_form').show();
+
+    // $('.ig').attr('data-10800','top:-100%')
+  }
+
+  function checkForm() {
+    if ($('#form__name').val() == "" || $('#form__tel').val() == "" || $('#form__email').val() == "" || $('#form__addr').val() == "") {
+      // console.log('please check the form again');
+    } else {
+      step3();
+    }
+  }
 });
 (function() {
 
