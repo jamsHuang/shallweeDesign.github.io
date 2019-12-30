@@ -76,6 +76,7 @@ $(function() {
             $('.a0__title__logo').addClass("flipInY");
             $('.a0__title__logo').removeClass('fadeOutUp');
           }
+            $('.cta').fadeOut();
           break;
         case "leave":
           if ($(".a0__title__text").hasClass("fadeInUp")) {
@@ -533,7 +534,7 @@ $(function() {
 
 
     if(dir=="up"){
-
+      $('.cta').fadeIn();
       TweenMax.set($tri,{y:0});
       TweenMax.to($tri,0.5,{ease: Quad.easeOut,y:stgH});
       TweenMax.set($model,{y:0});
@@ -564,17 +565,23 @@ $(function() {
     if($tri.hasClass("tri-m")){
       $tri.removeClass("tri-m")
     }
+    if(dir=="up"){
+        $('.cta').fadeInUp();
+    }
   }
   function ss5(){
 
     if(dir == "down"){
 
+      $('.cta').fadeOut();
       TweenMax.set($bg3,{opacity:1,y:stgH});
       $bg3.show();
       TweenMax.to($bg3,0.5,{ease: Sine.easeOut,opacity:1,y:0});
 
     }
+    else{
 
+    }
     //
     if($tri.hasClass("tri-m")){}else{
       $tri.addClass("tri-m")
@@ -780,7 +787,7 @@ $(function() {
         case "enter":
           sen= 9;
           $(".b8__txt__title, .b8__txt__text").fadeIn();
-          $('.cta').fadeOut();
+
           // $(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2").hide();
           // $(".b8__txt__title, .b8__txt__text").fadeIn();
           // //
@@ -798,7 +805,7 @@ $(function() {
           // TweenMax.set($('.fixed__a7'),{y:0});
           // TweenMax.to($(".fixed__a7"),0.5,{y:stgH,onComplete:function(){
             $('#main__scroll').scrollTop(anc[6]);
-            $('.cta').fadeIn();
+
             // isAc = false;
             // sen =8;
             // drawSc();

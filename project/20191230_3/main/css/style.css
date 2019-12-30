@@ -5104,8 +5104,8 @@ img {
 }
 
 .tri {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   left: 50%;
   top: 50%;
   position: absolute;
@@ -5116,7 +5116,7 @@ img {
 .tri-m {
   animation-name: oxxo;
   animation-duration: 1s;
-  margin-top: -20px;
+  margin-top: -50px;
   margin-left: -100px;
 }
 
@@ -5443,13 +5443,13 @@ section {
 
 .a5__skin {
   position: absolute;
-  width: 100px;
-  height: 100px;
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  margin-top: 90px;
-  margin-left: -40px;
+  width: 50px;
+  height: 50px;
+  margin-left: -10px;
+  margin-top: 60px;
   background-position: left top;
   background-image: url("../img/skin.png");
   background-repeat: no-repeat;
@@ -5551,8 +5551,10 @@ section {
 .a6__title2__arr {
   display: inline-block;
   width: 18px;
-  vertical-align: sub;
+  vertical-align: top;
+  line-height: 46px;
   margin-top: 10px;
+  margin-left: -10px;
 }
 
 .a6__text2 {
@@ -5576,16 +5578,16 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -65px;
-  margin-left: 33px;
+  margin-left: 50px;
+  margin-top: -90px;
 }
 
 .b1__text {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -165px;
-  margin-left: 12px;
+  margin-left: 25px;
+  margin-top: -205px;
 }
 
 .b2 {
@@ -5598,7 +5600,7 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 200px;
+  margin-top: 165px;
   letter-spacing: 10px;
   width: 100%;
   margin-left: -100px;
@@ -5607,7 +5609,7 @@ section {
 .b2__text {
   position: absolute;
   top: 50%;
-  margin-top: 240px;
+  margin-top: 200px;
   left: 50%;
   letter-spacing: 5px;
   margin-left: -77px;
@@ -5624,7 +5626,7 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 200px;
+  margin-top: 165px;
   letter-spacing: 10px;
   margin-left: -110px;
   width: 500px;
@@ -5633,7 +5635,7 @@ section {
 .b3__text {
   position: absolute;
   top: 50%;
-  margin-top: 240px;
+  margin-top: 200px;
   left: 50%;
   letter-spacing: 5px;
   margin-left: -60px;
@@ -5650,7 +5652,7 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 200px;
+  margin-top: 165px;
   letter-spacing: 10px;
   width: 500px;
   margin-left: -113px;
@@ -5659,7 +5661,7 @@ section {
 .b4__text {
   position: absolute;
   top: 50%;
-  margin-top: 240px;
+  margin-top: 200px;
   left: 50%;
   letter-spacing: 5px;
   width: 500px;
@@ -5680,6 +5682,7 @@ section {
   height: 100%;
   margin-left: 55px;
   margin-top: -200px;
+  font-size: 22px;
 }
 
 .b5__title1 {
@@ -5694,7 +5697,7 @@ section {
 
 .b5__title3 {
   margin-top: -170px;
-  margin-left: 15px;
+  margin-left: 0px;
 }
 
 .b5__text {
@@ -5707,23 +5710,23 @@ section {
 }
 
 .b5__text1 {
-  margin-top: -120px;
-  margin-left: 101px;
+  margin-top: 0px;
+  margin-left: 96px;
 }
 
 .b5__text2 {
   margin-top: -150px;
-  margin-left: 82px;
+  margin-left: 96px;
 }
 
 .b5__text3 {
   margin-top: -150px;
-  margin-left: 42px;
+  margin-left: 36px;
 }
 
 .b5__text4 {
-  margin-top: -150px;
-  margin-left: -7px;
+  margin-top: -170px;
+  margin-left: -24px;
 }
 
 .b6 {
@@ -5824,7 +5827,7 @@ section {
 
 .b9 .production_ss {
   pointer-events: none;
-  position: fixed;
+  position: absolute;
   display: block;
   top: 50%;
   left: 50%;
@@ -5872,8 +5875,7 @@ section {
   font-size: 12px;
   letter-spacing: 3px;
   margin-left: -150px;
-  margin-top: 100px;
-  height: auto;
+  margin-top: 120px;
 }
 
 .b__bg {
@@ -6269,6 +6271,8 @@ section {
     height: 100%;
   }
   .a5__skin {
+    width: 100px;
+    height: 100px;
     margin-left: -80px;
     margin-top: -40px;
   }
@@ -6366,6 +6370,7 @@ section {
   .b5__title {
     letter-spacing: 10px;
     height: 100%;
+    font-size: 28px;
   }
   .b5__title1 {
     margin-top: -170px;
