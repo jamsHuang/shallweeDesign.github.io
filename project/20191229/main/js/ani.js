@@ -39,7 +39,7 @@ $(function() {
     // anc[16] = $(".main__a16")[0].offsetTop;
     anc[17] = $(".main__a17")[0].offsetTop;
   }
-  console.log(anc);
+  //console.log(anc);
 
   function getIn(target, effectIn, effectOut) {
     if (target.hasClass(effectIn)) {
@@ -94,7 +94,7 @@ $(function() {
           }
           break;
         case "leave":
-          // console.log('leave')
+          // //console.log('leave')
           if ($(".a0__title__text").hasClass("fadeInUp")) {
             $(".a0__title__text").removeClass("fadeInUp");
             $(".a0__title__text").addClass("fadeOutUp");
@@ -215,7 +215,7 @@ $(function() {
           }
           break;
         case "leave":
-          console.log('leave')
+          //console.log('leave')
           if ($(".a3__text2").hasClass("fadeInUp")) {
             $(".a3__text2").removeClass("fadeInUp");
             $(".a3__text2").addClass("fadeOutUp");
@@ -236,10 +236,8 @@ $(function() {
     })
     .on("progress", function(e) {
       if(e.progress < 0.6 && e.progress > 0.2){
-        
+
         $(".fixed__a3").show();
-
-
       }
       $(".fixed__a3 .bg2").css('top', anc[3] - nowTop);
 
@@ -247,7 +245,7 @@ $(function() {
     .on("enter leave", function(e) {
       switch (e.type) {
         case "enter":
-
+        sen = 0;
         $(".fixed__a1").hide();
         $('.fixed__a7').hide();
         $('.fixed__a8').hide();
@@ -259,7 +257,7 @@ $(function() {
           }
           break;
         case "leave":
-          // console.log('out');
+          // ////console.log('out');
       }
     })
     .addTo(controller)
@@ -303,14 +301,14 @@ $(function() {
 
   function goUp() {
     sen--;
-    console.log('goup', sen);
+    //console.log('goup', sen);
     if (sen <= 0) {
       sen = 0;
       stopCounting();
       s5goPre();
     }else{
       $('#main__scroll').scrollTop(anc[6]);
-      //console.log($('#main__scroll').scrollTop());
+      ////console.log($('#main__scroll').scrollTop());
       drawSc();
       setTimeout(function(){
         isAc = false;
@@ -320,7 +318,7 @@ $(function() {
 
   function goDown() {
     sen++;
-    console.log('godown', sen);
+    //console.log('godown', sen);
     if (sen >= 9) {
       sen = 9;
       stopCounting();
@@ -660,15 +658,15 @@ $(function() {
                 isAc = true;
                 goDown();
               }
-              //console.log("down");
+              ////console.log("down");
             } else if (mv < -0.001) {
-              //console.log("up");
+              ////console.log("up");
               if (isAc == false) {
                 isAc = true;
                 goUp();
               }
             } else {
-              //console.log("stay");
+              ////console.log("stay");
             }
             ppTop = nnTop;
           }, 50);
@@ -696,7 +694,7 @@ $(function() {
               isDrawing = false;
 
             },1000);
-            //console.log("in",$('#main__scroll').scrollTop());
+            ////console.log("in",$('#main__scroll').scrollTop());
           });
           break;
         case "leave":
@@ -735,7 +733,7 @@ $(function() {
           }
           break;
         case "leave":
-          // console.log('leave')
+          // //console.log('leave')
           if ($(".b8__txt__title, .b8__txt__text").hasClass("fadeInUp")) {
             $(".b8__txt__title, .b8__txt__text").removeClass("fadeInUp");
             $(".b8__txt__title, .b8__txt__text").addClass("fadeOutUp");
@@ -753,7 +751,7 @@ $(function() {
         offset: 0, // start this scene after scrolling for 50px
       })
       .on("progress", function(e) {
-        console.log(e.progress);
+        //console.log(e.progress);
         if(e.progress>0.9){
 
           $('.fixed__a8').show();
@@ -774,7 +772,7 @@ $(function() {
             }
             break;
           case "leave":
-            // console.log('leave')
+            // //console.log('leave')
             if ($('.b9__title , .production_ss, .b9__text').hasClass("fadeInUp")) {
               $('.b9__title , .production_ss, .b9__text').removeClass("fadeInUp");
               $('.b9__title , .production_ss, .b9__text').addClass("fadeOut");
@@ -803,7 +801,7 @@ $(function() {
 
                   break;
                 case "leave":
-                  // console.log('leave')
+                  // //console.log('leave')
                   break;
               }
             })
@@ -814,17 +812,17 @@ $(function() {
 
   $('.layer__scroll').scroll(function() {
     nTop = $('.layer__scroll').scrollTop();
-    console.log(nTop);
+    //console.log(nTop);
   })
 
   function handleUp() {
-    console.log('up');
+    //console.log('up');
     nowPage++;
-    console.log(nowPage);
+    //console.log(nowPage);
   }
 
   function handleDown() {
-    console.log('down');
+    //console.log('down');
     if (nowPage == 0) {
       if ($('.layer__scroll').hasClass('active')) {
         $('.layer__scroll').removeClass('active');
