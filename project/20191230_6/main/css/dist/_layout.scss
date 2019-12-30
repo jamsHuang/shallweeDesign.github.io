@@ -17,9 +17,11 @@ body {
   box-sizing: border-box;
   -webkit-backface-visibility: hidden;
 }
-section{
+
+section {
   position: relative;
 }
+
 canvas {
   max-width: none;
 }
@@ -30,33 +32,38 @@ html {
   height: 100%;
   margin: 0;
   overflow: hidden;
-  &.fancybox-active{
+
+  &.fancybox-active {
     height: 100%;
   }
 }
-.stinkie{
-  top:0;
+
+.stinkie {
+  top: 0;
   position: sticky;
-  width:100%;
+  width: 100%;
   height: 0;
-  .bg6{
+
+  .bg6 {
     position: absolute;
     width: 100%;
-    height:100vh;
+    height: 100vh;
   }
-  .b__bg{
+
+  .b__bg {
     position: absolute;
     width: 100%;
-    height:100vh;
+    height: 100vh;
   }
 }
 
-#main__container{
+#main__container {
   width: 100%;
-  height:100%;
+  height: 100%;
   position: relative;
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
+
 .wrapper {
   padding-top: 55px;
   width: 100%;
@@ -77,21 +84,25 @@ html {
       bottom: 0;
       width: 100%;
       height: 100%;
-      #bg__scroll{
+
+      #bg__scroll {
         overflow-y: hidden;
       }
-      &__content{
+
+      &__content {
         width: 100%;
         height: 100%;
         position: relative;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
         overflow-x: hidden;
         overflow-y: scroll;
       }
-      &__text{
+
+      &__text {
         z-index: 2;
       }
+
       &__bg {
         z-index: -1;
       }
@@ -112,113 +123,127 @@ html {
         // overflow-y: hidden;
         // pointer-events: none;
         position: relative;
-          overflow: hidden;
+        overflow: hidden;
+
         &::-webkit-scrollbar {
           // display: none;
         }
         display: block;
-        &.active{
+
+        &.active {
           display: block;
           pointer-events: auto;
         }
         // -ms-overflow-style: none;
-
         .scroll__content {
-
           width: 100%;
           height: 10000px;
-
         }
       }
     }
   }
 }
-.loading{
+
+.loading {
   display: block;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 999999;
-    top: 0;
-    left: 0;
-    background-color: #dff1f5;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  background-color: #dff1f5;
 }
-.fixed__a3{
+
+.fixed__a3 {
   z-index: 2;
 }
-.fixed__a5{
+
+.fixed__a5 {
   position: absolute;
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 }
-.relative{
+
+.relative {
   position: relative;
-  width:100%;
-  height: calc( 100% - 55px);
+  width: 100%;
+  height: calc(100% - 55px);
   top: 55px;
-  &__a3{
+
+  &__a3 {
     position: relative;
-    top:0;
-    width:100%;
-    height:100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
-  &__a5{
+
+  &__a5 {
     position: absolute;
     height: 100%;
     width: 100%;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
   }
-  &__a7{
+
+  &__a7 {
     position: absolute;
     width: 100%;
-    height:100%;
+    height: 100%;
   }
-  &__a8{
+
+  &__a8 {
     position: absolute;
     width: 100%;
-    height:100%;
+    height: 100%;
   }
-  &__a9{
+
+  &__a9 {
     height: 200%;
   }
 }
-.main{
-  &__a{
+
+.main {
+  &__a {
     // position: sticky;
     // top:0;
-
   }
-  &__a1{
-      width: 100%;
-      height: 100%;
-  }
-  &__a2{
-    width: 100%;
-    height: 150%;
 
-  }
-  &__a3{
-
+  &__a1 {
     width: 100%;
     height: 100%;
   }
-  &__a5{
+
+  &__a2 {
+    width: 100%;
+    height: 150%;
+  }
+
+  &__a3 {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__a5 {
     height: 5000px;
   }
-  &__a6{
-    width:100%;
-    height: 5000px;;
+
+  &__a6 {
+    width: 100%;
+    height: 5000px;
   }
-  &__a14{
-    width:100%;
+
+  &__a14 {
+    width: 100%;
     height: 120%;
   }
-  &__a15{
-    width:100%;
+
+  &__a15 {
+    width: 100%;
     height: 120%;
   }
 }
+
 a,
 a:focus,
 a:hover,
@@ -352,7 +377,7 @@ img {
     width: 100%;
     height: 92%;
     bottom: 0;
-    margin-left: -430px;
+    margin-left: -320px;
 
     &--light {
       background-image: url("../img/model-light.png");
@@ -365,9 +390,8 @@ img {
     left: 50%;
     top: 50%;
     position: absolute;
-    margin-top: -200px;
-    margin-left: 100px;
-
+        margin-top: -200px;
+        margin-left: 95px;
     &-m {
       animation: none !important;
     }
@@ -388,5 +412,16 @@ img {
         opacity: 0.4;
       }
     }
+  }
+}
+@media (min-width:1024px) {
+  .model {
+    margin-left: -430px;
+  }
+  .tri{
+
+    margin-top: -200px;
+    margin-left: 100px;
+
   }
 }
