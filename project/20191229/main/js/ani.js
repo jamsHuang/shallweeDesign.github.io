@@ -235,11 +235,22 @@ $(function() {
       offset: 0, // start this scene after scrolling for 50px
     })
     .on("progress", function(e) {
+      if(e.progress < 0.6 && e.progress > 0.2){
+        
+        $(".fixed__a3").show();
+
+
+      }
       $(".fixed__a3 .bg2").css('top', anc[3] - nowTop);
+
     })
     .on("enter leave", function(e) {
       switch (e.type) {
         case "enter":
+
+        $(".fixed__a1").hide();
+        $('.fixed__a7').hide();
+        $('.fixed__a8').hide();
           if (isA5) {
 
           } else {
@@ -268,6 +279,7 @@ $(function() {
   }
 
   function s5goPre() {
+    sen = 0;
     $(".fixed__a3").show();
     isDrawing = true;
     $('#main__scroll').stop().animate({
@@ -670,11 +682,11 @@ $(function() {
           $('#main__scroll').stop().animate({
             scrollTop: anc[6]
           }, 10, function() {
-            if (sen == 0) {
-              sen = 1;
-            } else if (sen == 9) {
-              sen = 8;
-            }
+            // if (sen == 0) {
+            //   sen = 1;
+            // } else if (sen == 9) {
+            //   sen = 8;
+            // }
             drawSc();
             $(".fixed__a3").hide();
             $('.fixed__a7').hide();
@@ -714,6 +726,7 @@ $(function() {
     .on("enter leave", function(e) {
       switch (e.type) {
         case "enter":
+          sen= 9;
           $('.fixed__a7').show();
           $('.fixed__a8').hide();
           if ($(".b8__txt__title, .b8__txt__text").hasClass("fadeInUp")) {} else {
@@ -853,5 +866,37 @@ $(function() {
     }
 
   });
-
+ $('a#btn_index').on('click',function(){
+   $('#main__scroll').stop().animate({
+     scrollTop: anc[1]
+   })
+ })
+ $('a#btn_commercial').on('click',function(){
+   $('#main__scroll').stop().animate({
+     scrollTop: anc[4]
+   })
+ })
+ $('a#btn_about').on('click',function(){
+   ss1();
+   $('#main__scroll').stop().animate({
+     scrollTop: anc[6]
+   })
+ })
+ $('a#btn_info').on('click',function(){
+   $('#main__scroll').stop().animate({
+     scrollTop: anc[6]
+   })
+   sen = 4;
+   ss4();
+ })
+ $('a#btn_form').on('click',function(){
+   $('#main__scroll').stop().animate({
+     scrollTop: anc[17]
+   })
+ })
+ $('.a6 .a6__title2, .a6__text2, .main__a6').on('click',function(){
+   $('#main__scroll').stop().animate({
+     scrollTop: anc[17]
+   })
+ })
 })
