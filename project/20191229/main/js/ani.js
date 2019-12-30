@@ -653,13 +653,13 @@ $(function() {
           tTimer = setInterval(function() {
             var mv = (nnTop - ppTop);
 
-            if (mv > 0.001) {
+            if (mv > 0.005) {
               if (isAc == false) {
                 isAc = true;
                 goDown();
               }
               ////console.log("down");
-            } else if (mv < -0.001) {
+            } else if (mv < -0.005) {
               ////console.log("up");
               if (isAc == false) {
                 isAc = true;
@@ -669,7 +669,7 @@ $(function() {
               ////console.log("stay");
             }
             ppTop = nnTop;
-          }, 50);
+          }, 150);
         }
       }
     })
