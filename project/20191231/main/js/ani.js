@@ -288,13 +288,13 @@ $(function() {
 
   function s5goPre() {
     sen = 0;
-    $('#main__scroll').scrollTop(anc[4]);
-    $('#main__scroll').animate({ scrollTop:(anc[4]),0});
     isAc = true;
     TweenMax.set($(".fixed__a3"),{y:-stgH});
     $(".fixed__a3").show();
-    TweenMax.to($(".fixed__a3"),1,{y:0,onComplete:function(){
-      isAc = false;
+    TweenMax.to($(".fixed__a3"),0.5,{y:0,onComplete:function(){
+      $('#main__scroll').animate({scrollTop:(anc[4])},50,function(){
+        isAc = false;
+      });
     }});
     // $(".fixed__a3").show();
     // isDrawing = true;
@@ -309,8 +309,9 @@ $(function() {
 
   function s5goNext() {
     sen = 9;
-    $('#main__scroll').scrollTop(anc[14]);
-    $('#main__scroll').animate({ scrollTop:(anc[14]),0});
+    // $('#main__scroll').scrollTop(anc[14]);
+    isAc = true;
+    $('#main__scroll').animate({scrollTop:(anc[14])},50,function(){ isAc = false;});
     console.log(anc[14]);
     console.log($('#main__scroll').scrollTop());
     isAc = true;
@@ -339,8 +340,9 @@ $(function() {
       stopCounting();
       s5goPre();
     }else{
-      $('#main__scroll').scrollTop(anc[6]);
-      $('#main__scroll').animate({ scrollTop:(anc[6]),0});
+      //$('#main__scroll').scrollTop(anc[6]);
+      isAc = true;
+      $('#main__scroll').animate({scrollTop:(anc[6])},50,function(){isAc = false;});
       ////console.log($('#main__scroll').scrollTop());
       drawSc();
       setTimeout(function(){
@@ -358,7 +360,9 @@ $(function() {
       stopCounting();
       s5goNext();
     }else{
-      $('#main__scroll').scrollTop(anc[6]);
+      // $('#main__scroll').scrollTop(anc[6]);
+      isAc = true;
+      $('#main__scroll').animate({scrollTop:(anc[6])},50,function(){isAc = false;});
       drawSc();
       setTimeout(function(){
         // isDrawing = false;
@@ -815,7 +819,7 @@ $(function() {
       triggerElement: "#trigger7",
       triggerHook: "onEnter",
       duration: stgH*1.2, // the scene should last for a scroll distance of 100px
-      offset:stgH/2, // start this scene after scrolling for 50px
+      offset:0, // start this scene after scrolling for 50px
     })
     .on("progress", function(e) {
 
@@ -848,8 +852,8 @@ $(function() {
         if(nowTop<anc[14]){
           // TweenMax.set($('.fixed__a7'),{y:0});
           // TweenMax.to($(".fixed__a7"),0.5,{y:stgH,onComplete:function(){
-            $('#main__scroll').scrollTop(anc[6]);
-            $('#main__scroll').animate({ scrollTop:(anc[6]),0});
+            // $('#main__scroll').scrollTop(anc[6]);
+            $('#main__scroll').animate({scrollTop:(anc[6])});
             // isAc = false;
             // sen =8;
             // drawSc();
@@ -890,7 +894,6 @@ $(function() {
             // console.log('im 9');
             TweenMax.fromTo($(".b8__txt__title, .b8__txt__text"),0.5,{opacity:1,y:0},{opacity:0,y:-50})
             TweenMax.fromTo($(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2"),0.5,{opacity:0,y:50},{opacity:1,y:0})
-            TweenMax.fromTo($('.fixed__a8'),0.5,{y:stgH},{y:stgH});
             // // $('.fixed__a8').show();
             // $(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2").fadeIn();
             // $(".b8__txt__text, .b8__txt__title").fadeOut();
@@ -933,7 +936,7 @@ $(function() {
 
                   break;
                 case "leave":
-                    // TweenMax.fromTo($('.fixed__a8'),0.5,{y:0},{y:stgH});
+                    TweenMax.fromTo($('.fixed__a8'),0.5,{y:0},{y:stgH});
                   break;
               }
             })
@@ -999,48 +1002,35 @@ $(function() {
   });
  $('a#btn_index').on('click',function(){
    // $('#main__scroll').scrollTop(0);
-   isAc = true;
-   $('#main__scroll').animate({ scrollTop:(0),0,function(){
-     isAc = false;
-   }});
+   isAc=true;
+   $('#main__scroll').animate({scrollTop:0},50,function(){isAc=false});
  })
  $('a#btn_commercial').on('click',function(){
+
+   isAc=true;
+   $('#main__scroll').animate({scrollTop:anc[4]},50,function(){isAc=false});
    // $('#main__scroll').scrollTop(anc[4]);
-   isAc = true;
-   $('#main__scroll').animate({ scrollTop:(anc[4]),0,function(){
-     isAc = false;
-   }});
  })
  $('a#btn_about').on('click',function(){
    sen = 1;
    ss1();
-   isAc = true;
-   $('#main__scroll').animate({ scrollTop:(anc[6]),0,function(){
-     isAc = false;
-   }});
+   isAc=true;
+   $('#main__scroll').animate({scrollTop:anc[6]},50,function(){isAc=false});
  })
  $('a#btn_info').on('click',function(){
 
    sen = 4;
    ss4();
-   isAc = true;
-   $('#main__scroll').animate({ scrollTop:(anc[6]),0,function(){
-     isAc = false;
-   }});
-
+   isAc=true;
+   $('#main__scroll').animate({scrollTop:anc[6]},50,function(){isAc=false});
  })
  $('a#btn_form').on('click',function(){
-   // $('#main__scroll').scrollTop(anc[17])
-   isAc = true;
-   $('#main__scroll').animate({ scrollTop:(anc[17]),0,function(){
-     isAc = false;
-   }});
+   isAc=true;
+   $('#main__scroll').animate({scrollTop:anc[17]},50,function(){isAc=false});
+
  })
  $('.a6 .a6__title2, .a6__text2, .main__a6').on('click',function(){
-   // $('#main__scroll').scrollTop( anc[17])
-   isAc = true;
-   $('#main__scroll').animate({ scrollTop:(anc[17]),0,function(){
-     isAc = false;
-   }});
+   isAc=true;
+   $('#main__scroll').animate({scrollTop:anc[17]},50,function(){isAc=false});
  })
 })
