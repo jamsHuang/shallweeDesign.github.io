@@ -288,25 +288,40 @@ $(function() {
 
   function s5goPre() {
     sen = 0;
+    $('#main__scroll').scrollTop(anc[4]);
+    isAc = true;
+    TweenMax.set($(".fixed__a3"),{y:-stgH});
     $(".fixed__a3").show();
-    isDrawing = true;
-    $('#main__scroll').stop().animate({
-      scrollTop: (anc[4])
-    }, 200, function() {
-      ppTop = 0;
-      isDrawing = false;
+    TweenMax.to($(".fixed__a3"),1,{y:0,onComplete:function(){
       isAc = false;
-    });
+    }});
+    // $(".fixed__a3").show();
+    // isDrawing = true;
+    // $('#main__scroll').stop().animate({
+    //   scrollTop: (anc[4])
+    // }, 200, function() {
+    //   ppTop = 0;
+    //   isDrawing = false;
+    //   isAc = false;
+    // });
   }
 
   function s5goNext() {
-    $('#main__scroll').stop().animate({
-      scrollTop: (anc[14]-stgH/2)
-    }, 100, function() {
-      ppTop = 1;
-      isDrawing = false;
+    sen = 9;
+    $('#main__scroll').scrollTop(anc[14]);
+    isAc = true;
+    TweenMax.set($(".fixed__a7"),{y:stgH});
+    $(".fixed__a7").show();
+    TweenMax.to($(".fixed__a7"),1,{y:0,onComplete:function(){
       isAc = false;
-    });
+    }});
+    // $('#main__scroll').stop().animate({
+    //   scrollTop: (anc[14]-stgH/2)
+    // }, 100, function() {
+    //   ppTop = 1;
+    //   isDrawing = false;
+    //   isAc = false;
+    // });
   }
 
   function goUp() {
@@ -544,7 +559,7 @@ $(function() {
     $model.fadeOut();
   }
   function ss4(){
-  setAll();
+    setAll();
     $a6__title2.fadeOut();
     $a6__text2.fadeOut();
     $a6__bg.fadeOut();
@@ -696,8 +711,22 @@ $(function() {
               sen = 8;
             }
             drawSc();
-            $(".fixed__a3").hide();
-            $('.fixed__a7').hide();
+            if(sen == 1){
+                isAc = true;
+                TweenMax.set($(".fixed__a3"),{y:0});
+                TweenMax.to($(".fixed__a3"),1,{y:-stgH,onComplete:function(){
+                  $(".fixed__a3").hide();
+                  isAc = false;
+                }});
+            }else if(sen==8){
+                isAc = true;
+                TweenMax.set($(".fixed__a7"),{y:0});
+                TweenMax.to($(".fixed__a7"),1,{y:stgH,onComplete:function(){
+                  $(".fixed__a7").hide();
+                  isAc = false;
+                }});
+            }
+
             $('.fixed__a8').hide();
             setTimeout(function(){
               // $('#main__scroll').scrollTop(anc[6]);
@@ -710,9 +739,16 @@ $(function() {
         case "leave":
           stopCounting();
           if(nowTop > anc[6]){
-            sen = 10;
+            sen = 9;
+
           }else{
             sen = 0;
+            isAc = true;
+            TweenMax.set($(".fixed__a3"),{y:-stgH});
+            $(".fixed__a3").show();
+            TweenMax.to($(".fixed__a3"),1,{y:0,onComplete:function(){
+              isAc = false;
+            }});
           }
           break;
       }
