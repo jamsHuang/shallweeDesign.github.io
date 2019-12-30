@@ -820,7 +820,8 @@ $(function() {
           $(".b8__txt__title, .b8__txt__text").fadeIn();
           //
           $('.fixed__a7').show();
-          $('.fixed__a8').hide();
+          $('.fixed__a8').show();
+
           if ($(".b8__txt__title, .b8__txt__text").hasClass("fadeInUp")) {} else {
             $(".b8__txt__title, .b8__txt__text").addClass("fadeInUp")
             $('.b8__txt__title, .b8__txt__text').removeClass('fadeOutUp');
@@ -845,30 +846,7 @@ $(function() {
         offset: 100, // start this scene after scrolling for 50px
       })
       .on("progress", function(e) {
-        //console.log(e.progress);
-        if(e.progress>0.9){
-          if(isA8){
-
-          }else{
-            $('.fixed__a8').show();
-            $('.fixed__a8').css({"top":"100%"});
-            isA8 = true;
-          }
-
-        }else if(e.progress>0.5){
-          // $('.production_ss').css({"transform":"scale("+(1+e.progress*10)+")","margin-top":(-120+e.progress*stgH/2)+"px"})
-          if(isA8){
-            $('.fixed__a8').hide();
-            isA8 = false;
-          }else{}
-
-          if(isA7){
-
-          }else{
-            $('.fixed__a7').show();
-            isA7=true;
-          }
-        }
+        
       })
       .on("enter leave", function(e) {
         switch (e.type) {
