@@ -4976,7 +4976,7 @@ html.fancybox-active {
 
 .main__a2 {
   width: 100%;
-  height: 120%;
+  height: 150%;
 }
 
 .main__a3 {
@@ -4991,6 +4991,10 @@ html.fancybox-active {
 .main__a6 {
   width: 100%;
   height: 5000px;
+}
+
+.main__a14 {
+  height: 120%;
 }
 
 a,

@@ -325,6 +325,7 @@ $(function() {
   }
 
   function goUp() {
+    dir="up";
     sen--;
     //console.log('goup', sen);
     if (sen <= 0) {
@@ -342,6 +343,7 @@ $(function() {
   }
 
   function goDown() {
+    dir="down";
     sen++;
     //console.log('godown', sen);
     if (sen >= 9) {
@@ -482,8 +484,9 @@ $(function() {
     TweenMax.to($a5__title,1,{opacity:1,y:0,css:{"color":"rgb(0,0,0)"}});
     TweenMax.set($a5__blackIn,{opacity:0,scale:1});
     TweenMax.set($a5__text,{opacity:0,y:50,css:{"color":"rgb(0,0,0)"}});
-    TweenMax.to($a5__text,1.2,{opacity:1,y:0,css:{"color":"rgb(0,0,0)"}});
+    TweenMax.to($a5__text,0.6,{opacity:1,y:0,css:{"color":"rgb(0,0,0)"}});
     TweenMax.set($a5__black,{scale:0,opacity:0,x:-80});
+    TweenMax.set($a6__bg,{css:{"left":"50%"}});
     $a5_bg.show();
     $a5_model.show();
     $a5__skin.show();
@@ -504,28 +507,36 @@ $(function() {
     TweenMax.set($a5__title,{css:{"color":"rgb(0,0,0)"}});
     TweenMax.to($a5__title,0.8,{css:{"color":"rgb(255,255,255)"}});
     TweenMax.set($a5__black,{scale:0,opacity:1,x:-40,y:-80});
-    TweenMax.to($a5__black,1.2,{scale:100,opacity:1,x:-40,y:-80});
+    TweenMax.to($a5__black,0.8,{scale:100,opacity:1,x:-40,y:-80});
   }
   function ss23(){
   // setAll();
-    TweenMax.set($a6__bg1,{opacity:0,x:-100})
-    TweenMax.set($a6__bg,{opacity:0,css:{"left":"45%"}})
+
     TweenMax.set($bg1,{opacity:0})
     TweenMax.set($a6__title,{opacity:0,y:80})
     TweenMax.set($a6__text,{opacity:0,y:70})
     TweenMax.set($production_s,{opacity:0,y:50})
-    TweenMax.to($a6__bg1,0.5,{opacity:1,x:0})
-    TweenMax.to($a6__bg,1.2,{opacity:0,css:{"left":"50%"}})
+
     TweenMax.to($bg1,1,{opacity:1})
     TweenMax.to($a6__title,1,{opacity:1})
     TweenMax.to($a6__text,1,{opacity:1})
     TweenMax.to($production_s,1,{opacity:1})
+
+    TweenMax.set($a6__bg1,{y:stgH})
+    TweenMax.to($a6__bg1,0.5,{ease: Quad.easeOut,y:0});
+
     $a6__bg1.show();
+    TweenMax.set($a6__bg,{y:0,x:-50,opacity:0});
     $a6__bg.show();
+    TweenMax.to($a6__bg,0.4,{y:0,x:0,opacity:0.5});
     $bg1.show();
+    TweenMax.set($a6__title,{y:50,opacity:0});
+    TweenMax.set($a6__text,{y:50,opacity:0});
     $a6__title.show();
     $a6__text.show();
-
+    TweenMax.to($a6__title,0.4,{y:0,opacity:1});
+    TweenMax.to($a6__text,0.4,{y:0,opacity:1});
+    //
     $production_s.show();
     $a5__skin.fadeOut();
     $a5__blackIn.fadeOut();
@@ -539,36 +550,58 @@ $(function() {
   }
   function ss3(){
 
-    setAll();
+
     TweenMax.to($a6__title,0.5,{opacity:0,y:-20})
     TweenMax.to($a6__text,0.5,{opacity:0,y:-20})
     TweenMax.set($a6__text2,{opacity:0,y:60})
     TweenMax.set($a6__title2,{opacity:0,y:30})
-    $production_s.show();$a6__bg1.show();
+    $production_s.show();
+    $a6__bg1.show();
     $a6__bg.show();
-    TweenMax.set($a6__bg,{opacity:0,css:{"left":"45%"}})
+    TweenMax.set($a6__bg,{opacity:0.5,x:-50,y:0});
+    TweenMax.to($a6__bg,0.5,{opacity:1,x:0,y:0,ease: Quad.easeOut})
 
-    TweenMax.to($a6__bg,{opacity:1,css:{"left":"50%"}})
     TweenMax.to($a6__title2,1,{opacity:1,y:0,delay:0.3})
-    TweenMax.to($a6__text2,1.2,{opacity:1,y:0,delay:0.5})
+    TweenMax.to($a6__text2,0.6,{opacity:1,y:0,delay:0.5})
     $a6__title2.fadeIn();
     $a6__text2.fadeIn();
     $b1__title.fadeOut();
     $b1__text.fadeOut();
-    $tri.fadeOut();
-    $model.fadeOut();
+
+
+    if(dir=="up"){
+
+      TweenMax.set($tri,{y:0});
+      TweenMax.to($tri,0.5,{ease: Quad.easeOut,y:stgH});
+      TweenMax.set($model,{y:0});
+      TweenMax.to($model,0.5,{ease: Quad.easeOut,y:stgH,onComplete:function(){
+      $tri.fadeOut();
+      $model.fadeOut();
+      }});
+
+    }
+
   }
   function ss4(){
     setAll();
     $a6__title2.fadeOut();
     $a6__text2.fadeOut();
     $a6__bg.fadeOut();
+  TweenMax.set($a6__bg,{opacity:1,y:0});
+    TweenMax.to($a6__bg,0.6,{opacity:1,y:-stgH});
+    //
     $production_s.fadeOut();
     //
     $b1__title.fadeIn();
     $b1__text.fadeIn();
+    //
     $tri.fadeIn();
+    TweenMax.set($tri,{y:stgH});
+    TweenMax.to($tri,1,{y:0});
     $model.fadeIn();
+    TweenMax.set($model,{y:stgH});
+    TweenMax.to($model,0.8,{y:0});
+
 
     if($tri.hasClass("tri-m")){
       $tri.removeClass("tri-m")
@@ -576,7 +609,14 @@ $(function() {
   }
   function ss5(){
 
-    $bg3.show();
+    if(dir == "down"){
+
+      TweenMax.set($bg3,{opacity:1,y:stgH});
+      $bg3.show();
+      TweenMax.to($bg3,0.5,{ease: Sine.easeOut,opacity:1,y:0});
+
+    }
+
     //
     if($tri.hasClass("tri-m")){}else{
       $tri.addClass("tri-m")
@@ -632,6 +672,10 @@ $(function() {
     $model.hide();
     $tri.show();
     $bg3.show();
+    if(dir=="up"){
+      TweenMax.set($bg3,{opacity:1,y:-stgH});
+      TweenMax.to($bg3,0.5,{opacity:1,y:0});
+    }
     $b4__title.show();
     $b4__text.show();
     TweenMax.set($b4__title,{opacity:0,y:20})
@@ -663,6 +707,7 @@ $(function() {
     $a6__bgMid.show();
     $model.show();
   }
+  var dir;
   var sc = new ScrollMagic.Scene({
       triggerElement: "#trigger5",
       triggerHook: "onEnter",
@@ -761,7 +806,7 @@ $(function() {
   var sc = new ScrollMagic.Scene({
       triggerElement: "#trigger7",
       triggerHook: "onEnter",
-      duration: (stgH-100), // the scene should last for a scroll distance of 100px
+      duration: (stgH*1.5), // the scene should last for a scroll distance of 100px
       offset:0, // start this scene after scrolling for 50px
     })
     .on("progress", function(e) {
