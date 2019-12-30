@@ -289,6 +289,7 @@ $(function() {
   function s5goPre() {
     sen = 0;
     $('#main__scroll').scrollTop(anc[4]);
+    $('#main__scroll').animate({ scrollTop:(anc[4]),0});
     isAc = true;
     TweenMax.set($(".fixed__a3"),{y:-stgH});
     $(".fixed__a3").show();
@@ -309,9 +310,14 @@ $(function() {
   function s5goNext() {
     sen = 9;
     $('#main__scroll').scrollTop(anc[14]);
+    $('#main__scroll').animate({ scrollTop:(anc[14]),0});
+    console.log(anc[14]);
+    console.log($('#main__scroll').scrollTop());
     isAc = true;
     TweenMax.set($(".fixed__a7"),{y:stgH});
+    TweenMax.set($('.fixed__a8'),{y:stgH});
     $(".fixed__a7").show();
+    $(".fixed__a8").show();
     TweenMax.to($(".fixed__a7"),1,{y:0,onComplete:function(){
       isAc = false;
     }});
@@ -334,6 +340,7 @@ $(function() {
       s5goPre();
     }else{
       $('#main__scroll').scrollTop(anc[6]);
+      $('#main__scroll').animate({ scrollTop:(anc[6]),0});
       ////console.log($('#main__scroll').scrollTop());
       drawSc();
       setTimeout(function(){
@@ -587,7 +594,7 @@ $(function() {
     $a6__title2.fadeOut();
     $a6__text2.fadeOut();
     $a6__bg.fadeOut();
-  TweenMax.set($a6__bg,{opacity:1,y:0});
+    TweenMax.set($a6__bg,{opacity:1,y:0});
     TweenMax.to($a6__bg,0.6,{opacity:1,y:-stgH});
     //
     $production_s.fadeOut();
@@ -745,7 +752,9 @@ $(function() {
     })
     .on("enter leave", function(e) {
       switch (e.type) {
+
         case "enter":
+        console.log('i');
           isDrawing = true;
           $('#main__scroll').stop().animate({
             scrollTop: anc[6]
@@ -760,19 +769,18 @@ $(function() {
                 isAc = true;
                 TweenMax.set($(".fixed__a3"),{y:0});
                 TweenMax.to($(".fixed__a3"),1,{y:-stgH,onComplete:function(){
-                  $(".fixed__a3").hide();
+                  // $(".fixed__a3").hide();
                   isAc = false;
                 }});
             }else if(sen==8){
                 isAc = true;
                 TweenMax.set($(".fixed__a7"),{y:0});
                 TweenMax.to($(".fixed__a7"),1,{y:stgH,onComplete:function(){
-                  $(".fixed__a7").hide();
+                  // $(".fixed__a7").hide();
                   isAc = false;
                 }});
             }
 
-            $('.fixed__a8').hide();
             setTimeout(function(){
               // $('#main__scroll').scrollTop(anc[6]);
               isDrawing = false;
@@ -806,8 +814,8 @@ $(function() {
   var sc = new ScrollMagic.Scene({
       triggerElement: "#trigger7",
       triggerHook: "onEnter",
-      duration: (stgH*1.5), // the scene should last for a scroll distance of 100px
-      offset:0, // start this scene after scrolling for 50px
+      duration: stgH*1.2, // the scene should last for a scroll distance of 100px
+      offset:stgH/2, // start this scene after scrolling for 50px
     })
     .on("progress", function(e) {
 
@@ -816,23 +824,51 @@ $(function() {
       switch (e.type) {
         case "enter":
           sen= 9;
-          $(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2").hide();
+          $(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2").fadeOut();
+          $('.production_ss').hide();
+          // TweenMax.fromTo($(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2"),0,{y:50,opacity:0});
+          // TweenMax.fromTo($(".b8__txt__title, .b8__txt__text"),0.5,{y:50,opacity:0},{y:0,opacity:1});
+          // console.log('im 8');
+          // $(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2").hide();
           $(".b8__txt__title, .b8__txt__text").fadeIn();
-          //
-          $('.fixed__a7').show();
-          $('.fixed__a8').show();
 
-          if ($(".b8__txt__title, .b8__txt__text").hasClass("fadeInUp")) {} else {
-            $(".b8__txt__title, .b8__txt__text").addClass("fadeInUp")
-            $('.b8__txt__title, .b8__txt__text').removeClass('fadeOutUp');
-          }
+          // $(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2").hide();
+          // $(".b8__txt__title, .b8__txt__text").fadeIn();
+          // //
+          // $('.fixed__a7').show();
+          // $('.fixed__a8').show();
+          //
+          // if ($(".b8__txt__title, .b8__txt__text").hasClass("fadeInUp")) {} else {
+          //   $(".b8__txt__title, .b8__txt__text").addClass("fadeInUp")
+          //   $('.b8__txt__title, .b8__txt__text').removeClass('fadeOutUp');
+          // }
           break;
         case "leave":
+          isAc = true;
+        if(nowTop<anc[14]){
+          // TweenMax.set($('.fixed__a7'),{y:0});
+          // TweenMax.to($(".fixed__a7"),0.5,{y:stgH,onComplete:function(){
+            $('#main__scroll').scrollTop(anc[6]);
+            $('#main__scroll').animate({ scrollTop:(anc[6]),0});
+            // isAc = false;
+            // sen =8;
+            // drawSc();
+
+            // console.log('im 8 leave up ');
+          // }})
+
+        }else{
+          $(".b8__txt__title, .b8__txt__text").fadeOut();
+          $(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2").fadeIn();
+          $('.production_ss').fadeIn();
+        }
+
+
           // //console.log('leave')
-          if ($(".b8__txt__title, .b8__txt__text").hasClass("fadeInUp")) {
-            $(".b8__txt__title, .b8__txt__text").removeClass("fadeInUp");
-            $(".b8__txt__title, .b8__txt__text").addClass("fadeOutUp");
-          }else{}
+          // if ($(".b8__txt__title, .b8__txt__text").hasClass("fadeInUp")) {
+          //   $(".b8__txt__title, .b8__txt__text").removeClass("fadeInUp");
+          //   $(".b8__txt__title, .b8__txt__text").addClass("fadeOutUp");
+          // }else{}
           break;
       }
     })
@@ -843,28 +879,33 @@ $(function() {
         triggerElement: "#trigger8",
         triggerHook: "onEnter",
         duration: stgH, // the scene should last for a scroll distance of 100px
-        offset: 100, // start this scene after scrolling for 50px
+        offset: stgH/2, // start this scene after scrolling for 50px
       })
       .on("progress", function(e) {
-        
+
       })
       .on("enter leave", function(e) {
         switch (e.type) {
           case "enter":
-            // $('.fixed__a8').show();
-            $(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2").fadeIn();
-            $(".b8__txt__text, .b8__txt__title").fadeOut();
-            if ($(".b9__title , .b9__text, .production_ss").hasClass("fadeInUp")) {} else {
-              $(".b9__title , .b9__text, .production_ss").addClass("fadeInUp")
-              $('.b9__title, .production_ss, .b9__text').removeClass('fadeOut');
-            }
+            // console.log('im 9');
+            TweenMax.fromTo($(".b8__txt__title, .b8__txt__text"),0.5,{opacity:1,y:0},{opacity:0,y:-50})
+            TweenMax.fromTo($(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2"),0.5,{opacity:0,y:50},{opacity:1,y:0})
+            TweenMax.fromTo($('.fixed__a8'),0.5,{y:stgH},{y:stgH});
+            // // $('.fixed__a8').show();
+            // $(".b9__title__1, .b9__title__2, .b9__text__1, .b9__text__2").fadeIn();
+            // $(".b8__txt__text, .b8__txt__title").fadeOut();
+            // if ($(".b9__title , .b9__text, .production_ss").hasClass("fadeInUp")) {} else {
+            //   $(".b9__title , .b9__text, .production_ss").addClass("fadeInUp")
+            //   $('.b9__title, .production_ss, .b9__text').removeClass('fadeOut');
+            // }
             break;
           case "leave":
+            // console.log('im 9 leave');
             // //console.log('leave')
-            if ($('.b9__title , .production_ss, .b9__text').hasClass("fadeInUp")) {
-              $('.b9__title , .production_ss, .b9__text').removeClass("fadeInUp");
-              $('.b9__title , .production_ss, .b9__text').addClass("fadeOut");
-            }else{}
+            // if ($('.b9__title , .production_ss, .b9__text').hasClass("fadeInUp")) {
+            //   $('.b9__title , .production_ss, .b9__text').removeClass("fadeInUp");
+            //   $('.b9__title , .production_ss, .b9__text').addClass("fadeOut");
+            // }else{}
             break;
         }
       })
@@ -877,50 +918,54 @@ $(function() {
               offset: 0, // start this scene after scrolling for 50px
             })
             .on("progress", function(e) {
-              $('.fixed__a8').css({"top": (100-e.progress*100)+"%"});
+              // $('.fixed__a8').css({"top": (100-e.progress*100)+"%"});
+
               if(e.progress>0.9){
 
+              }else{
+                // TweenMax.set($('.fixed__a8'),{y: -e.progress*stgH});
               }
             })
             .on("enter leave", function(e) {
               switch (e.type) {
                 case "enter":
-                  // $('.fixed__a8').show();
+                  TweenMax.fromTo($('.fixed__a8'),0.5,{y:stgH},{y:0});
 
                   break;
                 case "leave":
-                  // //console.log('leave')
+                    // TweenMax.fromTo($('.fixed__a8'),0.5,{y:0},{y:stgH});
                   break;
               }
             })
             .addTo(controller)
+
   $('#main__scroll').scroll(function() {
     nowTop = $(this).scrollTop();
   })
 
   $('.layer__scroll').scroll(function() {
-    nTop = $('.layer__scroll').scrollTop();
+    // nTop = $('.layer__scroll').scrollTop();
     //console.log(nTop);
   })
 
   function handleUp() {
     //console.log('up');
-    nowPage++;
+    // nowPage++;
     //console.log(nowPage);
   }
 
   function handleDown() {
     //console.log('down');
-    if (nowPage == 0) {
-      if ($('.layer__scroll').hasClass('active')) {
-        $('.layer__scroll').removeClass('active');
-        $('#main__scroll').stop().animate({
-          scrollTop: anc[4]
-        }, 10);
-      } else {
-
-      }
-    }
+    // if (nowPage == 0) {
+    //   if ($('.layer__scroll').hasClass('active')) {
+    //     $('.layer__scroll').removeClass('active');
+    //     $('#main__scroll').stop().animate({
+    //       scrollTop: anc[4]
+    //     }, 10);
+    //   } else {
+    //
+    //   }
+    // }
   }
 
   window.addEventListener('touchstart', function() {
@@ -954,26 +999,32 @@ $(function() {
   });
  $('a#btn_index').on('click',function(){
    $('#main__scroll').scrollTop(0);
+   $('#main__scroll').animate({ scrollTop:(0),0});
  })
  $('a#btn_commercial').on('click',function(){
    $('#main__scroll').scrollTop(anc[4]);
+   $('#main__scroll').animate({ scrollTop:(anc[4]),0});
  })
  $('a#btn_about').on('click',function(){
    sen = 1;
    ss1();
    $('#main__scroll').scrollTop(anc[6]);
+   $('#main__scroll').animate({ scrollTop:(anc[6]),0});
  })
  $('a#btn_info').on('click',function(){
 
    sen = 4;
    ss4();
-   $('#main__scroll').scrollTop( anc[6])
+   $('#main__scroll').scrollTop( anc[6]);
+   $('#main__scroll').animate({ scrollTop:(anc[6]),0});
+
  })
  $('a#btn_form').on('click',function(){
    $('#main__scroll').scrollTop(anc[17])
-
+$('#main__scroll').animate({ scrollTop:(anc[17]),0});
  })
  $('.a6 .a6__title2, .a6__text2, .main__a6').on('click',function(){
    $('#main__scroll').scrollTop( anc[17])
+   $('#main__scroll').animate({ scrollTop:(anc[17]),0});
  })
 })
