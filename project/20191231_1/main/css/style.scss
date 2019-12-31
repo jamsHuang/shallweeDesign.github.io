@@ -1,0 +1,18 @@
+@font-face{
+  font-family: "GenYoMinTW-Bold";
+  src: url('genyo-font/TW/GenYoMinTW-Bold.ttf');
+}
+@font-face{
+  font-family: "GenYoMinJP-Medium";
+  src: url('./genyo-font/JP/GenYoMinJP-Medium.ttf');
+}
+
+@font-face{
+  font-family: "GenYoMinTW-Medium";
+  src: url('./genyo-font/TW/GenYoMinTW-Medium.ttf');
+}
+@import "dist/reset.css";
+@import "dist/vendor";
+@import "dist/layout";
+@import "dist/page";
+* { touch-action: pan-y; }
