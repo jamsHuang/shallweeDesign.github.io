@@ -390,7 +390,7 @@ p.nominalBounds = new cjs.Rectangle(-46.2,0,97,448);
 	// timeline functions:
 	this.frame_0 = function() {
 		var stage = new createjs.Stage("canvas");
-		createjs.Touch.enable(stage);
+		createjs.Touch.enable(stage, false, true);
 		
 		var main = this;
 		var pt1,pt2,pt3,pt4,pt5;
@@ -423,23 +423,6 @@ p.nominalBounds = new cjs.Rectangle(-46.2,0,97,448);
 		// 	 console.log("rawX/Y: "+evt.rawX+","+evt.rawY); 
 		// })
 		console.log(main.mc_weight1.x);
-		var mc1 = new lib.mc_weight1();
-		main.addChild(mc1);
-		
-		mc1.on("pressmove", function(evt) {
-			console.log("mc");
-			reset();
-			main.sp_thin.gotoAndStop(0);
-			main.sp_thick.gotoAndStop(0);
-			var p = evt.currentTarget.globalToLocal(evt.stageX, evt.stageY);
-		    this.x = p.x ;
-		    this.y = p.y ;
-			console.log(this.x);
-			//evt.currentTarget.x = p.x;
-			//evt.currentTarget.y = p.y;
-					
-		});
-		
 		
 		main.mc_weight1.mouseChildren = false;
 		
@@ -459,7 +442,7 @@ p.nominalBounds = new cjs.Rectangle(-46.2,0,97,448);
 		});
 		
 		main.mc_weight1.on("pressmove", function(evt) {
-			
+			evt.nativeEvent.preventDefault();
 			reset();
 			main.sp_thin.gotoAndStop(0);
 			main.sp_thick.gotoAndStop(0);
@@ -778,15 +761,15 @@ lib.properties = {
 	color: "#DFECF5",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/bg.jpg?1577942759145", id:"bg"},
-		{src:"images/Bitmap1.png?1577942759145", id:"Bitmap1"},
-		{src:"images/thickspring.png?1577942759145", id:"thickspring"},
-		{src:"images/thinspring.png?1577942759145", id:"thinspring"},
-		{src:"images/weight_1.png?1577942759145", id:"weight_1"},
-		{src:"images/weight_2.png?1577942759145", id:"weight_2"},
-		{src:"images/weight_3.png?1577942759145", id:"weight_3"},
-		{src:"images/weight_4.png?1577942759145", id:"weight_4"},
-		{src:"images/weight_green.png?1577942759145", id:"weight_green"}
+		{src:"images/bg.jpg?1577944218167", id:"bg"},
+		{src:"images/Bitmap1.png?1577944218167", id:"Bitmap1"},
+		{src:"images/thickspring.png?1577944218167", id:"thickspring"},
+		{src:"images/thinspring.png?1577944218167", id:"thinspring"},
+		{src:"images/weight_1.png?1577944218167", id:"weight_1"},
+		{src:"images/weight_2.png?1577944218167", id:"weight_2"},
+		{src:"images/weight_3.png?1577944218167", id:"weight_3"},
+		{src:"images/weight_4.png?1577944218167", id:"weight_4"},
+		{src:"images/weight_green.png?1577944218167", id:"weight_green"}
 	],
 	preloads: []
 };
