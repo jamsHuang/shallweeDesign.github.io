@@ -315,6 +315,9 @@ p.nominalBounds = new cjs.Rectangle(-71,-71,142,142);
 
 	// timeline functions:
 	this.frame_0 = function() {
+		var stage = new createjs.Stage("canvas");
+		createjs.Touch.enable(stage);
+		
 		this.win = false;
 		this.resetPosition = true;
 		this.piecePrefix = "piece";
