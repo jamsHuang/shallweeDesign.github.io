@@ -172,6 +172,14 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 (lib.mc_weight1 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
+	// timeline functions:
+	this.frame_0 = function() {
+		$(this)[0].draggable();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
 	// Layer_1
 	this.instance = new lib.weight_1();
 	this.instance.parent = this;
@@ -393,8 +401,8 @@ p.nominalBounds = new cjs.Rectangle(-46.2,0,97,448);
 		createjs.Touch.enable(stage, false, true);
 		
 		var main = this;
-		var pt1,pt2,pt3,pt4,pt5;
-		var area1,area2;
+		var pt1, pt2, pt3, pt4, pt5;
+		var area1, area2;
 		//
 		main.text_thick1.visible = false;
 		main.text_thick2.visible = false;
@@ -409,69 +417,91 @@ p.nominalBounds = new cjs.Rectangle(-46.2,0,97,448);
 		main.text_thin5.visible = false;
 		//
 		//x,y,w,h
-		area1 = [main.hit_1.x , main.hit_1.y, main.hit_1.getBounds().width,main.hit_1.getBounds().height];
-		area2 = [main.hit_2.x , main.hit_2.y, main.hit_2.getBounds().width,main.hit_2.getBounds().height];
+		area1 = [main.hit_1.x, main.hit_1.y, main.hit_1.getBounds().width, main.hit_1.getBounds().height];
+		area2 = [main.hit_2.x, main.hit_2.y, main.hit_2.getBounds().width, main.hit_2.getBounds().height];
 		
-		pt1 = new createjs.Point(main.mc_weight1.x,main.mc_weight1.y);
-		pt2 = new createjs.Point(main.mc_weight2.x,main.mc_weight2.y);
-		pt3 = new createjs.Point(main.mc_weight3.x,main.mc_weight3.y);
-		pt4 = new createjs.Point(main.mc_weight4.x,main.mc_weight4.y);
-		pt5 = new createjs.Point(main.mc_weight5.x,main.mc_weight5.y);
+		pt1 = new createjs.Point(main.mc_weight1.x, main.mc_weight1.y);
+		pt2 = new createjs.Point(main.mc_weight2.x, main.mc_weight2.y);
+		pt3 = new createjs.Point(main.mc_weight3.x, main.mc_weight3.y);
+		pt4 = new createjs.Point(main.mc_weight4.x, main.mc_weight4.y);
+		pt5 = new createjs.Point(main.mc_weight5.x, main.mc_weight5.y);
 		
 		// stage.on("stagemousedown", function(evt) {
 		// console.log("the canvas was clicked at "+evt.stageX+","+evt.stageY);
 		// 	 console.log("rawX/Y: "+evt.rawX+","+evt.rawY); 
 		// })
-		console.log(main.mc_weight1.x);
 		
+		function init() {
+		
+			var mc1 = new lib.mc_weight1();
+			mc1.on("pressmove", function (evt) {
+			var p = stage.globalToLocal(evt.stageX, evt.stageY);
+			evt.currentTarget.x = p.x;
+			evt.currentTarget.y = p.y;
+				// make sure to redraw the stage to show the change:
+			});
+			mc1.x = 200;
+			mc1.y = 200;
+			main.addChild(mc1);
+		
+		
+			var mc2 = new lib.mc_weight2();
+			mc2.on("pressmove", function (evt) {	var p = stage.globalToLocal(evt.stageX, evt.stageY);
+			evt.currentTarget.x = p.x;
+			evt.currentTarget.y = p.y;
+				// make sure to redraw the stage to show the change:
+			});
+			mc2.x = 200;
+			mc2.y = 400;
+			main.addChild(mc2);
+			stage.update();
+		}
+		
+		init();
+		//
 		main.mc_weight1.mouseChildren = false;
 		
-		main.mc_weight1.on('mousedown', function(evt) {
-			
-		    var ct = evt.currentTarget,
-		        local = ct.globalToLocal(evt.stageX, evt.stageY),
-		        nx = ct.regX - local.x,
-		        ny = ct.regY - local.y;
-		    //set the new regX/Y
-		    ct.regX = local.x;
-		    ct.regY = local.y;
-		    //adjust the real-position, otherwise the new regX/Y would cause a jump
-		    ct.x -= nx;
-		    ct.y -= ny;
-			console.log("ct.x",ct.x);
-		});
+		//main.mc_weight1.on('mousedown', function(evt) {
 		
-		main.mc_weight1.on("pressmove", function(evt) {
-			evt.nativeEvent.preventDefault();
+		//  var ct = evt.currentTarget,
+		//    local = ct.globalToLocal(evt.stageX, evt.stageY),
+		//  nx = ct.regX - local.x,
+		//ny = ct.regY - local.y;
+		//set the new regX/Y
+		//ct.regX = local.x;
+		//ct.regY = local.y;
+		//adjust the real-position, otherwise the new regX/Y would cause a jump
+		//ct.x -= nx;
+		//ct.y -= ny;
+		//console.log("ct.x",ct.x);
+		//});
+		/*main.mc_weight1.on("pressmove", function (evt) {
 			reset();
 			main.sp_thin.gotoAndStop(0);
 			main.sp_thick.gotoAndStop(0);
-			var p = evt.currentTarget.globalToLocal(evt.stageX, evt.stageY);
-		    this.x = p.x ;
-		    this.y = p.y ;
-			//evt.currentTarget.x = p.x;
-			//evt.currentTarget.y = p.y;
-					
-		});
-		main.mc_weight1.on("pressup", function(evt) { 
-			if(evt.currentTarget.x<=(area1[0]+area1[2]) &&evt.currentTarget.x>=area1[0] && evt.currentTarget.y<=(area1[1]+area1[3]) &&evt.currentTarget.y>=area1[1]){
+			var p = stage.globalToLocal(evt.stageX, evt.stageY);
+			evt.currentTarget.x = p.x;
+			evt.currentTarget.y = p.y;
+		
+			main.mc_weight1.update();
+		});*/
+		main.mc_weight1.on("pressup", function (evt) {
+			if (evt.currentTarget.x <= (area1[0] + area1[2]) && evt.currentTarget.x >= area1[0] && evt.currentTarget.y <= (area1[1] + area1[3]) && evt.currentTarget.y >= area1[1]) {
 				//console.log("hit");
 				evt.currentTarget.visible = false;
 				main.sp_thin.gotoAndPlay(2);
-			}
-			else if(evt.currentTarget.x<=(area2[0]+area2[2]) &&evt.currentTarget.x>=area2[0] &&evt.currentTarget.y<=(area2[1]+area2[3]) &&evt.currentTarget.y>=area2[1]){
+			} else if (evt.currentTarget.x <= (area2[0] + area2[2]) && evt.currentTarget.x >= area2[0] && evt.currentTarget.y <= (area2[1] + area2[3]) && evt.currentTarget.y >= area2[1]) {
 				//console.log("hit2");
 				evt.currentTarget.visible = false;
 				main.sp_thick.gotoAndPlay(1);
-			}
-			else{
-				console.log("hit nothing",evt.currentTarget.x);
+			} else {
+				console.log("hit nothing", evt.currentTarget.x);
 				evt.currentTarget.x = pt1.x;
 				evt.currentTarget.y = pt1.y;
 			}
 		});
 		//
-		main.mc_weight2.on("pressmove", function(evt) {
+		main.mc_weight2.on("pressmove", function (evt) {
 			reset();
 			main.sp_thin.gotoAndStop(0);
 			main.sp_thick.gotoAndStop(0);
@@ -479,26 +509,24 @@ p.nominalBounds = new cjs.Rectangle(-46.2,0,97,448);
 			evt.currentTarget.x = p.x;
 			evt.currentTarget.y = p.y;
 		});
-		main.mc_weight2.on("pressup", function(evt) { 
-			if(evt.currentTarget.x<=(area1[0]+area1[2]) &&evt.currentTarget.x>=area1[0] && evt.currentTarget.y<=(area1[1]+area1[3]) &&evt.currentTarget.y>=area1[1]){
+		main.mc_weight2.on("pressup", function (evt) {
+			if (evt.currentTarget.x <= (area1[0] + area1[2]) && evt.currentTarget.x >= area1[0] && evt.currentTarget.y <= (area1[1] + area1[3]) && evt.currentTarget.y >= area1[1]) {
 				//console.log("hit");
 				evt.currentTarget.visible = false;
 				main.sp_thin.gotoAndPlay(52);
 				console.log(main.sp_thin);
-			}
-			else if(evt.currentTarget.x<=(area2[0]+area2[2]) &&evt.currentTarget.x>=area2[0] &&evt.currentTarget.y<=(area2[1]+area2[3]) &&evt.currentTarget.y>=area2[1]){
+			} else if (evt.currentTarget.x <= (area2[0] + area2[2]) && evt.currentTarget.x >= area2[0] && evt.currentTarget.y <= (area2[1] + area2[3]) && evt.currentTarget.y >= area2[1]) {
 				//console.log("hit2");
 				evt.currentTarget.visible = false;
 				main.sp_thick.gotoAndPlay(51);
-			}
-			else{
-				console.log("hit nothing",evt.currentTarget.x);
+			} else {
+				console.log("hit nothing", evt.currentTarget.x);
 				evt.currentTarget.x = pt2.x;
 				evt.currentTarget.y = pt2.y;
 			}
 		});
 		//
-		main.mc_weight3.on("pressmove", function(evt) {
+		main.mc_weight3.on("pressmove", function (evt) {
 			reset();
 			main.sp_thin.gotoAndStop(0);
 			main.sp_thick.gotoAndStop(0);
@@ -506,25 +534,23 @@ p.nominalBounds = new cjs.Rectangle(-46.2,0,97,448);
 			evt.currentTarget.x = p.x;
 			evt.currentTarget.y = p.y;
 		});
-		main.mc_weight3.on("pressup", function(evt) { 
-			if(evt.currentTarget.x<=(area1[0]+area1[2]) &&evt.currentTarget.x>=area1[0] && evt.currentTarget.y<=(area1[1]+area1[3]) &&evt.currentTarget.y>=area1[1]){
+		main.mc_weight3.on("pressup", function (evt) {
+			if (evt.currentTarget.x <= (area1[0] + area1[2]) && evt.currentTarget.x >= area1[0] && evt.currentTarget.y <= (area1[1] + area1[3]) && evt.currentTarget.y >= area1[1]) {
 				//console.log("hit");
 				evt.currentTarget.visible = false;
 				main.sp_thin.gotoAndPlay(102);
-			}
-			else if(evt.currentTarget.x<=(area2[0]+area2[2]) &&evt.currentTarget.x>=area2[0] &&evt.currentTarget.y<=(area2[1]+area2[3]) &&evt.currentTarget.y>=area2[1]){
+			} else if (evt.currentTarget.x <= (area2[0] + area2[2]) && evt.currentTarget.x >= area2[0] && evt.currentTarget.y <= (area2[1] + area2[3]) && evt.currentTarget.y >= area2[1]) {
 				//console.log("hit2");
 				evt.currentTarget.visible = false;
 				main.sp_thick.gotoAndPlay(101);
-			}
-			else{
+			} else {
 				//console.log("hit nothing",evt.currentTarget.x);
 				evt.currentTarget.x = pt3.x;
 				evt.currentTarget.y = pt3.y;
 			}
 		});
 		//
-		main.mc_weight4.on("pressmove", function(evt) {
+		main.mc_weight4.on("pressmove", function (evt) {
 			reset();
 			main.sp_thin.gotoAndStop(0);
 			main.sp_thick.gotoAndStop(0);
@@ -532,25 +558,23 @@ p.nominalBounds = new cjs.Rectangle(-46.2,0,97,448);
 			evt.currentTarget.x = p.x;
 			evt.currentTarget.y = p.y;
 		});
-		main.mc_weight4.on("pressup", function(evt) { 
-			if(evt.currentTarget.x<=(area1[0]+area1[2]) &&evt.currentTarget.x>=area1[0] && evt.currentTarget.y<=(area1[1]+area1[3]) &&evt.currentTarget.y>=area1[1]){
+		main.mc_weight4.on("pressup", function (evt) {
+			if (evt.currentTarget.x <= (area1[0] + area1[2]) && evt.currentTarget.x >= area1[0] && evt.currentTarget.y <= (area1[1] + area1[3]) && evt.currentTarget.y >= area1[1]) {
 				//console.log("hit");
 				evt.currentTarget.visible = false;
 				main.sp_thin.gotoAndPlay(152);
-			}
-			else if(evt.currentTarget.x<=(area2[0]+area2[2]) &&evt.currentTarget.x>=area2[0] &&evt.currentTarget.y<=(area2[1]+area2[3]) &&evt.currentTarget.y>=area2[1]){
+			} else if (evt.currentTarget.x <= (area2[0] + area2[2]) && evt.currentTarget.x >= area2[0] && evt.currentTarget.y <= (area2[1] + area2[3]) && evt.currentTarget.y >= area2[1]) {
 				//console.log("hit2");
 				evt.currentTarget.visible = false;
 				main.sp_thick.gotoAndPlay(151);
-			}
-			else{
-				console.log("hit nothing",evt.currentTarget.x);
+			} else {
+				console.log("hit nothing", evt.currentTarget.x);
 				evt.currentTarget.x = pt4.x;
 				evt.currentTarget.y = pt4.y;
 			}
 		});
 		//
-		main.mc_weight5.on("pressmove", function(evt) {
+		main.mc_weight5.on("pressmove", function (evt) {
 			reset();
 			main.sp_thin.gotoAndStop(0);
 			main.sp_thick.gotoAndStop(0);
@@ -558,24 +582,22 @@ p.nominalBounds = new cjs.Rectangle(-46.2,0,97,448);
 			evt.currentTarget.x = p.x;
 			evt.currentTarget.y = p.y;
 		});
-		main.mc_weight5.on("pressup", function(evt) { 
-			if(evt.currentTarget.x<=(area1[0]+area1[2]) &&evt.currentTarget.x>=area1[0] && evt.currentTarget.y<=(area1[1]+area1[3]) &&evt.currentTarget.y>=area1[1]){
+		main.mc_weight5.on("pressup", function (evt) {
+			if (evt.currentTarget.x <= (area1[0] + area1[2]) && evt.currentTarget.x >= area1[0] && evt.currentTarget.y <= (area1[1] + area1[3]) && evt.currentTarget.y >= area1[1]) {
 				//console.log("hit");
 				evt.currentTarget.visible = false;
 				main.sp_thin.gotoAndPlay(202);
-			}
-			else if(evt.currentTarget.x<=(area2[0]+area2[2]) &&evt.currentTarget.x>=area2[0] &&evt.currentTarget.y<=(area2[1]+area2[3]) &&evt.currentTarget.y>=area2[1]){
+			} else if (evt.currentTarget.x <= (area2[0] + area2[2]) && evt.currentTarget.x >= area2[0] && evt.currentTarget.y <= (area2[1] + area2[3]) && evt.currentTarget.y >= area2[1]) {
 				//console.log("hit2");
 				evt.currentTarget.visible = false;
 				main.sp_thick.gotoAndPlay(201);
-			}
-			else{
-				console.log("hit nothing",evt.currentTarget.x);
+			} else {
+				console.log("hit nothing", evt.currentTarget.x);
 				evt.currentTarget.x = pt5.x;
 				evt.currentTarget.y = pt5.y;
 			}
 		});
-		function reset(){
+		function reset() {
 			main.mc_weight1.visible = true;
 			main.mc_weight2.visible = true;
 			main.mc_weight3.visible = true;
@@ -591,8 +613,10 @@ p.nominalBounds = new cjs.Rectangle(-46.2,0,97,448);
 			main.mc_weight3.y = pt3.y;
 			main.mc_weight4.y = pt4.y;
 			main.mc_weight5.y = pt5.y;
-			
+		
 		}
+		
+		stage.update();
 	}
 
 	// actions tween:
@@ -761,15 +785,15 @@ lib.properties = {
 	color: "#DFECF5",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/bg.jpg?1577944218167", id:"bg"},
-		{src:"images/Bitmap1.png?1577944218167", id:"Bitmap1"},
-		{src:"images/thickspring.png?1577944218167", id:"thickspring"},
-		{src:"images/thinspring.png?1577944218167", id:"thinspring"},
-		{src:"images/weight_1.png?1577944218167", id:"weight_1"},
-		{src:"images/weight_2.png?1577944218167", id:"weight_2"},
-		{src:"images/weight_3.png?1577944218167", id:"weight_3"},
-		{src:"images/weight_4.png?1577944218167", id:"weight_4"},
-		{src:"images/weight_green.png?1577944218167", id:"weight_green"}
+		{src:"images/bg.jpg?1577961491712", id:"bg"},
+		{src:"images/Bitmap1.png?1577961491712", id:"Bitmap1"},
+		{src:"images/thickspring.png?1577961491712", id:"thickspring"},
+		{src:"images/thinspring.png?1577961491712", id:"thinspring"},
+		{src:"images/weight_1.png?1577961491712", id:"weight_1"},
+		{src:"images/weight_2.png?1577961491712", id:"weight_2"},
+		{src:"images/weight_3.png?1577961491712", id:"weight_3"},
+		{src:"images/weight_4.png?1577961491712", id:"weight_4"},
+		{src:"images/weight_green.png?1577961491712", id:"weight_green"}
 	],
 	preloads: []
 };
