@@ -1,0 +1,266 @@
+#hakuApp {
+  .slogan {
+    z-index: 0;
+    margin-top: -100vh;
+
+    &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #dff1f5;
+    }
+
+    &__model {
+      position: absolute;
+      margin-left: -18vh;
+      margin-bottom: -15vh;
+      width: 100%;
+      height: 92%;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+      background-image: url("../../assets/images/model-normal.png");
+      @include break-point(desktop) {
+        margin-left: -23%;
+        margin-bottom: 0;
+        width: 100%;
+        height: 90%;
+      }
+
+      &.animation_1 {
+        opacity: 0;
+      }
+
+      &.animation_2 {
+        opacity: 0;
+        animation-name: aniIn;
+        animation-duration: 1.5s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+      }
+
+      &.animation_3 {
+        opacity: 1;
+      }
+    }
+
+    &__title {
+      position: absolute;
+      width: auto;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+
+      &__1 {
+        margin-top: -180px;
+        margin-left: 120px;
+        @include break-point(tablet) {
+          margin-top: -320px;
+          margin-left: 270px;
+        }
+        @include break-point(desktop) {
+          margin-left: 330px;
+        }
+
+        &.animation_1 {
+          opacity: 0;
+        }
+
+        &.animation_2 {
+          opacity: 0;
+          animation-name: aniIn;
+          animation-duration: 1.5s;
+          animation-delay: 0.5s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_3 {
+          opacity: 1;
+        }
+      }
+
+      &__2 {
+        margin-top: -180px;
+        margin-left: 60px;
+        @include break-point(tablet) {
+          margin-top: -320px;
+          margin-left: 200px;
+        }
+        @include break-point(desktop) {
+          margin-left: 240px;
+        }
+
+        &.animation_1 {
+          opacity: 0;
+        }
+
+        &.animation_2 {
+          opacity: 0;
+          animation-name: aniIn;
+          animation-duration: 1.5s;
+          animation-delay: 0.8s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_3 {
+          opacity: 1;
+        }
+      }
+
+      &__3 {
+        margin-top: -180px;
+        margin-left: 0;
+        @include break-point(tablet) {
+          margin-top: -320px;
+          margin-left: 130px;
+        }
+        @include break-point(desktop) {
+          margin-left: 150px;
+        }
+
+        &.animation_1 {
+          opacity: 0;
+        }
+
+        &.animation_2 {
+          opacity: 0;
+          animation-name: aniIn;
+          animation-duration: 1.5s;
+          animation-delay: 1.1s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_3 {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__text {
+      position: absolute;
+      width: auto;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+
+      &__1 {
+        margin-top: 0;
+        margin-left: 96px;
+        @include break-point(tablet) {
+          margin-top: -110px;
+          margin-left: 247px;
+        }
+        @include break-point(desktop){
+          margin-top: -60px;
+          margin-left: 297px;
+        }
+
+        &.animation_1 {
+          opacity: 0;
+        }
+
+        &.animation_2 {
+          opacity: 0;
+          animation-name: aniIn;
+          animation-duration: 1.5s;
+          animation-delay: 0.5s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_3 {
+          opacity: 1;
+        }
+      }
+
+      &__2 {
+        margin-top: -160px;
+        margin-left: 96px;
+        opacity: 0;
+        @include break-point(tablet) {
+          margin-top: -280px;
+          margin-left: 247px;
+        }
+        @include break-point(desktop){
+          margin-top: -270px;
+          margin-left: 297px;
+        }
+        &.animation_1 {
+          opacity: 0;
+        }
+
+        &.animation_2 {
+          opacity: 0;
+          animation-name: aniIn;
+          animation-duration: 1.5s;
+          animation-delay: 0.7s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_3 {
+          opacity: 1;
+        }
+      }
+
+      &__3 {
+        margin-top: -160px;
+        margin-left: 36px;
+        @include break-point(tablet) {
+          margin-top: -280px;
+          margin-left: 179px;
+        }
+
+        @include break-point(desktop){
+          margin-top: -270px;
+          margin-left: 209px;
+        }
+        &.animation_1 {
+          opacity: 0;
+        }
+
+        &.animation_2 {
+          opacity: 0;
+          animation-name: aniIn;
+          animation-duration: 1.5s;
+          animation-delay: 0.9s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_3 {
+          opacity: 1;
+        }
+      }
+
+      &__4 {
+        margin-top: -160px;
+        margin-left: -24px;
+        @include break-point(tablet) {
+          margin-top: -280px;
+          margin-left: 104px;
+        }
+
+        @include break-point(desktop){
+          margin-top: -270px;
+          margin-left: 117px;
+        }
+        &.animation_1 {
+          opacity: 0;
+        }
+
+        &.animation_2 {
+          opacity: 0;
+          animation-name: aniIn;
+          animation-duration: 1.5s;
+          animation-delay: 1.2s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_3 {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

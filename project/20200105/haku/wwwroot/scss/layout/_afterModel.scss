@@ -1,0 +1,220 @@
+#hakuApp {
+  .afterModel {
+    z-index: 2;
+
+    &__bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    &__midbg {
+      position: absolute;
+      width: 180vh;
+      height: 100%;
+      background-image: url("../../assets/images/bg_mid.png");
+      background-position: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      top: 0;
+      left: 50%;
+      margin-left: -90vh;
+      opacity: 0;
+
+      &.animation_1 {
+        animation-name: aniLeftIn;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+      }
+
+      &.animation_2 {
+        animation-name: aniLeftIn;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+      }
+
+      &.animation_3 {
+        opacity: 1;
+      }
+    }
+
+    &__production {
+      position: absolute;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("../../assets/images/production_2.png");
+      top: 50%;
+      left: 50%;
+      margin-left: -60px;
+      width: 120px;
+      height: 360px;
+      margin-top: -140px;
+      opacity: 0;
+      @include break-point(tablet) {
+        width: 160px;
+        height: 500px;
+        margin-left: 40px;
+        margin-top: -210px;
+      }
+
+      &.animation_1 {
+        animation-name: aniIn;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+      }
+
+      &.animation_2 {
+        opacity: 1;
+      }
+
+      &.animation_3 {
+        opacity: 1;
+      }
+    }
+
+    &__title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: auto;
+      height: 100%;
+      margin-top: -160px;
+      margin-left: -110px;
+      opacity: 0;
+      @include break-point(tablet) {
+        margin-top: -110px;
+        margin-left: -170px;
+      }
+      @include break-point(desktop) {
+        margin-left: -180px;
+      }
+
+      &__1 {
+        &.animation_1 {
+          animation-name: aniIn;
+          animation-duration: 1.5s;
+          animation-delay: 0s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_2 {
+          animation-name: aniOut;
+          animation-duration: 0.5s;
+          animation-delay: 0s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_3 {
+          opacity: 0;
+        }
+      }
+
+      &__2 {
+        &.animation_1 {
+          opacity: 0;
+        }
+
+        &.animation_2 {
+          animation-name: aniIn;
+          animation-duration: 1.5s;
+          animation-delay: 0s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_3 {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: auto;
+      height: 100%;
+      margin-top: -190px;
+      margin-left: -130px;
+      opacity: 0;
+      @include break-point(tablet) {
+        margin-top: -30px;
+        margin-left: -190px;
+      }
+      @include break-point(desktop) {
+        margin-left: -220px;
+      }
+
+      &__1 {
+        &.animation_1 {
+          animation-name: aniIn;
+          animation-duration: 1.5s;
+          animation-delay: 0s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_2 {
+          animation-name: aniOut;
+          animation-duration: 0.5s;
+          animation-delay: 0s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_3 {
+          opacity: 0;
+        }
+      }
+
+      &__2 {
+        &.animation_1 {
+          opacity: 0;
+        }
+
+        &.animation_2 {
+          animation-name: aniIn;
+          animation-duration: 1.5s;
+          animation-delay: 0s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_3 {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__arr {
+      position: absolute;
+      background-image: url("../../assets/images/arrow.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 24px;
+      height: 24px;
+      top: 50%;
+      left: 50%;
+      margin-left: -107px;
+      margin-top: 0;
+      opacity: 0;
+      animation-name: aniUpIn;
+      animation-duration: 1.5s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+      @include break-point(tablet) {
+        margin-left: -160px;
+        margin-top: 90px;
+      }
+      @include break-point(desktop) {
+        margin-left: -172px;
+        margin-top: 135px;
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}

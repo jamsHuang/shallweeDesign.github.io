@@ -1,0 +1,71 @@
+@import "../helper/mixin";
+
+#hakuApp {
+  .kv {
+    &_bgColor {
+      @include aspect-ratio(1920, 1320);
+      position: relative;
+      width: 100%;
+      background-image: url("../../assets/images/bgcolor-kv.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &__logo {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: auto;
+      margin-left: -20px;
+      margin-top: -120px;
+
+      &.animation_1 {
+        animation-name: aniIn;
+        animation-duration: 1s;
+      }
+
+      &.animation_2 {
+        animation-name: aniOut;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+      }
+      @include break-point(desktop) {
+        width: 65px;
+        height: 342px;
+        margin-left: -32.5px;
+        margin-top: -171px;
+      }
+      @include break-point(large-desktop) {}
+    }
+
+    &__subtitle {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 13px;
+      margin-left: 35px;
+      margin-top: -140px;
+      @include break-point(desktop) {
+        font-size: 14px;
+        margin-top: -205px;
+        margin-left: 50px;
+      }
+
+      &.animation_1 {
+        animation-name: aniIn;
+        animation-duration: 1s;
+      }
+
+      &.animation_2 {
+        animation-name: aniOut;
+        animation-duration: 0.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}

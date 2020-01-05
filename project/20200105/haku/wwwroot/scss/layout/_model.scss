@@ -1,0 +1,173 @@
+#hakuApp {
+  .model {
+    &__img {
+      position: absolute;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__woman {
+      position: absolute;
+      background-image: url("../../assets/images/model-normal.png");
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      margin-top: -45%;
+      margin-left: -34%;
+      opacity: 0;
+      @include break-point(tablet) {}
+      @include break-point(desktop) {
+        margin-top: -25%;
+      }
+
+      &.animation_1 {
+        animation-name: aniIn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+
+      &.animation_2 {
+        opacity: 1;
+      }
+
+      &.animation_3 {
+        opacity: 1;
+      }
+    }
+
+    &__title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -170px;
+      margin-left: -120px;
+      width: auto;
+      height: 100%;
+      opacity: 0;
+      @include break-point(tablet) {
+        margin-left: -230px;
+      }
+      @include break-point(desktop) {
+        margin-left: -310px;
+      }
+
+      &.animation_1 {
+        animation-name: aniIn;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+      }
+
+      &.animation_2 {
+        opacity: 1;
+      }
+
+      &.animation_3 {
+        opacity: 1;
+      }
+    }
+
+    &__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -140px;
+      margin-top: -170px;
+      width: auto;
+      height: 100%;
+      opacity: 0;
+      @include break-point(tablet) {
+        margin-left: -260px;
+      }
+      @include break-point(desktop) {
+
+    margin-left: -340px;
+      }
+
+      &.animation_1 {
+        animation-name: aniIn;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+      }
+
+      &.animation_2 {
+        opacity: 1;
+      }
+
+      &.animation_3 {
+        opacity: 1;
+      }
+    }
+
+    &__skin {
+      position: absolute;
+      background-image: url("../../assets/images/skin.png");
+      top: 50%;
+      left: 50%;
+      margin-left: -120px;
+      margin-top: 130px;
+      width: 80px;
+      height: 80px;
+      opacity: 0;
+
+      @include break-point(tablet){
+          width: 120px;
+          height: 120px;
+    margin-left: -170px;
+      }
+      @include break-point(desktop){
+        width: 150px;
+height: 150px;
+      }
+
+      &__black {
+        position: absolute;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0;
+
+        &.animation_1 {
+          opacity: 0;
+        }
+
+        &.animation_2 {
+          animation-name: fadeIn;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_3 {
+          opacity: 0.8;
+        }
+      }
+
+      &.animation_1 {
+        animation-name: skinIn;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+      }
+
+      &.animation_2 {
+        opacity: 1;
+      }
+
+      &.animation_3 {
+        opacity: 1;
+      }
+    }
+  }
+}

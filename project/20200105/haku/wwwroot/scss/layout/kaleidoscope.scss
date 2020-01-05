@@ -1,0 +1,148 @@
+#hakuApp {
+  .kaleidoscope {
+    z-index: 1;
+
+    .app_section_content {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      // background-color: red;
+    }
+
+    .kale__container {
+      background-color: #FFF;
+      width: 100%;
+      height: 100%;
+    }
+
+    .kale__production {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-weight: bold;
+        font-size: 24px;
+
+        &--1 {
+          margin-left: -70px;
+          margin-top: -140px;
+          opacity: 0;
+
+          &.animation_1 {
+            animation-name: aniIn;
+            animation-duration: 1.5s;
+            animation-delay: 0.8s;
+            animation-fill-mode: forwards;
+          }
+
+          &.animation_2 {
+            animation-name: aniOut;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+          }
+          @include break-point(desktop) {
+            margin-left: -200px;
+            margin-top: -110px;
+          }
+        }
+
+        &--2 {
+          margin-left: -100px;
+          margin-top: -110px;
+          opacity: 0;
+
+          &.animation_1 {
+            animation-name: aniIn;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+          }
+
+          &.animation_2 {
+            animation-name: aniOut;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+          }
+          @include break-point(desktop) {
+            margin-left: -250px;
+            margin-top: -70px;
+          }
+        }
+        @include break-point(desktop) {
+          font-size: 38px;
+        }
+      }
+
+      &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #e4007f;
+        color: #FFF;
+        margin-top: -140px;
+        margin-left: -136px;
+        font-size: 14px;
+        padding: 6px 4px;
+        opacity: 0;
+
+        &.animation_1 {
+          animation-name: aniIn;
+          animation-duration: 1s;
+          animation-delay: 0.5s;
+          animation-fill-mode: forwards;
+        }
+
+        &.animation_2 {
+          animation-name: aniOut;
+          animation-duration: 0.5s;
+          animation-delay: 0.5s;
+          animation-fill-mode: forwards;
+        }
+        @include break-point(desktop) {
+          margin-top: -110px;
+          margin-left: -295px;
+          font-size: 16px;
+        }
+      }
+
+      &__img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90px;
+        height: auto;
+        margin-top: 0px;
+        margin-left: -45px;
+
+        &.animation_1 {
+          animation-name: aniIn;
+          animation-duration: 1.5s;
+        }
+
+        &.animation_2 {
+          animation-name: aniOut;
+          animation-duration: 1s;
+          animation-delay: 0.5s;
+          animation-fill-mode: forwards;
+        }
+        @include break-point(desktop) {
+          width: 150px;
+          height: 440px;
+          margin-top: -140px;
+          margin-left: - 75px;
+        }
+      }
+    }
+  }
+}

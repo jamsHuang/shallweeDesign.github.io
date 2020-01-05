@@ -1,0 +1,223 @@
+
+
+@keyframes moveTriangle {
+  0% {
+    transform: translate(0,0)rotate(0);
+  }
+
+  100% {
+    transform: translate(0,0)rotate(-20deg);
+  }
+}
+@keyframes moveTriangle_desktop1 {
+  0% {
+    transform: translate(0,0)rotate(-20deg);
+  }
+
+  100% {
+    transform: translate(0,0)rotate(30deg);
+  }
+}
+
+@keyframes moveTriangle_mobile1 {
+  0% {
+    transform: translate(0,0)rotate(-20deg);
+  }
+
+  100% {
+    transform: translate(-130px,260px)rotate(30deg);
+  }
+}
+
+@keyframes moveTriangle_desktop2 {
+  0% {
+    transform: translate(0,0)rotate(30deg);
+  }
+
+  100% {
+    transform: translate(0,0)rotate(80deg);
+  }
+}
+@keyframes moveTriangle_mobile2 {
+  0% {
+    transform: translate(-130px,260px)rotate(30deg);
+  }
+
+  100% {
+    transform: translate(-130px,260px)rotate(80deg);
+  }
+}
+
+@keyframes moveTriangle_desktop3 {
+  0% {
+    transform: translate(0,0)rotate(80deg);
+  }
+
+  100% {
+    transform: translate(0,0)rotate(130deg);
+  }
+}
+@keyframes moveTriangle_mobile3 {
+  0% {
+    transform: translate(-130px,260px)rotate(80deg);
+  }
+
+  100% {
+    transform: translate(-130px,260px)rotate(130deg);
+  }
+}
+
+@keyframes moveTriangle_desktop4 {
+  0% {
+    transform: translate(0,0)rotate(130deg);
+  }
+
+  100% {
+    transform: translate(0,0)rotate(180deg);
+  }
+}
+@keyframes moveTriangle_mobile4 {
+  0% {
+    transform: translate(-130px,260px)rotate(130deg);
+  }
+
+  100% {
+    transform: translate(-130px,260px)rotate(180deg);
+  }
+}
+
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes aniUpIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes aniLeftIn {
+  from {
+    opacity: 0;
+    transform: translateX(-5%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+@keyframes wordIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes wordIn_desktop {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes aniIn {
+  from {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes aniOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+}
+@keyframes skinIn {
+  from {
+    opacity: 0;
+    transform: translate(100px,-50px)scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0,0)scale(1);
+  }
+}
+
+@keyframes aniText0 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.6;
+  }
+}
+
+@keyframes aniText1 {
+  from {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0.6;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes aniText2 {
+  from {
+    opacity: 0.6;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 0.6;
+    transform: scale(0);
+  }
+}
