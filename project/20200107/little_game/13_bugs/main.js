@@ -398,15 +398,17 @@ p.nominalBounds = new cjs.Rectangle(-80.5,-19.5,161.1,39.1);
 		}
 		function moveSb(evt) {
 			main.setChildIndex(evt.currentTarget, main.getNumChildren() - 1);
-			evt.scaleX = 0.3;
-			evt.scaleY = 0.3;
+			evt.currentTarget.scaleX = 1;
+			evt.currentTarget.scaleY = 1;
 			var p = stage.globalToLocal(evt.stageX, evt.stageY);
 			evt.currentTarget.x = p.x;
 			evt.currentTarget.y = p.y;
 		
 		}
 		function releaseSb(e) {
-			console.log(e.currentTarget, "re");
+			e.currentTarget.scaleX =0.3;
+			e.currentTarget.scaleY =0.3;
+			//console.log(e.currentTarget, "re");
 			if (main.getChildIndex(e.currentTarget) == (main.getNumChildren() - 1)) {
 				//remove from orginal area
 				if (e.currentTarget.area == "area1") {
@@ -705,8 +707,8 @@ p.nominalBounds = new cjs.Rectangle(-80.5,-19.5,161.1,39.1);
 				var p = stage.globalToLocal(evt.stageX, evt.stageY);
 				evt.currentTarget.x = p.x;
 				evt.currentTarget.y = p.y;
-				evt.currentTarget.scaleX = 0.3;
-				evt.currentTarget.scaleY = 0.3;
+				evt.currentTarget.scaleX = 1;
+				evt.currentTarget.scaleY = 1;
 			}
 		}
 		var pickArr = [];
@@ -716,6 +718,8 @@ p.nominalBounds = new cjs.Rectangle(-80.5,-19.5,161.1,39.1);
 				msb = sbArr[0];
 				sbArr.splice(0, 1);
 				pickArr.push(msb);
+				msb.scaleX =0.3;
+				msb.scaleY =0.3;
 				msb.x = evt.currentTarget.x;
 				msb.y = evt.currentTarget.y;
 				msb.visible = true;
@@ -1043,11 +1047,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Asset22x100.jpg?1578449654332", id:"Asset22x100"},
-		{src:"images/Asset22x8.png?1578449654332", id:"Asset22x8"},
-		{src:"images/Asset32x8.png?1578449654332", id:"Asset32x8"},
-		{src:"images/Asset42x8.png?1578449654332", id:"Asset42x8"},
-		{src:"images/farm2x8.png?1578449654332", id:"farm2x8"}
+		{src:"images/Asset22x100.jpg?1578466274026", id:"Asset22x100"},
+		{src:"images/Asset22x8.png?1578466274027", id:"Asset22x8"},
+		{src:"images/Asset32x8.png?1578466274027", id:"Asset32x8"},
+		{src:"images/Asset42x8.png?1578466274027", id:"Asset42x8"},
+		{src:"images/farm2x8.png?1578466274027", id:"farm2x8"}
 	],
 	preloads: []
 };
