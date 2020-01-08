@@ -114,6 +114,19 @@ p.nominalBounds = new cjs.Rectangle(0,0,0,0);
 }).prototype = getMCSymbolPrototype(lib.mc_en, new cjs.Rectangle(-10,-13,20,25), null);
 
 
+(lib.hit = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(83,83,83,0.008)").s().p("AkwGrIAAtVIJhAAIAANVg");
+	this.shape.setTransform(30.5,42.65);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.hit, new cjs.Rectangle(0,0,61,85.3), null);
+
+
 (lib.colorBar = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -129,6 +142,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,0,0);
 
 (lib.pointer = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_3
+	this.instance = new lib.hit();
+	this.instance.parent = this;
+	this.instance.setTransform(-0.5,-18.5,1,1,0,0,0,30.5,42.6);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	// Layer_2
 	this.mc_light2 = new lib.mc_light2();
@@ -147,17 +167,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,0,0);
 	this.pointer_num.parent = this;
 	this.pointer_num.setTransform(0,-50.8);
 
-	this.instance = new lib.pointer2x();
-	this.instance.parent = this;
-	this.instance.setTransform(-10,-15,0.5,0.5);
+	this.instance_1 = new lib.pointer2x();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(-10,-15,0.5,0.5);
 
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("rgba(204,204,204,0)").s().p("AhoFVIAAqqIDRAAIAAKqg");
-	this.shape.setTransform(-1.5,-18.65);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.pointer_num}]}).wait(1));
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance},{t:this.pointer_num}]}).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.pointer, new cjs.Rectangle(-12,-52.8,24,68.3), null);
+}).prototype = getMCSymbolPrototype(lib.pointer, new cjs.Rectangle(-31,-61.1,61,85.3), null);
 
 
 (lib.colorPicker = function(mode,startPosition,loop) {
@@ -179,7 +195,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,0,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.colorBar).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.colorPicker, new cjs.Rectangle(0,-26.5,411.5,68.3), null);
+}).prototype = getMCSymbolPrototype(lib.colorPicker, new cjs.Rectangle(0,-34.8,429.5,85.3), null);
 
 
 (lib.main_view = function(mode,startPosition,loop) {
@@ -408,11 +424,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/bg_12x.jpg?1578449003163", id:"bg_12x"},
-		{src:"images/colorbar1111.png?1578449003163", id:"colorbar1111"},
-		{src:"images/energy.png?1578449003163", id:"energy"},
-		{src:"images/pointer2x.png?1578449003163", id:"pointer2x"},
-		{src:"images/redline.png?1578449003163", id:"redline"}
+		{src:"images/bg_12x.jpg?1578451408431", id:"bg_12x"},
+		{src:"images/colorbar1111.png?1578451408431", id:"colorbar1111"},
+		{src:"images/energy.png?1578451408431", id:"energy"},
+		{src:"images/pointer2x.png?1578451408431", id:"pointer2x"},
+		{src:"images/redline.png?1578451408431", id:"redline"}
 	],
 	preloads: []
 };
