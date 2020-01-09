@@ -1101,23 +1101,23 @@ p.nominalBounds = new cjs.Rectangle(12.5,13.4,11.3,13.200000000000001);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btn_obj1},{t:this.btn_obj2},{t:this.btn_obj3},{t:this.btn_ctrl}]}).wait(1));
 
 	// ctrl_btn
-	this.btn_nav = new lib.btn_0();
-	this.btn_nav.name = "btn_nav";
-	this.btn_nav.parent = this;
-	this.btn_nav.setTransform(50.75,728.15,5.8988,1.0237,0,0,0,-80.4,-19.4);
-	new cjs.ButtonHelper(this.btn_nav, 0, 1, 2, false, new lib.btn_0(), 3);
-
 	this.ctrl_nav = new lib.ctrl_nav();
 	this.ctrl_nav.name = "ctrl_nav";
 	this.ctrl_nav.parent = this;
 	this.ctrl_nav.setTransform(50,748,0.75,0.75);
+
+	this.btn_nav = new lib.btn_0();
+	this.btn_nav.name = "btn_nav";
+	this.btn_nav.parent = this;
+	this.btn_nav.setTransform(51.2,728.15,5.8988,1.0237,0,0,0,-80.4,-19.4);
+	new cjs.ButtonHelper(this.btn_nav, 0, 1, 2, false, new lib.btn_0(), 3);
 
 	this.mc_ctrl = new lib.ClipGroup();
 	this.mc_ctrl.name = "mc_ctrl";
 	this.mc_ctrl.parent = this;
 	this.mc_ctrl.setTransform(512,748,1,1,0,0,0,512,20);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.mc_ctrl},{t:this.ctrl_nav},{t:this.btn_nav}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.mc_ctrl},{t:this.btn_nav},{t:this.ctrl_nav}]}).wait(1));
 
 	// ctrl_bg
 	this.mc_btn3 = new lib.mc_btn3();
@@ -1182,7 +1182,6 @@ p.nominalBounds = new cjs.Rectangle(12.5,13.4,11.3,13.200000000000001);
 		//
 		createjs.Ticker.addEventListener("tick", handleTick);
 		//
-		
 		function handleTick(event) {
 			if (!event.paused) {
 				if (isPlaying) {
@@ -1211,6 +1210,11 @@ p.nominalBounds = new cjs.Rectangle(12.5,13.4,11.3,13.200000000000001);
 		function upNav(evt) {
 		
 		}
+		function resetNav(){
+			now_sence.gotoAndStop(0);
+			main.ctrl_nav.x = 50;
+		}
+		
 		function moveNav(evt) {
 			isPlaying = false;
 			createjs.Ticker.paused = true;
@@ -1229,6 +1233,7 @@ p.nominalBounds = new cjs.Rectangle(12.5,13.4,11.3,13.200000000000001);
 		function switchMC(evt) {
 			switch (evt.target.name) {
 				case "btn_obj1":
+					resetNav();
 					mc_sence = 1;
 					isPlaying = false;
 					now_sence = main.mc_sence1;
@@ -1239,6 +1244,8 @@ p.nominalBounds = new cjs.Rectangle(12.5,13.4,11.3,13.200000000000001);
 					main.mc_btn3.gotoAndStop(0);
 					break;
 				case "btn_obj2":
+					
+					resetNav();
 					mc_sence = 2;
 					isPlaying = false;
 					now_sence = main.mc_sence2;
@@ -1249,6 +1256,7 @@ p.nominalBounds = new cjs.Rectangle(12.5,13.4,11.3,13.200000000000001);
 					main.mc_btn3.gotoAndStop(0);
 					break;
 				case "btn_obj3":
+					resetNav();
 					mc_sence = 3;
 					isPlaying = false;
 					now_sence = main.mc_sence3;
@@ -1318,78 +1326,78 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Asset22x8.png?1578449612743", id:"Asset22x8"},
-		{src:"images/Asset32x8.png?1578449612743", id:"Asset32x8"},
-		{src:"images/bg.jpg?1578449612743", id:"bg"},
-		{src:"images/btn_face0.png?1578449612743", id:"btn_face0"},
-		{src:"images/btn_face1.png?1578449612743", id:"btn_face1"},
-		{src:"images/btn_text1.png?1578449612743", id:"btn_text1"},
-		{src:"images/btn_text2.png?1578449612743", id:"btn_text2"},
-		{src:"images/btn_text3.png?1578449612743", id:"btn_text3"},
-		{src:"images/map1.png?1578449612743", id:"map1"},
-		{src:"images/map10.png?1578449612743", id:"map10"},
-		{src:"images/map11.png?1578449612743", id:"map11"},
-		{src:"images/map12.png?1578449612743", id:"map12"},
-		{src:"images/map13.png?1578449612743", id:"map13"},
-		{src:"images/map14.png?1578449612743", id:"map14"},
-		{src:"images/map15.png?1578449612743", id:"map15"},
-		{src:"images/map16.png?1578449612743", id:"map16"},
-		{src:"images/map17.png?1578449612743", id:"map17"},
-		{src:"images/map18.png?1578449612743", id:"map18"},
-		{src:"images/map19.png?1578449612743", id:"map19"},
-		{src:"images/map2.png?1578449612743", id:"map2"},
-		{src:"images/map20.png?1578449612743", id:"map20"},
-		{src:"images/map21.png?1578449612743", id:"map21"},
-		{src:"images/map22.png?1578449612743", id:"map22"},
-		{src:"images/map23.png?1578449612743", id:"map23"},
-		{src:"images/map24.png?1578449612743", id:"map24"},
-		{src:"images/map25.png?1578449612743", id:"map25"},
-		{src:"images/map26.png?1578449612743", id:"map26"},
-		{src:"images/map27.png?1578449612743", id:"map27"},
-		{src:"images/map28.png?1578449612743", id:"map28"},
-		{src:"images/map29.png?1578449612743", id:"map29"},
-		{src:"images/map3.png?1578449612743", id:"map3"},
-		{src:"images/map30.png?1578449612743", id:"map30"},
-		{src:"images/map31.png?1578449612743", id:"map31"},
-		{src:"images/map32.png?1578449612743", id:"map32"},
-		{src:"images/map33.png?1578449612743", id:"map33"},
-		{src:"images/map34.png?1578449612743", id:"map34"},
-		{src:"images/map35.png?1578449612743", id:"map35"},
-		{src:"images/map36.png?1578449612743", id:"map36"},
-		{src:"images/map37.png?1578449612743", id:"map37"},
-		{src:"images/map38.png?1578449612743", id:"map38"},
-		{src:"images/map39.png?1578449612743", id:"map39"},
-		{src:"images/map4.png?1578449612743", id:"map4"},
-		{src:"images/map40.png?1578449612743", id:"map40"},
-		{src:"images/map41.png?1578449612743", id:"map41"},
-		{src:"images/map42.png?1578449612743", id:"map42"},
-		{src:"images/map43.png?1578449612743", id:"map43"},
-		{src:"images/map44.png?1578449612743", id:"map44"},
-		{src:"images/map45.png?1578449612743", id:"map45"},
-		{src:"images/map46.png?1578449612743", id:"map46"},
-		{src:"images/map47.png?1578449612743", id:"map47"},
-		{src:"images/map48.png?1578449612743", id:"map48"},
-		{src:"images/map49.png?1578449612743", id:"map49"},
-		{src:"images/map5.png?1578449612743", id:"map5"},
-		{src:"images/map50.png?1578449612743", id:"map50"},
-		{src:"images/map51.png?1578449612743", id:"map51"},
-		{src:"images/map52.png?1578449612743", id:"map52"},
-		{src:"images/map53.png?1578449612743", id:"map53"},
-		{src:"images/map54.png?1578449612743", id:"map54"},
-		{src:"images/map55.png?1578449612743", id:"map55"},
-		{src:"images/map56.png?1578449612743", id:"map56"},
-		{src:"images/map57.png?1578449612743", id:"map57"},
-		{src:"images/map58.png?1578449612743", id:"map58"},
-		{src:"images/map59.png?1578449612743", id:"map59"},
-		{src:"images/map6.png?1578449612743", id:"map6"},
-		{src:"images/map60.png?1578449612743", id:"map60"},
-		{src:"images/map61.png?1578449612743", id:"map61"},
-		{src:"images/map7.png?1578449612743", id:"map7"},
-		{src:"images/map8.png?1578449612743", id:"map8"},
-		{src:"images/map9.png?1578449612743", id:"map9"},
-		{src:"images/s3_bg.png?1578449612743", id:"s3_bg"},
-		{src:"images/sence1.png?1578449612743", id:"sence1"},
-		{src:"images/sence2.png?1578449612743", id:"sence2"}
+		{src:"images/Asset22x8.png?1578546248525", id:"Asset22x8"},
+		{src:"images/Asset32x8.png?1578546248525", id:"Asset32x8"},
+		{src:"images/bg.jpg?1578546248525", id:"bg"},
+		{src:"images/btn_face0.png?1578546248525", id:"btn_face0"},
+		{src:"images/btn_face1.png?1578546248525", id:"btn_face1"},
+		{src:"images/btn_text1.png?1578546248525", id:"btn_text1"},
+		{src:"images/btn_text2.png?1578546248525", id:"btn_text2"},
+		{src:"images/btn_text3.png?1578546248525", id:"btn_text3"},
+		{src:"images/map1.png?1578546248525", id:"map1"},
+		{src:"images/map10.png?1578546248525", id:"map10"},
+		{src:"images/map11.png?1578546248525", id:"map11"},
+		{src:"images/map12.png?1578546248525", id:"map12"},
+		{src:"images/map13.png?1578546248525", id:"map13"},
+		{src:"images/map14.png?1578546248525", id:"map14"},
+		{src:"images/map15.png?1578546248525", id:"map15"},
+		{src:"images/map16.png?1578546248525", id:"map16"},
+		{src:"images/map17.png?1578546248525", id:"map17"},
+		{src:"images/map18.png?1578546248525", id:"map18"},
+		{src:"images/map19.png?1578546248525", id:"map19"},
+		{src:"images/map2.png?1578546248525", id:"map2"},
+		{src:"images/map20.png?1578546248525", id:"map20"},
+		{src:"images/map21.png?1578546248525", id:"map21"},
+		{src:"images/map22.png?1578546248525", id:"map22"},
+		{src:"images/map23.png?1578546248525", id:"map23"},
+		{src:"images/map24.png?1578546248525", id:"map24"},
+		{src:"images/map25.png?1578546248525", id:"map25"},
+		{src:"images/map26.png?1578546248525", id:"map26"},
+		{src:"images/map27.png?1578546248525", id:"map27"},
+		{src:"images/map28.png?1578546248525", id:"map28"},
+		{src:"images/map29.png?1578546248525", id:"map29"},
+		{src:"images/map3.png?1578546248525", id:"map3"},
+		{src:"images/map30.png?1578546248525", id:"map30"},
+		{src:"images/map31.png?1578546248525", id:"map31"},
+		{src:"images/map32.png?1578546248525", id:"map32"},
+		{src:"images/map33.png?1578546248525", id:"map33"},
+		{src:"images/map34.png?1578546248525", id:"map34"},
+		{src:"images/map35.png?1578546248525", id:"map35"},
+		{src:"images/map36.png?1578546248525", id:"map36"},
+		{src:"images/map37.png?1578546248525", id:"map37"},
+		{src:"images/map38.png?1578546248525", id:"map38"},
+		{src:"images/map39.png?1578546248525", id:"map39"},
+		{src:"images/map4.png?1578546248525", id:"map4"},
+		{src:"images/map40.png?1578546248525", id:"map40"},
+		{src:"images/map41.png?1578546248525", id:"map41"},
+		{src:"images/map42.png?1578546248525", id:"map42"},
+		{src:"images/map43.png?1578546248525", id:"map43"},
+		{src:"images/map44.png?1578546248525", id:"map44"},
+		{src:"images/map45.png?1578546248525", id:"map45"},
+		{src:"images/map46.png?1578546248525", id:"map46"},
+		{src:"images/map47.png?1578546248525", id:"map47"},
+		{src:"images/map48.png?1578546248525", id:"map48"},
+		{src:"images/map49.png?1578546248525", id:"map49"},
+		{src:"images/map5.png?1578546248525", id:"map5"},
+		{src:"images/map50.png?1578546248525", id:"map50"},
+		{src:"images/map51.png?1578546248525", id:"map51"},
+		{src:"images/map52.png?1578546248525", id:"map52"},
+		{src:"images/map53.png?1578546248525", id:"map53"},
+		{src:"images/map54.png?1578546248525", id:"map54"},
+		{src:"images/map55.png?1578546248525", id:"map55"},
+		{src:"images/map56.png?1578546248525", id:"map56"},
+		{src:"images/map57.png?1578546248525", id:"map57"},
+		{src:"images/map58.png?1578546248525", id:"map58"},
+		{src:"images/map59.png?1578546248525", id:"map59"},
+		{src:"images/map6.png?1578546248525", id:"map6"},
+		{src:"images/map60.png?1578546248525", id:"map60"},
+		{src:"images/map61.png?1578546248525", id:"map61"},
+		{src:"images/map7.png?1578546248525", id:"map7"},
+		{src:"images/map8.png?1578546248525", id:"map8"},
+		{src:"images/map9.png?1578546248525", id:"map9"},
+		{src:"images/s3_bg.png?1578546248525", id:"s3_bg"},
+		{src:"images/sence1.png?1578546248525", id:"sence1"},
+		{src:"images/sence2.png?1578546248525", id:"sence2"}
 	],
 	preloads: []
 };
