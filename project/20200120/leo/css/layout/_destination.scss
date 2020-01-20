@@ -1,0 +1,59 @@
+.destination {
+  margin-top: 10px;
+
+  &__photo {
+    height: auto;
+    min-height: 20rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__info {
+    padding: 20px;
+
+
+    &__title {}
+
+    &__detail{
+      .info__detail{
+        display: inline-block;
+        width: 40%;
+        i{
+          margin-right:5px;
+        }
+      }
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      border-top: 1px solid #ACACAC;
+      padding-top: 15px;
+
+    }
+  }
+
+  &__weather {
+    text-align: center;
+
+    &__icon {
+      display: inline-block;
+    }
+
+    &__info {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 1.5rem;
+      margin-top: 15px;
+
+      .weather__info {
+        &__c {
+          margin-right: 25px;
+          color:#000;
+        }
+
+        &__f {color:#AAA;}
+      }
+    }
+  }
+}
