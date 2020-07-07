@@ -1,0 +1,42 @@
+#edgApp {
+  .about {
+    &__title {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+      max-width: 600px;
+
+      .st0 {
+        opacity: 0.8;
+        fill: #F8C432;
+        enable-background: new;
+      }
+
+      .st1 {
+        fill: none;
+        stroke: #3E3A39;
+        stroke-width: 1.1;
+        stroke-miterlimit: 10;
+      }
+
+      .st2 {
+        font-weight: bold;
+      }
+
+      .st3 {
+        font-size: 37.28px;
+      }
+
+      .st4 {
+        letter-spacing: 2;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      padding: 20px;
+      max-width: 960px;
+      margin: 50px auto;
+    }
+  }
+}
