@@ -22,7 +22,7 @@
       <div class="skip btn-underline">
         <span class="btn-underline__child">SKIP</span>
       </div>
-      <div class="openning">
+      <div class="openning" style="background-image: url(images/sp.png)">
         <div class="openning__logo">
           <img src="images/logo.svg" />
         </div>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="work__item__info">
                       <h3 class="work__item__title">西雅圖極品咖啡</h3>
-                      <button type="button" name="button">CAMPAIGN SITE</button>
+                      <button class="button" type="button" name="button"  data-toggle="modal" data-target="#workModal">CAMPAIGN SITE</button>
                     </div>
                   </div>
                   <div class="work__item" data-aos="flip-up">
@@ -112,27 +112,7 @@
                     </div>
                     <div class="work__item__info">
                       <h3 class="work__item__title">西雅圖極品咖啡</h3>
-                      <button type="button" name="button">CAMPAIGN SITE</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="work__row">
-                  <div class="work__item" data-aos="flip-up">
-                    <div class="work__item__img">
-                      <img src="images/work-1.jpg" />
-                    </div>
-                    <div class="work__item__info">
-                      <h3 class="work__item__title">西雅圖極品咖啡</h3>
-                      <button type="button" name="button">CAMPAIGN SITE</button>
-                    </div>
-                  </div>
-                  <div class="work__item" data-aos="flip-up">
-                    <div class="work__item__img">
-                      <img src="images/work-1.jpg" />
-                    </div>
-                    <div class="work__item__info">
-                      <h3 class="work__item__title">西雅圖極品咖啡</h3>
-                      <button type="button" name="button">CAMPAIGN SITE</button>
+                    <button class="button" type="button" name="button"  data-toggle="modal" data-target="#workModal">CAMPAIGN SITE</button>
                     </div>
                   </div>
                 </div>
@@ -143,7 +123,27 @@
                     </div>
                     <div class="work__item__info">
                       <h3 class="work__item__title">西雅圖極品咖啡</h3>
-                      <button type="button" name="button">CAMPAIGN SITE</button>
+                      <button class="button" type="button" name="button"  data-toggle="modal" data-target="#workModal">CAMPAIGN SITE</button>
+                    </div>
+                  </div>
+                  <div class="work__item" data-aos="flip-up">
+                    <div class="work__item__img">
+                      <img src="images/work-1.jpg" />
+                    </div>
+                    <div class="work__item__info">
+                      <h3 class="work__item__title">西雅圖極品咖啡</h3>
+                      <button class="button" type="button" name="button"  data-toggle="modal" data-target="#workModal">CAMPAIGN SITE</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="work__row">
+                  <div class="work__item" data-aos="flip-up">
+                    <div class="work__item__img">
+                      <img src="images/work-1.jpg" />
+                    </div>
+                    <div class="work__item__info">
+                      <h3 class="work__item__title">西雅圖極品咖啡</h3>
+                      <button class="button" type="button" name="button"  data-toggle="modal" data-target="#workModal">CAMPAIGN SITE</button>
                     </div>
                   </div>
                   <div class="work__item" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
@@ -152,7 +152,7 @@
                     </div>
                     <div class="work__item__info">
                       <h3 class="work__item__title">西雅圖極品咖啡</h3>
-                      <button type="button" name="button">CAMPAIGN SITE</button>
+                      <button class="button" type="button" name="button"  data-toggle="modal" data-target="#workModal">CAMPAIGN SITE</button>
                     </div>
                   </div>
                 </div>
@@ -374,9 +374,16 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7995146871326!2d121.56029831644564!3d25.04087698396919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb8e306ada3%3A0x20f658b825fcc484!2zZWJn77yN5ZCN6LGh5ZOB54mM5b2i6LGh562W55Wl!5e0!3m2!1szh-TW!2stw!4v1594079182702!5m2!1szh-TW!2stw"
                     frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-                <a class="contact__question-type">
+                <!-- <a class="contact__question-type">
                   <input class="contact__input" type="text" name="question" value="" placeholder="需要的服務(可複選)" onfocus="this.placeholder=''" onblur="this.placeholder='需要的服務(可複選)'" disabled />
-                </a>
+                </a> -->
+                <select class="selectpicker"  multiple width: 'fit' title="需要的服務(可複選)" data-size="3">
+  <option  data-subtext=" / Integrated Marketing">品牌全傳播行銷</option>
+  <option data-subtext=" / Social Media">社群口碑行銷</option>
+  <option data-subtext=" / Media Planning & Buying">媒體採購與購買執行</option>
+  <option data-subtext=" / Responsive Web design">RWD 網站建置</option>
+</select>
+
                 <input class="contact__input contact__company-name" type="text" name="company-name" value="" placeholder="公司名稱" onfocus="this.placeholder=''" onblur="this.placeholder='公司名稱'" />
                 <input class="contact__input contact__name" type="text" name="name" value="" placeholder="聯絡姓名" onfocus="this.placeholder=''" onblur="this.placeholder='聯絡姓名'" />
                 <input class="contact__input contact__tel" type="tel" name="tel" value="" placeholder="聯絡電話" onfocus="this.placeholder=''" onblur="this.placeholder='聯絡電話'" />
@@ -384,7 +391,7 @@
                 <input class="contact__input contact__question" type="text" name="question" value="" placeholder="請簡述您的需求" onfocus="this.placeholder=''" onblur="this.placeholder='請簡述您的需求'" />
 
               </form>
-              <button class="contact__button">確定</button>
+              <button class="contact__button button">確定</button>
             </div>
           </section>
         </div>
@@ -440,14 +447,47 @@
         </footer>
       </div>
     </div>
-    <div class="popup">
-      <div class="popup__content">
 
-      </div>
-      <div class="pop">
+<!-- Modal -->
+<div id="workModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 
+  <div class="modal-dialog modal-dialog-centered" role="document">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal"><img src="images/closeBtn.svg"/></button>
+      <div class="modal-body">
+
+        <div class="container">
+          <div class="row head">
+            <div class="col-12 col-md-9">
+              <p class="client-name">西雅圖極品咖啡</p>
+              <h4 class="project-name">放手就好</h4>
+              <h6 class="project-subtitle">JUST LET GO</h6>
+              <p class="hashtag">#video #barista</p>
+            </div>
+            <div class="col-12 col-md-3">
+              <button class="button">WEBSITE</button>
+              <button class="button">FILM</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <img src="images/workItem__image--1.png"/>
+              <p class="text">喝杯好咖啡，真的需要那麼複雜？ 拋開所有器具限制、規則教條，從現在開
+始，想喝，就放手去喝 ——</p>
+<img src="images/workItem__image--2.png"/>
+<p class="text">直覺放入即飲，完全萃取濃郁風味，冷熱雙享可回沖，隨心調飲更多變。</p>
+
+<video id="video"></video>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+  </div>
+</div>
     <div class="loading">
       <div class="message">
         loading
@@ -455,6 +495,6 @@
     </div>
   </div>
 
-<script type="text/javascript" src="scripts/index.c6ab924b48b86942e958.js"></script></body>
+<script type="text/javascript" src="scripts/index.a0e41811eadafcdfa38c.js"></script></body>
 
 </html>
