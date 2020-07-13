@@ -4,15 +4,16 @@
 	 viewBox="0 0 464 463.7" style="enable-background:new 0 0 464 463.7;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#EBEBEC;}
-	.st1{opacity:0.8;fill:#F8C432;enable-background:new    ;}
-	.st2{fill:none;stroke:#3E3A39;stroke-width:1.1;stroke-miterlimit:10;}
-	.st3{font-family:'NotoSans-Bold';}
-	.st4{font-size:56px;}
-	.st5{font-family:'NotoSansCJKtc-Light-B5pc-H';}
-	.st6{font-size:25.14px;}
-	.st7{fill:#3E3A39;}
-	.st8{font-family:'NotoSansCJKtc-Regular-B5pc-H';}
-	.st9{font-size:20px;}
+	.st1{fill:none;stroke:#3E3A39;stroke-width:1.1;stroke-miterlimit:10;}
+	.st2{font-family:'NotoSans-Bold';}
+	.st3{font-size:56px;}
+	.st4{font-family:'NotoSansCJKtc-Light-B5pc-H';}
+	.st5{font-size:25.14px;}
+	.st6{fill:#3E3A39;}
+	.st7{font-family:'NotoSansCJKtc-Regular-B5pc-H';}
+	.st8{font-size:20px;}
+	.st9{opacity:0.8;fill:#95A200;}
+	.st10{opacity:0.8;fill:#F8C432;}
 </style>
 <g id="Layer_2_1_">
 	<g id="設計">
@@ -21,18 +22,19 @@
 				<path class="st0" d="M79.2,47.7v241.1l384.9-33v-158L79.2,47.7z"/>
 			</g>
 		</g>
-		<path class="st1" d="M79.2,48.2v241.1l384.9-7.6V82.8L79.2,48.2z"/>
-		<path class="st2" d="M263.3,248L71.6,311.1c0,0-6.1-19.7-10-32.5"/>
-		<polyline class="st2" points="167.1,41.2 378.8,0.6 437.2,190.8 421.5,196 		"/>
-		<path class="st2" d="M11.7,116.4c-5.3-17.1,8,25.9,5.1,16.7c-2.1-6.8-16.1-52.4-16.1-52.4l14.9-3.2"/>
-		<text transform="matrix(1 0 0 1 23 99.6)" class="st3 st4">CREATIVE</text>
-		<text transform="matrix(1 0 0 1 23 161.23)" class="st3 st4">EXECUTIVE</text>
-		<text transform="matrix(1 0 0 1 23 222.86)" class="st3 st4">PRODUCTION</text>
-		<text transform="matrix(1 0 0 1 23 261.39)" class="st5 st6">創意執行製作</text>
-		<text transform="matrix(1 0 0 1 23 352.7)" class="st7 st8 st9">．短影片 / TVCF 廣告影片</text>
-		<text transform="matrix(1 0 0 1 23 382.7)" class="st7 st8 st9">．腳本發想 / 拍攝 / 後製</text>
-		<text transform="matrix(1 0 0 1 23 412.7)" class="st7 st8 st9">．產品攝影 / 人物攝影</text>
-		<text transform="matrix(1 0 0 1 23 442.7)" class="st7 st8 st9">．媒體素材製作</text>
+		<path class="st1" d="M263.3,248L71.6,311.1c0,0-6.1-19.7-10-32.5"/>
+		<polyline class="st1" points="167.1,41.2 378.8,0.6 437.2,190.8 421.5,196 		"/>
+		<path class="st1" d="M11.7,116.4c-5.3-17.1,8,25.9,5.1,16.7c-2.1-6.8-16.1-52.4-16.1-52.4l14.9-3.2"/>
+		<text transform="matrix(1 0 0 1 23 99.6)" class="st2 st3">CREATIVE</text>
+		<text transform="matrix(1 0 0 1 23 161.23)" class="st2 st3">EXECUTIVE</text>
+		<text transform="matrix(1 0 0 1 23 222.86)" class="st2 st3">PRODUCTION</text>
+		<text transform="matrix(1 0 0 1 23 261.39)" class="st4 st5">創意執行製作</text>
+		<text transform="matrix(1 0 0 1 23 352.7)" class="st6 st7 st8">．短影片 / TVCF 廣告影片</text>
+		<text transform="matrix(1 0 0 1 23 382.7)" class="st6 st7 st8">．腳本發想 / 拍攝 / 後製</text>
+		<text transform="matrix(1 0 0 1 23 412.7)" class="st6 st7 st8">．產品攝影 / 人物攝影</text>
+		<text transform="matrix(1 0 0 1 23 442.7)" class="st6 st7 st8">．媒體素材製作</text>
+		<polygon class="st9" points="79.2,47.7 464.1,97.8 464.1,255.8 79.2,288.8 		"/>
 	</g>
+	<polygon class="st10" points="79.2,48 464.1,85.4 464.1,281.5 79.2,288.6 	"/>
 </g>
 </svg>
