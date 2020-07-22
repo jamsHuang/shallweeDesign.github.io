@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>EDG｜名象設計</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/all.min.css">
+<link href="./css/all.min.css" rel="stylesheet"></head>
+
+<body>
+  <div id="edgApp" class="app" role="main">
+    <div class="app_wrapper">
+      <!-- webgl -->
+      <div class="container" id="waves"></div>
+      <div class="container" id="background"></div>
+      <div class="skip btn-underline">
+        <span class="btn-underline__child">SKIP</span>
+        <span class="counting-bar"></span>
+      </div>
+      <div class="openning">
+        <div class="slogan slogan--2">
+          <h4>找到EDG，找到最佳數位創意</h4>
+          <p>COME TO EDG , GET THE BEST DIGITAL CREATIVE.</p>
+        </div>
+        <div class="scroll-icon">
+          <h5>Scroll</h5>
+          <span class="scroll-icon__wheel-inner"></span>
+        </div>
+      </div>
+      <div class="app_content">
+        <!--Nav-->
+        <nav class="app_nav">
+          <div class="logo">
+            <svg viewBox="0 0 357.5 155.7">
+              <g>
+                <path class="st0" d="M8.9,50.8c-1.9,2.3-3.5,4.7-4.8,7.3c-1.3,2.7-2.3,5.4-3,8.3c-1.5,6-1.5,12.2,0,18.2c0.7,2.9,1.7,5.7,3,8.3
+    					c2.6,5.2,6.4,9.8,11.1,13.3l2.1,1.6V43.1l-2.1,1.6C12.9,46.5,10.8,48.6,8.9,50.8z" />
+                <path class="st0" d="M322.6,50.8c1.9,2.3,3.5,4.7,4.8,7.3c1.3,2.7,2.3,5.4,3,8.3c1.5,6,1.5,12.2,0,18.2c-0.7,2.9-1.7,5.7-3,8.3
+    					c-1.3,2.6-2.9,5.1-4.8,7.3c-1.9,2.2-4,4.2-6.3,6l-2.1,1.6V43.1l2.1,1.6C318.6,46.5,320.7,48.6,322.6,50.8z" />
+                <path class="st0" d="M351.4,59.9c-1.6,0-3.1,0.6-4.2,1.7c-2.3,2.4-2.3,6.2,0,8.5c1.1,1.1,2.7,1.8,4.2,1.8c1.6,0,3.2-0.6,4.3-1.8
+    					c2.3-2.4,2.3-6.2,0-8.5C354.6,60.5,353,59.9,351.4,59.9z" />
+                <path class="st0" d="M351.4,79c-3.3,0-6,2.7-6,6c0,1.6,0.6,3.1,1.8,4.3c1.1,1.1,2.7,1.8,4.2,1.7c1.6,0,3.2-0.6,4.3-1.8
+    					c2.3-2.4,2.3-6.1,0-8.5C354.5,79.6,353,79,351.4,79z" />
+                <path class="st1" d="M125.8,76.3c0,23.9,17.8,42.6,40.6,42.6s40.8-18.7,40.8-42.6V0h-15.2v45.1c-6.8-7-16.1-10.9-25.8-11
+    					C143.6,34,125.8,52.6,125.8,76.3z M141.4,76.3c0-15.3,11.2-27.7,25-27.7s25.1,12.4,25.1,27.7c0,15.5-11.3,28-25.1,28
+    					C152.4,104.4,141.4,92.1,141.4,76.3z" />
+                <path class="st0" d="M99.5,90.8c-4.9,9-12.4,13.3-22.7,13.3c-8.2,0.1-15.8-3.8-20.7-10.4l59.7-25.3l-0.2-1.1
+    					C111.1,47.7,94.8,34,76,34c-22.5,0-40.8,19.1-40.8,42.6c0,23.7,18.2,42.3,41.6,42.3c18.5,0,32.2-9.6,38.6-27.1l0.7-1.8H99.8
+    					L99.5,90.8z M50.8,76.5c0-17,13.1-27.6,25.2-27.6c8,0,15.7,4.5,20.4,11.9L51,79.9C50.9,78.8,50.8,77.6,50.8,76.5z" />
+                <path class="st0" d="M257,34c-22.9,0-40.8,18.7-40.8,42.6s17.8,42.5,40.5,42.5c9.6,0.2,18.9-3.7,25.5-10.7v3.8
+    					c0,13.7-6.9,28.3-26.2,28.3c-3.8,0-16.9-0.9-22-12.6l-0.4-0.8h-16.4l0.4,1.7c4.2,16.3,19.2,26.9,38.3,26.9
+    					c25,0,41.7-17.5,41.7-43.5V76.7C297.6,52.8,279.8,34,257,34z M257,104.4c-14.1,0-25.2-12.2-25.2-27.7s11.3-28,25.2-28
+    					s25.1,12.6,25.1,28C282.1,91.9,270.8,104.4,257,104.4z" />
+              </g>
+            </svg>
+          </div>
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul id="menu">
+            <a href="#work">
+              <li>WORK</li>
+            </a>
+            <a href="#about">
+              <li>ABOUT</li>
+            </a>
+            <a href="#service">
+              <li>SERVICE</li>
+            </a>
+            <a href="#client">
+              <li>CLIENT</li>
+            </a>
+            <a href="#contact">
+              <li>CONTACT</li>
+            </a>
+          </ul>
+          <h2 class="message"></h2>
+        </nav>
+        <div class="section__wrapper">
+          <!--KV / A01-->
+          <section id="kv" class="kv app_section">
+          </section>
+          <!--work / A02-->
+          <section id="work" class="work app_section">
+            <div class="app_section_content">
+              <!-- <h2 class="message animate__animated animate__bounce">work</h2> -->
+              <div class="work__content">
+                <div class="work__row">
+                  <div class="work__item">
+                    <div class="work__item__img">
+                      <img src="images/work-1.jpg" />
+                    </div>
+                    <div class="work__item__info">
+                      <span class="info__content">
+                        <h3 class="work__item__title">西雅圖極品咖啡</h3>
+                        <button class="button" type="button" name="button" data-toggle="modal" data-target="#workModal">CAMPAIGN SITE</button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="work__item" data-aos="flip-up">
+                    <div class="work__item__img">
+                      <img src="images/work-1.jpg" />
+                    </div>
+                    <div class="work__item__info">
+                      <span class="info__content">
+                        <h3 class="work__item__title">西雅圖極品咖啡</h3>
+                        <button class="button" type="button" name="button" data-toggle="modal" data-target="#workModal">CAMPAIGN SITE</button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="work__row">
+                  <div class="work__item" data-aos="flip-up">
+                    <div class="work__item__img">
+                      <img src="images/work-1.jpg" />
+                    </div>
+                    <div class="work__item__info">
+                      <span class="info__content">
+                        <h3 class="work__item__title">西雅圖極品咖啡</h3>
+                        <button class="button" type="button" name="button" data-toggle="modal" data-target="#workModal">CAMPAIGN SITE</button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="work__item" data-aos="flip-up">
+                    <div class="work__item__img">
+                      <img src="images/work-1.jpg" />
+                    </div>
+                    <div class="work__item__info">
+                      <span class="info__content">
+                        <h3 class="work__item__title">西雅圖極品咖啡</h3>
+                        <button class="button" type="button" name="button" data-toggle="modal" data-target="#workModal">CAMPAIGN SITE</button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="work__row">
+                  <div class="work__item" data-aos="flip-up">
+                    <div class="work__item__img">
+                      <img src="images/work-1.jpg" />
+                    </div>
+                    <div class="work__item__info">
+                      <span class="info__content">
+                        <h3 class="work__item__title">西雅圖極品咖啡</h3>
+                        <button class="button" type="button" name="button" data-toggle="modal" data-target="#workModal">CAMPAIGN SITE</button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="work__item" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                    <div class="work__item__img">
+                      <img src="images/work-1.jpg" />
+                    </div>
+                    <div class="work__item__info">
+                      <span class="info__content">
+                        <h3 class="work__item__title">西雅圖極品咖啡</h3>
+                        <button class="button" type="button" name="button" data-toggle="modal" data-target="#workModal">CAMPAIGN SITE</button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--about / A03-->
+          <section id="about" class="about app_section">
+            <div class="app_section_content">
+              <div class="about__title">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 631.2 170.9" style="enable-background:new 0 0 631.2 170.9;" xml:space="preserve">
+                  <g id="about__title">
+                    <polygon class="st0" points="95.6,36.2 137.9,170.9 631.2,142.1 578.3,57.3 		" />
+                    <polyline class="st1" points="85.2,124 92.6,152.6 550.1,120.1 501.1,24.3 53.3,0.6 59.4,24 		" />
+                    <text transform="matrix(1 0 0 1 0 65.06)" class="st2 st3 st4">COMPREHENSIVE</text>
+                    <text transform="matrix(1 0 0 1 0 105.79)" class="st2 st3 st4">BRANDING STRATEGY</text>
+                  </g>
+                </svg>
+              </div>
+              <div class="about__text animate__animated animate__fadeOutUp">
+                <p>
+                  我們隸屬於1981年成立的名象品牌形象策略集團，有感於在數位時代的浪潮下，客戶需要更多元、堅實的全方位整合服務，2018年將原先的數位部門獨立，成立數位營銷子公司「名象數位整合營銷」，雖然仍十分年輕，但基底十分穩固。<br />
+                  <br />
+                  名象數位匯聚了數位、廣告業界優秀人才， 以品牌策略、多元創意與數位科技，致力為客戶打造全方位、全媒體的廣告行銷服務！
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--service / A04-->
+          <section id="service" class="service app_section">
+            <div class="app_section_content">
+              <div class="service__item item--1">
+                <svg version="1.1" id="item-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 441 415.5" style="enable-background:new 0 0 441 415.5;" xml:space="preserve">
+                  <g>
+                    <polygon class="item--1__norsq norsq" id="norsq" points="79.2,47.7 464.1,97.8 464.1,255.8 79.2,288.8 " />
+                    <!-- <polygon class="actsq" id="actsq" points="79.2,48 464.1,85.4 464.1,281.5 79.2,288.6 " /> -->
+                    <path style="stroke-dasharray:71; stroke-dashoffset:71;" class="actline item--1__actline--1" d="M16.8,133.1 0.7,80.7 15.6,77.5" />
+                    <!-- <polyline class="actline" id="line-2" points="167.1,41.2 378.8,0.6 437.2,190.8 421.5,196 		" /> -->
+                    <path stroke-dasharray="432" stroke-dashoffset="432" class="actline item--1__actline--2" d="M167.1,41.2 378.8,0.6 437.2,190.8 421.5,196" />
+                    <path stroke-dasharray="236" stroke-dashoffset="236" class="actline item--1__actline--3" d="M263.3,248 71.6,311.1 61.6,278.6" />
+                    <text transform="matrix(1 0 0 1 23 99.6)" class="title">CREATIVE</text>
+                    <text transform="matrix(1 0 0 1 23 161.23)" class="title">EXECUTIVE</text>
+                    <text transform="matrix(1 0 0 1 23 222.86)" class="title">PRODUCTION</text>
+                    <text transform="matrix(1 0 0 1 23 261.39)" class="subtitle">創意執行製作</text>
+                    <text transform="matrix(1 0 0 1 23 352.7)" class="text">．短影片 / TVCF 廣告影片</text>
+                    <text transform="matrix(1 0 0 1 23 382.7)" class="text">．腳本發想 / 拍攝 / 後製</text>
+                    <text transform="matrix(1 0 0 1 23 412.7)" class="text">．產品攝影 / 人物攝影</text>
+                    <text transform="matrix(1 0 0 1 23 442.7)" class="text">．媒體素材製作</text>
+                  </g>
+                </svg>
+              </div>
+              <div class="service__item item--2">
+                <svg class="item--2__svg" id="item-2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 431.6 377.9" style="enable-background:new 0 0 431.6 377.9;"
+                  xml:space="preserve">
+                  <polygon class="norsq item--2__norsq" points='6.4,49.7 402.7,0 402.7,220.7 6.4,188.3' />
+                  <!-- <polygon class="actsq" points="6.4,39 402.7,33.7 402.7,254.4 6.4,234.2 		" /> -->
+                  <path style="stroke-dasharray:57; stroke-dashoffset:57;" class="actline" d="M28.1,177.7 13.8,172.6 25.6,133 		" />
+                  <path style="stroke-dasharray:460; stroke-dashoffset:460;" class="actline" d="M406.1,133 357.6,294.9 82.7,197.1 		" />
+                  <path style="stroke-dasharray:400; stroke-dashoffset:400;" class="actline" d="M46.8,62.4 65.2,0.7 380,90.2 		" />
+                  <text transform="matrix(1 0 0 1 30.72 128.2)" class="title">BRAND</text>
+                  <text transform="matrix(1 0 0 1 30.72 189.83)" class="title">MARKETING</text>
+                  <text transform="matrix(1 0 0 1 255.64 118.62)" class="subtitle">品牌全傳播行銷</text>
+                  <text transform="matrix(1 0 0 1 0 266.92)" class="text">．市場觀察定位</text>
+                  <text transform="matrix(1 0 0 1 0 296.92)" class="text">．消費者行為觀察分析</text>
+                  <text transform="matrix(1 0 0 1 0 326.92)" class="text">．全通路操作策略</text>
+                  <text transform="matrix(1 0 0 1 0 356.92)" class="text">．創意策略及應用</text>
+                </svg> </div>
+              <div class="service__item item--3">
+                <svg class="item--3__svg" id="item-3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 438.7 356.2" style="enable-background:new 0 0 438.7 356.2;"
+                  xml:space="preserve">
+                  <polygon class="norsq item--3__norsq" points="52.9,24.6 437.3,3 418.5,194 20.5,203.1 " />
+                  <!-- <polygon class="actsq" points="0,25.6 438.7,4 395.5,195 22,204.1 		" /> -->
+                  <path style="stroke-dasharray:841; stroke-dashoffset:841;" class="item--3__actline actline" d="M40.2,51.8 44,0.6 424.7,57.4 354.8,214.1 125.2,174 		" />
+                  <text transform="matrix(1 0 0 1 21.85 104.03)" class="title">COMMUNITY </text>
+                  <text transform="matrix(1 0 0 1 21.85 165.66)" class="title">WOM</text>
+                  <text transform="matrix(1 0 0 1 189.02 154.22)" class="subtitle">社群口碑行銷</text>
+                  <text transform="matrix(1 0 0 1 16.46 245.26)" class="text">．FB / IG 內容經營</text>
+                  <text transform="matrix(1 0 0 1 16.46 275.26)" class="text">．部落客行銷</text>
+                  <text transform="matrix(1 0 0 1 16.46 305.26)" class="text">．直播主 / 網紅行銷</text>
+                  <text transform="matrix(1 0 0 1 16.46 335.26)" class="text">．KOL 意見領袖行銷</text>
+                </svg>
+              </div>
+
+              <div class="service__item item--5">
+                <svg version="1.1" id="item-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 453.5 413.9" style="enable-background:new 0 0 453.5 413.9;" xml:space="preserve">
+                  <polygon class="norsq item--5__norsq" points="414,22.2 0,72.8 18.9,230.8 431.2,232.8 " />
+                  <!-- <polygon class="actsq" points="431.2,22.2 39.4,32.7 36.1,230.9 428.8,232.8 		" /> -->
+                  <path style="stroke-dasharray:923; stroke-dashoffset:923;" class="actline" d="M277,45.6 114.4,0.7 59.8,169.6 395.7,273.9 452.8,94.1 418,84.5 		" />
+                  <text transform="matrix(1 0 0 1 278.2 103.47)" class="title">RWD</text>
+                  <text transform="matrix(1 0 0 1 156.46 163.14)" class="title">WEBSITE</text>
+                  <text transform="matrix(1 0 0 1 243.25 206.17)" class="subtitle">RWD 網站建置</text>
+                  <text transform="matrix(1 0 0 1 45.82 272.94)" class="text">．企業形象網站</text>
+                  <text transform="matrix(1 0 0 1 45.82 302.94)" class="text">．活動網站 / 網頁</text>
+                  <text transform="matrix(1 0 0 1 45.82 332.94)" class="text">．RWD 跨螢網站</text>
+                  <text transform="matrix(1 0 0 1 45.82 362.94)" class="text">．AWS 主機維運</text>
+                  <text transform="matrix(1 0 0 1 45.82 392.94)" class="text">．SEO</text>
+                  <text transform="matrix(1 0 0 1 104.36 392.94)" class="text">(SEARCH ENGINE OPTIMIZATION)</text>
+
+                </svg>
+
+              </div>
+              <div class="service__item item--4">
+                <svg version="1.1" id="item-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 442.6 348.6" style="enable-background:new 0 0 442.6 348.6;" xml:space="preserve">
+                  <polygon class="norsq item--4__norsq" points="23.2,0.9 431,84 415.4,231.2 1.6,205.7 " />
+                  <!-- <polygon class="actsq" points="18.4,30 442.6,27.2 413.8,229.8 0,204.3 		" /> -->
+                  <path style="stroke-dasharray:426; stroke-dashoffset:426;" class="actline" d="M403.4,178 403.7,181.4 41,239 34.8,185 		" />
+                  <path style="stroke-dasharray:468; stroke-dashoffset:468;" class="actline" d="M27.4,119.8 23.4,84.8 389.5,0.7 394,57.5 		" />
+                  <text transform="matrix(1 0 0 1 214.24 113.09)" class="title">BRAND</text>
+                  <text transform="matrix(1 0 0 1 23.95 172.76)" class="title">CONSULTANT</text>
+                  <text transform="matrix(1 0 0 1 83.44 101.19)" class="subtitle">品牌顧問</text>
+                  <text transform="matrix(1 0 0 1 304.97 267.62)" class="text">．品牌審視</text>
+                  <text transform="matrix(1 0 0 1 304.97 297.62)" class="text">．品牌設計</text>
+                  <text transform="matrix(1 0 0 1 264.97 327.62)" class="text">．品牌系統建立</text>
+
+                </svg>
+
+              </div>
+
+              <div class="service__item item--7">
+                <svg version="1.1" id="item-7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 404 607.3" style="enable-background:new 0 0 404 607.3;" xml:space="preserve">
+                  <polygon class="norsq item--7__norsq" points="394.8,0 11.5,50.3 18.6,338.4 396.4,302 " />
+                  <!-- <polygon class="actsq" points="394.8,16.7 11.5,52.7 18.6,326.3 396.4,340.7 		" /> -->
+                  <path style="stroke-dasharray:349; stroke-dashoffset:349;" class="actline" d="M368.5,125.3 341.3,0.7 130.5,66.7 		" />
+                  <path style="stroke-dasharray:437; stroke-dashoffset:437;" class="actline" d="M62.6,317.7 68.7,343 403.3,285 387.9,214.3 		" />
+                  <text transform="matrix(1 0 0 1 1 129.32)" class="title">MEDIA </text>
+                  <text transform="matrix(1 0 0 1 1 190.95)" class="title">PURCHASING</text>
+                  <text transform="matrix(1 0 0 1 1 252.58)" class="title">&amp;EXECUTION</text>
+                  <text transform="matrix(1 0 0 1 0 300.38)" class="subtitle">媒體採購與購買執行</text>
+                  <text transform="matrix(1 0 0 1 162.6 376.36)" class="text">．GOOGLE &amp; YOUTUBE</text>
+                  <text transform="matrix(1 0 0 1 114.48 406.36)" class="text">．FACEBOOK &amp; INSTAGRAM</text>
+                  <text transform="matrix(1 0 0 1 259.66 436.36)" class="text">．LINE (LAP)</text>
+                  <text transform="matrix(1 0 0 1 216.18 466.36)" class="text">．聯播及影音廣告</text>
+                  <text transform="matrix(1 0 0 1 216.18 496.36)" class="text">．廣編及新聞廣告</text>
+                  <text transform="matrix(1 0 0 1 256.18 526.36)" class="text">．關鍵字廣告</text>
+                  <text transform="matrix(1 0 0 1 116.18 556.36)" class="text">．媒體策略、成效優化及追蹤</text>
+
+                </svg>
+
+              </div>
+              <div class="service__item item--6">
+                <svg version="1.1" id="item-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 450.1 429.7" style="enable-background:new 0 0 450.1 429.7;" xml:space="preserve">
+                  <polygon class="norsq item--6__norsq" points="15.1,21.5 449.4,50.7 450.1,235.4 12.4,243.8 " />
+                  <!-- <polygon class="actsq" points="15.1,24.7 449.4,19.4 450.1,251.9 12.4,224.1 		" /> -->
+                  <path style="stroke-dasharray:636; stroke-dashoffset:636;" class="actline" d="M30.5,180.3 0.6,173 33.8,0.6 410.8,63.1 402.6,109.8 		" />
+                  <text transform="matrix(1 0 0 1 30.48 99.97)" class="title">DIGITAL </text>
+                  <text transform="matrix(1 0 0 1 30.48 161.6)" class="title">TECHNOLOGY</text>
+                  <text transform="matrix(1 0 0 1 32.44 206.97)" class="subtitle">數位科技應用</text>
+                  <text transform="matrix(1 0 0 1 30.48 288.77)" class="text">．AR / VR 創意製作</text>
+                  <text transform="matrix(1 0 0 1 30.48 318.77)" class="text">．FB / IG 濾鏡製作</text>
+                  <text transform="matrix(1 0 0 1 30.48 348.77)" class="text">．客製短網址服務</text>
+                  <text transform="matrix(1 0 0 1 30.48 378.77)" class="text">．圖像辨識</text>
+                  <text transform="matrix(1 0 0 1 30.48 408.77)" class="text">．CHATBOT 對話機器人</text>
+              </div>
+            </div>
+          </section>
+          <!--client / A05-->
+          <section id="client" class="client app_section">
+            <div class="app_section_content">
+              <div class="client__item">
+                <img src="images/client-1.png" class="client__item__img" />
+              </div>
+              <div class="client__item">
+                <img src="images/client-2.png" class="client__item__img" />
+              </div>
+              <div class="client__item">
+                <img src="images/client-3.png" class="client__item__img" />
+              </div>
+              <div class="client__item">
+                <img src="images/client-4.png" class="client__item__img" />
+              </div>
+              <div class="client__item">
+                <img src="images/client-5.png" class="client__item__img" />
+              </div>
+              <div class="client__item">
+                <img src="images/client-6.png" class="client__item__img" />
+              </div>
+              <div class="client__item">
+                <img src="images/client-7.png" class="client__item__img" />
+              </div>
+              <div class="client__item">
+                <img src="images/client-8.png" class="client__item__img" />
+              </div>
+              <div class="client__item">
+                <img src="images/client-9.png" class="client__item__img" />
+              </div>
+              <div class="client__item">
+                <img src="images/client-10.png" class="client__item__img" />
+              </div>
+              <div class="client__item">
+                <img src="images/client-11.png" class="client__item__img" />
+              </div>
+              <div class="client__item">
+                <img src="images/client-12.png" class="client__item__img" />
+              </div>
+            </div>
+          </section>
+          <!--contact / A06-->
+          <section id="contact" class="contact app_section">
+            <div class="app_section_content container">
+              <form class="" action="" method="post">
+                <div class="contact__info row">
+                  <h4 class="contact__info__title col-12 col-md-2">TAIPEI</h4>
+                  <p class="contact__info__text col-12 col-md-10">
+                    名象數位整合營銷有限公司<br />
+                    11071台灣台北市信義區忠孝東路四段512號5樓之3<br />
+                    +886-2-27296000 #296 Steven Hung
+                  </p>
+
+                </div>
+                <div class="contact__map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7995146871326!2d121.56029831644564!3d25.04087698396919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb8e306ada3%3A0x20f658b825fcc484!2zZWJn77yN5ZCN6LGh5ZOB54mM5b2i6LGh562W55Wl!5e0!3m2!1szh-TW!2stw!4v1594079182702!5m2!1szh-TW!2stw"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <!-- <a class="contact__question-type">
+                  <input class="contact__input" type="text" name="question" value="" placeholder="需要的服務(可複選)" onfocus="this.placeholder=''" onblur="this.placeholder='需要的服務(可複選)'" disabled />
+                </a> -->
+                <div class="row">
+                  <div class="col-12">
+                    <select class="selectpicker" multiple width: 'fit' title="需要的服務(可複選)" data-size="3">
+                      <option data-subtext=" / Integrated Marketing">品牌全傳播行銷</option>
+                      <option data-subtext=" / Social Media">社群口碑行銷</option>
+                      <option data-subtext=" / Media Planning & Buying">媒體採購與購買執行</option>
+                      <option data-subtext=" / Responsive Web design">RWD 網站建置</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <input class="contact__input contact__company-name" type="text" name="company-name" value="" placeholder="公司名稱" onfocus="this.placeholder=''" onblur="this.placeholder='公司名稱'" />
+                    <div class="error_msg">*The field is required.</div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <input class="contact__input contact__name" type="text" name="name" value="" placeholder="聯絡姓名" onfocus="this.placeholder=''" onblur="this.placeholder='聯絡姓名'" />
+                    <div class="error_msg">*The field is required.</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <input class="contact__input contact__tel" type="tel" name="tel" value="" placeholder="聯絡電話" onfocus="this.placeholder=''" onblur="this.placeholder='聯絡電話'" />
+
+                    <div class="error_msg">*The field is required.</div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <input class="contact__input contact__email" type="email" name="email" value="" placeholder="電子郵件" onfocus="this.placeholder=''" onblur="this.placeholder='電子郵件'" />
+                    <div class="error_msg">*The field is required.</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <textarea class="contact__input contact__question" rows="5" type="text" name="question" value="" placeholder="請簡述您的需求" onfocus="this.placeholder=''" onblur="this.placeholder='請簡述您的需求'"></textarea>
+                    <div class="error_msg">*The field is required.</div>
+                  </div>
+                </div>
+              </form>
+              <button class="contact__button button">確定</button>
+            </div>
+          </section>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+
+          <div class="info">
+            <div class="info__item">
+              <h4 class="info__item__title">
+                CONTACT
+              </h4>
+              <h6 class="info__item__text">
+                TAIPEI<br />
+                名象數位整合營銷有限公司<br />
+                <a>+886-2-27296000 # 296</a><br />
+                <a>stevenhung@design-edg.com</a><br />
+                11071 台灣台北市信義區忠孝東路四段512號5樓之3
+              </h6>
+            </div>
+            <div class="info__item">
+              <h4 class="info__item__title">ELITE GROUP MEMBER</h4>
+              <h6 class="info__item__text">
+                TAIPEI<br />
+                名象品牌形象策略股份有限公司<br />
+                <a>https://www.design-ebg.com/</a><br />
+                <a>+886 2 2729 6000 #219</a><br />
+                <a>info@design-ebg.com</a><br />
+                11071 台北市信義區忠孝東路四段512號5樓之2<br />
+              </h6>
+            </div>
+            <div class="info__item">
+              <h4 class="info__item__title hidePad">&emsp;</h4>
+              <h6 class="info__item__text">
+                SHANGHAI<br />
+                明象品牌設計（上海）有限公司<br />
+                <a>+86 21 6380 5357</a><br />
+                <a>info@design-ebg.cn</a><br />
+                200041 上海市靜安區南京西路819號5-150
+              </h6>
+            </div>
+            <div class="info__item qrcode-box  hidePad">
+              <h4 class="info__item__title">&emsp;</h4>
+              <img class="info__item__img" src="images/qrcode.png" alt="qrcode">
+              <h6 class="info__item__text">
+                微信公眾號
+              </h6>
+            </div>
+          </div>
+          <div class="copyright">
+            © 2020 ELITE GROUP LTD. All Rights Reserved.
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="workModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+
+      <div class="modal-dialog modal-dialog-centered" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal"><img src="images/closeBtn.svg" /></button>
+          <div class="modal-body">
+
+            <div class="container">
+              <div class="row head">
+                <div class="col-12 col-md-9">
+                  <p class="client-name">西雅圖極品咖啡</p>
+                  <h4 class="project-name">放手就好</h4>
+                  <h6 class="project-subtitle">JUST LET GO</h6>
+                  <p class="hashtag">#video #barista</p>
+                </div>
+                <div class="col-12 col-md-3">
+                  <button class="button">WEBSITE</button>
+                  <button class="button">FILM</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <img src="images/workItem__image--1.png" />
+                  <p class="text">喝杯好咖啡，真的需要那麼複雜？ 拋開所有器具限制、規則教條，從現在開
+                    始，想喝，就放手去喝 ——</p>
+                  <img src="images/workItem__image--2.png" />
+                  <p class="text">直覺放入即飲，完全萃取濃郁風味，冷熱雙享可回沖，隨心調飲更多變。</p>
+
+                  <video id="video"></video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="loading">
+      <div class="message">
+        loading
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src="scripts/index.1653cc85273441be5e5c.js"></script></body>
+
+</html>
