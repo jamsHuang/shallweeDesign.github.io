@@ -213,7 +213,7 @@ body {
     }
 
     .coffee {
-      overflow-x: clip;
+      overflow-x: visible;
 
       &__text {
         font-size: 15px;
@@ -255,7 +255,7 @@ body {
       width: 100%;
       background-color: #d3c9c7;
       margin-top: 50px;
-      overflow-x: clip;
+      overflow-x: visible;
 
       &__icon {
         display: block;
@@ -378,7 +378,8 @@ body {
     }
 
     .table {
-      margin-bottom:50px;
+      margin-bottom: 50px;
+
       table {
         width: 90%;
         margin: 0 auto;
@@ -389,6 +390,7 @@ body {
           td {
             text-align: center;
             padding: 10px 5px;
+
             &:first-child {
               text-align: center;
             }
@@ -419,25 +421,30 @@ body {
       }
     }
 
-    .notice{
+    .notice {
       padding: 20px;
       background-color: #f0ebe5;
-      &__title{
+
+      &__title {
         color: #452600;
       }
-      &__text{
-        color:#633600;
-        &--star{
-          color:#633600;
+
+      &__text {
+        color: #633600;
+
+        &--star {
+          color: #633600;
           list-style: none;
           padding: 0;
           margin: 0;
-          li{
+
+          li {
             padding-left: 40px;
-            &:before{
+
+            &:before {
               padding-right: 14px;
-  content: "*";
-  margin-left: -20px;
+              content: "*";
+              margin-left: -20px;
             }
           }
         }
@@ -611,11 +618,15 @@ body {
         }
 
         &__title {
-          // margin: 50px 20px;
+          padding-top: 50px;
         }
 
         &__text {
           // margin: 0 20px;
+        }
+
+        &__label {
+          width: 220px;
         }
       }
 
@@ -627,7 +638,8 @@ body {
           vertical-align: top;
         }
       }
-      .notice{
+
+      .notice {
         padding: 40px;
       }
     }
@@ -751,6 +763,16 @@ body {
           &-cups {
             width: 330px;
           }
+        }
+      }
+
+      .ones {
+        &__title {
+          padding-top: 45px;
+        }
+
+        &__label {
+          width: 320px;
         }
       }
     }
