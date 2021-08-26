@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test canvas</title>
+    <link rel="stylesheet" href="css/rd.css">
+    <link rel="stylesheet" href="css/jquery.minicolors.css">
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+</head>
+<body>
+    <section class="rd">
+        <div class="rd__controls">
+        <button class="rd__btn" id="rdBtnUndo">上一步</button>
+        <button class="rd__btn" id="rdBtnRedo">重做</button>
+        
+        <span>
+            <label for="rd__width">畫筆尺寸：</label>
+            <select name="rd__width" id="rd__width">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+
+            </select>
+        </span>
+        <span>工具 
+            <select name="rd__shapes" id="rd__shapes">
+                <option value="0">Select</option>
+                <option value="1" selected>Pen</option>
+                <option value="2">Rect</option>
+                <option value="3">Circle</option>
+                <option value="4">Ellipse</option>
+                <option value="5">Triangle</option>
+            </select>
+        </span>
+        <span>Stroke <input type="hidden" id="rdBtnStroke" class="rd__btn rd__colors" value="rgba(0,0,0,1)" size="10"></span>
+        <span>Fill <input type="hidden" id="rdBtnPaint" class="rd__btn rd__colors" value="rgba(250,0,0,1)" size="10"></span>
+    </div>
+    <div class="rd__wrapper">
+        <canvas class="rd__canvas" id="rdCanvas" width="1480" height="1050"></canvas>
+    </div>
+    </section>
+    <script type="text/javascript" src="js/jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.minicolors.min.js"></script>
+    <script type="text/javascript" src="js/fabric.js"></script>
+    <script type="text/javascript" src="js/fabric-history.js"></script>
+    <script type="text/javascript" src="js/rdjs.js"></script>
+</body>
+</html>
